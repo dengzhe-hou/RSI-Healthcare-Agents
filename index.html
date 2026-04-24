@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self-Evolving Agent — Literature Publication Trend</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      padding: 32px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    header p {
+      font-size: 0.9rem;
+      color: #64748b;
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .stat-card {
+      background: white;
+      border-radius: 12px;
+      padding: 18px 28px;
+      text-align: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      min-width: 140px;
+    }
+    .stat-card .num {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2563eb;
+    }
+    .stat-card .lbl {
+      font-size: 0.78rem;
+      color: #64748b;
+      margin-top: 4px;
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .controls label {
+      font-size: 0.85rem;
+      color: #475569;
+      font-weight: 500;
+    }
+    .controls select, .controls input[type=range] {
+      padding: 5px 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      background: white;
+      font-size: 0.85rem;
+      color: #1e293b;
+      cursor: pointer;
+    }
+    .tab-bar {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .tab-btn {
+      padding: 7px 18px;
+      border-radius: 20px;
+      border: 1px solid #cbd5e1;
+      background: white;
+      font-size: 0.82rem;
+      color: #475569;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tab-btn.active {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+    }
+    .chart-section {
+      display: none;
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      max-width: 860px;
+      margin: 0 auto 24px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    }
+    .chart-section.visible { display: block; }
+    .chart-section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .chart-section .subtitle {
+      font-size: 0.8rem;
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+    canvas { width: 100% !important; }
+    footer {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+    footer a { color: #2563eb; text-decoration: none; }
+    .legend-inline {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      font-size: 0.78rem;
+      color: #475569;
+    }
+    .legend-dot {
+      width: 12px; height: 12px;
+      border-radius: 3px;
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Publication Trend of Cited Literature</h1>
+  <p>
+    Distribution of the 122 papers cited in the survey on <em>Self-Evolving AI Agents</em>
+    (search conducted April 2026). One additional foundational work (MYCIN, 1975) is cited
+    but excluded from the timeline below.
+  </p>
+</header>
+
+<!-- Summary stats -->
+<div class="stats-row">
+  <div class="stat-card"><div class="num">122</div><div class="lbl">Papers cited<br>(excl. MYCIN)</div></div>
+  <div class="stat-card"><div class="num">37</div><div class="lbl">Peak year<br>(2023)</div></div>
+  <div class="stat-card"><div class="num">70%</div><div class="lbl">Published in<br>2022–2024</div></div>
+  <div class="stat-card"><div class="num">2016</div><div class="lbl">Earliest cited<br>modern work</div></div>
+</div>
+
+<!-- Tab bar -->
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="showTab('annual', this)">Annual Count</button>
+  <button class="tab-btn" onclick="showTab('cumulative', this)">Cumulative</button>
+  <button class="tab-btn" onclick="showTab('growth', this)">Growth Rate</button>
+</div>
+
+<!-- Chart 1: Annual -->
+<div class="chart-section visible" id="tab-annual">
+  <h2>Number of Papers per Year</h2>
+  <div class="subtitle">Bars show cited papers per publication year. Light blue = foundational works; blue = primary search window (2022–2025); pale blue with hatch = partial 2026.</div>
+  <div class="legend-inline">
+    <span><span class="legend-dot" style="background:#93c5fd"></span>Foundational (≤ 2021)</span>
+    <span><span class="legend-dot" style="background:#2563eb"></span>Primary window (2022–2025)</span>
+    <span><span class="legend-dot" style="background:#bfdbfe;border:1px dashed #93c5fd"></span>2026 (partial, through April)*</span>
+  </div>
+  <canvas id="annualChart" height="280"></canvas>
+  <p style="font-size:0.72rem;color:#94a3b8;margin-top:12px">* Search conducted April 2026; 2026 count reflects partial-year indexing.</p>
+</div>
+
+<!-- Chart 2: Cumulative -->
+<div class="chart-section" id="tab-cumulative">
+  <h2>Cumulative Paper Count</h2>
+  <div class="subtitle">Running total of cited papers over time, showing acceleration in the self-evolving agent research area.</div>
+  <div class="controls">
+    <label>Start year:</label>
+    <select id="cumStartYear" onchange="updateCumulative()">
+      <option value="2016">2016</option>
+      <option value="2019">2019</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+    </select>
+  </div>
+  <canvas id="cumulativeChart" height="280"></canvas>
+</div>
+
+<!-- Chart 3: Growth Rate -->
+<div class="chart-section" id="tab-growth">
+  <h2>Year-over-Year Growth Rate</h2>
+  <div class="subtitle">Percentage change in number of cited papers compared to the previous year (excluding 2026 partial year).</div>
+  <canvas id="growthChart" height="280"></canvas>
+</div>
+
+<footer>
+  Data source: <code>references.bib</code> (Self-Evolving Agent survey, April 2026) &nbsp;|&nbsp;
+  Inspired by <a href="https://braininspiredai.github.io/prompt_trend_in_medical/" target="_blank">braininspiredai.github.io/prompt_trend_in_medical</a>
+</footer>
+
+<script>
+// ── Raw data ──────────────────────────────────────────────────────────────────
+const RAW = {
+  1975: 1,
+  2016: 1, 2017: 3, 2018: 1, 2019: 5, 2020: 2, 2021: 5,
+  2022: 13, 2023: 37, 2024: 20, 2025: 20, 2026: 15
+};
+
+const YEARS = [2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
+const COUNTS = YEARS.map(y => RAW[y] || 0);
+
+const MAIN_COLOR   = "#2563eb";
+const FOUND_COLOR  = "#93c5fd";
+const PARTIAL_COLOR= "#bfdbfe";
+
+function barColors(years) {
+  return years.map(y => y <= 2021 ? FOUND_COLOR : y === 2026 ? PARTIAL_COLOR : MAIN_COLOR);
+}
+
+// Shared chart defaults
+Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+Chart.defaults.color = "#475569";
+
+// ── Chart 1: Annual ───────────────────────────────────────────────────────────
+const annualCtx = document.getElementById("annualChart").getContext("2d");
+new Chart(annualCtx, {
+  type: "bar",
+  data: {
+    labels: YEARS,
+    datasets: [{
+      data: COUNTS,
+      backgroundColor: barColors(YEARS),
+      borderWidth: 0,
+      borderRadius: 4,
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          title: ctx => `Year: ${ctx[0].label}`,
+          label: ctx => `Papers: ${ctx.raw}`,
+          afterLabel: ctx => {
+            const y = parseInt(ctx.label);
+            if (y <= 2021) return "Category: Foundational works";
+            if (y === 2026) return "Category: Partial year (through April)";
+            return "Category: Primary search window";
+          }
+        }
+      },
+      datalabels: { display: false }
+    },
+    scales: {
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 12 } }
+      },
+      y: {
+        grid: { color: "#f1f5f9", lineWidth: 1 },
+        beginAtZero: true,
+        ticks: { precision: 0 },
+        title: { display: true, text: "Number of Papers", font: { size: 12 } }
+      }
+    },
+    animation: { duration: 600, easing: "easeInOutQuart" }
+  },
+  plugins: [{
+    id: "valueLabels",
+    afterDatasetsDraw(chart) {
+      const { ctx, data } = chart;
+      ctx.save();
+      chart.getDatasetMeta(0).data.forEach((bar, i) => {
+        const val = data.datasets[0].data[i];
+        if (val > 0) {
+          ctx.fillStyle = "#374151";
+          ctx.font = "bold 11px sans-serif";
+          ctx.textAlign = "center";
+          ctx.fillText(val, bar.x, bar.y - 6);
+        }
+      });
+      ctx.restore();
+    }
+  }]
+});
+
+// ── Chart 2: Cumulative ───────────────────────────────────────────────────────
+let cumulativeChart = null;
+
+function buildCumulativeData(startYear) {
+  const yrs = YEARS.filter(y => y >= startYear);
+  let cum = 0;
+  // Add papers from years before startYear to running total
+  YEARS.filter(y => y < startYear).forEach(y => cum += RAW[y] || 0);
+  const data = yrs.map(y => { cum += RAW[y] || 0; return cum; });
+  return { yrs, data };
+}
+
+function updateCumulative() {
+  const startYear = parseInt(document.getElementById("cumStartYear").value);
+  const { yrs, data } = buildCumulativeData(startYear);
+  if (cumulativeChart) {
+    cumulativeChart.data.labels = yrs;
+    cumulativeChart.data.datasets[0].data = data;
+    cumulativeChart.update();
+  }
+}
+
+const { yrs: initYrs, data: initData } = buildCumulativeData(2016);
+const cumCtx = document.getElementById("cumulativeChart").getContext("2d");
+cumulativeChart = new Chart(cumCtx, {
+  type: "line",
+  data: {
+    labels: initYrs,
+    datasets: [{
+      label: "Cumulative Papers",
+      data: initData,
+      borderColor: "#2563eb",
+      backgroundColor: "rgba(37,99,235,0.08)",
+      borderWidth: 2.5,
+      pointBackgroundColor: "#2563eb",
+      pointRadius: 5,
+      pointHoverRadius: 7,
+      fill: true,
+      tension: 0.3
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          title: ctx => `Year: ${ctx[0].label}`,
+          label: ctx => `Cumulative total: ${ctx.raw} papers`
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 12 } }
+      },
+      y: {
+        grid: { color: "#f1f5f9" },
+        beginAtZero: true,
+        ticks: { precision: 0 },
+        title: { display: true, text: "Cumulative Papers", font: { size: 12 } }
+      }
+    },
+    animation: { duration: 600, easing: "easeInOutQuart" }
+  },
+  plugins: [{
+    id: "valueLabels",
+    afterDatasetsDraw(chart) {
+      const { ctx, data } = chart;
+      ctx.save();
+      chart.getDatasetMeta(0).data.forEach((pt, i) => {
+        const val = data.datasets[0].data[i];
+        ctx.fillStyle = "#374151";
+        ctx.font = "10px sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(val, pt.x, pt.y - 10);
+      });
+      ctx.restore();
+    }
+  }]
+});
+
+// ── Chart 3: Growth Rate ──────────────────────────────────────────────────────
+// Use 2016–2025 (exclude 2026 partial)
+const growthYears = YEARS.filter(y => y <= 2025);
+const growthData = [];
+for (let i = 1; i < growthYears.length; i++) {
+  const prev = RAW[growthYears[i-1]] || 0;
+  const curr = RAW[growthYears[i]]   || 0;
+  const pct = prev === 0 ? null : Math.round((curr - prev) / prev * 100);
+  growthData.push(pct);
+}
+const growthLabels = growthYears.slice(1); // 2017–2025
+
+const growthColors = growthData.map(v => v === null ? "#e2e8f0" : v >= 0 ? "#22c55e" : "#ef4444");
+
+const growthCtx = document.getElementById("growthChart").getContext("2d");
+new Chart(growthCtx, {
+  type: "bar",
+  data: {
+    labels: growthLabels,
+    datasets: [{
+      label: "YoY Growth (%)",
+      data: growthData,
+      backgroundColor: growthColors,
+      borderRadius: 4,
+      borderWidth: 0,
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          title: ctx => `${ctx[0].label} vs ${parseInt(ctx[0].label)-1}`,
+          label: ctx => ctx.raw === null ? "N/A (prev = 0)" : `YoY change: ${ctx.raw > 0 ? "+" : ""}${ctx.raw}%`
+        }
+      }
+    },
+    scales: {
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 12 } }
+      },
+      y: {
+        grid: { color: "#f1f5f9" },
+        ticks: { precision: 0, callback: v => v + "%" },
+        title: { display: true, text: "Year-over-Year Change (%)", font: { size: 12 } }
+      }
+    },
+    animation: { duration: 600, easing: "easeInOutQuart" }
+  },
+  plugins: [{
+    id: "valueLabels",
+    afterDatasetsDraw(chart) {
+      const { ctx, data } = chart;
+      ctx.save();
+      chart.getDatasetMeta(0).data.forEach((bar, i) => {
+        const val = data.datasets[0].data[i];
+        if (val !== null) {
+          ctx.fillStyle = "#374151";
+          ctx.font = "bold 10px sans-serif";
+          ctx.textAlign = "center";
+          const yPos = val >= 0 ? bar.y - 6 : bar.y + 14;
+          ctx.fillText((val > 0 ? "+" : "") + val + "%", bar.x, yPos);
+        }
+      });
+      ctx.restore();
+    }
+  }]
+});
+
+// ── Tab switching ─────────────────────────────────────────────────────────────
+function showTab(name, btn) {
+  document.querySelectorAll(".chart-section").forEach(s => s.classList.remove("visible"));
+  document.getElementById("tab-" + name).classList.add("visible");
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+}
+</script>
+</body>
+</html>
