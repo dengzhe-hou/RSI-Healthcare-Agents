@@ -202,7 +202,7 @@
 <!-- Chart 3: Growth Rate -->
 <div class="chart-section" id="tab-growth">
   <h2>Year-over-Year Growth Rate</h2>
-  <div class="subtitle">Percentage change in number of cited papers compared to the previous year (excluding 2026 partial year).</div>
+  <div class="subtitle">Percentage change in number of cited papers compared to the previous year (excluding 2026 partial year). Years where the previous year had fewer than 3 papers are omitted, since small-denominator percentages are not informative.</div>
   <canvas id="growthChart" height="280"></canvas>
 </div>
 
@@ -381,12 +381,13 @@ cumulativeChart = new Chart(cumCtx, {
 
 // ── Chart 3: Growth Rate ──────────────────────────────────────────────────────
 // Use 2016–2025 (exclude 2026 partial)
+// Skip YoY when prev < 3 (small-denominator years produce noisy/misleading percentages).
 const growthYears = YEARS.filter(y => y <= 2025);
 const growthData = [];
 for (let i = 1; i < growthYears.length; i++) {
   const prev = RAW[growthYears[i-1]] || 0;
   const curr = RAW[growthYears[i]]   || 0;
-  const pct = prev === 0 ? null : Math.round((curr - prev) / prev * 100);
+  const pct = prev < 3 ? null : Math.round((curr - prev) / prev * 100);
   growthData.push(pct);
 }
 const growthLabels = growthYears.slice(1); // 2017–2025
@@ -412,7 +413,7 @@ new Chart(growthCtx, {
       tooltip: {
         callbacks: {
           title: ctx => `${ctx[0].label} vs ${parseInt(ctx[0].label)-1}`,
-          label: ctx => ctx.raw === null ? "N/A (prev = 0)" : `YoY change: ${ctx.raw > 0 ? "+" : ""}${ctx.raw}%`
+          label: ctx => ctx.raw === null ? "N/A (small-denominator year)" : `YoY change: ${ctx.raw > 0 ? "+" : ""}${ctx.raw}%`
         }
       }
     },
@@ -424,9 +425,11 @@ new Chart(growthCtx, {
       y: {
         grid: { color: "#f1f5f9" },
         ticks: { precision: 0, callback: v => v + "%" },
-        title: { display: true, text: "Year-over-Year Change (%)", font: { size: 12 } }
+        title: { display: true, text: "Year-over-Year Change (%)", font: { size: 12 } },
+        grace: "15%"
       }
     },
+    layout: { padding: { top: 18 } },
     animation: { duration: 600, easing: "easeInOutQuart" }
   },
   plugins: [{
