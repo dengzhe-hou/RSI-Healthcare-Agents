@@ -1,5 +1,9 @@
 # Resource changelog
 
+## 0.3.1, presentation update on 9 November 2026
+
+Moved the complete S3 mechanism table from the article to GitHub, with its full independently referenced PDF added beside the existing CSV/JSON. The article retains its synthesis and links, with no appended full tables. All 85 study records, classifications, source locators, screening decisions and numerical conclusions remain unchanged. This is a presentation and access update. The original 0.3.0 tag remains fixed; unchanged coding/evaluation guides retain component version 0.3.0. No manuscript PDF is published, arXiv remains paused and no additional license is selected.
+
 ## 9 November 2026 resource publication
 
 Author-authorized publication of S1, S2, S4, search details and reusable evaluation/record templates on GitHub at tag `evidence-2026-11-04-v0.3.0`. S3 remains with the article. The 25 S4 rows retain all modality/task, reference-standard and level descriptions, with source URLs added from the existing evidence map. The 85-study extraction, classifications and 10,720 screening decisions are unchanged. The revised manuscript PDF is not part of this publication. Author verification remains incomplete, no additional resource license is selected, and arXiv remains paused.

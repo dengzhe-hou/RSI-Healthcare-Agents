@@ -1,6 +1,6 @@
 # RSI-HA evidence resources
 
-Companion resources for **Recursive Self-Improvement in Healthcare AI Agents** by Dengzhe Hou, Zihao Wu, Yuwen Zeng, Lingyu Jiang, Fangzhou Lin and Kazunori D Yamada. Fixed search cutoff **4 November 2026**, resource version **0.3.0**.
+Companion resources for **Recursive Self-Improvement in Healthcare AI Agents** by Dengzhe Hou, Zihao Wu, Yuwen Zeng, Lingyu Jiang, Fangzhou Lin and Kazunori D Yamada. Fixed search cutoff **4 November 2026**, resource version **0.3.1**.
 
 Screening and extraction were LLM-assisted. The fixed sample-check plan was withdrawn without being performed. Read [review status](REVIEW_STATUS.md) before reuse.
 
@@ -10,7 +10,7 @@ Screening and extraction were LLM-assisted. The fixed sample-check plan was with
 - Download the 85-study evidence map as [CSV](snapshots/2026-11-04/evidence_map.csv), [JSON](snapshots/2026-11-04/evidence_map.json) or [searchable HTML](snapshots/2026-11-04/evidence_map.html).
 - Read [field descriptions](CODEBOOK.md), [four coded examples](examples/coded_examples.json) and the [blank extraction template](extraction_template.csv).
 - Inspect all 10,720 screening records as [CSV](snapshots/2026-11-04/screening_decisions.csv), [JSON](snapshots/2026-11-04/screening_decisions.json) or [searchable HTML](snapshots/2026-11-04/screening_decisions.html).
-- Inspect the 85 [compact mechanism summaries](snapshots/2026-11-04/mechanism_summaries.csv) and [search provenance](snapshots/2026-11-04/SEARCH_METHOD.md).
+- Read the complete 85-study mechanism table S3 as [PDF](snapshots/2026-11-04/mechanism_summaries.pdf), or inspect the same study summaries as [CSV](snapshots/2026-11-04/mechanism_summaries.csv) and [JSON](snapshots/2026-11-04/mechanism_summaries.json). Read the [search provenance](snapshots/2026-11-04/SEARCH_METHOD.md).
 
 - Inspect the 25-study imaging view (Table S4) in [editable Markdown](STUDY_DESIGN_MATRIX.md#imaging-and-radiology-report-studies-table-s4), [CSV](snapshots/2026-11-04/imaging_studies.csv), [JSON](snapshots/2026-11-04/imaging_studies.json) or [searchable HTML](snapshots/2026-11-04/imaging_studies.html).
 

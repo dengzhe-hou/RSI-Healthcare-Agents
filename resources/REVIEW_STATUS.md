@@ -1,6 +1,6 @@
 # Review status of the evidence resources
 
-Version 0.3.0 is a fixed, LLM-assisted literature extraction prepared for reuse. Author verification is incomplete. It must not be described as a fully author-verified dataset, an independently double-screened review, a validated clinical standard or an executable benchmark.
+Version 0.3.1 is a fixed, LLM-assisted literature extraction prepared for reuse. Author verification is incomplete. It must not be described as a fully author-verified dataset, an independently double-screened review, a validated clinical standard or an executable benchmark.
 
 The author withdrew the fixed 70-record sample-check plan on 8 November 2026. It was not performed. The original sample (40 title/abstract and 30 full-text decisions) is retained as a historical record and is no longer a required task. The optional OpenAlex candidate list and the blank 85-row review form do not document completed author verification.
 

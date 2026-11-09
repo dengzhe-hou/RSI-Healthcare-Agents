@@ -12,7 +12,7 @@ The85-row matrix includes the contextual comparators already in the review. It m
 
 ## Imaging and radiology-report studies (Table S4)
 
-This editable table preserves the 25-study imaging view moved from the manuscript on 9 November 2026. Its modality, task, reference-standard descriptions and evidence levels are unchanged. S3 remains with the article. Publication status, mechanism evidence and clinical evaluation remain separate judgments. Full source versions, boundaries and locators are in the evidence map.
+This editable table preserves the 25-study imaging view moved from the manuscript on 9 November 2026. Its modality, task, reference-standard descriptions and evidence levels are unchanged. The complete S3 table is also available in the companion GitHub resources. Publication status, mechanism evidence and clinical evaluation remain separate judgments. Full source versions, boundaries and locators are in the evidence map.
 
 <!-- RSI_HA_IMAGING_TABLE_BEGIN -->
 | Key | Study | Modality and task | Data and reference standard | Level | Source URL |

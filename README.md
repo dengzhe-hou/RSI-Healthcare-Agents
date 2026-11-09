@@ -2,9 +2,9 @@
 
 Evidence resources accompanying the review by Dengzhe Hou, Zihao Wu, Yuwen Zeng, Lingyu Jiang, Fangzhou Lin and Kazunori D Yamada.
 
-The fixed 4 November 2026 snapshot contains 85 mapped studies and 10,720 deduplicated screening decisions. [Browse the resources](https://dengzhe-hou.github.io/self-evolving-agent-engineering/resources/), read the [resource documentation](resources/README.md), or use the [fixed version](https://github.com/dengzhe-hou/self-evolving-agent-engineering/tree/evidence-2026-11-04-v0.3.0/resources).
+The fixed 4 November 2026 snapshot contains 85 mapped studies and 10,720 deduplicated screening decisions. [Browse the resources](https://dengzhe-hou.github.io/self-evolving-agent-engineering/resources/), read the [resource documentation](resources/README.md), or use the [fixed version](https://github.com/dengzhe-hou/self-evolving-agent-engineering/tree/evidence-2026-11-04-v0.3.1/resources).
 
-S1 provides extraction records, S2 provides search and screening details, and S4 provides the 25-study imaging view. Evaluation-design and experiment-record templates are also available. S3 remains with the article. These resources preserve existing judgments; they do not establish a validated clinical standard or executable benchmark.
+S1 provides extraction records, S2 provides search and screening details, and S4 provides the 25-study imaging view. Evaluation-design and experiment-record templates are also available. The complete mechanism table S3 is available as a companion PDF and structured data on GitHub. These resources preserve existing judgments; they do not establish a validated clinical standard or executable benchmark.
 
 Screening and extraction were LLM-assisted. Author verification is incomplete, and the fixed sample-check plan was withdrawn without being performed. Read [review status](resources/REVIEW_STATUS.md), [rights](resources/RIGHTS.md), [versions](resources/VERSIONS.md) and [citation metadata](CITATION.cff).
 
