@@ -1,0 +1,423 @@
+﻿key,name,evidence_level,clinical_evaluation_category,control_description,independent_test_description,source_version,source_url,source_locators,author_check,author_comment
+medhospital2024,Agent Hospital / MedAgent-Zero,1,simulated,No matched changing-versus-fixed improver comparison reported.,Separate simulated test cases and MedQA; memory-component ablations.,v3,https://arxiv.org/abs/2405.02957v3,"Agent Evolution | https://arxiv.org/html/2405.02957v3#Sx3
+Appendix B.3: reflection, validation and refinement | https://arxiv.org/html/2405.02957v3#Sx12.SSx3
+Appendix C.4: separate simulated training/test cases | https://arxiv.org/html/2405.02957v3#Sx13.SSx4
+Appendix C.7: ablations | https://arxiv.org/html/2405.02957v3#Sx13.SSx7",,
+clinicalagents2026,ClinicalAgents,0,offline_benchmark,Orchestration/memory ablations; no changing-improver control.,Test cases excluded from experience store; separate-model judge validated against clinicians.,v2,https://arxiv.org/abs/2603.26182v2,"Section 3.3.2: explicitly static experience memory | https://arxiv.org/html/2603.26182v2#S3.SS3.SSS2
+Section 3.3.1: working memory | https://arxiv.org/html/2603.26182v2#S3.SS3.SSS1
+Section 4.1.1: test exclusion | https://arxiv.org/html/2603.26182v2#S4.SS1.SSS1
+Section 4.2: clinician validation of judge | https://arxiv.org/html/2603.26182v2#S4.SS2",,
+coevolving2025,TissueLab,1,retrospective,No isolated changing-versus-fixed improver comparison reported.,Task benchmarks; separate pathology hold-out and patient-level fatty-liver split described.,v1,https://arxiv.org/abs/2509.20279,"Methods: Community-driven co-evolution | https://arxiv.org/html/2509.20279v1#S4.SSx3
+Methods: Editable memory layer | https://arxiv.org/html/2509.20279v1#S4.SSx6
+Section 2.5: user-created/adapted tools | https://arxiv.org/html/2509.20279v1#S2.SS5
+Methods: benchmarking and separation | https://arxiv.org/html/2509.20279v1#S4.SSx9
+Discussion: human supervision and clinical integration limitations | https://arxiv.org/html/2509.20279v1#S3",,
+fan2026macro,MACRO,2-implicit,retrospective,Component ablations share hyperparameters; no isolated improver-change control.,Imaging benchmarks and component ablations; RAM-W600 test-set results.,v1,https://arxiv.org/abs/2603.05860,"Section 3.2: correct training episodes enter memory | https://arxiv.org/html/2603.05860v1#S3.SS2
+Section 3.3: composite registration | https://arxiv.org/html/2603.05860v1#S3.SS3
+Section 3.4: SFT/GRPO and reward | https://arxiv.org/html/2603.05860v1#S3.SS4
+Section 4.3: ablations | https://arxiv.org/html/2603.05860v1#S4.SS3
+Section 5: prospective studies remain future work | https://arxiv.org/html/2603.05860v1#S5",,
+qiu2025diaggym,DiagAgent / DiagGym,1,simulated,SFT/reward ablations; no changing-versus-fixed improver comparison.,Held-out and out-of-domain DiagBench cases; physician-written rubrics and judge validation.,v2,https://arxiv.org/abs/2510.24654v2,"Section 5.2: training and fixed rewards | https://arxiv.org/html/2510.24654v2#S5.SS2
+Section 5.3: benchmark construction | https://arxiv.org/html/2510.24654v2#S5.SS3
+Appendix A.1.3: physician validation of metrics | https://arxiv.org/html/2510.24654v2#A1.SS1.SSS3
+Section 3.3: ablations | https://arxiv.org/html/2510.24654v2#S3.SS3
+Section 4: virtual environment limitations | https://arxiv.org/html/2510.24654v2#S4",,
+feng2025doctoragentrl,DoctorAgent-RL,1,simulated,SFT/RL/turn-budget ablations; no evolving-improver control.,Held-out MTMedDialog; model judge and blinded human assessment of sampled dialogues.,"ICASSP 2026 metadata; mechanism extraction from matching-title/five-author arXiv v3 (2025-10-14), not extended v4",https://arxiv.org/html/2505.19630v3,"Official conference title/authors | https://www.cmsworkshops.com/ICASSP2026/view_paper.php?PaperNum=6520
+Training Procedure | https://arxiv.org/html/2505.19630v3#Sx3.SSx3
+Consultation Evaluator | https://arxiv.org/html/2505.19630v3#Sx3.SSx2.SSSx3
+Blinded human evaluation | https://arxiv.org/html/2505.19630v3#Sx4.SSx4
+Training-component ablations | https://arxiv.org/html/2505.19630v3#Sx4.SSx5",,
+xu2026oaims,OAIMS,1,retrospective,Frozen and other fixed adaptation baselines; no changing-improver comparison.,Ground-truth segmentation metrics on shifted target databases; baseline/ablation/robustness comparisons.,v4,https://arxiv.org/abs/2503.06717v4,"Section 2.4: update timing | https://arxiv.org/html/2503.06717v4#S2.SS4
+Section 3.2: online evaluation | https://arxiv.org/html/2503.06717v4#S3.SS2
+Section 3.3: robustness | https://arxiv.org/html/2503.06717v4#S3.SS3
+Appendix A.2: clicks simulated using ground truth | https://arxiv.org/html/2503.06717v4#A1.SS2
+Official ICLR publication | https://proceedings.iclr.cc/paper_files/paper/2026/hash/8e5e1e120afdbd8700ee4ce8c42f2bf5-Abstract-Conference.html",,
+wu2026medrsi,MedRSI,2-implicit,external_retrospective,Matched clinical-cost/registration ablations; no isolated evolving-improver control.,Disjoint patient partitions; locked test evaluation after trajectory freezing.,v1 (2026-09-21),https://arxiv.org/html/2609.24838v1,"Section 2.1: fixed M/P and changing registry | https://arxiv.org/html/2609.24838v1#S2.SS1
+Section 2.2: frozen clinical evaluator | https://arxiv.org/html/2609.24838v1#S2.SS2
+Section 2.3: discovery and registration | https://arxiv.org/html/2609.24838v1#S2.SS3
+Section 3.1: separation and retrospective checkpoint testing | https://arxiv.org/html/2609.24838v1#S3.SS1
+Table 6: matched mechanism ablations | https://arxiv.org/html/2609.24838v1#S3.T6
+Section 4: prospective validation needed | https://arxiv.org/html/2609.24838v1#S4",,
+lan2024amc,Agent Mental Clinic (AMC),1,simulated,"Memory-off, memory-layer and supervisor ablations test component value; they do not compare an evolved skill-generation procedure with its fixed predecessor.","Separate D4 test cases are evaluated in a single-attempt Exam, using professional reference labels; original versus simulated dialogues and memory/supervisor ablations are reported.","Submission history From: Kunyao Lan [ view email ] [v1] Fri, 20 Sep 2024 14:25:08 UTC (1,994 KB) [v2] Wed, 9 Oct 2024 04:37:29 UTC (1,994 KB)",https://arxiv.org/html/2409.15084v2,"patient cohort, professional labels and supervisor role | https://arxiv.org/html/2409.15084v2#Sx2
+six-stage loop; constant-prompt Eqs. 1–6; tertiary memory; retrieval Eq. 7 | https://arxiv.org/html/2409.15084v2#Sx3
+Quiz/Exam distinction, Table 1, memory and supervisor ablations | https://arxiv.org/html/2409.15084v2#Sx4
+role-play, cultural coverage and absent real-time expert feedback | https://arxiv.org/html/2409.15084v2#Sx6
+intended-use and privacy boundaries | https://arxiv.org/html/2409.15084v2#A3",,
+almansoori2025medagentsim,MedAgentSim,1,simulated,"Incremental measurement, memory, chain-of-thought and ensembling ablations compare task pipelines, not evolved versus unchanged experience-generation procedures.","NEJM, MedQA and MIMIC-IV cases are converted to interactive simulations; LLM diagnosis scoring and data conversions are manually reviewed. A separate protected memory-development/test split is not specified in the full published Methods/Experiments.","MICCAI 2025 accepted/published version (official OA PDF); latest arXiv counterpart v2, 2025-10-01.",https://papers.miccai.org/miccai-2025/paper/2575_paper.pdf,"official publication status, author list, DOI, pages, and OA version identity | https://papers.miccai.org/miccai-2025/0537-Paper2575.html
+pp. 3–5, §2 and Fig. 2: two buffers, reflection and correctness admission | https://papers.miccai.org/miccai-2025/paper/2575_paper.pdf
+pp. 5–7, §3: benchmark conversion, diagnosis scoring, Table 1 and incremental Table 2 | https://papers.miccai.org/miccai-2025/paper/2575_paper.pdf
+matching methodology in current arXiv counterpart | https://arxiv.org/html/2503.22678v2#S2
+publisher metadata and 2025-09-21 publication date | https://api.crossref.org/works/10.1007/978-3-032-05114-1_35",,
+han2026gsem,GSEM,1,offline_benchmark,"Static GSEM is compared with evolving-memory snapshots, plus retrieval ablations; this isolates graph-state calibration, not a self-revised calibration procedure.",Held-out MedR-Bench diagnosis/treatment cases and five MedAgentsBench subsets; DeepSeek-V3.2 judges reasoning and is also one generator. The relation of online-evolution samples to snapshot test cases is not fully specified in §5.3/Appendices.,"Submission history From: Xiao Han [ view email ] [v1] Mon, 23 Mar 2026 15:24:15 UTC (5,083 KB)",https://arxiv.org/html/2603.22096v1,"task/experience definitions and dual-layer graph | https://arxiv.org/html/2603.22096v1#S3
+extraction, held-out Experience Reliability Validation and graph construction | https://arxiv.org/html/2603.22096v1#S4.SS1
+update targets and fixed Eqs. 7–10 | https://arxiv.org/html/2603.22096v1#S4.SS3
+benchmark setup, shared backbone/judging and evolution Table 2 | https://arxiv.org/html/2603.22096v1#S5
+retrieval ablations and reasoning-quality analysis | https://arxiv.org/html/2603.22096v1#S6
+explicit lack of real workflow, longitudinal and expert evaluation | https://arxiv.org/html/2603.22096v1#Sx1
+fixed traversal and graph hyperparameters | https://arxiv.org/html/2603.22096v1#A3",,
+shen2026evomedagent,Evo-MedAgent,1,retrospective,No-memory and episodic/procedural ablations; fixed versus evolved reflection or memory-update procedures are not compared. Tool-governance quantitative ablation is explicitly deferred.,"ChestAgentBench answers score sequential predictions; three case-order permutations are reported for GPT-5-mini. This is online benchmark evaluation with prior-answer feedback, not a separately frozen-memory external clinical cohort.","Submission history From: Bailiang Jian [ view email ] [v1] Wed, 15 Apr 2026 23:12:02 UTC (508 KB)",https://arxiv.org/html/2604.14475v1,"sequential ground-truth reveal and fixed-parameter objective | https://arxiv.org/html/2604.14475v1#S3
+three memory stores, utility selection, fixed tool-trust thresholds and deferred governance ablation | https://arxiv.org/html/2604.14475v1#S3.SS1
+fixed base protocol and reflection-based patch updates | https://arxiv.org/html/2604.14475v1#S3.SS2
+Table 1, sequential trajectories, three permutations and memory ablations | https://arxiv.org/html/2604.14475v1#S4
+immediate-feedback, CXR-only and governance limitations | https://arxiv.org/html/2604.14475v1#S5",,
+ren2026dxevolve,DxEvolve,1,external_retrospective,Backbone-matched DCP-free and retrieval ablations plus exposure curves isolate experiential reuse; no changed-versus-fixed DCP-construction procedure is evaluated.,Non-overlapping 400-case MIMIC-CDM evaluation; a separate 80-case reader-study split; a 293-case external hospital cohort excluded from accrual; two blinded physicians rate 40 sampled DCPs.,"Submission history From: Ruiyang Ren [ view email ] [v1] Wed, 11 Mar 2026 11:41:51 UTC (1,166 KB)",https://arxiv.org/html/2603.10677v1,"workflow, three-part DCP, provenance and evidence-compatible reuse | https://arxiv.org/html/2603.10677v1#S4.SS1
+accrual/evaluation separation, reader-study cohort and external hospital cohort | https://arxiv.org/html/2603.10677v1#S4.SS3
+frozen backbones, common prompt contract, fixed dense retrieval and baselines | https://arxiv.org/html/2603.10677v1#S4.SS5
+nested accrual pools, blinded clinician ratings and process metrics | https://arxiv.org/html/2603.10677v1#S4.SS6
+fixed experience-construction prompt, ground truth and rule-based feedback | https://arxiv.org/html/2603.10677v1#Sx4
+unmatched information access for published clinician reference | https://arxiv.org/html/2603.10677v1#S2.SS2
+independent external validation | https://arxiv.org/html/2603.10677v1#S2.SS3
+retrospective scope and prospective-study priorities | https://arxiv.org/html/2603.10677v1#S3",,
+he2026evoclinician,EvoClinician,1,simulated,"Static, memory-only, prompt-only and transcript-feedback controls; these isolate components, not evolving versus fixed Evolver.","Separate diagnosis Judge, but its score feeds adaptation; the reported fixed-order case stream is not an independent frozen holdout.","arXiv v1, 2026-01-30",https://arxiv.org/html/2601.22964v1,"Sections 4.1–4.5; update access and mechanism | https://arxiv.org/html/2601.22964v1#S4
+Tables 1–3; fixed-order evaluation and component ablations | https://arxiv.org/html/2601.22964v1#S5
+fixed Evolver prompt and memory deletion | https://arxiv.org/html/2601.22964v1#A6
+simulation and safety limitations | https://arxiv.org/html/2601.22964v1#A10
+reference implementation README; no acceptance claim | https://github.com/yf-he/EvoClinician",,
+liu2026evomdt,EvoMDT,1,external_retrospective,No evolution-disabled or frozen-optimizer comparison identified in the main results and 16-page supplement.,"Six QA datasets, retrospective hospital records and single-blind physician scoring; these assess recommendations, not improvement cycles.",Published 2026-01-07; version of record 2026-02-04,https://www.nature.com/articles/s41746-025-02304-8,"Multi-agent EvoMDT; prompt optimization and self-evolution | https://www.nature.com/articles/s41746-025-02304-8#Sec11
+four-center, 405-case retrospective design | https://www.nature.com/articles/s41746-025-02304-8#Sec13
+single-blind physician protocol | https://www.nature.com/articles/s41746-025-02304-8#Sec14
+Discussion and limitations | https://www.nature.com/articles/s41746-025-02304-8#Sec8
+16-page supplement; guideline catalog, cohort figures and evaluation rubric | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41746-025-02304-8/MediaObjects/41746_2025_2304_MOESM1_ESM.pdf",,
+yang2026psychagent,PsychAgent,2-implicit,simulated,"Memory/planning, skill-evolution and internalization ablations; no dedicated control isolating shared-model improvements as an updater.",Separate evaluation profiles plus human ratings of 522 dialogues by two psychology-trained graduate raters; simulated clients.,"arXiv v3, 2026-04-28; v1 2026-04-01",https://arxiv.org/html/2604.00931v3,"three engines; equations 4–6 | https://arxiv.org/html/2604.00931v3#S3
+profile split and implementation | https://arxiv.org/html/2604.00931v3#S4.SS1
+Table 3 ablations | https://arxiv.org/html/2604.00931v3#S4.SS4
+human-rater qualifications and matched dialogue sample | https://arxiv.org/html/2604.00931v3#A2
+README: incomplete public skill-evolution pipeline | https://github.com/ECNU-ICALK/PsychAgent",,
+sun2026skemex,SkeMex,1,offline_benchmark,"Matched-tool/prompt/inference-budget ablations freeze writing, valuation, governance or retrieval components; no evolving-operator comparator.",Offline held-out in-domain and unseen-benchmark-family tests; cross-backbone skill transfer; separate online repeated-stream experiments.,"Audited arXiv v4, 2026-10-09; v1 2026-06-08",https://arxiv.org/html/2606.09365v4,"equations 5–9; writing, valuation and governance | https://arxiv.org/html/2606.09365v4#S3
+Table 2 lifecycle ablations; Table 3 online epochs | https://arxiv.org/html/2606.09365v4#S4.SS3
+Table 10 split and fixed hyperparameters | https://arxiv.org/html/2606.09365v4#A6
+OOD and cross-backbone transfer | https://arxiv.org/html/2606.09365v4#A9
+limitations | https://arxiv.org/html/2606.09365v4#A10
+official NeurIPS 2026 Poster listing | https://neurips.cc/virtual/2026/poster/150444
+linked from official conference listing | https://openreview.net/forum?id=i09nlt9B6r",,
+zhu2026healthflow,HealthFlow,1,offline_benchmark,"Progressive addition of planner/evaluator, reflector-memory and tools; no separately evolving-reflector versus fixed-reflector experiment.",External Gemini judge with expert-built references; 12 blinded experts assess 20 reports. Online memory updates continue within each benchmark.,Published 2026-08-17; version of record 2026-08-27; supersedes arXiv:2508.02621 title,https://www.nature.com/articles/s41746-026-03097-0,"Algorithm 1; within-task versus cross-task indices | https://www.nature.com/articles/s41746-026-03097-0#Sec12
+equations 2–4; retrieval and outcome-specific writeback | https://www.nature.com/articles/s41746-026-03097-0#Sec13
+independent judging, sequential online evaluation and human review | https://www.nature.com/articles/s41746-026-03097-0#Sec15
+progressive ablation | https://www.nature.com/articles/s41746-026-03097-0#Sec5
+limitations | https://www.nature.com/articles/s41746-026-03097-0#Sec9
+supplementary judge agreement and repair dynamics | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41746-026-03097-0/MediaObjects/41746_2026_3097_MOESM1_ESM.pdf",,
+du2025evopatient,EvoPatient,2-explicit,simulated,"Tables 4–5 test doctor evolution and recruitment; patient-impact evolved-doctor condition bundles trajectory, question-pool and profile components.",Separate disease-transfer assessment and human/GPT-4 preferences; no prospective human-trainee clinical-outcome test.,"ACL Anthology proceedings version, 2025-07; pages 17278–17306",https://aclanthology.org/2025.acl-long.846.pdf,"Section 3.3, pp. 17281–17282; two evolving libraries | https://aclanthology.org/2025.acl-long.846.pdf
+Section 4.3, p. 17285; transfer from one disease to five | https://aclanthology.org/2025.acl-long.846.pdf
+Section 4.4, Tables 4–5, pp. 17285–17286; generator and patient-impact ablations | https://aclanthology.org/2025.acl-long.846.pdf
+Appendix E, p. 17293; correction/deletion rules | https://aclanthology.org/2025.acl-long.846.pdf
+Algorithm 1, p. 17294; quality validation | https://aclanthology.org/2025.acl-long.846.pdf
+complete authors, venue, pages and DOI | https://aclanthology.org/2025.acl-long.846/",,
+li2026healthclaw,HealthClaw,1,simulated,Memory/context baselines; biomedical comparisons also differ in backbone and pipeline.,Hidden-ledger probes on a synthetic year; nine biomedical task datasets.,v1,https://arxiv.org/abs/2607.13940v1,"Introduction | https://arxiv.org/html/2607.13940v1#Sx1
+Results | https://arxiv.org/html/2607.13940v1#Sx2
+Discussion | https://arxiv.org/html/2607.13940v1#Sx3
+Methods | https://arxiv.org/html/2607.13940v1#Sx4",,
+shi2026emr,EMR,1,offline_benchmark,Experience/hierarchy ablations and cross-backbone transfer; no evolving-versus-fixed updater test.,"Mining and testing subsets separated; most datasets evenly resplit, PubMedQA uses official test set.",v1,https://arxiv.org/abs/2609.15161v1,"Section 3.2: mining | https://arxiv.org/html/2609.15161v1#S3.SS2
+Section 3.3: update and retrieval | https://arxiv.org/html/2609.15161v1#S3.SS3
+Appendix A: mining/test split | https://arxiv.org/html/2609.15161v1#A1
+Limitations | https://arxiv.org/html/2609.15161v1#Sx1",,
+chen2026medforge,MedForge-RSI,1,retrospective,Fixed configurations and mechanism ablations; the improvement mechanism itself is protected.,"Final 4,000-image held-out evaluation, separate from validation and learning.",v1,https://arxiv.org/abs/2609.36549v1,"Section 3.4: protected components and gates | https://arxiv.org/html/2609.36549v1#S3.SS4
+Section 4: data splits and contaminated resample | https://arxiv.org/html/2609.36549v1#S4
+Section 7: limitations and bounded claim | https://arxiv.org/html/2609.36549v1#S7.SS0.SSS0.Px3",,
+zhang2026vibemed,VIBEMed,1,offline_benchmark,No component-isolating memory/model/code evolution ablation; explicitly deferred.,MedBench base-versus-tuned comparison and clinical case demonstration.,v2,https://arxiv.org/abs/2606.15504v2,"Section 2.3: three-level mechanism | https://arxiv.org/html/2606.15504v2#S2.SS3
+Section 3.2 and Table 2: evolution evaluation | https://arxiv.org/html/2606.15504v2#S3.SS2
+Section 3.3: case demonstration | https://arxiv.org/html/2606.15504v2#S3.SS3
+Conclusions: untested component effects | https://arxiv.org/html/2606.15504v2#S4
+Published metadata; extraction uses arXiv v2 | https://doi.org/10.1016/j.metrad.2026.100223",,
+wang2026ecgrsi,ECG-RSI,2-explicit,retrospective,"Yes: frozen-operator/skill ablations; equal accepted-data volume and matched training, unequal generation counts.","Patient-disjoint sources/development/tests; two physicians review synthetic samples, not clinical outcomes.",v1 (2026-10-13),https://arxiv.org/html/2610.17718v1,"Section 3.1: separate learner, training pool and construction policy; data boundaries | https://arxiv.org/html/2610.17718v1#S3.SS1
+Section 3.2.2: old/new operator and prompt repair comparisons | https://arxiv.org/html/2610.17718v1#S3.SS2.SSS2
+Appendix A.2: exact rule changes, proposer and independent regression checks | https://arxiv.org/html/2610.17718v1#A1.SS2
+Prompt P5: repair generator component while acceptance criteria remain fixed | https://arxiv.org/html/2610.17718v1#A4.SS5
+Table 10: 10,000 accepted samples; candidates 16,193 full, 36,723 frozen operators, 22,398 frozen skills | https://arxiv.org/html/2610.17718v1#S5.T10
+Main Table 15: R1 S7 full 43.22±1.40; frozen operators 39.29±1.30; frozen skills 40.15±1.30 | https://arxiv.org/html/2610.17718v1#S5.T15
+Section 5.6/Table 11: same-parent fixed-mixture control | https://arxiv.org/html/2610.17718v1#S5.SS6
+Section 5.7/Table 12: per-branch 10,000 additions and matched replay/training; not proof of total tree/chain compute equality | https://arxiv.org/html/2610.17718v1#S5.SS7
+Table 7: 240 generated samples, two physicians; answer correctness 0.88, explanation support 0.76 | https://arxiv.org/html/2610.17718v1#S5.T7
+Conclusion: unreleased implementation/data and diminishing external gains | https://arxiv.org/html/2610.17718v1#S6",,
+dang2026medzero,MedZERO,2-explicit,offline_benchmark,Curriculum-source/curation/retrieval ablations; matched frozen-Examiner comparison not reported.,"Public benchmark gold labels; separate option-mapping judge. Curation is a separate stage, not independent truth adjudication.",v1 (2026-10-06),https://arxiv.org/html/2610.08327v1,"ArXiv comment: accepted by NIPS 2026; date/authors | https://arxiv.org/abs/2610.08327v1
+Section 3.1: alternating Examiner and Reasoner updates; counterpart frozen | https://arxiv.org/html/2610.08327v1#S3.SS1
+Section 3.2: Examiner GRPO and fixed frontier/diversity/grounding reward | https://arxiv.org/html/2610.08327v1#S3.SS2
+Section 3.3: causal visibility; temporary buffer discarded; separate curation pass | https://arxiv.org/html/2610.08327v1#S3.SS3
+Section 3.4: fixed Reasoner consistency/grounding reward | https://arxiv.org/html/2610.08327v1#S3.SS4
+Section 3.5: open-ended responses and separate mapping judge | https://arxiv.org/html/2610.08327v1#S3.SS5
+Figure 3 inspected visually: panel c varies KG-only/Web-only/generated-triplets+Web curriculum source, not a frozen-Examiner control | https://arxiv.org/html/2610.08327v1#S5.F3
+Original Figure 3 SVG rendered for inspection | https://arxiv.org/html/2610.08327v1/analysis_fig1.svg
+Section 5.3: three-round evolution | https://arxiv.org/html/2610.08327v1#S5.SS3
+Appendix B: verification, persistent-error and clinical-utility limitations | https://arxiv.org/html/2610.08327v1#A2
+Appendix F: fixed Reasoner, variable retrieval/prompt/observation budget; within-table comparison only | https://arxiv.org/html/2610.08327v1#A6",,
+tzanis2026reclaim,ReclAIm,1,retrospective,Before/after classifier performance is compared; the paper explicitly lacks scripted or single-agent baselines and direct catastrophic-forgetting assessment. It does not compare changed versus fixed improver procedures.,"Patient-separated development, monitoring and adaptation cohorts are reported. Monitoring labels select adaptation and the same monitoring cohort measures its outcome, so post-update results are not from an untouched final holdout.","Full methods and supplements read from arXiv:2510.17004v2 (2026-06-05); journal title, publication status, authors, DOI and abstract cross-checked with the publisher and Crossref.",https://arxiv.org/pdf/2510.17004v2,"title, authors, volume 8/issue 4, online date and abstract | https://pubs.rsna.org/doi/10.1148/ryai.250923
+article e250923 and issue publication metadata | https://api.crossref.org/works/10.1148/ryai.250923
+Experimental setup steps I–V: label-based monitoring, separate fine-tuning data, re-evaluation on inference data | https://arxiv.org/pdf/2510.17004v2#page=5
+5% trigger and eight affected model–dataset combinations | https://arxiv.org/pdf/2510.17004v2#page=8
+label availability, single temporal dataset, random partitions, no forgetting/control-pipeline tests | https://arxiv.org/pdf/2510.17004v2#page=11
+Supplement A: agent roles and fine-tuning strategies | https://arxiv.org/pdf/2510.17004v2#page=23
+fixed GPT-4.1, permanent prompt, parameter-anchoring loss | https://arxiv.org/pdf/2510.17004v2#page=24
+relative metric-change formula and threshold documentation | https://arxiv.org/pdf/2510.17004v2#page=45
+tool validation accuracy, early stopping and best checkpoint selection | https://arxiv.org/pdf/2510.17004v2#page=52
+Supplement B: general 60/20/20 with inner 70/15/15, alongside MIMIC chronological 40/gap20/recent40 | https://arxiv.org/pdf/2510.17004v2#page=56
+Supplement C DenseNet121 prompts explicitly use distinct fine-tuning data and reuse the same inference file for post-update evaluation | https://arxiv.org/pdf/2510.17004v2#page=60
+example human-specified head-only recipe for cardiomegaly InceptionV3 | https://arxiv.org/pdf/2510.17004v2#page=68",,
+wang2026privmesa,PrivMeSA,1,retrospective,"Ablations (untrained policy, no-probing training, local-only with and without RL, reward-term variants) and a paired memory-on versus memory-off test-time run; no comparison of a revised versus fixed distiller, judge, reward or training procedure.","Patient-disjoint held-out MIMIC-IV-ED patients (100 for main results, 200 patients/897 encounters for test-time learning) with an evaluation attacker (GPT-5.6-Luna) different from the training attacker; no seeds, confidence intervals or significance tests are reported.",v1,https://arxiv.org/abs/2609.38458v1,"Section 3.4: lesson distillation, post-episode memory update, fixed retriever/judge/distiller and memory updates during RL training | https://arxiv.org/html/2609.38458v1#S3.SS4
+Section 3.3: episode reward (accuracy, discretion, anonymity), GRPO optimization, frozen specialists/attacker/distiller/judge/retriever | https://arxiv.org/html/2609.38458v1#S3.SS3
+Section 4.1: patient-disjoint split, registry, tasks, evaluation attacker, paired test-time learning protocol, baselines and implementation | https://arxiv.org/html/2609.38458v1#S4.SS1
+Table 1: main accuracy, leak and k<=10 results for Gemma 4 12B and Granite 4.2 8B versus Delegation, PAPILLON and Remote only | https://arxiv.org/html/2609.38458v1#S3.T1
+Appendix E.1 (with Table 3): test-time memory growth, share answered from memory, messages per case, memory on versus off | https://arxiv.org/html/2609.38458v1#A5.SS1",,
+wang2026tcmsea,TCM-SEA / TCM-MisDx,1,simulated,Base harness (empty document) and a learning-signal ablation (outcome-only feedback) under the same loop; no comparison of an evolved versus fixed edit-generating or gating procedure.,"Sealed 141-episode test split from the same three monographs, not used in selection, each final skill document run three times and averaged, scored by a fixed DeepSeek-Flash judge (temperature 0) plus exact-match and set-based metrics.",v1,https://arxiv.org/abs/2610.40663v1,"Section 3, Source and episodes, and Table 1: three published monographs, 820 episodes, Train/Val/Test 526/153/141, hidden manager view with expert analysis | https://arxiv.org/html/2610.40663v1#S3.SS0.SSS0.Px1
+Section 4, Editable surface and Evolution loop: frozen LLM, skill document only, 80 held-in and 153 held-out episodes, acceptance gate rule, same LLM for consultation, diagnosis and proposal | https://arxiv.org/html/2610.40663v1#S4.SS0.SSS0.Px2
+Section 4, Learning from expert cases: feedback contents for TCM-SEA versus the outcome-only ablation | https://arxiv.org/html/2610.40663v1#S4.SS0.SSS0.Px3
+Section 5, Setup and Table 2: DeepSeek-Flash for agent and judge, 9 rounds, seed 42, sealed test set, mean of three runs | https://arxiv.org/html/2610.40663v1#S5.T2
+Section 5, The gate selects edits that transfer, with Tables 3 and 4: accepted edits at rounds 1 and 6, held-in/held-out/test trajectories, per-source results, edit text | https://arxiv.org/html/2610.40663v1#S5.SS0.SSS0.Px3",,
+yuan2026asclepius,Asclepius,1,simulated,Add-one component ablations and an evolved-versus-initial manual contrast holding skills and subagents fixed; no evolving-versus-fixed proposer test.,"Four held-out batches (48 patients) from the same distribution, never shown to the proposer, with one rollout per configuration; baseline and full system re-graded by four further LLM judges.",v1,https://arxiv.org/abs/2609.13543v1,"Section 4.1: proposer reads candidate manuals, scores and traces, rewrites the manual, best search-batch manual (v7) selected after N=10 iterations; search/held-out split. | https://arxiv.org/html/2609.13543v1#S4.SS1
+Table 2: held-out (batches 7-10, n=48) mixed-effects differences, critical actions +0.625 (p=0.024), timeliness and overall ns. | https://arxiv.org/html/2609.13543v1#S5.T2
+Table 5 / Appendix E.1: search vs held-out means per configuration; harness-only variant 4.08 search vs 3.82 held-out against baseline 3.81/3.78. | https://arxiv.org/html/2609.13543v1#A5.T5
+Table 9 / Appendix E.4: evolved manual vs initial manual with skills and subagents fixed, +0.12 (p=0.364) all batches, +0.02 (p=0.883) held-out. | https://arxiv.org/html/2609.13543v1#A5.T9
+Section 8 Limitations: CES is a simulator with LLM-generated physiology, single ED configuration and single backbone; performance is a proxy for clinical competence. | https://arxiv.org/html/2609.13543v1#S8.SS0.SSS0.Px3
+Published metadata; extraction uses arXiv v1 | https://aclanthology.org/2026.findings-emnlp.2094/",,
+lee2026revision3d,ReVision3D,2-explicit,retrospective,"Equal-compute longer-training control for recipe revisions, frozen-encoder and hand-chosen perception comparisons, and a four-designer swap at the inference level; no evolving-versus-fixed improver test.","One-time held-out test on 31 liver and 70 kidney patients with patient-level bootstrap, though Appendix B reports that the 31 liver test patients were also used in earlier liver-study comparisons and only 40 of 70 kidney test patients were unused.",v2,https://arxiv.org/abs/2609.32984v2,"Section 3, Motivation: system components (view selection, perception, weights, inference), frozen designer, and fixed verifier, masks, objective and acceptance rule. | https://arxiv.org/html/2609.32984v2#S3.SS0.SSS0.Px1.p2
+Section 3, Recursive improvement: seed-range and bootstrap acceptance rules, playbook carried across rounds, routing rule formulated retrospectively. | https://arxiv.org/html/2609.32984v2#S3.SS0.SSS0.Px8.p2
+Appendix E.1, Table A9: liver J and max recall after each accepted revision and who made each change. | https://arxiv.org/html/2609.32984v2#A5.T9
+Section 5.3, Table 2: development (selection) and single-run test J for perception and inference revisions. | https://arxiv.org/html/2609.32984v2#S5.T2
+Appendix G.1, Table A16: inference-level search repeated with four designers from three model families. | https://arxiv.org/html/2609.32984v2#A7.T16",,
+hu2026templar,TEMPLAR,1,retrospective,"Cumulative component ablation from ASTAR (M1) to full system (M6), LLM-judged pairwise Revision/Note ablation, and cross-dataset transfer without re-induction; the feedback calibration step is not ablated separately and there is no evolving-versus-fixed updater test.","Held-out test splits of four datasets scored for LLM-matched template coverage, reference-based reconstruction metrics, LLM-judged diagnostic fidelity (PDA, KFP, CA), and expert plus LLM template-quality ratings; no statistical tests or intervals are reported.",v1,https://arxiv.org/abs/2610.05247v1,"Section 3.2: template evolution as assembly, revision, external evidence grounding and one feedback-guided granularity calibration. | https://arxiv.org/html/2610.05247v1#S3.SS2
+Appendix B.2.3: calibration audits sampled training structurings and adds slot-specific patterns without changing allowed values. | https://arxiv.org/html/2610.05247v1#A2.SS2.SSS3
+Section 4.1: four datasets, train/test splits, ASTAR and nine LLM baselines. | https://arxiv.org/html/2610.05247v1#S4.SS1
+Section 4.4: cumulative ablation M1 (ASTAR) to M6 on PETCT, ViMed and PETCT-to-ViMed transfer. | https://arxiv.org/html/2610.05247v1#S4.SS4
+Ethics Statement: research use only; metrics and expert assessments do not establish clinical safety or deployment readiness. | https://arxiv.org/html/2610.05247v1#S5.SSx2",,
+schmidgall2026agentclinic,AgentClinic,1,simulated,"Compared against a no-tool baseline per backbone and against five other tools (zero-shot, one-shot and reflection CoT, adaptive RAG book and web) on AgentClinic-MedQA, for six backbones.","Not reported as a held-out split: the notebook gain is measured as AgentClinic-MedQA diagnostic accuracy over the same sequential stream in which notes are written (each case is seen before its own note update), with no seeds or intervals for the tool table.","Published version of record (nature.com HTML, fetched 2026-11-03); arXiv 2405.07960v5 (2025-05-25) used only for the tool table and notebook prompt, which the published HTML does not contain.",https://www.nature.com/articles/s41746-026-02674-7,"Abstract: Llama-3 shows up to 92% relative improvement with a notebook that persists across cases. | https://www.nature.com/articles/s41746-026-02674-7#Abs1
+Results, Comparing tools from the Agent Toolbox: six tools, Claude 3.5 56.1% with Notebook, Llama3-70b 41.1%, GPT-3.5 declines. | https://www.nature.com/articles/s41746-026-02674-7#Sec5
+Methods, Tool descriptions: notebook persists across patients; experiential learning module stores takeaways from correct cases. | https://www.nature.com/articles/s41746-026-02674-7#Sec21
+arXiv v5 Table 6: per-tool accuracy with change from no-tool baseline for six backbones. | https://arxiv.org/html/2405.07960v5#A15.T6
+arXiv v5 Appendix M.2: notebook prompt reveals correct diagnosis, 1000-character overwrite limit. | https://arxiv.org/html/2405.07960v5#A13.SS2",,
+feng2026medexpmem,MedExpMem,1,retrospective,"Zero-shot baseline for all seven models, a PubMed-RAG (top-3 articles) comparison and construction/retrieval ablations, all on Qwen3-VL-8B only for the comparison and ablations.","Accuracy on a temporally held-out set of 227 Eurorad 2025 cases versus zero-shot baseline, with retrieval recall/precision and beneficial/harmful case rates; the answer-matching method, number of runs, confidence intervals and significance tests are not reported.","arXiv 2605.22872v1 (2026-05-20, only version listed by the arXiv API on 2026-11-03); the LNCS chapter text was not examined.",https://arxiv.org/html/2605.22872v1,"Section 2.2, Table 1: note schema, and 11 departments / 118 organ-region taxonomy. | https://arxiv.org/html/2605.22872v1#S2.T1
+Section 2.3: Phase I error-driven extraction with expert discussion; Phase II re-diagnosis, refinement and merging. | https://arxiv.org/html/2605.22872v1#S2.SS3
+Section 3.1: 6,228 pre-2025 construction cases, 227 test cases from 2025, tau=0.9, K=10, per-agent memory. | https://arxiv.org/html/2605.22872v1#S3.SS1
+Table 2: baseline vs w/Exp accuracy, recall, precision, beneficial and harmful rates for seven VLMs. | https://arxiv.org/html/2605.22872v1#S3.T2
+Table 3: Qwen3-VL-8B PubMed-RAG comparison and construction/retrieval ablations. | https://arxiv.org/html/2605.22872v1#S3.T3",,
+shi2024ehragent,EHRAgent,1,offline_benchmark,"Ablation without long-term memory under the same backbone and prompts on MIMIC-III and eICU (Table 2, Table 7); shuffled-order runs reported as almost no influence (App. F.2).","Not reported: success rate is measured on the same question stream from which memory accumulates (§4.1, App. F.2).",arXiv v3 (2024-10-04) read in full; numbers checked against the EMNLP 2024 Anthology PDF,https://arxiv.org/html/2401.07128v3,"§3.2 Demonstration Optimization through Long-Term Memory | https://arxiv.org/html/2401.07128v3#S3.SS2
+Table 2, ablation on MIMIC-III | https://arxiv.org/html/2401.07128v3#S4.T2
+Table 8, LTM with success vs completion vs none | https://arxiv.org/html/2401.07128v3#A6.T8
+Table 7, eICU ablation | https://arxiv.org/html/2401.07128v3#A6.T7
+Published version, Algorithm 1 and §3.2 | https://aclanthology.org/2024.emnlp-main.1245.pdf#page=4",,
+liao2025reflectool,ReflecTool,1,offline_benchmark,Ablations removing reflective memory or tool-wise reflection (Table 3); baselines given the same long-term memory (Table 4); performance versus optimization steps (Fig. 3).,"Test samples of CAB distinct from the optimization subset; ablations on 200 random samples per dimension; optimization subset size not reported (§3.2, §4.3).",arXiv v3 (2025-06-16) read in full; key table values match the ACL 2025 Anthology PDF,https://arxiv.org/html/2410.17657v3,"§3.2 Optimization Stage | https://arxiv.org/html/2410.17657v3#S3.SS2
+§3.3 Inference Stage | https://arxiv.org/html/2410.17657v3#S3.SS3
+Table 3, ablation of memory and tool-wise reflection | https://arxiv.org/html/2410.17657v3#S3.T3
+Table 4, long-term memory given to baselines | https://arxiv.org/html/2410.17657v3#S5.T4
+Figure 3, effect of optimization step | https://arxiv.org/html/2410.17657v3#S5.F3",,
+chen2026mdteamgpt,MDTeamGPT,1,offline_benchmark,"Ablation adding CorrectKB, ChainKB or both with the discussion protocol fixed (Table 2); accuracy versus accumulated cases for eight backbones (Fig. 4).","Official MedQA and PubMedQA test sets, five runs with SD; cross-dataset KB transfer (Table 3); VQA-RAD and SLAKE official test sets (App. C.2).","Findings of ACL 2026 version read; arXiv v1 (2025-03-18) also read and differs (600 vs 900 accumulation rounds, text-only, average 87.0)",https://aclanthology.org/2026.findings-acl.1427.pdf,"§3.3 Summary and Output Stage, KB construction | https://aclanthology.org/2026.findings-acl.1427.pdf#page=5
+Table 2 ablation and §4.5 Self-Evolving Capability | https://aclanthology.org/2026.findings-acl.1427.pdf#page=7
+Fig. 4 and Table 3 cross-dataset generalization | https://aclanthology.org/2026.findings-acl.1427.pdf#page=8
+§6 Limitations | https://aclanthology.org/2026.findings-acl.1427.pdf#page=9
+App. C.2-C.3, Table 6 multimodal results | https://aclanthology.org/2026.findings-acl.1427.pdf#page=22",,
+zhuang2025doctor,Learning to Be A Doctor (medical agent workflow search),1,offline_benchmark,"Ablations disabling individual operations (Table 3) and operation levels (Table 4); static IO, CoT and Round Table baselines (Table 1); single seed 42.",Held-out test splits: 224 Skin Concepts images (before excluding 100 images for moderation or broken links) and 120 Skin Conditions images (§4.1).,"arXiv v2 (2025-08-15, comment: Accepted at ACM MM 2025); published version not read",https://arxiv.org/html/2504.11301v2,"§3.3 Workflow Evolution | https://arxiv.org/html/2504.11301v2#S3.SS3
+§4.1 datasets, splits, implementation details | https://arxiv.org/html/2504.11301v2#S4.SS1
+Table 1, top-k accuracy vs baselines | https://arxiv.org/html/2504.11301v2#S4.T1
+Table 3, operation ablation | https://arxiv.org/html/2504.11301v2#S4.T3
+Table 4, operation-level ablation | https://arxiv.org/html/2504.11301v2#S4.T4",,
+li2025macd,MACD,1,retrospective,Summarizer-only versus summarizer plus refiner ablation and knowledge-composition ablations under the same pipeline; no evolving-versus-fixed improver comparison.,"Held-out MIMIC-MACD test cases never used for learning; comparisons with Mayo Clinic and guideline-derived knowledge, CoT, few-shot and LoRA fine-tuning; cross-model transfer; clinician concept-relevance ratings and a 140-case physician reader study.",v5,https://arxiv.org/abs/2509.20067v5,"Methods, Dataset construction: 4,390 cases, success-driven learning-set selection | https://arxiv.org/html/2509.20067v5#Sx5.SSx1
+Methods, Multi-agent clinical diagnosis framework: Eqs. 1-4, summarizer, refiner, causal concept ablation | https://arxiv.org/html/2509.20067v5#Sx5.SSx4
+Results: SLK vs authoritative knowledge, CoT, few-shot, LoRA, SOTA models (Fig. 2) | https://arxiv.org/html/2509.20067v5#Sx3.SSx2
+Table 2: ablations including Sum. Only vs Sum. + Ref. | https://arxiv.org/html/2509.20067v5#Sx3.T2
+Results: MACD-human workflow and physician comparison (Fig. 4) | https://arxiv.org/html/2509.20067v5#Sx3.SSx6",,
+zheng2026meddcr,MedDCR,1,offline_benchmark,"Ablations removing top-k, recent-n, score feedback or text feedback (Table 4); no changing-improver comparison.",Not reported; optimisation uses D_val and the paper does not describe a separate test split for Table 1.,arXiv v1 (17 Nov 2025) read in full; ACL Anthology PDF checked and Tables 1–4 and Algorithm 1 match.,https://arxiv.org/html/2511.13361v1,"§3.2 framework overview and Algorithm 1 | https://arxiv.org/html/2511.13361v1#S3.SS2
+§3.4 memory archive and plug-and-play | https://arxiv.org/html/2511.13361v1#S3.SS4
+§4.1 datasets and 100-iteration implementation | https://arxiv.org/html/2511.13361v1#S4.SS1
+§4.3 ablations, Table 4 | https://arxiv.org/html/2511.13361v1#S4.SS3
+§6 limitations | https://arxiv.org/html/2511.13361v1#S6",,
+lu2025kea,KEA (on PG-Bench),1,offline_benchmark,Component ablations (Table VIII) and round-count comparisons; no changing-improver comparison.,Held-out 30% test split of PG-Bench; separate high- and low-frequency test sets (Tables V–VI); human evaluation assesses dataset realism only.,Author manuscript in IEEE template from the UTS OPUS repository (open-access copy listed by Semantic Scholar).,https://opus.lib.uts.edu.au/bitstream/10453/190868/2/main.pdf,"§III-B PG-Bench construction and 7:3 split (pp. 3–4) | https://opus.lib.uts.edu.au/bitstream/10453/190868/2/main.pdf#page=3
+§IV-A evolving knowledge pool | https://opus.lib.uts.edu.au/bitstream/10453/190868/2/main.pdf#page=4
+§IV-B dynamic evolution rule | https://opus.lib.uts.edu.au/bitstream/10453/190868/2/main.pdf#page=5
+Tables II–IV round-wise results | https://opus.lib.uts.edu.au/bitstream/10453/190868/2/main.pdf#page=7
+§VII-E/F ablation and extended rounds, Tables VIII–IX (pp. 9–10) | https://opus.lib.uts.edu.au/bitstream/10453/190868/2/main.pdf#page=9",,
+ji2026spagents,SpAgents,1,external_retrospective,With versus without memory (Table 3); no changing-improver comparison.,Single-centre validation set (n=186) and external test set (n=51) from other hospitals; with/without-memory comparison.,"Published HTML article and Supplementary Information PDF (algorithms, Fig. S3).",https://www.nature.com/articles/s41746-026-02372-4,"Results: Impact of long-term memory, Table 3 | https://www.nature.com/articles/s41746-026-02372-4#Sec5
+Methods: data preparation and cohorts | https://www.nature.com/articles/s41746-026-02372-4#Sec16
+Methods: Design of DoctorAgent (diagnosis and learning tasks) | https://www.nature.com/articles/s41746-026-02372-4#Sec18
+Methods: Evaluation of the long-term memory | https://www.nature.com/articles/s41746-026-02372-4#Sec20
+Supplementary Note 1.4 and Fig. S3 (memory retrieval/update) | https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-026-02372-4/MediaObjects/41746_2026_2372_MOESM1_ESM.pdf",,
+mokssit2026fhiragenteval,FHIR-AgentEval memory configurations,1,simulated,Five configurations varying memory and specification access; no changing-improver comparison.,"Unseen task variations (Experiments 2–3) and 22 held-out tasks (Experiment 4), three runs each, deterministic validation.",Research Square preprint v1 (DOI 10.21203/rs.3.rs-8746188/v1); published preview page shows abstract only.,https://www.researchsquare.com/article/rs-8746188/v1,"Methodology: Reflexion long-term memory MCP server | https://www.researchsquare.com/article/rs-8746188/v1
+Methodology: Reflexion training process (micro and macro reflections) | https://www.researchsquare.com/article/rs-8746188/v1
+Methodology: four experimental settings, Experiment 4 held-out tasks | https://www.researchsquare.com/article/rs-8746188/v1
+Results: Figure 5a success rates | https://www.researchsquare.com/article/rs-8746188/v1
+Discussion: memory effects and specification grounding | https://www.researchsquare.com/article/rs-8746188/v1",,
+xing2026clinicalretrial,ClinicalReTrial,1,simulated,"Paired ablations without memory, pool or analysis (Table 3); no changing-improver comparison.",60 failed trials from the held-out TrialBench test split; HINT re-scoring never used in optimisation (App. C.2); 8 retrospective case studies.,arXiv v3 (13 Sep 2026) read in full; ACL Anthology PDF checked for Table 3 and Appendix C.2.,https://arxiv.org/html/2601.00290v3,"§3.3.3 cross-trial global memory | https://arxiv.org/html/2601.00290v3#S3.SS3.SSS3
+Appendix A Algorithm 1 | https://arxiv.org/html/2601.00290v3#A1
+§4.3 Tables 2–3 and ablations | https://arxiv.org/html/2601.00290v3#S4.SS3
+Appendix C.2 cross-predictor HINT evaluation | https://arxiv.org/html/2601.00290v3#A3.SS2
+Limitations | https://arxiv.org/html/2601.00290v3#Sx1",,
+sayeedi2026r4,R4Agent,1,offline_benchmark,Not reported; only a pass@k ablation (Fig. 2).,"IU Chest X-ray report generation and VinBigData localization; GPT-4o-mini reference-based judge, overlap metrics and mAP50; test sizes and case order not reported.",arXiv v2 (8 Mar 2026).,https://arxiv.org/html/2601.08192v2,"§3.2 Exemplar Memory | https://arxiv.org/html/2601.08192v2#S3.SS2.SSSx2
+§3.3 Self-Improvement via Exemplar Curation | https://arxiv.org/html/2601.08192v2#S3.SS3
+§4.1 Datasets | https://arxiv.org/html/2601.08192v2#S4.SS1
+§5 Results, Table 1 and Fig. 2 pass@k ablation | https://arxiv.org/html/2601.08192v2#S5",,
+liao2026agentehr,AgentEHR / RetroSum,1,offline_benchmark,No comparison of a changing versus a fixed improvement procedure.,Held-out MIMIC-IV-Common cohorts plus MIMIC-IV-Rare (label shift) and MIMIC-III (schema shift) with the same memory; evolved versus non-evolved ablations; ReflecTool and ReasoningBank comparators across five backbones.,"arXiv v1 (2026-01-20), cross-checked against EMNLP 2026 PDF",https://arxiv.org/html/2601.13918v1,"Sec. 3.3 Evolving Strategy: experience generation, memory construction, evolved inference | https://arxiv.org/html/2601.13918v1#S3.SS3
+App. D.2: 100 training examples per task, same memory for all subsets, top-1 bge-m3 retrieval | https://arxiv.org/html/2601.13918v1#A4.SS2
+Table 2: MIMIC-IV-Common results, evolved vs non-evolved, five backbones | https://arxiv.org/html/2601.13918v1#S3.T2
+Table 3: OOD subsets MIMIC-IV-Rare and MIMIC-III | https://arxiv.org/html/2601.13918v1#S4.T3
+Table 4: ablation of retrospect and evolved components | https://arxiv.org/html/2601.13918v1#S4.T4",,
+zhu2026ultrasoundagents,UltrasoundAgents,2-implicit,offline_benchmark,No comparison of a changing versus a fixed improvement procedure.,"Held-out BUSBRA, BUSI and BUDIAT splits (BUS-CoT protocol) and external BrEaST OOD set; ablations without oracle training and without self-distillation; GT-box and GT-attribute upper bounds.",arXiv v1 (2026-03-11),https://arxiv.org/html/2603.10852v1,"Sec. 2.2: three-stage decoupled training and corrective self-distillation | https://arxiv.org/html/2603.10852v1#S2.SS2
+Sec. 3.1: datasets, splits, implementation and baselines | https://arxiv.org/html/2603.10852v1#S3.SS1
+Table 1: main diagnostic performance, in-domain and BrEaST OOD | https://arxiv.org/html/2603.10852v1#S3.T1
+Table 2: ablation and upper-bound analysis | https://arxiv.org/html/2603.10852v1#S3.T2",,
+chen2026theraagent,TheraAgent,1,retrospective,No comparison of a changing versus a fixed improvement procedure.,"35 real patients and 400 synthetic cases; single-LLM, MedAgents, MDAgents and MedAgent-Pro baselines; w/o SEA-Mem ablation on real data.",arXiv v1 (2026-03-14),https://arxiv.org/html/2603.13676v1,"Sec. 2.3: SEA-Mem structure, pattern learning, retrieval, update | https://arxiv.org/html/2603.13676v1#S2.SS3
+Sec. 3.1: real and synthetic data, baselines | https://arxiv.org/html/2603.13676v1#S3.SS1
+Table 1: real-patient results | https://arxiv.org/html/2603.13676v1#S2.T1
+Table 2: synthetic results by complexity | https://arxiv.org/html/2603.13676v1#S3.T2
+Table 3: ablation including w/o SEA-Mem | https://arxiv.org/html/2603.13676v1#S3.T3",,
+liu2026openhospital,OpenHospital,1,simulated,Not reported.,"A 9:1 train/test split of 12,000 synthetic records is stated, but reported trajectories are plotted across training batches; no ablation or comparator system.",arXiv v3 (2026-05-31),https://arxiv.org/html/2603.14771v3,"Sec. 4.2: dataset split, 22 batches, baseline reflection mechanism | https://arxiv.org/html/2603.14771v3#S4.SS2
+Sec. 4.3: evolution results | https://arxiv.org/html/2603.14771v3#S4.SS3
+Figure 4: performance trajectories across batches | https://arxiv.org/html/2603.14771v3#S4.F4
+Sec. 3.1: synthetic patient data construction | https://arxiv.org/html/2603.14771v3#S3.SS1
+Limitations | https://arxiv.org/html/2603.14771v3#Sx1",,
+chen2026skingptx,SkinGPT-X,1,offline_benchmark,No comparison of a changing versus a fixed improvement procedure.,"Held-out test splits of Dermnet, HAM10000, DDI31, Fitzpatrick-17k, Dermnet498 and RSDD; with/without memory ablation; blinded review of 600 evolutionary cases by two dermatologists.",arXiv v1 (2026-03-27),https://arxiv.org/html/2603.26122v1,"Sec. IV-C: EvoDerma-Mem storage and guideline evolution | https://arxiv.org/html/2603.26122v1#S4.SS3
+Sec. IV-D3: case review with retrieved cases and evolved guidelines | https://arxiv.org/html/2603.26122v1#S4.SS4.SSS3
+Sec. II-E: memory ablation and dermatologist review | https://arxiv.org/html/2603.26122v1#S2.SS5
+Figure 5: memory ablation, guideline evolution timeline, physician ratings | https://arxiv.org/html/2603.26122v1#S2.F5
+Sec. IV-B: datasets and splits | https://arxiv.org/html/2603.26122v1#S4.SS2",,
+li2026sea,SEA,2-implicit,offline_benchmark,"Same dual-memory tool and prompt with untrained or SFT writers (Qwen-8b SFT + Dual Memory, GPT-5.2 + Dual Memory) and memoryless SFT/RL baselines (Table 2); component ablations on MedCaseReasoning (Table 3).","MedCaseReasoning official test split (each case independent, 10 training cases as memory context, App F.2.3); ER-Reason never trained on and streamed once with frozen weights (Sec 4.2.1, Table 4).","arXiv v2, 2026-08-07 (v1 2026-04-08)",https://arxiv.org/html/2604.07269v2,"Sec 3.1: dual-memory design and memory operations as agent actions | https://arxiv.org/html/2604.07269v2#S3.SS1
+Sec 3.2-3.3: diagnostic and memory rewards, round-wise schedule, GRPO | https://arxiv.org/html/2604.07269v2#S3.SS2
+Table 2: ER-Reason long-horizon final accuracy and Delta Acc@50/@100 | https://arxiv.org/html/2604.07269v2#S4.T2
+App F.2.3 and Table 4: standard vs long-horizon protocols, no test carryover in standard setting | https://arxiv.org/html/2604.07269v2#A6.T4
+Sec 5.1 and App G: expert evaluation by one physician | https://arxiv.org/html/2604.07269v2#S5.SS1",,
+jeong2026healthcaregym,Healthcare AI GYM (TT-OPD),2-implicit,offline_benchmark,"Base+AR (same tools and knowledge base, no RL), vanilla GRPO with identical hyperparameters, four OPD variants adding one component each (Table 1, Sec 6.1, Fig 4).","307 held-out validation tasks from the training distribution; 18 external benchmarks (MC QA, VQA, EHR, long-form QA) with test-set fingerprinting for contamination (Sec 5.1, Table 1, App G).","arXiv v1, 2026-05-01",https://arxiv.org/html/2605.02943v1,"Sec 3: environment design, tools, 5D reward | https://arxiv.org/html/2605.02943v1#S3
+Sec 4.2: TT-OPD, EMA teacher, outcome-conditioned hints | https://arxiv.org/html/2605.02943v1#S4.SS2
+Table 1: 18 benchmarks, Base (text), Base+AR, GRPO, TT-OPD | https://arxiv.org/html/2605.02943v1#S5.T1
+Sec 6.1 and Fig 4: OPD failure progression ablation | https://arxiv.org/html/2605.02943v1#S6.SS1
+App A.2: task sources, AutoTaskGenerator conversion of MedQA/MedMCQA/MMLU/VQA/MIMIC | https://arxiv.org/html/2605.02943v1#A1.SS2",,
+ossowski2026codeclinic,CodeClinic (clinical autoformalization),1,retrospective,"Zero-shot agent with the same schema and query_db tool; GRPO fine-tuning with 50 examples per concept on the same backbone (Table 3, Fig 6-7).","Held-out 90% of compositional queries (56,700 test vs 6,300 train) and the longitudinal ICU surveillance task (2,000 held-out stays, subject-level split) not used to build the library (Sec 3.1-3.2, Sec 5).","arXiv v1, 2026-05-10",https://arxiv.org/html/2605.09675v1,"Sec 4: autoformalization pipeline (tool generation, verification, inference) | https://arxiv.org/html/2605.09675v1#S4
+Table 3: zero-shot vs GRPO vs autoformalization on held-out compositional test set | https://arxiv.org/html/2605.09675v1#S5.T3
+Fig 6: longitudinal step accuracy, zero-shot vs autoformalized library | https://arxiv.org/html/2605.09675v1#S5.F6
+Sec 3.2: concepts, dependency levels, 10%/90% split | https://arxiv.org/html/2605.09675v1#S3.SS2
+App A: limitations | https://arxiv.org/html/2605.09675v1#A1",,
+wu2026sepsisagent,SepsisAgent,1,retrospective,"Same world model and workflow without training (o3, Gemini-3-Flash, GPT-4.1-mini + WM), untrained base model, and cumulative stage ablation (Table 3, Table 4).","725-episode held-out MIMIC-IV test set with off-policy estimators (DR, WIS, WPDIS), guideline adherence and unsafe-action rates never optimized in training; 2,862 MIMIC-III episodes (Sec 5.1, App I).","arXiv v1, 2026-05-14",https://arxiv.org/html/2605.14723v1,"Sec 4.4: world-model-based agentic RL, rollouts and composite reward | https://arxiv.org/html/2605.14723v1#S4.SS4
+Table 3: OPE, guideline adherence and unsafe actions vs baselines | https://arxiv.org/html/2605.14723v1#S5.T3
+Table 4: cumulative stage ablation and IHM/VR prediction without simulator | https://arxiv.org/html/2605.14723v1#S5.T4
+App I, Table 11: MIMIC-III cross-dataset OPE | https://arxiv.org/html/2605.14723v1#A9.T11
+App G: training data, settings and reward coefficients | https://arxiv.org/html/2605.14723v1#A7",,
+li2026vdss,VDSS,1,external_retrospective,"Single-model end-to-end generation with the same backbones; NoPref, NoImg and NoImgNoPref ablations within VDSS (Table 1).","Retrospective replay on a multi-center ICU cohort (1,309 records, 7,447 setting entries, 13 modes) for next-setting prediction; expert ratings of 100 cycles (Sec 3, Table 1).","arXiv v1, 2026-05-22 (examined); LNCS version not examined",https://arxiv.org/html/2605.23320v1,"Sec 2.2 and Algorithm 1: cycle-end preference update and long-term memory writes | https://arxiv.org/html/2605.23320v1#S2.SS2
+Sec 2.3: contextual bandit over 12 preference categories | https://arxiv.org/html/2605.23320v1#S2.SS3
+Table 1: replay metrics, clinician ratings, NoPref/NoImg ablations | https://arxiv.org/html/2605.23320v1#S3.T1
+Fig 2: regret over 100 cycles from a single clinician | https://arxiv.org/html/2605.23320v1#S3.F2",,
+zeng2026trajevolve,Traj-Evolve,2-implicit,retrospective,"Static zero-shot Traj-CoA and RAG with the same backbone, plus ExPool-only, MARL-only and combined variants (Tables 1-2).","Disjoint held-out test sets from the same institution (overall n=1,000; never-smoker n=835), bootstrap 1,000 resamples (Sec 4).",arXiv v1 (2026-06-01); no journal_ref or acceptance comment,https://arxiv.org/html/2606.02812v1,"Sec 3.3 Evolving Experience Pool | https://arxiv.org/html/2606.02812v1#S3.SS3
+Sec 3.4 Multi-Agent Reinforcement Learning | https://arxiv.org/html/2606.02812v1#S3.SS4
+Table 1 overall population results | https://arxiv.org/html/2606.02812v1#S5.T1
+Fig 4 and Sec 5.2 ExPool size dynamics | https://arxiv.org/html/2606.02812v1#S5.F4
+Sec 6 Conclusion and Limitations | https://arxiv.org/html/2606.02812v1#S6",,
+zhang2026medevoeval,MedEvoEval,1,simulated,"No-memory conditions E0 and H0 with identical doctor, simulator, order and scorer; frozen-bank relevant vs case-mismatched retrieval control (Table 27).","200 held-out cases sharing no content with the stream, but same source and H3 keeps writing memory during evaluation; two-physician audit of 80 scored outputs.","arXiv v3 (2026-10-18), author comment: camera-ready accepted at NeurIPS 2026 Evaluations and Datasets Track",https://arxiv.org/html/2606.28900v3,"Sec 3.4 Experience write-back | https://arxiv.org/html/2606.28900v3#S3.SS4
+Table 4 longitudinal, held-out and BWT results | https://arxiv.org/html/2606.28900v3#S5.T4
+Table 21 paired H3-H0 held-out endpoints | https://arxiv.org/html/2606.28900v3#A4.T21
+Table 27 frozen-bank retrieval control | https://arxiv.org/html/2606.28900v3#A4.T27
+Sec 6 Discussion, limitations and ethics | https://arxiv.org/html/2606.28900v3#S6",,
+meng2026topoagent,TopoAgent,1,offline_benchmark,Ablations without dual memory and without long-term memory under the same pipeline (Table 2).,"26 TopoBenchmark datasets with 5-fold CV on frozen splits, but the skill set was distilled from the same benchmark at object-type level; three external datasets for downstream integration.",arXiv v1 (2026-06-29),https://arxiv.org/html/2606.29763v1,"Sec 3.3 Dual Memory and Algorithm 1 | https://arxiv.org/html/2606.29763v1#S3.SS3
+Table 1 main results | https://arxiv.org/html/2606.29763v1#S4.T1
+Table 2 ablation | https://arxiv.org/html/2606.29763v1#S4.T2
+Sec 5 Conclusions and limitations | https://arxiv.org/html/2606.29763v1#S5",,
+qu2026sageagent,SAGEAgent,1,offline_benchmark,"Component ablation from base LLM through tools, episodic and semantic memory with the same frozen LLM (Table 2); Reflexion baseline (Table 1).",Nested 5x5 cross-validation on 170 complete-modality patients with outer-fold test patients; whether memory keeps updating on test patients is not reported.,"arXiv v1 (2026-07-10) examined; published in MICCAI 2026, LNCS pp. 536-546 (Crossref)",https://arxiv.org/html/2607.09521v1,"Sec 2.3 episodic and semantic memory | https://arxiv.org/html/2607.09521v1#S2.SS3
+Table 1 core results | https://arxiv.org/html/2607.09521v1#S3.T1
+Table 2 component ablation | https://arxiv.org/html/2607.09521v1#S3.T2
+Table 3 discovered rules and Sec 3.5 | https://arxiv.org/html/2607.09521v1#S3.T3
+MICCAI 2026 LNCS version, pp. 536-546 | https://doi.org/10.1007/978-3-032-38059-3_51",,
+chen2026cura,Cura 1T,2-explicit,offline_benchmark,Base Kimi-K2.6 and frontier comparators only; authors state isolating contributions or further ablations was beyond capability (Limitations).,"None for healthcare: the selection benchmarks also give the reported scores (authors call them development measurements, Sec 4.6); AIME, GPQA-Diamond and tau2-Bench were not used for selection.",arXiv v3 (2026-10-05); no journal_ref,https://arxiv.org/html/2607.15314v3,"Sec 3.2 Recursive self-improvement loop | https://arxiv.org/html/2607.15314v3#S3.SS2
+Table 2 MedAgentBench rounds | https://arxiv.org/html/2607.15314v3#S4.T2
+Table 4 MedXpertQA rounds | https://arxiv.org/html/2607.15314v3#S4.T4
+Sec 4.6 Improvement across benchmarks | https://arxiv.org/html/2607.15314v3#S4.SS6
+Sec 6 Conclusion, Limitations, Safety | https://arxiv.org/html/2607.15314v3#S6",,
+wang2026mira,MIRA,2-implicit,offline_benchmark,"RL ablation with format+accuracy, plus consistency, plus reflection memory (Table 4); validation curve with and without memory (Fig A7).",Test splits of nine medical VQA benchmarks reported as never used for training or selection; whether the final memory is injected at test time is not stated explicitly.,"arXiv v1 (2026-08-11), PDF only",https://arxiv.org/pdf/2608.10827v1,"Sec 3.2-3.3 composite reward and on-policy reflection memory | https://arxiv.org/pdf/2608.10827v1#page=9
+Table 1 main results (p. 10) | https://arxiv.org/pdf/2608.10827v1#page=10
+Table 4 RL ablation (p. 13) | https://arxiv.org/pdf/2608.10827v1#page=13
+Appendix E online reflection memory details (pp. A13-A16) | https://arxiv.org/pdf/2608.10827v1#page=30
+Sec 5 limitations (p. 14) | https://arxiv.org/pdf/2608.10827v1#page=14",,
+liu2026bat,BaT (Benchmark-as-Teacher),2-explicit,offline_benchmark,"Same SFT start trained by plain GRPO with a single final reward, and Stage Bank pool ablations (Table 2, Fig 5).","AutoMedBench-Lite scores both steer training and report results (authors: not an untouched final test, Sec 5.1-5.2); ABRA, MedXpertQA-Text and eight external benchmarks were not used for selection.",arXiv v1 (2026-08-17),https://arxiv.org/html/2608.16211v1,"Sec 2.1 Stage Bank | https://arxiv.org/html/2608.16211v1#S2.SS1
+Sec 2.2 BiCuRL outer and inner loops | https://arxiv.org/html/2608.16211v1#S2.SS2
+Table 2 policy-level results | https://arxiv.org/html/2608.16211v1#S4.T2
+Fig 5 pool ablation | https://arxiv.org/html/2608.16211v1#S4.F5
+Sec 5.2 Limits | https://arxiv.org/html/2608.16211v1#S5.SS2",,
+murugesan2026amr,AMR,1,offline_benchmark,"Ablation against a multi-agent baseline without memory, reflection or RAG, and feedback-only and memory-only variants (Table IV); no comparison of a revised versus a fixed update procedure.","MedQA official test split and a disjoint MedMCQA subset, evaluated in sequential batches of 50; test-set sizes, seeds and intervals are not reported (Sec IV-A, IV-B).","arXiv v1, 2026-08-19",https://arxiv.org/html/2608.19029v1,"Sec III-C: agent-specific memory and reflective update | https://arxiv.org/html/2608.19029v1#S3.SS3
+Algorithm 1: reflective feedback learning loop | https://arxiv.org/html/2608.19029v1#alg1
+Sec IV-B: frozen retrieval corpus, no test write-back | https://arxiv.org/html/2608.19029v1#S4.SS2
+Table IV: memory, feedback and RAG ablation | https://arxiv.org/html/2608.19029v1#S4.T4
+Table V: comparison with GPT-4, MDAgents, MedAgents | https://arxiv.org/html/2608.19029v1#S4.T5",,
+wu2026mediskillevo,MediSkill-Evo,1,simulated,"No-memory and single-bank-removal variants on a 100-case subset (Table 7), and six baselines with method-native frozen memory trained on the same 700 encounters (Table 4, Table S3); no revised versus fixed update-procedure test.","300 held-out MIMIC-IV FullChain encounters, 180 stress conditions from 30 disjoint cases, and 100 NEJM image cases; one rollout per case at temperature 0; LLM judge is the comparison backbone (Sec 3.1-3.3).","arXiv v2, 2026-08-25",https://arxiv.org/html/2608.23397v2,"Sec 2.2: four-bank self-evolution, merge and validation | https://arxiv.org/html/2608.23397v2#S2.SS2
+Table 4: FullChain results on 300 encounters, two backbones | https://arxiv.org/html/2608.23397v2#S3.T4
+Table 5: controlled-stress aggregates on 180 conditions | https://arxiv.org/html/2608.23397v2#S3.T5
+Table 7: no-memory and bank-removal ablation | https://arxiv.org/html/2608.23397v2#S3.SS7
+Table S3: comparator ledger and frozen object counts | https://arxiv.org/html/2608.23397v2#S3.T3a",,
+dai2026cdeg,CDEG,1,simulated,"Vanilla agent, self-reflection, Trajectory RAG and Flat Experience baselines from the same construction split, plus a graph without counterfactual validation (Tables 2, 3); no revised versus fixed construction procedure over rounds.",200 patient-disjoint MIMIC-IDx cases (ID) and 107 AgentClinic-MedQA cases (OOD); accuracy judged by GPT-5.6-Sol; repeated runs or intervals not reported (Benchmarks; Metrics; App A).,"arXiv v3, 2026-10-14",https://arxiv.org/html/2608.22899v3,"Methods: candidate mining, counterfactual validation, graph consolidation | https://arxiv.org/html/2608.22899v3#Sx3.SSx2
+Implementation Details: construction agents, frozen shared graph | https://arxiv.org/html/2608.22899v3#Sx4.SSx1.SSS0.Px4
+Table 2: accuracy across four backbones, ID and OOD | https://arxiv.org/html/2608.22899v3#Sx4.T2
+Table 3: ablations incl. without counterfactual validation | https://arxiv.org/html/2608.22899v3#Sx4.T3
+Tables 6-7: construction and validation statistics | https://arxiv.org/html/2608.22899v3#A2.T6",,
+ghaffari2026learnactcoder,LearnActCoder,1,retrospective,"Same pipeline with and without MistakeKDB on identical notes, plus raw-example and reflection-summary memory formats from the same error pool (Tables 1-3); routing policy not ablated; no revised update-procedure test.","Note-level held-out ACT sets: 150 matched MIMIC-III notes (paired bootstrap, Wilcoxon), 250 matched MIMIC-IV notes, 250 and 1,000 memory-only MIMIC-III notes (Sec 4, 5).","arXiv v1, 2026-09-17",https://arxiv.org/html/2609.19721v1,"Sec 3.2: Learn-Then-Act error memory and role-aware routing | https://arxiv.org/html/2609.19721v1#S3.SS2
+Table 1: matched 150-note MIMIC-III ablation with CIs | https://arxiv.org/html/2609.19721v1#S5.T1
+Table 2: matched 250-note MIMIC-IV ablation | https://arxiv.org/html/2609.19721v1#S5.T2
+Table 3: memory-format comparison | https://arxiv.org/html/2609.19721v1#S5.T3
+Sec 6: limitations | https://arxiv.org/html/2609.19721v1#S6.SS0.SSS0.Px4",,
+shao2026case,CASE,2-implicit,offline_benchmark,"Component ablation from shared RSFT initialization: RSFT only, GRPO, GRPO+RLAIF, GRPO+OPSD, full (Table 2); the evolving self-teacher is not compared with a frozen teacher.","4,850 questions from 455 held-out participants (14,135 agent-question evaluations), first-pass exact answer-set accuracy, participant-cluster bootstrap for gaps (Sec 4, App C, App F).","arXiv v3, 2026-10-14",https://arxiv.org/html/2609.39566v3,"Sec 5.3: on-policy interaction with replayable environment | https://arxiv.org/html/2609.39566v3#S5.SS3
+Sec 5.5: rubric feedback, composite reward, GRPO | https://arxiv.org/html/2609.39566v3#S5.SS5
+Table 1: accuracy versus medical and frontier models | https://arxiv.org/html/2609.39566v3#S6.T1
+Sec 6.3 / Table 2: post-training ablations | https://arxiv.org/html/2609.39566v3#S6.SS3
+App B: Consultant skill memory, frozen across runs | https://arxiv.org/html/2609.39566v3#A2.SS0.SSS0.Px4",,
+chen2026clinverse,ClinVerse,2-implicit,simulated,"Unadapted Qwen3-32B (L0) under the same environment and metrics, plus fixed-procedure L1/L2 methods beside procedure-revising L3 methods (Table 2); no seed-improver versus improved-improver comparison.","100 cases randomly sampled from a held-out test set, 5 independent runs, mean and SD (Sec 4.1); ClinVerse-adapted agents tested on AIHospital without further adaptation (Table 4).","arXiv v1, 2026-10-26",https://arxiv.org/html/2610.34878v1,"Table 2: L0-L3 results for Qwen3-32B with nine methods | https://arxiv.org/html/2610.34878v1#S3.T2
+Sec 4.3: evolution environment results and trajectory budgets | https://arxiv.org/html/2610.34878v1#S4.SS3
+Appendix B: descriptions of the nine self-evolution methods | https://arxiv.org/html/2610.34878v1#A2
+Table 4: transfer to AIHospital | https://arxiv.org/html/2610.34878v1#S5.T4
+Appendix C / Table 7: SkillRL-GRPO weight updates on Qwen3-8B | https://arxiv.org/html/2610.34878v1#A3",,
+cao2026guideskill,GuideSkill,1,offline_benchmark,Skill-component ablations; no changing-improver versus frozen-improver control.,Four benchmarks; MedThinkBench excluded from evolution.,"arXiv v1, 2026-07-28",https://arxiv.org/html/2607.26160v1,"§3.3 skill evolution | https://arxiv.org/html/2607.26160v1
+§4 and Tables 1–3 | https://arxiv.org/html/2607.26160v1
+Appendix H | https://arxiv.org/html/2607.26160v1",,
+ruan2026normcompliance,Role-based norm agent,1,simulated,Component ablations; no isolated changing-improver control.,Three synthetic healthcare communication tasks.,Official ACL Anthology conference PDF,https://aclanthology.org/2026.findings-acl.1133.pdf,"§3.4–3.7; Algorithm 1 | https://aclanthology.org/2026.findings-acl.1133.pdf#page=4
+§4; Table 1 | https://aclanthology.org/2026.findings-acl.1133.pdf#page=6
+Appendix A.1 and A.3 reproducibility | https://aclanthology.org/2026.findings-acl.1133.pdf",,
+shi2026medguard,MedGuard,1,retrospective,Component ablations; no evolving-versus-fixed improver comparison.,Separate real/synthetic conversations and retrospective expert assessment.,Publisher Article in Press PDF,https://www.nature.com/articles/s41746-026-03116-0_reference.pdf,"Methods; MedGuard Agent | https://www.nature.com/articles/s41746-026-03116-0_reference.pdf#page=21
+Domain-Transfer Reinforcement learning, pp.24–26 | https://www.nature.com/articles/s41746-026-03116-0_reference.pdf#page=24
+Doctor Evaluation and retrospective validation, pp.12–15 | https://www.nature.com/articles/s41746-026-03116-0_reference.pdf#page=12",,
+jiang2026sempa,SEMPA,2-implicit,retrospective,Evolution-module ablation; changing Critic is not isolated.,Disjoint evolution stream and 100 held-out MIMIC-IV encounters.,Official ACL Anthology conference PDF,https://aclanthology.org/2026.findings-emnlp.994.pdf,"§3.4–3.5; Eqs.5–7 | https://aclanthology.org/2026.findings-emnlp.994.pdf#page=4
+§4.1 evolve–freeze–test | https://aclanthology.org/2026.findings-emnlp.994.pdf#page=5
+Table 5 | https://aclanthology.org/2026.findings-emnlp.994.pdf#page=9
+Appendix A.7 Algorithm 1 | https://aclanthology.org/2026.findings-emnlp.994.pdf#page=15",,
+li2026skillcdpo,Skill-CDPO,1,offline_benchmark,Skill and preference-learning ablations; no evolving-improver control.,"CURE-Bench, MedBrowseComp and PubMed Search with contamination filters.",Official ACL Anthology conference PDF,https://aclanthology.org/2026.findings-emnlp.1985.pdf,"§3.1 | https://aclanthology.org/2026.findings-emnlp.1985.pdf#page=3
+Table 1 | https://aclanthology.org/2026.findings-emnlp.1985.pdf#page=7
+Appendix A.1 | https://aclanthology.org/2026.findings-emnlp.1985.pdf#page=11
+Limitations; single-round training | https://aclanthology.org/2026.findings-emnlp.1985.pdf#page=9",,
+feng2026gatedopenclaw,Gated adapter / OpenClaw agent,1,retrospective,Adapter-capacity comparison; no matched evolving-improver control.,Private fundus-image data; repeated adaptation on test cases.,"Publisher PDF, 2026",https://ijocsit.org/pdf/2026/10.62051-ijcsit.v8n4.01.pdf,"§2.3.1–2.3.3 | https://ijocsit.org/pdf/2026/10.62051-ijcsit.v8n4.01.pdf#page=7
+§3.1; Table 1 | https://ijocsit.org/pdf/2026/10.62051-ijcsit.v8n4.01.pdf#page=9
+§3.2; Figure 4 | https://ijocsit.org/pdf/2026/10.62051-ijcsit.v8n4.01.pdf#page=10",,
+li2026emai,EMAI,1,external_retrospective,Experience/component ablations; no isolated evolving rule-generator control.,MIMIC-CXR and Open-I; separate training/test comparisons.,"Publisher HTML methods/results; first online 2025-09-29, issue January 2026",https://www.sciencedirect.com/science/article/abs/pii/S016926072500495X,"§2.2 Self-evolutive nearest-neighbor explicit experience induction | https://www.sciencedirect.com/science/article/abs/pii/S016926072500495X
+§2.4 Agentic framework | https://www.sciencedirect.com/science/article/abs/pii/S016926072500495X
+§4.2–4.3; Table 3; Figure 4 | https://www.sciencedirect.com/science/article/abs/pii/S016926072500495X
+§4.5 manual evaluation | https://www.sciencedirect.com/science/article/abs/pii/S016926072500495X",,
+li2026bridgegap,BridgeGap,1,simulated,Training/reward ablations; no changing-improver comparison.,"HealthBench, AgentClinic and static medical QA.",Official ACL Anthology conference PDF,https://aclanthology.org/2026.emnlp-main.1974.pdf,"§3.1–3.2 | https://aclanthology.org/2026.emnlp-main.1974.pdf#page=3
+§3.4.2 online belief-progress RL | https://aclanthology.org/2026.emnlp-main.1974.pdf#page=5
+§4.1 and Appendix C PPO details | https://aclanthology.org/2026.emnlp-main.1974.pdf",,
+chen2025semagents,SeM-Agents,1,offline_benchmark,Memory/discussion variants; no changing-improver control.,MedQA/PubMedQA test sets; experience banks contain training-set cases only.,"IEEE Xplore full-text HTML, accessed through existing Tohoku University entitlement",https://ieeexplore.ieee.org/document/10889517,"§II.C Summary and output; Algorithm 2 | https://ieeexplore.ieee.org/document/10889517
+§III.A Datasets | https://ieeexplore.ieee.org/document/10889517
+§III.B–D; Tables I–II; Figure 2 | https://ieeexplore.ieee.org/document/10889517",,
+li2026decisionrules,Evolved multi-image decision rules,1,offline_benchmark,Common search engine and generation budget; no comparison that revises the improvement procedure.,"855 final-test examples, grouped by video ID apart from 1331 evolution and 665 selection cases; five independent main-method repeats.","arXiv v1, 2026-07-30",https://arxiv.org/abs/2607.27564v1,"§3 and Table1, frozen split | https://arxiv.org/abs/2607.27564v1
+§4 and Figure4, mutable configuration | https://arxiv.org/abs/2607.27564v1
+§5 and Table3, models/budget/repeated results | https://arxiv.org/abs/2607.27564v1",,
+dou2024shennongagent,Shennong-Agent,1,retrospective,With/without HITL comparison; no isolated persistent-memory or changing-improver control.,461 retrospectively collected elderly outpatient prescriptions/clinical records from one hospital; two pharmacist raters and a third for disagreement. No separate adaptation/test split reported.,"Published IEEE HTML, accessed through existing Tohoku University entitlement",https://ieeexplore.ieee.org/document/10822302,"§III opening paragraphs, correction/prompt recording and similar-situation reuse | https://ieeexplore.ieee.org/document/10822302
+§III.B vector database; §IV.C Qwen-7B | https://ieeexplore.ieee.org/document/10822302
+§IV.A–B retrospective cohort and raters | https://ieeexplore.ieee.org/document/10822302
+§V.B HITL comparison; §VI limitations | https://ieeexplore.ieee.org/document/10822302",,
+rugo2026livingoep,Living-OEP,1,offline_benchmark,Commercial chatbot comparison; no isolated persistent-update or changing-improver control.,1997 later breast-cancer publications excluded from training; eight clinical evidence scenarios.,Published 2026-09-01; full PMC article,https://pmc.ncbi.nlm.nih.gov/articles/PMC13563553/,"Materials and methods: agentic AI construction and annotation process | https://pmc.ncbi.nlm.nih.gov/articles/PMC13563553/
+Validation of the agentic AI system: independent locked publications | https://pmc.ncbi.nlm.nih.gov/articles/PMC13563553/
+Results: iterative extraction refinement; chatbot-comparison limitations | https://pmc.ncbi.nlm.nih.gov/articles/PMC13563553/",,
+wu2026uehr,U-EHR,1,external_retrospective,"Ablations remove UCB, step scoring and negative memory; no changing-improver control.","AgentEHR-Bench/MIMIC-IV and private CN-EHR with four backbones; all tasks are processed sequentially with memory from earlier tasks, without separate held-out memory learning.",Published 2026-08-08; online publisher PDF read through existing browser,https://dl.acm.org/doi/pdf/10.1145/3770855.3819038,"§3 and Figure2, retained bank and next-task reuse | https://dl.acm.org/doi/pdf/10.1145/3770855.3819038#page=4
+§4.1–4.3, scoring, extraction and UCB | https://dl.acm.org/doi/pdf/10.1145/3770855.3819038#page=5
+§4.4, Tables1–3 | https://dl.acm.org/doi/pdf/10.1145/3770855.3819038#page=6
+§5.2–5.4 and Table4 | https://dl.acm.org/doi/pdf/10.1145/3770855.3819038#page=7
+AppendixA, sequential task order and fixed prompts | https://dl.acm.org/doi/pdf/10.1145/3770855.3819038#page=11",,
+neary2025fast,Coach Iris / FAST,1,retrospective,Not reported.,"Five reviewers initially assessed 12 recorded dialogues; the article reports framework development/face validity and ongoing service monitoring, without an independent post-update learning evaluation.",published18Jun2025,https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1460236/full,"§2.4 SME-directed refinements; PDFp4 | https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1460236/pdf#page=4
+§2.5 updates from monitoring | https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1460236/pdf
+§3.1.1 unacceptable feedback to ML fine-tuning | https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1460236/pdf
+§3.4 rubric changes | https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1460236/pdf
+§4 face validity and absent measure validation | https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1460236/pdf",,
+fan2026medenv,MedEnv / Diagnosis-R1,2-implicit,simulated,"Table3 matchedSFT, outcome-onlyRL and full-reward ablations; same initialization/data/steps/hyperparameters stated.","2000 heldout cases separate from RL, per author response; patient-level disjointness and external validation unspecified.","Public accepted10-page paper; society HTML abstract still calls environment DiagWorld and500K+, final PDF/ Springer useMedEnv496K+.",https://papers.miccai.org/miccai-2026/paper/5084_paper.pdf,"§2.1, clinical simulators/tools | https://papers.miccai.org/miccai-2026/paper/5084_paper.pdf#page=4
+§2.2, interactive GRPO and policy-likelihood process reward | https://papers.miccai.org/miccai-2026/paper/5084_paper.pdf#page=5
+§3.1/3.3, training and Table3 | https://papers.miccai.org/miccai-2026/paper/5084_paper.pdf#page=7
+Author Feedback, held-out-case separation | https://papers.miccai.org/miccai-2026/0631-Paper5084.html",,
+mao2026srmapr,SR-MAPR,1,offline_benchmark,Rules/case/RAG removal ablations; no fixed-versus-changing improver comparison.,"7362 physician profiles with stated80/20 split, four Summary backbones, ranking/classification metrics and component ablations.",Published IEEE HTML; conference 2026-01-30–02-01; added2026-03-31,https://ieeexplore.ieee.org/document/11452303,"§III.A dataset and split | https://ieeexplore.ieee.org/document/11452303
+§III.C.3–4 dual memory and self-reflective rule storage | https://ieeexplore.ieee.org/document/11452303
+§IV.A fixed backbone/retrieval implementation | https://ieeexplore.ieee.org/document/11452303
+§V.C and TableIII ablations | https://ieeexplore.ieee.org/document/11452303",,
+chen2027mdtace,MDTace,1,offline_benchmark,"Primary-doctor, context-layer and Playbook removal ablations; no changing-improver control.","MedQA, PubMedQA, VQA-RAD and SLAKE test sets; all stored bullets explicitly training-derived.",Publisher full HTML; first online2026-07-19; citation/imprint2027,https://link.springer.com/chapter/10.1007/978-981-92-3403-5_6,"§3.2, Reflector-to-Playbook memory write | https://link.springer.com/chapter/10.1007/978-981-92-3403-5_6#Sec7
+§3.3, cross-case bullet aggregation/filtering | https://link.springer.com/chapter/10.1007/978-981-92-3403-5_6#Sec8
+§4.1, training-only memory/test evaluation | https://link.springer.com/chapter/10.1007/978-981-92-3403-5_6#Sec10
+§4.2, capacity/retrieval, results and ablations | https://link.springer.com/chapter/10.1007/978-981-92-3403-5_6#Sec11
+§2.1, distinct SeM-Agents/MDTeamGPT predecessors | https://link.springer.com/chapter/10.1007/978-981-92-3403-5_6#Sec3",,
+chen2026rhis,RHIS,1,simulated,"Named predecessor/successor controller runs, without a matched frozen-improver control; aggregate across versions is explicitly descriptive.",300 virtual-EHR tasks in11 first-pass stages; controller versions change across stages. Only named same-stage retests support version contrasts; no separate held-out learning-transfer test.,"SSRN Working Paper Version0.1, September2026, posted2026-09-21;13-page online PDF",https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7482519,"PDFp3, §3.1 benchmark source and300-task stages | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7482519
+PDFp4, §3.2–3.4 controller and controlled self-evolution | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7482519
+PDFpp5–6, §5 first-pass versus named post-evolution runs | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7482519
+PDFp7, §6 costs and state-closure boundary | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7482519
+PDFpp10–11, §10 limitations | https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7482519",,

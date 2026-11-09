@@ -1,0 +1,26 @@
+[
+  {
+    "question": "persistent_memory",
+    "comparison": "Paired persistent-memory condition versus memory-disabled/empty condition. A frozen prebuilt-memory arm answers a different question from ongoing writeback.",
+    "keep_fixed": "Task backbone, orchestration, tools, starting policy and base artifacts, feedback access and initial cases. Keep the patient/case sequence paired or record the ordering difference.",
+    "separation": "Write back only after the current case. State which labels become available and when. Distinguish an online adaptation stream from an untouched final test.",
+    "cost": "Count retrieval, distillation, verification, specialist calls and memory maintenance in both arms; report missing measurements.",
+    "interpretation": "Estimate the contribution of the retained memory under this procedure. This comparison alone does not test a better updater."
+  },
+  {
+    "question": "changed_generator_or_recipe",
+    "comparison": "Changed generator/operator/skill/recipe versus the corresponding frozen version, followed by matched learner training and independent downstream evaluation.",
+    "keep_fixed": "Shared learner start, task model, training protocol, data access, selection rule and downstream evaluator. State whether accepted-data volume, learner compute, generator compute or total search compute is actually matched.",
+    "separation": "Separate feedback data, candidate-selection data and final test data. Freeze the chosen generator and learner before final evaluation.",
+    "cost": "Count every generated candidate, rejection, failed trial, repair, selection call and training run. Equal accepted volume does not imply equal generation/search cost.",
+    "interpretation": "Test the changed update-producing component. The procedure proposing and accepting generator changes may still be fixed."
+  },
+  {
+    "question": "revised_improver",
+    "comparison": "Start from the same learner and improvement procedure. Compare keeping that procedure fixed with revising it, then evaluate their subsequent learning on separate later tasks or cycles.",
+    "keep_fixed": "Shared initial agent, update opportunities, data access, task distribution, resource envelope, evaluator and outcome definition. Record any intended difference.",
+    "separation": "Separate evidence used to construct the revised improver from the later learning stream and its independent tests. Evaluate the subsequent learning effect rather than only the already-selected best artifact.",
+    "cost": "Include the full cost of constructing/searching the revised improver and all subsequent updates. Retain unsuccessful proposals and rejected branches in the ledger.",
+    "interpretation": "Tests the changed improvement procedure. None of the87 healthcare studies is coded as demonstrating this level; do not fill a positive healthcare example by inference."
+  }
+]

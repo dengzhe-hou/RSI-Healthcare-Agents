@@ -1,0 +1,26 @@
+[
+  {
+    "key": "ling2026prismatic",
+    "name": "PRISMATIC",
+    "record_id": "832",
+    "source_cohort": "initial_three",
+    "previous_outcome": "Included",
+    "outcome": "Excluded",
+    "code": "F7",
+    "date": "2026-11-05",
+    "reason": "Sample size and learning/test separation are not reported. The claimed more-than-twofold EM advantage is unsupported by Table2:13.58% versus9.86%, approximately1.38-fold.",
+    "source_url": "https://arxiv.org/html/2610.19762v1"
+  },
+  {
+    "key": "osman2026codingbilling",
+    "name": "Human-in-the-loop coding agent",
+    "record_id": "W7128808243",
+    "source_cohort": "openalex",
+    "previous_outcome": "Included",
+    "outcome": "Excluded",
+    "code": "F7",
+    "date": "2026-11-05",
+    "reason": "The report does not identify sample size, model or dataset and gives no numerical evaluation; Table1 contains qualitative comparisons only.",
+    "source_url": "https://doi.org/10.21203/rs.3.rs-8863592/v1"
+  }
+]

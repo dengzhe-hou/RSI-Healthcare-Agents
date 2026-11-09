@@ -1,0 +1,852 @@
+[
+  {
+    "key": "medhospital2024",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "Agent Hospital [P]",
+    "changes_fixed": "Case database and principles change; model and reflection design fixed.",
+    "feedback_timing": "Synthetic reference decisions; retained across simulated encounters.",
+    "evaluation": "Separate simulated tests, MedQA and memory ablations.",
+    "boundary": "Experience reuse; no changing-improver control or prospective care."
+  },
+  {
+    "key": "lan2024amc",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "Agent Mental Clinic [P]",
+    "changes_fixed": "Tertiary diagnostic memory changes; psychiatrist backbone fixed.",
+    "feedback_timing": "Supervisor feedback after simulated psychiatric interviews.",
+    "evaluation": "Dialogue-derived train/test cases; memory ablations.",
+    "boundary": "Simulated diagnosis, with unchanged memory-update procedure."
+  },
+  {
+    "key": "almansoori2025medagentsim",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "MedAgentSim [J/C]",
+    "changes_fixed": "Successful cases and reflections retained; doctor model fixed.",
+    "feedback_timing": "Simulated patient/measurement interactions and answer feedback.",
+    "evaluation": "Diagnostic simulations; component ablations.",
+    "boundary": "Full-system gain combines memory, reasoning and measurement; not patient-care evidence."
+  },
+  {
+    "key": "han2026gsem",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "GSEM [J/C]",
+    "changes_fixed": "Graph-structured diagnostic memory and weights change; update rules fixed.",
+    "feedback_timing": "Feedback-driven experience updates over case iterations.",
+    "evaluation": "Clinical-reasoning/QA benchmarks and component analysis.",
+    "boundary": "Snapshot/evolution-case separation insufficiently specified; gains not monotonic."
+  },
+  {
+    "key": "shen2026evomedagent",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "Evo-MedAgent [P]",
+    "changes_fixed": "Error patterns, successful strategies and preferences change; models fixed.",
+    "feedback_timing": "Reference answer revealed after each chest-X-ray case.",
+    "evaluation": "Sequential ChestAgentBench evaluation and memory ablations.",
+    "boundary": "Retrospective adaptation; proposed tool governance lacks quantitative ablation."
+  },
+  {
+    "key": "ren2026dxevolve",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "DxEvolve [P]",
+    "changes_fixed": "Diagnostic cognition profiles accumulate; construction prompts and retrieval fixed.",
+    "feedback_timing": "Diagnosed historical cases distilled before later evaluations.",
+    "evaluation": "Non-overlapping MIMIC-CDM cases; 293 external hospital cases; physician profile review.",
+    "boundary": "External retrospective evidence; improved experience assets, not an isolated updater gain."
+  },
+  {
+    "key": "li2026healthclaw",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "HealthClaw [P]",
+    "changes_fixed": "Profile, procedures and episodes change; shared rules and induction design fixed.",
+    "feedback_timing": "Post-episode writeback; disabled during probes.",
+    "evaluation": "Hidden-ledger synthetic-year probes and nine biomedical tasks.",
+    "boundary": "A synthetic year is not clinical follow-up; task comparisons also differ in models."
+  },
+  {
+    "key": "shi2026emr",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "EMR [P]",
+    "changes_fixed": "Principles, patterns and cases change; weights, retrieval and merge rule fixed.",
+    "feedback_timing": "Gold-answer trajectory feedback; offline mining iterations.",
+    "evaluation": "Separated mining/test subsets; hierarchy and transfer analyses.",
+    "boundary": "Several custom dataset halves; library transfer does not isolate an evolving updater."
+  },
+  {
+    "key": "wang2026privmesa",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "PrivMeSA [P]",
+    "changes_fixed": "Lesson memory grows and LoRA policy is RL-trained; distiller, judge and specialists fixed.",
+    "feedback_timing": "Recorded labels and privacy penalties in training; label-free lesson distillation after episodes.",
+    "evaluation": "Patient-disjoint MIMIC-IV-ED replay; baselines, ablations and paired memory-on/off run.",
+    "boundary": "Retrospective replay with synthetic identifiers; single run; no evolving-versus-fixed improver test."
+  },
+  {
+    "key": "schmidgall2026agentclinic",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "AgentClinic [J/C]",
+    "changes_fixed": "Doctor-written diagnostic notebook is overwritten after each case; models and meta-prompt fixed.",
+    "feedback_timing": "Correct diagnosis shown after each simulated case; 1,000-character cap.",
+    "evaluation": "AgentClinic-MedQA tool experiments across six backbones.",
+    "boundary": "Notebook written and tested on one case stream; gains vary in sign across models."
+  },
+  {
+    "key": "feng2026medexpmem",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "MedExpMem [J/C]",
+    "changes_fixed": "Self-written pairwise differential-diagnosis notes change; VLM, retriever and prompts fixed.",
+    "feedback_timing": "Ground-truth diagnosis and expert discussion, offline over 6,228 pre-2025 cases.",
+    "evaluation": "Temporal split of 227 Eurorad 2025 cases; seven VLMs; RAG comparison and ablations.",
+    "boundary": "Retrospective teaching-file accuracy; no variance or tests; construction procedure fixed."
+  },
+  {
+    "key": "shi2024ehragent",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "EHRAgent [J/C]",
+    "changes_fixed": "Changes a memory of successful code solutions; GPT-4, tools and prompts stay fixed.",
+    "feedback_timing": "Ground-truth success labels gate memory admission, online across the evaluated question stream.",
+    "evaluation": "No separate held-out split; ablation without memory on MIMIC-III and eICU benchmarks.",
+    "boundary": "Offline EHR QA benchmarks; labels used at test time; no clinician or prospective evaluation."
+  },
+  {
+    "key": "liao2025reflectool",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "ReflecTool [J/C]",
+    "changes_fixed": "Changes trajectory memory and tool-wise experience; Qwen2 backbone, toolbox and verifiers fixed.",
+    "feedback_timing": "Ground-truth answers on a small training subset, offline before frozen inference.",
+    "evaluation": "Separate CAB test samples; ablations on 200 samples per dimension, single runs.",
+    "boundary": "Offline public benchmarks; trajectory correctness unverified; no clinician or prospective evaluation."
+  },
+  {
+    "key": "chen2026mdteamgpt",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "MDTeamGPT [J/C]",
+    "changes_fixed": "Changes correct-case and error-reflection knowledge bases; backbone and consultation protocol stay fixed.",
+    "feedback_timing": "Ground-truth correctness routes each training consultation; accumulated offline before testing.",
+    "evaluation": "Official test sets, five runs, KB ablation and cross-dataset transfer.",
+    "boundary": "Offline QA and VQA benchmarks; labels gate admission; no deployment or prospective evaluation."
+  },
+  {
+    "key": "li2025macd",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "MACD [P]",
+    "changes_fixed": "Self-learned diagnostic knowledge text changes; LLMs, summarizer and refiner fixed.",
+    "feedback_timing": "Correct diagnoses on learning cases; offline accumulation before frozen held-out testing.",
+    "evaluation": "3,076 held-out MIMIC cases; guideline knowledge, CoT, LoRA baselines; refiner ablation; reader study.",
+    "boundary": "Single-site retrospective text; non-random test residue; knowledge procedure fixed, untested."
+  },
+  {
+    "key": "lu2025kea",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "KEA [J/C]",
+    "changes_fixed": "Experience and reflection banks grow; backbone LLM, retriever and knowledge base fixed.",
+    "feedback_timing": "Gold department labels gate storage during offline training-set rounds before testing.",
+    "evaluation": "Held-out 30% PG-Bench split; component ablation; frequency-shift test; three backbones.",
+    "boundary": "Synthetic triage dialogues; label-gated memory reuse, not clinical deployment or improver change."
+  },
+  {
+    "key": "ji2026spagents",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "SpAgents [J/C]",
+    "changes_fixed": "Labelled case memory grows; LLM agents, imaging tool and retrieval fixed.",
+    "feedback_timing": "Physician labels written immediately via learning task; experimental update timing unreported.",
+    "evaluation": "Internal validation, 51-patient external test, memory ablation, seven-physician reader comparison.",
+    "boundary": "Retrospective; memory contents during testing unreported, so static labelled-case retrieval possible."
+  },
+  {
+    "key": "mokssit2026fhiragenteval",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "FHIR-AgentEval [J/C]",
+    "changes_fixed": "Reflection memory changes; evaluation agent, reflector, validators and tools fixed.",
+    "feedback_timing": "Validator outcomes and evaluator critique during a separate offline training phase.",
+    "evaluation": "Unseen variations and 22 held-out tasks; five configurations; three runs each.",
+    "boundary": "FHIR sandbox administrative tasks; cross-task transfer smaller; no clinical outcome evidence."
+  },
+  {
+    "key": "xing2026clinicalretrial",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "ClinicalReTrial [J/C]",
+    "changes_fixed": "Local and global redesign memory change; agents, predictor reward and validator fixed.",
+    "feedback_timing": "Predictor-derived rewards each iteration; global memory updated after each trial converges.",
+    "evaluation": "60 held-out failed trials, paired ablations, independent HINT re-scoring, retrospective case studies.",
+    "boundary": "Predicted trial success only; global-memory contribution not isolated from local memory."
+  },
+  {
+    "key": "sayeedi2026r4",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "R4Agent [P]",
+    "changes_fixed": "Exemplar memory grows from outputs; VLM backbones, router and agent prompts fixed.",
+    "feedback_timing": "Self-critique and pass@k selection per case; outputs written to memory during inference.",
+    "evaluation": "IU X-ray reports, VinBigData boxes; model-judge and overlap metrics; pass@k ablation.",
+    "boundary": "Memory contribution not isolated; stored exemplars are unverified self-generated outputs."
+  },
+  {
+    "key": "liao2026agentehr",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "AgentEHR [J/C]",
+    "changes_fixed": "Experience memory bank grows; LLM weights, prompts, tools and retriever fixed.",
+    "feedback_timing": "Ground-truth comparison on 100 training cases per task, offline before testing.",
+    "evaluation": "Held-out MIMIC-IV cohorts, two shifted subsets, evolved-versus-plain ablations, memory baselines.",
+    "boundary": "Single-center retrospective EHR; memory built once; train-test disjointness not stated."
+  },
+  {
+    "key": "chen2026theraagent",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "TheraAgent [P]",
+    "changes_fixed": "Case-outcome memory and subgroup patterns grow; GPT-4o agents and trial knowledge fixed.",
+    "feedback_timing": "Documented PSA and survival outcomes added after treatment; evaluation ordering not reported.",
+    "evaluation": "35 real patients, 400 synthetic cases, agent baselines, memory-removal ablation.",
+    "boundary": "Single-center tiny cohort; possible self-retrieval unaddressed; no significance testing."
+  },
+  {
+    "key": "liu2026openhospital",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "OpenHospital [P]",
+    "changes_fixed": "Reflection-derived physician experience accumulates; LLM weights and arena fixed.",
+    "feedback_timing": "Ground-truth diagnosis, exams and treatment critique after each case, 22 batches.",
+    "evaluation": "Metric trajectories across training batches; no ablation, comparator, or repeated runs.",
+    "boundary": "Synthetic text-only simulation; retained artifact and test-set use unspecified."
+  },
+  {
+    "key": "chen2026skingptx",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "SkinGPT-X [P]",
+    "changes_fixed": "Case memory and per-disease guidelines evolve; vision, diagnosis and review agents fixed.",
+    "feedback_timing": "Expert labels of stored training cases; threshold-triggered guideline rewrites, offline.",
+    "evaluation": "Held-out splits of six datasets, memory ablation, blinded dermatologist review.",
+    "boundary": "Offline public data; test-time memory growth unreported; no prospective evaluation."
+  },
+  {
+    "key": "li2026sea",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "SEA [P]",
+    "changes_fixed": "Case and rule memory change in stream; RL-trained weights, candidate sets fixed",
+    "feedback_timing": "Ground-truth label after each case; offline RL, then online memory writes",
+    "evaluation": "ER-Reason single-pass stream, untrained-writer memory controls; MedCaseReasoning test without carryover",
+    "boundary": "Closed-set 200 candidates, one stream order, no intervals, one-physician rule rating"
+  },
+  {
+    "key": "zeng2026trajevolve",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "Traj-Evolve [P]",
+    "changes_fixed": "Experience pool and LoRA agent weights change; architecture, embedder, reward rule fixed",
+    "feedback_timing": "Ground-truth cancer labels; offline rejection sampling and one fine-tuning epoch",
+    "evaluation": "Held-out overall and never-smoker test sets versus static Traj-CoA and ML baselines",
+    "boundary": "Single-institution retrospective case-control; simulated patient stream; single training round only"
+  },
+  {
+    "key": "zhang2026medevoeval",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "MedEvoEval [A*]",
+    "changes_fixed": "Rule-card memory bank grows; doctor, simulator, scorer and case order fixed",
+    "feedback_timing": "Manager rubric scores; online write-back after every simulated episode",
+    "evaluation": "No-memory vs mature-memory on 200 held-out cases with Holm-corrected paired tests",
+    "boundary": "Simulated episodes; repeated-stream gains confounded; held-out outcome gains not significant"
+  },
+  {
+    "key": "meng2026topoagent",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "TopoAgent [P]",
+    "changes_fixed": "Within-dataset failure-correction memory grows; GPT-4o, tools, distilled skill set fixed",
+    "feedback_timing": "LLM self-check of feature quality; memory written online after failed reflections",
+    "evaluation": "Balanced accuracy on 26 benchmark datasets; memory ablations; three external datasets",
+    "boundary": "Memory reset per dataset; skills distilled from evaluation benchmark; non-clinical endpoint"
+  },
+  {
+    "key": "qu2026sageagent",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "SAGEAgent [J/C]",
+    "changes_fixed": "Episodic store and reflected rules change; frozen LLM, predictor and rewards fixed",
+    "feedback_timing": "Uncertainty and burden rewards; reflection every 10 training patients before testing",
+    "evaluation": "Nested 5x5 cross-validation with memory ablations, fusion, RL and Reflexion baselines",
+    "boundary": "Small public glioma cohort; uncertainty-based reward; test-time memory updating unreported"
+  },
+  {
+    "key": "wang2026mira",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "MIRA [P]",
+    "changes_fixed": "VLM weights and principle memory change; tools, judges, validation gate fixed",
+    "feedback_timing": "Judge-scored rewards; memory edits gated on validation during online RL",
+    "evaluation": "Nine medical VQA test splits; RL ablation isolating reflection memory contribution",
+    "boundary": "Benchmark VQA only; single runs; memory role in reward not isolated"
+  },
+  {
+    "key": "murugesan2026amr",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "AMR [A*]",
+    "changes_fixed": "Per-agent reflection memories change; GPT-4o, routing graph and RAG corpus fixed",
+    "feedback_timing": "Ground-truth label on wrong answers; test-time write-back disabled, filling phase unreported",
+    "evaluation": "MedQA test and MedMCQA subset; batches of 50, sizes unreported",
+    "boundary": "Exam multiple-choice QA only; no intervals; memory provenance at test unclear"
+  },
+  {
+    "key": "dai2026cdeg",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "CDEG [P]",
+    "changes_fixed": "Evidence graph built from trajectories; doctor backbones, tools and environment fixed",
+    "feedback_timing": "Reference-diagnosis correctness plus counterfactual verifier; one offline construction pass",
+    "evaluation": "200 patient-disjoint MIMIC-IDx cases and 107 AgentClinic OOD cases",
+    "boundary": "Interactive retrospective records; LLM-judged accuracy; no repeated runs reported"
+  },
+  {
+    "key": "ghaffari2026learnactcoder",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "LearnActCoder [P]",
+    "changes_fixed": "Role-routed error memory changes; GPT-5, Coder-Judge workflow and lookup table fixed",
+    "feedback_timing": "Reference-code mismatches from 25 LEARN notes; built once offline, then frozen",
+    "evaluation": "Held-out matched MIMIC-III (150) and MIMIC-IV (250) notes; 1,000-note stability run",
+    "boundary": "Retrospective coding; one model; CPT gain only; ICD F1 unchanged"
+  },
+  {
+    "key": "li2026emai",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "EMAI [J/C]",
+    "changes_fixed": "Report-derived experience rules evolve; backbone and rule induction/selection procedure remain fixed.",
+    "feedback_timing": "Impression scores filter and refine cluster rules offline for later unseen reports.",
+    "evaluation": "MIMIC-CXR and Open-I report summarisation with component ablations and clinician ratings.",
+    "boundary": "Task rules evolve under fixed induction; no changing-improver control or prospective patient evaluation."
+  },
+  {
+    "key": "chen2025semagents",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "SeM-Agents [J/C]",
+    "changes_fixed": "Correct-case and error-reflection banks grow; backbone, consultation protocol and reviewer prompts stay fixed.",
+    "feedback_timing": "Reference answers route training consultations into separate banks before frozen test evaluation.",
+    "evaluation": "MedQA and PubMedQA test sets, memory variants and two-backbone evolution curves.",
+    "boundary": "Training-only memories; no prospective care or changing-improver control; MedQA option counts differ."
+  },
+  {
+    "key": "dou2024shennongagent",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "Shennong-Agent [J/C]",
+    "changes_fixed": "Clinician corrections and prompts enter vector memory; Qwen-7B and module design remain fixed.",
+    "feedback_timing": "Human edits are encoded for reuse in later similar pharmaceutical-care situations.",
+    "evaluation": "461 retrospective outpatient records; pharmacist scoring and with/without human-intervention comparison.",
+    "boundary": "Persistent-memory contribution not isolated; no adaptation/test split or prospective deployment evaluation."
+  },
+  {
+    "key": "wu2026uehr",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "U-EHR [J/C]",
+    "changes_fixed": "Positive/negative memory and retrieval estimates change; backbone, scorers and UCB rules fixed.",
+    "feedback_timing": "Prior action scores and task success update the bank after each clinical task.",
+    "evaluation": "MIMIC EHR tasks and private CN-EHR, four backbones; sequential adaptation and ablations.",
+    "boundary": "No separate memory-learning holdout or prospective patient outcomes; fixed update procedure."
+  },
+  {
+    "key": "mao2026srmapr",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "SR-MAPR [J/C]",
+    "changes_fixed": "Physician-assessment heuristics change; backbone, reflection routine and retrieval design remain fixed.",
+    "feedback_timing": "Expert-rating discrepancies trigger error reflections and rules retained for later profile evaluations.",
+    "evaluation": "7362 physician profiles, stated80/20 split, backbone comparisons and rules/case/RAG ablations.",
+    "boundary": "Professional-profile benchmark; rule-update/test scheduling unspecified; no patient outcomes or improver control."
+  },
+  {
+    "key": "chen2027mdtace",
+    "group": "memory",
+    "group_label": "Memory and experience across encounters",
+    "name_status": "MDTace [J/C]",
+    "changes_fixed": "Structured consultation bullets change; backbone, lead/reflector prompts and memory procedure remain fixed.",
+    "feedback_timing": "Training-case deliberation and tool-use feedback are distilled into a global reusable Playbook.",
+    "evaluation": "Four clinical QA/VQA test sets; training-only bullets, Playbook and context-layer ablations.",
+    "boundary": "Offline benchmarks; no changing-improver control or prospective care; first online2026, imprint2027."
+  },
+  {
+    "key": "he2026evoclinician",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "EvoClinician [P]",
+    "changes_fixed": "Actor prompts and action-conditioned memory change; Evolver and Grader fixed.",
+    "feedback_timing": "Process feedback and diagnosis score in a sequential case stream.",
+    "evaluation": "Case-stream evaluations and memory/strategy ablations.",
+    "boundary": "Judge score feeds adaptation; not an independent frozen release test."
+  },
+  {
+    "key": "liu2026evomdt",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "EvoMDT [J/C]",
+    "changes_fixed": "Prompts and agent configuration adapt; framework/evaluator prescribed.",
+    "feedback_timing": "Expert development-case feedback, metrics and reported post-task outcomes.",
+    "evaluation": "QA datasets, retrospective records and blinded physician scoring.",
+    "boundary": "Evolution gain not isolated; automatic release criteria not detailed."
+  },
+  {
+    "key": "yang2026psychagent",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "PsychAgent [P]",
+    "changes_fixed": "Skills and shared model parameters change; session-selection rule fixed.",
+    "feedback_timing": "Simulated counseling feedback; skill evolution and rejection fine-tuning.",
+    "evaluation": "Separate client profiles; human ratings of simulated dialogues.",
+    "boundary": "Shared-model change can affect skill generation; its contribution is not isolated."
+  },
+  {
+    "key": "sun2026skemex",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "SkeMex [A]",
+    "changes_fixed": "Skill repository and utility state change; online update operators fixed.",
+    "feedback_timing": "Task trajectories, novelty/quality and utility; offline and online phases.",
+    "evaluation": "Held-out in-domain cases, unseen benchmark families and cross-model skill transfer.",
+    "boundary": "Transfer of skills is tested; improvement of update operators is not established."
+  },
+  {
+    "key": "zhu2026healthflow",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "HealthFlow [J/C]",
+    "changes_fixed": "Plans, workflow code and experience change; writeback/retrieval rules fixed.",
+    "feedback_timing": "Execution outcomes; reflection and outcome-aware memory after tasks.",
+    "evaluation": "External model judge and blinded expert report review; online memory runs.",
+    "boundary": "Independent assessment exists; benchmark-time memory and clinical efficacy remain distinct."
+  },
+  {
+    "key": "wu2026medrsi",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "MedRSI [P]",
+    "changes_fixed": "Tools and trainable tool models change; reasoner, execution and judge fixed.",
+    "feedback_timing": "Failure-driven capability construction; candidate validation before registration.",
+    "evaluation": "Public imaging tests and frozen-checkpoint retrospective cohorts.",
+    "boundary": "Generated capabilities may aid later construction; improver benefit not independently isolated."
+  },
+  {
+    "key": "chen2026medforge",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "MedForge-RSI [P]",
+    "changes_fixed": "Experience, tools and optional directives change; detector and acceptance design fixed.",
+    "feedback_timing": "Verified errors; replay/validation checks over 20 rounds.",
+    "evaluation": "Disjoint final 4,000-image test; mechanism/seed analyses.",
+    "boundary": "Bounded self-refinement; one earlier resample set contaminated; no clinical trial."
+  },
+  {
+    "key": "wang2026tcmsea",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "TCM-SEA [P]",
+    "changes_fixed": "Clinical skill document edited; LLM, edit loop, gate and simulator fixed.",
+    "feedback_timing": "Expert monograph analysis of failed held-in cases; nine offline edit rounds.",
+    "evaluation": "Gate on held-in and validation splits; sealed test split; outcome-only ablation.",
+    "boundary": "Cases from published monographs with a lookup simulator; one seed; no physician review."
+  },
+  {
+    "key": "yuan2026asclepius",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "Asclepius [J/C]",
+    "changes_fixed": "Operating manual rewritten; backbone, skills library, subagent prompts and proposer fixed.",
+    "feedback_timing": "Judge scores and traces between offline search-batch iterations.",
+    "evaluation": "Four held-out simulated emergency-department batches; add-one ablations and manual-only contrast.",
+    "boundary": "Simulated shifts; evolved manual alone adds +0.02 on held-out batches, not significant."
+  },
+  {
+    "key": "zhuang2025doctor",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "Learning to Be A Doctor [J/C]",
+    "changes_fixed": "Changes workflow graph and node prompts; backbone LLM, tools and evolution procedure fixed.",
+    "feedback_timing": "Ground-truth diagnostic errors on 50 training images, offline batches with validation checks.",
+    "evaluation": "Held-out test images; static baselines and operation ablations; single seed, three backbones.",
+    "boundary": "Small dermatology splits, one synthetic dataset; offline only, no clinician evaluation."
+  },
+  {
+    "key": "zheng2026meddcr",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "MedDCR [J/C]",
+    "changes_fixed": "Coding workflows and design archive change; Designer, Reflector and selection rule fixed.",
+    "feedback_timing": "Validation F1 score plus Reflector critique across 100 offline search iterations.",
+    "evaluation": "MDACE and ACI-BENCH micro-F1; archive and feedback ablations; no separate test split described.",
+    "boundary": "Benchmark workflow search; selection and reporting data separation unclear; no clinical deployment."
+  },
+  {
+    "key": "ossowski2026codeclinic",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "CodeClinic [P]",
+    "changes_fixed": "Verified function library grows; inference weights, verifier, threshold, guidelines fixed",
+    "feedback_timing": "Accuracy on labeled verification cases with error traces; offline, then frozen",
+    "evaluation": "56,700 held-out queries and separate ICU surveillance task; zero-shot, GRPO controls",
+    "boundary": "Single-center MIMIC-IV, one builder model, small verification sets, LLM-written guidelines"
+  },
+  {
+    "key": "wu2026mediskillevo",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "MediSkill-Evo [P]",
+    "changes_fixed": "Four typed knowledge banks change; backbone, harness, simulator and evaluator fixed",
+    "feedback_timing": "Post-encounter label-based reflection; offline over 700 training encounters, frozen at test",
+    "evaluation": "300 held-out MIMIC-IV encounters, 180 stress conditions, 100 NEJM cases",
+    "boundary": "Simulated encounters; LLM judge; one rollout; no clinician validation"
+  },
+  {
+    "key": "cao2026guideskill",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "GuideSkill [P]",
+    "changes_fixed": "Executable diagnostic scoring skills evolve; backbone, compiler and skill generator remain fixed.",
+    "feedback_timing": "Labelled case rationales distilled offline before evaluation on different clinical benchmark cases.",
+    "evaluation": "Four diagnostic benchmarks; evolved skills assessed across four fixed task backbones.",
+    "boundary": "No prospective evaluation; learned task skills do not revise the improvement procedure."
+  },
+  {
+    "key": "ruan2026normcompliance",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "Role-based norm agent [J/C]",
+    "changes_fixed": "Norm memory and role prompts evolve; Qwen-plus weights and feedback routines remain fixed.",
+    "feedback_timing": "Fixed AI feedback drives prompt edits and periodic identity changes across episodes.",
+    "evaluation": "Three simulated healthcare communication tasks compare full framework and component ablations.",
+    "boundary": "No prospective evaluation; judge sampling and identity-consistency measurement are reported inconsistently."
+  },
+  {
+    "key": "shi2026medguard",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "MedGuard [J/C]",
+    "changes_fixed": "Agent policy weights change; prompts, retrieval knowledge base and training generator stay fixed.",
+    "feedback_timing": "Full risk-alerting trajectories receive format and outcome rewards during offline GRPO.",
+    "evaluation": "Separate consultation benchmarks, retrospective records and expert ratings assess risk-alerting outputs.",
+    "boundary": "Patient memory and planner refinement are case-local; no prospective patient outcome evaluation."
+  },
+  {
+    "key": "jiang2026sempa",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "SEMPA [J/C]",
+    "changes_fixed": "Prescribing and Critic policies evolve; backbone, rewrite routine and safety rules stay fixed.",
+    "feedback_timing": "Cross-encounter utility pools guide periodic rewrites before frozen held-out encounter evaluation.",
+    "evaluation": "One hundred retrospective MIMIC-IV encounters, six runs and component ablations.",
+    "boundary": "Critic scores inform later updates; its evolving evaluator role is not isolated."
+  },
+  {
+    "key": "li2026skillcdpo",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "Skill-CDPO [J/C]",
+    "changes_fixed": "Experience-derived tool skills and agent weights change; expert and selection procedure stay fixed.",
+    "feedback_timing": "Historical invocation failures form skills; rollout outcome gaps guide offline preference optimization.",
+    "evaluation": "Three medical retrieval and QA benchmarks compare skills, SFT and DPO variants.",
+    "boundary": "One-round parameter optimization; skill reuse supports eligibility, without changing-improver causal control."
+  },
+  {
+    "key": "feng2026gatedopenclaw",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "Gated adapter / OpenClaw [J/C]",
+    "changes_fixed": "Persistent guidance and final adapter gate change; encoders and update routine remain fixed.",
+    "feedback_timing": "Report-simulated physician feedback updates special-case memory and guidance every hundred iterations.",
+    "evaluation": "Private fundus images; conflict counts assessed across repeated adaptation rounds.",
+    "boundary": "Agent backbone unspecified; reused test cases and conflict counts do not establish independent accuracy."
+  },
+  {
+    "key": "li2026bridgegap",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "BridgeGap [J/C]",
+    "changes_fixed": "Diagnostic dialogue policy learns; patient simulator, evidence verifier and reward routine stay fixed.",
+    "feedback_timing": "Environment-verified belief progress and terminal diagnosis guide PPO across simulated patient episodes.",
+    "evaluation": "HealthBench, AgentClinic and static medical QA assess the resulting frozen policy.",
+    "boundary": "Belief state is case-local; learned weights persist, without prospective patient outcome evidence."
+  },
+  {
+    "key": "li2026decisionrules",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "Evolved decision rules [P]",
+    "changes_fixed": "Medical VQA prompt-program configurations evolve; proposer, VLM and selection pipeline remain fixed.",
+    "feedback_timing": "Evolution-case accuracy guides offline search, followed by separate holdout selection and testing.",
+    "evaluation": "MedFrameQA internal video-grouped split; five main-method repeats on 855 final-test examples.",
+    "boundary": "No prospective evaluation or revised improver; strategy feedback subset sizes differ."
+  },
+  {
+    "key": "rugo2026livingoep",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "Living-OEP [J/C]",
+    "changes_fixed": "Annotation instructions and examples change; clinical LLM backbones and human update procedure fixed.",
+    "feedback_timing": "Human annotation corrections guide repeated instruction refinement before locked later-publication validation.",
+    "evaluation": "1997 independent breast-cancer publications and eight clinical evidence-retrieval scenarios; human quality review.",
+    "boundary": "No patient outcomes or isolated updater control; trial-level evidence interpretation remains human."
+  },
+  {
+    "key": "neary2025fast",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "Coach Iris / FAST [J/C]",
+    "changes_fixed": "Shared prompts, retrieval data and responses change; backbone and optimization details unreported.",
+    "feedback_timing": "Human reviewers flag dialogue failures; clinical experts and the ML team refine behavior.",
+    "evaluation": "Framework face validity on recorded dialogues; five reviewers initially assess twelve dialogues.",
+    "boundary": "Deployed service monitoring; no prospective adaptation trial or quantified post-update clinical benefit."
+  },
+  {
+    "key": "chen2026rhis",
+    "group": "skills",
+    "group_label": "Skills, tools and workflow adaptation",
+    "name_status": "RHIS [P]",
+    "changes_fixed": "Action-governance rules change; Kimi backbone, benchmark source and change-admission protocol remain fixed.",
+    "feedback_timing": "Execution failures trigger versioned controller revisions between frozen benchmark runs and stages.",
+    "evaluation": "300 virtual-EHR tasks; named same-stage retests separated from cross-version first-pass totals.",
+    "boundary": "No held-out update-transfer or frozen-improver control; candidate governance labels await independent review."
+  },
+  {
+    "key": "coevolving2025",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "TissueLab [P]",
+    "changes_fixed": "Tool classifiers and model preferences change; foundations/framework fixed.",
+    "feedback_timing": "Clinician annotations, acceptance feedback and active learning.",
+    "evaluation": "Retrospective imaging/omics tasks and patient-level splits.",
+    "boundary": "Human-guided adaptation; autonomous experience-to-skill synthesis unclear."
+  },
+  {
+    "key": "fan2026macro",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "MACRO [P]",
+    "changes_fixed": "Memory, composite tools and policy change; discovery/training design fixed.",
+    "feedback_timing": "Training episodes; correctness gates retention, composite use earns reward.",
+    "evaluation": "Public imaging benchmarks and static/component comparisons.",
+    "boundary": "Persistent artifacts arise during training; deployment-time learning not established."
+  },
+  {
+    "key": "zhang2026vibemed",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "VIBEMed [J/C]",
+    "changes_fixed": "Memory/model/code changes described; coordinated update workflow prescribed.",
+    "feedback_timing": "Case feedback, model judges and sandbox tests; user confirms code release.",
+    "evaluation": "Base-versus-tuned MedBench comparison and oncology demonstration.",
+    "boundary": "Evolution components not isolated; two evaluated task scores decline after tuning."
+  },
+  {
+    "key": "du2025evopatient",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "EvoPatient [J/C]",
+    "changes_fixed": "Doctor trajectory memory changes patient-training interactions; validation rules fixed.",
+    "feedback_timing": "Simulated doctor/patient feedback across coevolution rounds.",
+    "evaluation": "Doctor-question and patient-ability analyses; disease transfer.",
+    "boundary": "Interaction-generator change tested; patient gains use bundled doctor ablations."
+  },
+  {
+    "key": "dang2026medzero",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "MedZERO [A*]",
+    "changes_fixed": "Examiner and Reasoner parameters plus knowledge graph change; reward/curation rules fixed.",
+    "feedback_timing": "Alternating frontier-focused question generation and RL training.",
+    "evaluation": "Medical benchmarks and curriculum-source/component analyses.",
+    "boundary": "Learned generator changes; its isolated benefit versus a frozen Examiner not established."
+  },
+  {
+    "key": "wang2026ecgrsi",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "ECG-RSI [P]",
+    "changes_fixed": "Waveform operators, prompts, skills and learner change; acceptance criteria fixed.",
+    "feedback_timing": "Construction feedback repairs generator; separate feedback and selection cohorts.",
+    "evaluation": "Patient-separated tests; frozen-generator-component controls; physician sample review.",
+    "boundary": "Positive bounded generator evidence; accepted-data budgets match, candidate counts differ; total-cost matching unestablished."
+  },
+  {
+    "key": "lee2026revision3d",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "ReVision3D [P]",
+    "changes_fixed": "Perception adapters, training recipe and inference program change; LLM designer, verifier and objective fixed.",
+    "feedback_timing": "Mask-grounded attribution and development objective; revisions kept above seed noise.",
+    "evaluation": "Test CT patients, partly reused from earlier comparisons; frontier, recipe-control and designer comparisons.",
+    "boundary": "Matched-compute recipe control on retrospective CT; recipe origin inconsistently reported; no improver-revision test."
+  },
+  {
+    "key": "zhu2026ultrasoundagents",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "UltrasoundAgents [P]",
+    "changes_fixed": "Sub-agent and main-agent VLM weights change; tools, taxonomy, rewards and recipe fixed.",
+    "feedback_timing": "Ground-truth labels drive GRPO stages, then self-distilled trajectory SFT, all pre-test.",
+    "evaluation": "Three in-domain test splits, external BrEaST OOD set, stage ablations, oracle upper bounds.",
+    "boundary": "One-off training on public data; frozen at test; low BI-RADS agreement."
+  },
+  {
+    "key": "jeong2026healthcaregym",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "Healthcare AI GYM [P]",
+    "changes_fixed": "Qwen3.5-9B weights change by GRPO/TT-OPD; gym tasks, tools, reward fixed",
+    "feedback_timing": "Episode 5D reward plus EMA-teacher KL; online RL during 60 training steps",
+    "evaluation": "18 benchmarks with same tools; Base+AR and GRPO controls; validation 307 tasks",
+    "boundary": "Train tasks from same benchmark families, single run, no intervals, inconsistent counts"
+  },
+  {
+    "key": "wu2026sepsisagent",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "SepsisAgent [P]",
+    "changes_fixed": "Qwen3-4B weights change across SFT, BC, GRPO; world model and rewards fixed",
+    "feedback_timing": "Simulated survival, SOFA, lactate and guideline reward; offline staged training only",
+    "evaluation": "725 held-out MIMIC-IV episodes by OPE; untrained world-model agents as controls",
+    "boundary": "Off-policy estimates, same-source world model, no seeds, no clinician evaluation"
+  },
+  {
+    "key": "chen2026cura",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "Cura 1T [P]",
+    "changes_fixed": "Training mixture and 1T weights change; harness skills, benchmarks, human review fixed",
+    "feedback_timing": "Graded benchmark trajectories; offline keep-or-revert rounds per capability loop",
+    "evaluation": "Same healthcare benchmarks used for selection; out-of-domain checks not used for selection",
+    "boundary": "No independent healthcare test; no ablations; human decides each round"
+  },
+  {
+    "key": "liu2026bat",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "BaT [P]",
+    "changes_fixed": "Agent policy and stage curriculum change; execution environment, verifier, controller fixed",
+    "feedback_timing": "Rubric-verified rewards and held-out stage scores; offline multi-round GRPO",
+    "evaluation": "AutoMedBench-Lite also steers training; ABRA, MedXpertQA, external benchmarks unselected",
+    "boundary": "Benchmark guides training; no matched ablation; research workflows rather than care"
+  },
+  {
+    "key": "shao2026case",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "CASE [P]",
+    "changes_fixed": "8B VLM policy weights change; tools, judge, evidence replay and prompts fixed",
+    "feedback_timing": "Answer, rubric and self-distillation rewards; offline RSFT then one GRPO epoch",
+    "evaluation": "4,850 questions from 455 held-out UK Biobank participants, three roles",
+    "boundary": "Single cohort; MCQ labels from ICD-10; LLM judges; no external site"
+  },
+  {
+    "key": "fan2026medenv",
+    "group": "generators",
+    "group_label": "Parameter updates and changing training generators",
+    "name_status": "MedEnv / Diagnosis-R1 [J/C]",
+    "changes_fixed": "Doctor policy changes and supplies a specified reward likelihood; GRPO and simulators fixed.",
+    "feedback_timing": "Interactive rollouts receive diagnosis outcomes, confidence-gain rewards and unsupported-action penalties.",
+    "evaluation": "Two thousand held-out cases per author response; matched reward/training ablations.",
+    "boundary": "Simulation; scoring-weight synchronization and patient-level split unspecified; evolving scorer not isolated."
+  },
+  {
+    "key": "clinicalagents2026",
+    "group": "comparators",
+    "group_label": "Diagnostic training and informative adaptation comparators",
+    "name_status": "ClinicalAgents [J/C]",
+    "changes_fixed": "Within-case working state changes; experience store remains static.",
+    "feedback_timing": "Current-case evidence, confidence and search feedback.",
+    "evaluation": "Experience/test separation and clinician-checked model judge.",
+    "boundary": "Within-case orchestration comparator; no new cross-case experience learned."
+  },
+  {
+    "key": "qiu2025diaggym",
+    "group": "comparators",
+    "group_label": "Diagnostic training and informative adaptation comparators",
+    "name_status": "DiagAgent [P]",
+    "changes_fixed": "Diagnostic policy parameters change; DiagGym and reward procedure fixed.",
+    "feedback_timing": "RL feedback on virtual EHR-derived consultations.",
+    "evaluation": "Physician-validated diagnostic benchmark cases.",
+    "boundary": "Learner improvement in a simulated environment; no changing-improver test."
+  },
+  {
+    "key": "feng2025doctoragentrl",
+    "group": "comparators",
+    "group_label": "Diagnostic training and informative adaptation comparators",
+    "name_status": "DoctorAgent-RL [J/C]",
+    "changes_fixed": "Doctor policy updates; interaction and reward design fixed.",
+    "feedback_timing": "Multi-turn patient-simulator feedback during training.",
+    "evaluation": "Dialogue-derived simulated consultation evaluation.",
+    "boundary": "Conference-aligned version; later extended-manuscript clinical results not imported."
+  },
+  {
+    "key": "xu2026oaims",
+    "group": "comparators",
+    "group_label": "Diagnostic training and informative adaptation comparators",
+    "name_status": "OAIMS [J/C]",
+    "changes_fixed": "Segmentation weights adapt; online update procedure fixed.",
+    "feedback_timing": "Label-derived simulated correction clicks, within/across cases.",
+    "evaluation": "Retrospective streams with imaging modality/pathology shifts.",
+    "boundary": "Non-LLM comparator; simulated clicks do not establish clinician-in-the-loop outcomes."
+  },
+  {
+    "key": "tzanis2026reclaim",
+    "group": "comparators",
+    "group_label": "Diagnostic training and informative adaptation comparators",
+    "name_status": "ReclAIm [J/C]",
+    "changes_fixed": "Image-classifier weights adapt; agent workflow and alarm rule fixed.",
+    "feedback_timing": "Labeled monitoring data trigger classifier fine-tuning.",
+    "evaluation": "Separate fine-tuning cohort; same monitoring cohort used for reassessment.",
+    "boundary": "Automated maintenance, not updater learning; no untouched final external test."
+  },
+  {
+    "key": "hu2026templar",
+    "group": "comparators",
+    "group_label": "Diagnostic training and informative adaptation comparators",
+    "name_status": "TEMPLAR [P]",
+    "changes_fixed": "Radiology reporting template and knowledge graphs built once; LLMs, prompts and rules fixed.",
+    "feedback_timing": "Literature grounding and one structuring audit on training reports.",
+    "evaluation": "Held-out PET/CT and CT reports; ablations, cross-dataset transfer and expert ratings.",
+    "boundary": "One-off offline construction, not post-deployment learning; mostly LLM-judged metrics."
+  },
+  {
+    "key": "li2026vdss",
+    "group": "comparators",
+    "group_label": "Diagnostic training and informative adaptation comparators",
+    "name_status": "VDSS [J/C]",
+    "changes_fixed": "Clinician preference bandit state updates; LLM agents, safety checks, backbones fixed",
+    "feedback_timing": "Clinician accept/reject and accepted settings; online update at each cycle close",
+    "evaluation": "Multi-center retrospective replay and expert ratings of 100 cycles; NoPref ablation",
+    "boundary": "Learning shown only as one-clinician regret trend; bandit and patient span unstated"
+  },
+  {
+    "key": "chen2026clinverse",
+    "group": "comparators",
+    "group_label": "Diagnostic training and informative adaptation comparators",
+    "name_status": "ClinVerse [P]",
+    "changes_fixed": "Memories, skills, playbooks, tool registry change; Qwen3-32B, simulator, rule-based judge fixed",
+    "feedback_timing": "Rule-based EHR-grounded trajectory scores; offline 5,000 or online 1,000 trajectories",
+    "evaluation": "100 held-out EHR cases, five runs; zero-shot transfer to AIHospital",
+    "boundary": "Simulated EHR environment; borrowed methods; gains often within one SD; preprint"
+  }
+]

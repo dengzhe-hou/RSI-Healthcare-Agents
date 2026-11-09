@@ -1,0 +1,2 @@
+record_kind,design_id,question,target_claim,changed_object,treatment_condition,control_condition,shared_start_state,backbone_and_harness,task_and_official_protocol,update_data,selection_data,final_test_data,feedback_and_label_access,update_selection_test_sequence,test_freeze_point,memory_and_writeback_policy,paired_units_and_order,matching_requirements,cost_scope,native_metrics_and_units,uncertainty_and_repeats,clinical_evaluation_setting,version_references,source_or_design_basis,author_decision_status
+,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,88 @@
+{
+  "version": "0.3.0",
+  "snapshot_cutoff": "2026-11-04",
+  "release_tag": "evidence-2026-11-04-v0.3.0",
+  "title": "Recursive Self-Improvement in Healthcare AI Agents",
+  "mapped_studies": 85,
+  "bibliography_entries": 147,
+  "deduplicated_screening_records": 10720,
+  "full_text_stage_records": 210,
+  "primary_reports_unavailable_at_full_text_stage": 13,
+  "search_sources": [
+    "arXiv",
+    "PubMed",
+    "Europe PMC",
+    "OpenAlex"
+  ],
+  "search_start_date": "2023-01-01",
+  "clinical_setting_basis": "Reported study evaluation design, not service deployment status",
+  "level_counts": {
+    "0": 1,
+    "1": 66,
+    "2-explicit": 6,
+    "2-implicit": 12,
+    "3": 0
+  },
+  "clinical_setting_counts": {
+    "simulated": 23,
+    "offline_benchmark": 33,
+    "retrospective": 22,
+    "external_retrospective": 7,
+    "prospective": 0
+  },
+  "publication_status_counts": {
+    "published": 40,
+    "accepted": 4,
+    "preprint": 41
+  },
+  "review_status": {
+    "llm_assisted_screening_and_extraction": true,
+    "author_spotcheck_sample_size": 70,
+    "author_spotcheck_results_recorded": 0,
+    "sample_covers_openalex_supplement": false,
+    "openalex_optional_review_candidates": 129,
+    "author_verification_complete": false,
+    "author_spotcheck_status": "withdrawn_not_performed",
+    "author_spotcheck_withdrawn_date": "2026-11-08",
+    "author_spotcheck_sample_size_note": "Historical sample retained; not an active required check"
+  },
+  "interpretation": "Study-level literature extraction, not patient-level data, an executable benchmark, a validated clinical standard or an aggregate quality score.",
+  "manuscript_status": "Structured narrative review manuscript; not an accepted Meta-Radiology article; arXiv upload not yet completed.",
+  "rights_status": "No additional open-content license selected for this new resource release. Third-party source rights remain with their owners.",
+  "source_provenance": {
+    "extraction": "notes/v2_evidence_20261019/all_studies.json",
+    "screening": "submission/RSI_HA_Table_S2_search_20261104.csv",
+    "mechanism_summaries": "notes/v2_evidence_20261019/compact_rows.py",
+    "source_commit": "e81bcdb5c5d95d72a3b98e120567a840b8c8a7d8"
+  },
+  "created_at_utc": "2026-11-04T10:56:04.092538+00:00",
+  "public_release_status": "Evidence resources published on GitHub with author authorization on 2026-11-09; revised manuscript remains unpublished",
+  "arxiv_status": "Not uploaded; author explicitly requested no submission while manuscript revision continues",
+  "study_design_matrix_records": 85,
+  "worked_design_assessments": 4,
+  "experiment_templates": [
+    "experiment_plan",
+    "run_log",
+    "update_log",
+    "cost_log",
+    "metric_results"
+  ],
+  "author_verified_matrix_rows": 0,
+  "resource_addition": "Evaluation-design and logging templates; no executable benchmark or new experiments",
+  "author_approved_reporting_quality_exclusions": 2,
+  "quality_revision_date": "2026-11-05",
+  "published_date": "2026-11-09",
+  "imaging_studies": 25,
+  "supplement_allocation": {
+    "with_article": [
+      "S3"
+    ],
+    "github": [
+      "S1",
+      "S2",
+      "S4",
+      "search details",
+      "evaluation and experiment-record templates"
+    ]
+  }
+}

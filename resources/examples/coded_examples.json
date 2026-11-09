@@ -1,0 +1,130 @@
+[
+  {
+    "key": "clinicalagents2026",
+    "name": "ClinicalAgents",
+    "level_as_coded_in_review": "0",
+    "explanation": "Static experience retrieval and changing within-case working state do not show new cross-case learning.",
+    "source_url": "https://arxiv.org/abs/2603.26182v2",
+    "locators": [
+      {
+        "url": "https://arxiv.org/html/2603.26182v2#S3.SS3.SSS2",
+        "location": "Section 3.3.2: explicitly static experience memory"
+      },
+      {
+        "url": "https://arxiv.org/html/2603.26182v2#S3.SS3.SSS1",
+        "location": "Section 3.3.1: working memory"
+      },
+      {
+        "url": "https://arxiv.org/html/2603.26182v2#S4.SS1.SSS1",
+        "location": "Section 4.1.1: test exclusion"
+      },
+      {
+        "url": "https://arxiv.org/html/2603.26182v2#S4.SS2",
+        "location": "Section 4.2: clinician validation of judge"
+      }
+    ],
+    "author_verification": "Not recorded"
+  },
+  {
+    "key": "medhospital2024",
+    "name": "Agent Hospital / MedAgent-Zero",
+    "level_as_coded_in_review": "1",
+    "explanation": "Cases and principles accumulate under a fixed reflection and validation design.",
+    "source_url": "https://arxiv.org/abs/2405.02957v3",
+    "locators": [
+      {
+        "url": "https://arxiv.org/html/2405.02957v3#Sx3",
+        "location": "Agent Evolution"
+      },
+      {
+        "url": "https://arxiv.org/html/2405.02957v3#Sx12.SSx3",
+        "location": "Appendix B.3: reflection, validation and refinement"
+      },
+      {
+        "url": "https://arxiv.org/html/2405.02957v3#Sx13.SSx4",
+        "location": "Appendix C.4: separate simulated training/test cases"
+      },
+      {
+        "url": "https://arxiv.org/html/2405.02957v3#Sx13.SSx7",
+        "location": "Appendix C.7: ablations"
+      }
+    ],
+    "author_verification": "Not recorded"
+  },
+  {
+    "key": "wang2026ecgrsi",
+    "name": "ECG-RSI",
+    "level_as_coded_in_review": "2-explicit",
+    "explanation": "Synthesis operators and skills generate later training data. Frozen-operator/skill controls exist, but generation-search costs are unequal; this does not establish Level3.",
+    "source_url": "https://arxiv.org/html/2610.17718v1",
+    "locators": [
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S3.SS1",
+        "location": "Section 3.1: separate learner, training pool and construction policy; data boundaries"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S3.SS2.SSS2",
+        "location": "Section 3.2.2: old/new operator and prompt repair comparisons"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#A1.SS2",
+        "location": "Appendix A.2: exact rule changes, proposer and independent regression checks"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#A4.SS5",
+        "location": "Prompt P5: repair generator component while acceptance criteria remain fixed"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.T10",
+        "location": "Table 10: 10,000 accepted samples; candidates 16,193 full, 36,723 frozen operators, 22,398 frozen skills"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.T15",
+        "location": "Main Table 15: R1 S7 full 43.22±1.40; frozen operators 39.29±1.30; frozen skills 40.15±1.30"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.SS6",
+        "location": "Section 5.6/Table 11: same-parent fixed-mixture control"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.SS7",
+        "location": "Section 5.7/Table 12: per-branch 10,000 additions and matched replay/training; not proof of total tree/chain compute equality"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.T7",
+        "location": "Table 7: 240 generated samples, two physicians; answer correctness 0.88, explanation support 0.76"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S6",
+        "location": "Conclusion: unreleased implementation/data and diminishing external gains"
+      }
+    ],
+    "author_verification": "Not recorded"
+  },
+  {
+    "key": "jiang2026sempa",
+    "name": "SEMPA",
+    "level_as_coded_in_review": "2-implicit",
+    "explanation": "The changing Critic affects later update selection; its evolving evaluator contribution is not isolated.",
+    "source_url": "https://aclanthology.org/2026.findings-emnlp.994.pdf",
+    "locators": [
+      {
+        "url": "https://aclanthology.org/2026.findings-emnlp.994.pdf#page=4",
+        "location": "§3.4–3.5; Eqs.5–7"
+      },
+      {
+        "url": "https://aclanthology.org/2026.findings-emnlp.994.pdf#page=5",
+        "location": "§4.1 evolve–freeze–test"
+      },
+      {
+        "url": "https://aclanthology.org/2026.findings-emnlp.994.pdf#page=9",
+        "location": "Table 5"
+      },
+      {
+        "url": "https://aclanthology.org/2026.findings-emnlp.994.pdf#page=15",
+        "location": "Appendix A.7 Algorithm 1"
+      }
+    ],
+    "author_verification": "Not recorded"
+  }
+]

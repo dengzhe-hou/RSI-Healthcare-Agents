@@ -1,0 +1,21 @@
+[
+  {
+    "record_kind": "",
+    "run_id": "",
+    "case_id": "",
+    "cycle_id": "",
+    "candidate_id": "",
+    "parent_state_version": "",
+    "changed_object": "",
+    "old_version": "",
+    "new_version": "",
+    "feedback_source": "",
+    "feedback_available_at": "",
+    "selection_split": "",
+    "evaluator_version": "",
+    "decision": "",
+    "decision_reason": "",
+    "released_after_case": "",
+    "evidence_locator": ""
+  }
+]

@@ -1,0 +1,13 @@
+# Search and screening provenance
+
+The fixed search covers first public availability from 1 January 2023 through 4 November 2026 in arXiv, PubMed, Europe PMC and OpenAlex. The two conceptual strands combine agent/improvement/healthcare terms and explicit RSI/healthcare terms. `initial_source_queries.html` preserves exact initial-source requests; `openalex_queries.json` preserves the OpenAlex queries and search scope.
+
+The four sources returned 11,622 hits. Deduplication yielded 10,720 records. Thirty-three records corresponded to 31 previously charted studies. The other 10,687 underwent title/abstract screening;210 entered full-text-stage assessment, of which 13 primary reports were unavailable. Fifty-two studies were included from the new screen after two author-approved reporting-quality exclusions during revision, and two informative comparators were retained purposively, giving 85 mapped studies. The10720-row screening ledger is not a list of10720 included papers. The85-study map includes historical/contextual comparators identified in the manuscript.
+
+Eligibility requires primary healthcare-focused LLM/VLM agent work with experience retained for later, different cases. Single-patient history, within-case reflection, static retrieval alone, general-domain methods with incidental medical tasks and one-off fixed-data post-training do not satisfy this rule. Demonstrated RSI is not required for inclusion.
+
+Full-text exclusion codes are F1 (not primary), F2 (healthcare not primary), F3 (not LLM agent), F4 (no persistent cross-case improvement), F5 (main report unavailable) F6 (duplicate report), and F7 (author-approved reporting-quality exclusion during revision). The ledger retains each original reason and available source-completeness information. Blank source fields are missing metadata and do not imply that a report was read in full.
+
+Screening and extraction were LLM-assisted. The author withdrew the fixed 70-record sample-check plan without performing it on 8 November 2026; this does not constitute completed author verification. The review follows PRISMA-ScR reporting principles but is a structured narrative review, not a registered systematic or scoping review. Bibliography year counts describe retained citations rather than a census of field growth.
+
+The two5November2026 revisions concern osman2026codingbilling and ling2026prismatic. Their original inclusion decisions and subsequent reasons are retained in the screening ledger and quality_exclusions.csv/.json. The fixed search date and retrieval records are unchanged. The final210 full-text-stage decisions comprise52 included and158 excluded reports.

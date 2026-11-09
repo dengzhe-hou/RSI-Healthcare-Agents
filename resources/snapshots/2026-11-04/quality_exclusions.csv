@@ -1,0 +1,3 @@
+﻿key,name,record_id,source_cohort,previous_outcome,outcome,code,date,reason,source_url
+ling2026prismatic,PRISMATIC,832,initial_three,Included,Excluded,F7,2026-11-05,"Sample size and learning/test separation are not reported. The claimed more-than-twofold EM advantage is unsupported by Table2:13.58% versus9.86%, approximately1.38-fold.",https://arxiv.org/html/2610.19762v1
+osman2026codingbilling,Human-in-the-loop coding agent,W7128808243,openalex,Included,Excluded,F7,2026-11-05,"The report does not identify sample size, model or dataset and gives no numerical evaluation; Table1 contains qualitative comparisons only.",https://doi.org/10.21203/rs.3.rs-8863592/v1

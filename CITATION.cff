@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use the evidence map, coding guide or evaluation-design templates, cite the accompanying manuscript and record the resource version. Author verification remains pending."
+type: dataset
+title: "RSI-HA evidence map, coding guide and evaluation-design templates, snapshot 2026-11-04"
+authors:
+  - family-names: "Hou"
+    given-names: "Dengzhe"
+  - family-names: "Wu"
+    given-names: "Zihao"
+  - family-names: "Zeng"
+    given-names: "Yuwen"
+  - family-names: "Jiang"
+    given-names: "Lingyu"
+  - family-names: "Lin"
+    given-names: "Fangzhou"
+  - family-names: "Yamada"
+    given-names: "Kazunori D"
+version: "0.3.0"
+url: "https://github.com/dengzhe-hou/self-evolving-agent-engineering"
+repository-code: "https://github.com/dengzhe-hou/self-evolving-agent-engineering"
+preferred-citation:
+  type: unpublished
+  title: "Recursive Self-Improvement in Healthcare AI Agents"
+  authors:
+    - family-names: "Hou"
+      given-names: "Dengzhe"
+    - family-names: "Wu"
+      given-names: "Zihao"
+    - family-names: "Zeng"
+      given-names: "Yuwen"
+    - family-names: "Jiang"
+      given-names: "Lingyu"
+    - family-names: "Lin"
+      given-names: "Fangzhou"
+    - family-names: "Yamada"
+      given-names: "Kazunori D"
+  year: 2026
+  url: "https://github.com/dengzhe-hou/self-evolving-agent-engineering"
+  notes: "Structured narrative review manuscript. Revised version; arXiv identifier not yet assigned."

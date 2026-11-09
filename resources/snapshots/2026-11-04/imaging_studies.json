@@ -1,0 +1,202 @@
+[
+  {
+    "key": "shen2026evomedagent",
+    "study": "Evo-MedAgent",
+    "modality_and_task": "Chest radiograph question answering",
+    "data_and_reference_standard": "ChestAgentBench answers, revealed after each case",
+    "level": "1",
+    "source_url": "https://arxiv.org/html/2604.14475v1"
+  },
+  {
+    "key": "feng2026medexpmem",
+    "study": "MedExpMem",
+    "modality_and_task": "CT, MRI, radiography and ultrasound differential diagnosis",
+    "data_and_reference_standard": "Eurorad teaching-file diagnoses; temporal split",
+    "level": "1",
+    "source_url": "https://arxiv.org/html/2605.22872v1"
+  },
+  {
+    "key": "wu2026medrsi",
+    "study": "MedRSI",
+    "modality_and_task": "Imaging diagnosis and tool construction",
+    "data_and_reference_standard": "Public benchmark labels and private retrospective cohorts",
+    "level": "2, implicit",
+    "source_url": "https://arxiv.org/html/2609.24838v1"
+  },
+  {
+    "key": "chen2026medforge",
+    "study": "MedForge-RSI",
+    "modality_and_task": "Medical-image forgery detection",
+    "data_and_reference_standard": "Verified forgery labels; separate final test set",
+    "level": "1",
+    "source_url": "https://arxiv.org/abs/2609.36549v1"
+  },
+  {
+    "key": "coevolving2025",
+    "study": "TissueLab",
+    "modality_and_task": "Imaging and omics analysis with expert interaction",
+    "data_and_reference_standard": "Clinician annotations and accept/reject feedback",
+    "level": "1",
+    "source_url": "https://arxiv.org/abs/2509.20279"
+  },
+  {
+    "key": "fan2026macro",
+    "study": "MACRO",
+    "modality_and_task": "Multiple medical imaging analysis tasks",
+    "data_and_reference_standard": "Public dataset labels",
+    "level": "2, implicit",
+    "source_url": "https://arxiv.org/abs/2603.05860"
+  },
+  {
+    "key": "lee2026revision3d",
+    "study": "ReVision3D",
+    "modality_and_task": "CT liver and kidney lesion localization",
+    "data_and_reference_standard": "Reference segmentation masks (LiTS, KiTS23)",
+    "level": "2, explicit",
+    "source_url": "https://arxiv.org/abs/2609.32984v2"
+  },
+  {
+    "key": "xu2026oaims",
+    "study": "OAIMS",
+    "modality_and_task": "Interactive segmentation under modality and pathology shift",
+    "data_and_reference_standard": "Reference masks; correction clicks simulated from labels",
+    "level": "1",
+    "source_url": "https://arxiv.org/abs/2503.06717v4"
+  },
+  {
+    "key": "tzanis2026reclaim",
+    "study": "ReclAIm",
+    "modality_and_task": "MRI, CT and radiograph classifier maintenance",
+    "data_and_reference_standard": "Dataset labels; monitoring cohort reused for reassessment",
+    "level": "1",
+    "source_url": "https://arxiv.org/pdf/2510.17004v2"
+  },
+  {
+    "key": "hu2026templar",
+    "study": "TEMPLAR",
+    "modality_and_task": "PET/CT and CT reporting templates",
+    "data_and_reference_standard": "Report corpora; expert and LLM-judged ratings",
+    "level": "1",
+    "source_url": "https://arxiv.org/abs/2610.05247v1"
+  },
+  {
+    "key": "zhuang2025doctor",
+    "study": "Learning to Be A Doctor",
+    "modality_and_task": "Dermatology image diagnosis with workflow search",
+    "data_and_reference_standard": "Skin Concepts and augmented Skin Conditions labels",
+    "level": "1",
+    "source_url": "https://arxiv.org/html/2504.11301v2"
+  },
+  {
+    "key": "sayeedi2026r4",
+    "study": "R4Agent",
+    "modality_and_task": "Chest radiograph detection and reporting",
+    "data_and_reference_standard": "Public chest X-ray datasets; memory written from self-critique",
+    "level": "1",
+    "source_url": "https://arxiv.org/html/2601.08192v2"
+  },
+  {
+    "key": "zhu2026ultrasoundagents",
+    "study": "Ultrasound-Agents",
+    "modality_and_task": "Breast ultrasound malignancy and BI-RADS assessment",
+    "data_and_reference_standard": "Public datasets; attribute, box and BI-RADS labels",
+    "level": "2, implicit",
+    "source_url": "https://arxiv.org/html/2603.10852v1"
+  },
+  {
+    "key": "chen2026theraagent",
+    "study": "TheraAgent",
+    "modality_and_task": "PSMA PET/CT-based radioligand therapy outcome prediction",
+    "data_and_reference_standard": "Single-centre cohort; documented PSA response and survival",
+    "level": "1",
+    "source_url": "https://arxiv.org/html/2603.13676v1"
+  },
+  {
+    "key": "chen2026skingptx",
+    "study": "SkinGPT-X",
+    "modality_and_task": "Dermatology image diagnosis",
+    "data_and_reference_standard": "Public clinical and dermoscopic datasets; expert labels",
+    "level": "1",
+    "source_url": "https://arxiv.org/html/2603.26122v1"
+  },
+  {
+    "key": "meng2026topoagent",
+    "study": "TopoAgent",
+    "modality_and_task": "Topological descriptors for 2D image classification across 11 modalities",
+    "data_and_reference_standard": "Public benchmark labels; reflection on feature statistics",
+    "level": "1",
+    "source_url": "https://arxiv.org/html/2606.29763v1"
+  },
+  {
+    "key": "qu2026sageagent",
+    "study": "SAGEAgent",
+    "modality_and_task": "Glioma survival prediction with staged radiology acquisition",
+    "data_and_reference_standard": "TCGA-LGG, TCGA-GBM and BraTS outcomes",
+    "level": "1",
+    "source_url": "https://arxiv.org/html/2607.09521v1"
+  },
+  {
+    "key": "wang2026mira",
+    "study": "MIRA",
+    "modality_and_task": "Medical image question answering",
+    "data_and_reference_standard": "Public VQA benchmark answers",
+    "level": "2, implicit",
+    "source_url": "https://arxiv.org/pdf/2608.10827v1"
+  },
+  {
+    "key": "liu2026bat",
+    "study": "BaT",
+    "modality_and_task": "Medical-imaging AI development and radiology viewer tasks",
+    "data_and_reference_standard": "Synthetic sandboxes scored by a rubric verifier",
+    "level": "2, explicit",
+    "source_url": "https://arxiv.org/html/2608.16211v1"
+  },
+  {
+    "key": "shao2026case",
+    "study": "CASE",
+    "modality_and_task": "Longitudinal multi-sequence MRI diagnosis questions",
+    "data_and_reference_standard": "UK Biobank MRI; ICD-10-derived multiple-choice labels",
+    "level": "2, implicit",
+    "source_url": "https://arxiv.org/html/2609.39566v3"
+  },
+  {
+    "key": "feng2026gatedopenclaw",
+    "study": "Gated OpenClaw",
+    "modality_and_task": "Fundus-image diagnosis with adapter and guidance updates",
+    "data_and_reference_standard": "Private fundus images; report-simulated feedback; test cases reused",
+    "level": "1",
+    "source_url": "https://ijocsit.org/pdf/2026/10.62051-ijcsit.v8n4.01.pdf"
+  },
+  {
+    "key": "li2026emai",
+    "study": "EMAI",
+    "modality_and_task": "Chest-radiology report summarization",
+    "data_and_reference_standard": "MIMIC-CXR and Open-I report texts; reference impressions and clinician ratings",
+    "level": "1",
+    "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S016926072500495X"
+  },
+  {
+    "key": "li2026decisionrules",
+    "study": "Evolved decision rules",
+    "modality_and_task": "Multi-image medical video question answering",
+    "data_and_reference_standard": "MedFrameQA answers; video-grouped evolution, selection and test partitions",
+    "level": "1",
+    "source_url": "https://arxiv.org/abs/2607.27564v1"
+  },
+  {
+    "key": "fan2026medenv",
+    "study": "MedEnv",
+    "modality_and_task": "Simulated diagnosis with optional chest radiograph review",
+    "data_and_reference_standard": "Virtual EHR environment; author-reported held-out cases and reward ablations",
+    "level": "2, implicit",
+    "source_url": "https://papers.miccai.org/miccai-2026/paper/5084_paper.pdf"
+  },
+  {
+    "key": "chen2027mdtace",
+    "study": "MDTace",
+    "modality_and_task": "Multidisciplinary medical text and image QA",
+    "data_and_reference_standard": "MedQA, PubMedQA, VQA-RAD and SLAKE; training-derived Playbook only",
+    "level": "1",
+    "source_url": "https://link.springer.com/chapter/10.1007/978-981-92-3403-5_6"
+  }
+]

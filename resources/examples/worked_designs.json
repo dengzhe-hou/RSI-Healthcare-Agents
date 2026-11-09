@@ -1,0 +1,186 @@
+[
+  {
+    "design_id": "reported_privmesa_memory",
+    "question": "persistent_memory",
+    "study_key": "wang2026privmesa",
+    "source_version": "v1",
+    "evidence_level_as_coded": "1",
+    "treatment": "Memory starts empty and retains distilled lessons between encounters.",
+    "control": "The same policy processes the same encounter sequence with memory kept empty.",
+    "held_fixed": "Local policy and remote specialists; distiller, retrieval and memory-gate design.",
+    "sequence_and_separation": "897 encounters from 200 held-out patients; patient visits remain chronological within a randomized sequence. Writeback follows each encounter without recorded answers.",
+    "matching_scope": "Paired encounter sequence and policy. This isolates the memory condition rather than a revised distiller or training procedure.",
+    "outcome_and_cost": "Preserve task-native accuracy/privacy measures and specialist-message counts. The case does not establish complete wall-time or monetary matching.",
+    "supported_interpretation": "Contribution of retained lesson memory under a fixed procedure.",
+    "boundary": "Retrospective replay with synthetic identifiers; not prospective care or revised-improver evidence.",
+    "source_sections": "Section 4.1; Appendix E.1 and Table 3",
+    "source_url": "https://arxiv.org/abs/2609.38458v1",
+    "locators": [
+      {
+        "url": "https://arxiv.org/html/2609.38458v1#S3.SS4",
+        "location": "Section 3.4: lesson distillation, post-episode memory update, fixed retriever/judge/distiller and memory updates during RL training"
+      },
+      {
+        "url": "https://arxiv.org/html/2609.38458v1#S3.SS3",
+        "location": "Section 3.3: episode reward (accuracy, discretion, anonymity), GRPO optimization, frozen specialists/attacker/distiller/judge/retriever"
+      },
+      {
+        "url": "https://arxiv.org/html/2609.38458v1#S4.SS1",
+        "location": "Section 4.1: patient-disjoint split, registry, tasks, evaluation attacker, paired test-time learning protocol, baselines and implementation"
+      },
+      {
+        "url": "https://arxiv.org/html/2609.38458v1#S3.T1",
+        "location": "Table 1: main accuracy, leak and k<=10 results for Gemma 4 12B and Granite 4.2 8B versus Delegation, PAPILLON and Remote only"
+      },
+      {
+        "url": "https://arxiv.org/html/2609.38458v1#A5.SS1",
+        "location": "Appendix E.1 (with Table 3): test-time memory growth, share answered from memory, messages per case, memory on versus off"
+      }
+    ],
+    "record_kind": "reported_summary",
+    "author_verification": "pending"
+  },
+  {
+    "design_id": "reported_ecgrsi_generator",
+    "question": "changed_generator_or_recipe",
+    "study_key": "wang2026ecgrsi",
+    "source_version": "v1",
+    "evidence_level_as_coded": "2-explicit",
+    "treatment": "Full synthesis method with operator and skill updates.",
+    "control": "Freeze operator updates or freeze skill updates, then train on the same accepted-question target.",
+    "held_fixed": "Learner-training protocol, accepted target of 10,000 questions and downstream evaluation; acceptance gates remain fixed.",
+    "sequence_and_separation": "Repair/generate and select training material before learner training; retain separate feedback, selection and external-test roles.",
+    "matching_scope": "Accepted volume and learner training are matched. Candidate-generation counts differ, so full search-cost matching is not established.",
+    "outcome_and_cost": "Table 10 reports candidate counts 16,193/36,723/22,398 and native S7 scores 43.22/39.29/40.15 for full/frozen-operator/frozen-skill conditions.",
+    "supported_interpretation": "The changed synthesis components affect data yield and downstream performance in this bounded comparison.",
+    "boundary": "A fixed procedure admits generator changes; this does not test a revised improver.",
+    "source_sections": "Section 5.5 and Table 10; Section 3.1",
+    "source_url": "https://arxiv.org/html/2610.17718v1",
+    "locators": [
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S3.SS1",
+        "location": "Section 3.1: separate learner, training pool and construction policy; data boundaries"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S3.SS2.SSS2",
+        "location": "Section 3.2.2: old/new operator and prompt repair comparisons"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#A1.SS2",
+        "location": "Appendix A.2: exact rule changes, proposer and independent regression checks"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#A4.SS5",
+        "location": "Prompt P5: repair generator component while acceptance criteria remain fixed"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.T10",
+        "location": "Table 10: 10,000 accepted samples; candidates 16,193 full, 36,723 frozen operators, 22,398 frozen skills"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.T15",
+        "location": "Main Table 15: R1 S7 full 43.22±1.40; frozen operators 39.29±1.30; frozen skills 40.15±1.30"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.SS6",
+        "location": "Section 5.6/Table 11: same-parent fixed-mixture control"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.SS7",
+        "location": "Section 5.7/Table 12: per-branch 10,000 additions and matched replay/training; not proof of total tree/chain compute equality"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S5.T7",
+        "location": "Table 7: 240 generated samples, two physicians; answer correctness 0.88, explanation support 0.76"
+      },
+      {
+        "url": "https://arxiv.org/html/2610.17718v1#S6",
+        "location": "Conclusion: unreleased implementation/data and diminishing external gains"
+      }
+    ],
+    "record_kind": "reported_summary",
+    "author_verification": "pending"
+  },
+  {
+    "design_id": "reported_revision3d_recipe",
+    "question": "changed_generator_or_recipe",
+    "study_key": "lee2026revision3d",
+    "source_version": "v2",
+    "evidence_level_as_coded": "2-explicit",
+    "treatment": "A changed training recipe selects learnable prompts and uses fresh views.",
+    "control": "Longer training without the selected recipe, under the reported equal-training-compute comparison.",
+    "held_fixed": "Common reader start, downstream reading protocol and mask-grounded verifier; the designer and acceptance rule stay fixed.",
+    "sequence_and_separation": "Development data guide revisions; the nominal final test follows frozen choices. Prior use of some nominal test patients is separately disclosed in the source.",
+    "matching_scope": "The longer-training control addresses training compute. The comparison does not establish equality of all outer-loop search cost.",
+    "outcome_and_cost": "Retain the source-native lesion recall, false positives and J definitions; report recipe-search and training costs separately.",
+    "supported_interpretation": "A changed training recipe can affect the trained reader under the stated comparison.",
+    "boundary": "Retrospective localization with a fixed designer/verifier. Source test-reuse limitations remain visible.",
+    "source_sections": "Section 5.4; Appendix B and Appendix G.2, Table A17",
+    "source_url": "https://arxiv.org/abs/2609.32984v2",
+    "locators": [
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#S3.SS0.SSS0.Px1.p2",
+        "location": "Section 3, Motivation: system components (view selection, perception, weights, inference), frozen designer, and fixed verifier, masks, objective and acceptance rule."
+      },
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#S3.SS0.SSS0.Px8.p2",
+        "location": "Section 3, Recursive improvement: seed-range and bootstrap acceptance rules, playbook carried across rounds, routing rule formulated retrospectively."
+      },
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#A5.T9",
+        "location": "Appendix E.1, Table A9: liver J and max recall after each accepted revision and who made each change."
+      },
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#S5.T2",
+        "location": "Section 5.3, Table 2: development (selection) and single-run test J for perception and inference revisions."
+      },
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#A7.T16",
+        "location": "Appendix G.1, Table A16: inference-level search repeated with four designers from three model families."
+      }
+    ],
+    "record_kind": "reported_summary",
+    "author_verification": "pending"
+  },
+  {
+    "design_id": "reported_revision3d_improver_boundary",
+    "question": "revised_improver",
+    "study_key": "lee2026revision3d",
+    "source_version": "v2",
+    "evidence_level_as_coded": "2-explicit; negative boundary for Level 3",
+    "treatment": "Observed recipe/perception/inference revisions proposed by a fixed designer.",
+    "control": "The reported recipe and component controls do not compare a revised improvement procedure with its original fixed version.",
+    "held_fixed": "Designer, attribution, verifier, objective and acceptance rule.",
+    "sequence_and_separation": "The source evaluates selected revised artifacts. It does not isolate the playbook or a revised procedure through independent subsequent-learning cycles.",
+    "matching_scope": "No matched changed-improver versus frozen-improver comparison is identified in this case.",
+    "outcome_and_cost": "No new revised-improver effect or cost value is inferred from the selected-artifact scores.",
+    "supported_interpretation": "Reported improvements concern revised artifacts under fixed update rules; the later-learning effect of revising those rules is not isolated.",
+    "boundary": "The reported comparison does not establish whether a revised improver improves subsequent learning.",
+    "source_sections": "Section 3; Section 5.4; Appendix G.2",
+    "source_url": "https://arxiv.org/abs/2609.32984v2",
+    "locators": [
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#S3.SS0.SSS0.Px1.p2",
+        "location": "Section 3, Motivation: system components (view selection, perception, weights, inference), frozen designer, and fixed verifier, masks, objective and acceptance rule."
+      },
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#S3.SS0.SSS0.Px8.p2",
+        "location": "Section 3, Recursive improvement: seed-range and bootstrap acceptance rules, playbook carried across rounds, routing rule formulated retrospectively."
+      },
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#A5.T9",
+        "location": "Appendix E.1, Table A9: liver J and max recall after each accepted revision and who made each change."
+      },
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#S5.T2",
+        "location": "Section 5.3, Table 2: development (selection) and single-run test J for perception and inference revisions."
+      },
+      {
+        "url": "https://arxiv.org/html/2609.32984v2#A7.T16",
+        "location": "Appendix G.1, Table A16: inference-level search repeated with four designers from three model families."
+      }
+    ],
+    "record_kind": "reported_summary",
+    "author_verification": "pending"
+  }
+]

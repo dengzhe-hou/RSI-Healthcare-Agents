@@ -1,0 +1,18 @@
+[
+  {
+    "record_kind": "",
+    "run_id": "",
+    "condition": "",
+    "metric_name": "",
+    "value": "",
+    "value_status": "",
+    "unit": "",
+    "aggregation_unit": "",
+    "test_split": "",
+    "used_for_selection": "",
+    "estimate_type": "",
+    "uncertainty_value": "",
+    "uncertainty_type": "",
+    "source_locator": ""
+  }
+]

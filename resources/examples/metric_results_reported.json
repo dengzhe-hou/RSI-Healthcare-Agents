@@ -1,0 +1,50 @@
+[
+  {
+    "record_kind": "reported_summary",
+    "run_id": "reported_ecgrsi_R1_full",
+    "condition": "full",
+    "metric_name": "S7",
+    "value": 43.22,
+    "value_status": "reported",
+    "unit": "source-native S7 score",
+    "aggregation_unit": "reported Table10 condition",
+    "test_split": "external S7 as defined by source",
+    "used_for_selection": "Selection uses a separate set as described in source; preserve its stated role",
+    "estimate_type": "Table10 point estimate",
+    "uncertainty_value": "",
+    "uncertainty_type": "Not extracted from this table; do not infer absent uncertainty in the full paper",
+    "source_locator": "https://arxiv.org/html/2610.17718v1#S5.T10 | Table10"
+  },
+  {
+    "record_kind": "reported_summary",
+    "run_id": "reported_ecgrsi_R1_frozen_operator",
+    "condition": "frozen_operator",
+    "metric_name": "S7",
+    "value": 39.29,
+    "value_status": "reported",
+    "unit": "source-native S7 score",
+    "aggregation_unit": "reported Table10 condition",
+    "test_split": "external S7 as defined by source",
+    "used_for_selection": "Selection uses a separate set as described in source; preserve its stated role",
+    "estimate_type": "Table10 point estimate",
+    "uncertainty_value": "",
+    "uncertainty_type": "Not extracted from this table; do not infer absent uncertainty in the full paper",
+    "source_locator": "https://arxiv.org/html/2610.17718v1#S5.T10 | Table10"
+  },
+  {
+    "record_kind": "reported_summary",
+    "run_id": "reported_ecgrsi_R1_frozen_skill",
+    "condition": "frozen_skill",
+    "metric_name": "S7",
+    "value": 40.15,
+    "value_status": "reported",
+    "unit": "source-native S7 score",
+    "aggregation_unit": "reported Table10 condition",
+    "test_split": "external S7 as defined by source",
+    "used_for_selection": "Selection uses a separate set as described in source; preserve its stated role",
+    "estimate_type": "Table10 point estimate",
+    "uncertainty_value": "",
+    "uncertainty_type": "Not extracted from this table; do not infer absent uncertainty in the full paper",
+    "source_locator": "https://arxiv.org/html/2610.17718v1#S5.T10 | Table10"
+  }
+]
