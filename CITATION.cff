@@ -15,9 +15,9 @@ authors:
     given-names: "Fangzhou"
   - family-names: "Yamada"
     given-names: "Kazunori D"
-version: "0.3.1"
-url: "https://github.com/dengzhe-hou/self-evolving-agent-engineering"
-repository-code: "https://github.com/dengzhe-hou/self-evolving-agent-engineering"
+version: "0.3.2"
+url: "https://github.com/dengzhe-hou/rsi-healthcare-agents"
+repository-code: "https://github.com/dengzhe-hou/rsi-healthcare-agents"
 preferred-citation:
   type: unpublished
   title: "Recursive Self-Improvement in Healthcare AI Agents"
@@ -35,5 +35,5 @@ preferred-citation:
     - family-names: "Yamada"
       given-names: "Kazunori D"
   year: 2026
-  url: "https://github.com/dengzhe-hou/self-evolving-agent-engineering"
+  url: "https://github.com/dengzhe-hou/rsi-healthcare-agents"
   notes: "Structured narrative review manuscript. Revised version; arXiv identifier not yet assigned."

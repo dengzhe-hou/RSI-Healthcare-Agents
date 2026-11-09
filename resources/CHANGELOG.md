@@ -1,5 +1,9 @@
 # Resource changelog
 
+## 0.3.2, repository address update on 9 November 2026
+
+The author selected `rsi-healthcare-agents` as the new GitHub repository name. Updated the current resource links, citation metadata, coding-guide link and S3 preface link. All study-level data, classifications, counts and scientific statements are unchanged. Previous tags remain fixed. The manuscript Data availability statement is shortened and points to the renamed repository and this resource version. ArXiv remains paused; the revised manuscript PDF is not published.
+
 ## 0.3.1, presentation update on 9 November 2026
 
 Moved the complete S3 mechanism table from the article to GitHub, with its full independently referenced PDF added beside the existing CSV/JSON. The article retains its synthesis and links, with no appended full tables. All 85 study records, classifications, source locators, screening decisions and numerical conclusions remain unchanged. This is a presentation and access update. The original 0.3.0 tag remains fixed; unchanged coding/evaluation guides retain component version 0.3.0. No manuscript PDF is published, arXiv remains paused and no additional license is selected.

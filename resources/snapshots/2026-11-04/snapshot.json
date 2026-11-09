@@ -1,7 +1,7 @@
 {
-  "version": "0.3.1",
+  "version": "0.3.2",
   "snapshot_cutoff": "2026-11-04",
-  "release_tag": "evidence-2026-11-04-v0.3.1",
+  "release_tag": "evidence-2026-11-04-v0.3.2",
   "title": "Recursive Self-Improvement in Healthcare AI Agents",
   "mapped_studies": 85,
   "bibliography_entries": 147,
@@ -84,5 +84,6 @@
       "evaluation and experiment-record templates"
     ]
   },
-  "presentation_update": "Full S3 PDF moved to GitHub; article retains synthesis and links; study data unchanged from 0.3.0"
+  "presentation_update": "Repository renamed with author approval; active resource URLs updated; study records unchanged",
+  "repository_url": "https://github.com/dengzhe-hou/rsi-healthcare-agents"
 }
