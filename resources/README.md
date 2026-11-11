@@ -1,6 +1,6 @@
 # RSI-HA evidence resources
 
-Companion resources for **Recursive Self-Improvement in Healthcare AI Agents** by Dengzhe Hou, Zihao Wu, Yuwen Zeng, Lingyu Jiang, Fangzhou Lin and Kazunori D Yamada. Fixed search cutoff **4 November 2026**, resource version **0.3.2**.
+Companion resources for **A Survey on Recursive Self-Improvement in Healthcare AI Agents** by Dengzhe Hou, Zihao Wu, Yuwen Zeng, Lingyu Jiang, Fangzhou Lin and Kazunori D Yamada. Fixed search cutoff **4 November 2026**, resource version **0.3.2**.
 
 Screening and extraction were LLM-assisted. The fixed sample-check plan was withdrawn without being performed. Read [review status](REVIEW_STATUS.md) before reuse.
 

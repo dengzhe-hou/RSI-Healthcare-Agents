@@ -20,7 +20,7 @@ url: "https://github.com/dengzhe-hou/rsi-healthcare-agents"
 repository-code: "https://github.com/dengzhe-hou/rsi-healthcare-agents"
 preferred-citation:
   type: unpublished
-  title: "Recursive Self-Improvement in Healthcare AI Agents"
+  title: "A Survey on Recursive Self-Improvement in Healthcare AI Agents"
   authors:
     - family-names: "Hou"
       given-names: "Dengzhe"
