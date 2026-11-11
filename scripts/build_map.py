@@ -93,7 +93,7 @@ def positions(studies, edges):
         for p,q in pairs:
             a,b=p['key'],q['key'];dx=nodes[b][0]-nodes[a][0];dy=nodes[b][1]-nodes[a][1]
             # Collision boxes include the right-aligned label, not just its node.
-            wa=min(25,len(p['short_name']))*6.2+24;wb=min(25,len(q['short_name']))*6.2+24
+            wa=min(25,len(p['short_name']))*7.2+24;wb=min(25,len(q['short_name']))*7.2+24
             ca=nodes[a][0]+wa/2;cb=nodes[b][0]+wb/2
             ox=(wa+wb)/2-abs(cb-ca);oy=29-abs(dy)
             if ox>0 and oy>0:

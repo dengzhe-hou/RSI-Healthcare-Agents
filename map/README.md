@@ -18,11 +18,17 @@ For maintainers with the author manuscript, `python scripts/build_map.py --manus
 
 ## Interaction
 
-- Search, mechanism, section, clinical-evaluation, level and year filters work in both views.
+- Search, mechanism toggles and cumulative year buttons filter the network and paper index together. Section, clinical-evaluation, level and exact-year controls are under More filters.
 - Select a paper to reveal its neighbors and read the overview, survey context or full evidence.
 - Drag, wheel or pinch to navigate. Fit restores the filtered network.
 - Each paper has a shareable hash link, copied BibTeX and downloadable JSON record.
-- The paper index opens by default on narrow screens. The network remains available.
+- The grouped paper index sits below the network at every screen width. Narrow tables scroll within their own frame.
 - Keyboard users can select study nodes with Enter or Space and close details with Escape.
 
 The six-panel illustrations and existing figures retain their [source notes](../assets/FIGURE_CREDITS.md). No new scientific classifications are introduced by this interface.
+
+## Visual reference
+
+The page structure and visual measurements follow https://continuous-lm.github.io/ and its public source at https://github.com/continuous-lm/continuous-lm.github.io. The layout and interaction code here are independently implemented. The reference repository does not declare a software license.
+
+The homepage uses the same narrow reading column, serif title, author masthead, contents beside three resource previews, opening timeline, abstract panel and chapter previews. The map uses a wider column, point-grid background, mechanism chips, cumulative year buttons, floating study card and grouped paper index. Our four mechanism colors and all study classifications retain their existing meaning. No paper-to-paper citation relation is inferred from a shared survey paragraph.

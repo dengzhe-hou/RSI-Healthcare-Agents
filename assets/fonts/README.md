@@ -1,5 +1,9 @@
-Newsreader, regular and italic. SIL Open Font License 1.1.
+# Website fonts
 
-Source https://fonts.google.com/specimen/Newsreader and https://github.com/google/fonts/tree/main/ofl/newsreader
+Newsreader, Inter and JetBrains Mono are variable fonts from the official Google Fonts repository. Each retains its SIL Open Font License 1.1.
 
-The exact font URLs served by Google Fonts are recorded in the site build log.
+- Newsreader is in `newsreader-regular.ttf` and `newsreader-italic.ttf`, with license in `OFL.txt`.
+- Inter is in `inter.ttf`, with license in `INTER-OFL.txt`.
+- JetBrains Mono is in `jetbrains.ttf`, with license in `JETBRAINS-OFL.txt`.
+
+Sources https://github.com/google/fonts/tree/main/ofl/newsreader, https://github.com/google/fonts/tree/main/ofl/inter and https://github.com/google/fonts/tree/main/ofl/jetbrainsmono.
