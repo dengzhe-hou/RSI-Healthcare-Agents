@@ -16,8 +16,8 @@ authors:
   - family-names: "Yamada"
     given-names: "Kazunori D"
 version: "0.3.2"
-url: "https://github.com/dengzhe-hou/rsi-healthcare-agents"
-repository-code: "https://github.com/dengzhe-hou/rsi-healthcare-agents"
+url: "https://github.com/dengzhe-hou/RSI-Healthcare-Agents"
+repository-code: "https://github.com/dengzhe-hou/RSI-Healthcare-Agents"
 preferred-citation:
   type: unpublished
   title: "A Survey on Recursive Self-Improvement in Healthcare AI Agents"
@@ -35,5 +35,5 @@ preferred-citation:
     - family-names: "Yamada"
       given-names: "Kazunori D"
   year: 2026
-  url: "https://github.com/dengzhe-hou/rsi-healthcare-agents"
+  url: "https://github.com/dengzhe-hou/RSI-Healthcare-Agents"
   notes: "Structured narrative review manuscript. Revised version; arXiv identifier not yet assigned."

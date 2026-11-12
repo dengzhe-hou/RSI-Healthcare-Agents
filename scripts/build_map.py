@@ -157,7 +157,7 @@ def main():
     out=dict(cutoff='2026-11-04',resource_version='0.3.2',groups=GROUPS,levels=LEVELS,settings=SETTINGS,studies=studies,edges=context['edges'],sections=context['sections'],passages=context['paragraphs'],examples=EXAMPLES)
     (ROOT/'map/data.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
     lines=['# Healthcare agent self-improvement paper collection','',
-       '[Homepage](https://dengzhe-hou.github.io/rsi-healthcare-agents/) · [Interactive network](https://dengzhe-hou.github.io/rsi-healthcare-agents/map/) · [Evidence and templates](resources/) · [85 BibTeX entries](resources/references_mapped.bib)','',
+       '[Homepage](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/) · [Interactive network](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/) · [Evidence and templates](resources/) · [85 BibTeX entries](resources/references_mapped.bib)','',
        'This reading collection accompanies *A Survey on Recursive Self-Improvement in Healthcare AI Agents*. All 85 records come from the fixed 4 November 2026 snapshot. The groups and evidence codes are unchanged.','',
        '## Contents','']
     for g in GROUPS:lines.append(f"- [{g['label']}](#{g['key']}) ({sum(p['mechanism_group']==g['key'] for p in studies)} studies)")
@@ -165,12 +165,12 @@ def main():
        '| Study | Retained change and fixed components | Evaluation | Source and record |','| --- | --- | --- | --- |']
     for key in EXAMPLES:
         p=next(x for x in studies if x['key']==key)
-        lines.append(f"| **{md(p['name'])}** | {md(p['summary']['changes_fixed'])} | {md(p['summary']['evaluation'])} | [Paper]({p['source_url']}) · [Evidence](https://dengzhe-hou.github.io/rsi-healthcare-agents/map/#{p['key']}) |")
+        lines.append(f"| **{md(p['name'])}** | {md(p['summary']['changes_fixed'])} | {md(p['summary']['evaluation'])} | [Paper]({p['source_url']}) · [Evidence](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/#{p['key']}) |")
     for g in GROUPS:
         lines+=['',f'<a id="{g["key"]}"></a>',f'## {g["label"]}','',
             '| Paper | Year / venue in bibliography | What changes | Evaluation |','| --- | --- | --- | --- |']
         for p in sorted((p for p in studies if p['mechanism_group']==g['key']),key=lambda p:(-p['year'],p['name'].lower())):
-            lines.append(f"| **[{md(p['name'])}]({p['source_url']})**<br>{md(p['title'])}<br>[Evidence record](https://dengzhe-hou.github.io/rsi-healthcare-agents/map/#{p['key']}) | {p['year']}<br>{md(p['venue'])} | {md(p['summary']['changes_fixed'])} | {md(p['summary']['evaluation'])} |")
+            lines.append(f"| **[{md(p['name'])}]({p['source_url']})**<br>{md(p['title'])}<br>[Evidence record](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/#{p['key']}) | {p['year']}<br>{md(p['venue'])} | {md(p['summary']['changes_fixed'])} | {md(p['summary']['evaluation'])} |")
     lines+=['','## Reading the records','', 'Each network record includes the update target, retained artifact, fixed components, feedback, controls, independent tests and original source locators. Network edges mean that two mapped studies are cited in the same paragraph of the current review. They do not denote a citation from one primary paper to another.','',
         'Publication and study-evaluation information is reported as recorded at the snapshot, not continuously re-verified. See [review status](resources/REVIEW_STATUS.md), [coding guide](resources/EVIDENCE_CODING_GUIDE.md) and [contribution instructions](CONTRIBUTING.md).']
     (ROOT/'PAPERS.md').write_text('\n'.join(lines)+'\n')

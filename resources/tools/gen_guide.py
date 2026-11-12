@@ -60,7 +60,7 @@ story += [p('No mapped healthcare study reaches Level 3 or reports prospective c
  p('Start from the blank extraction template and field codebook. The four examples and 85-study map retain original source locators. Levels, causal benefit, clinical setting and publication status are separate fields; no aggregate quality score is assigned.','small'),
  p('Conceptual sources: Liu et al. (2026), <link href="https://doi.org/10.20944/preprints202608.0051.v1" color="#174e7d">component versus improver</link>; Han et al. (2026), <link href="https://arxiv.org/abs/2610.38266v1" color="#174e7d">L0-L3 roles</link>; Pu et al. (2026), <link href="https://arxiv.org/abs/2610.35193v1" color="#174e7d">functional distinction</link>. Cite those sources for their concepts and the RSI-HA manuscript for this healthcare map and operationalization.','small'),
  p('Use the companion evaluation-design templates for controls, phase separation and experiment records.','small'),
- p('<link href="https://dengzhe-hou.github.io/rsi-healthcare-agents/" color="#174e7d">dengzhe-hou.github.io/rsi-healthcare-agents</link>','small')]
+ p('<link href="https://dengzhe-hou.github.io/RSI-Healthcare-Agents/" color="#174e7d">dengzhe-hou.github.io/RSI-Healthcare-Agents</link>','small')]
 
 def footer(canvas,doc):
     canvas.setFont('Arial',7.5)
