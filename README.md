@@ -21,7 +21,7 @@ The map contains **85 studies** from the fixed **4 November 2026** evidence snap
 
 Persistent memory retains selected experience for later encounters. Reusable skills change the action sequences an agent can draw on. Training generators change the material used for later learning. RSI concerns revisions to the procedures that generate future improvements. The survey connects these mechanisms with healthcare evidence while recording mechanism change, performance benefit and clinical validation separately.
 
-[![Selected studies by update target and public month](assets/figures/timeline.svg)](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/#section-1)
+[![28 selected studies by update target and public month](assets/figures/timeline.svg?v=20261112-28)](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/#section-1)
 
 ## Start here
 
