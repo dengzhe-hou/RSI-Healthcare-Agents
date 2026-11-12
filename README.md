@@ -211,3 +211,7 @@ Use [CITATION.bib](CITATION.bib) or [CITATION.cff](CITATION.cff). Cite the fixed
 The revised manuscript is under author revision. The [earlier Preprints.org version](https://www.preprints.org/manuscript/202605.1547) has different contents and an earlier title. The full revised manuscript PDF is not published in this repository.
 
 Screening and extraction were LLM-assisted. Author verification is incomplete, and the fixed sample-check plan was withdrawn without being performed. See [review status](resources/REVIEW_STATUS.md), [rights](resources/RIGHTS.md) and [versions](resources/VERSIONS.md). No additional open-content license has been selected. The bundled Newsreader, Inter and JetBrains Mono fonts retain their separate [SIL Open Font Licenses](assets/fonts/README.md).
+
+## Website acknowledgments
+
+The website layout and interactive presentation were inspired by [Continuous Language Models](https://continuous-lm.github.io/). This site uses an independent HTML, CSS and JavaScript implementation with its own interface palette and healthcare evidence data.
