@@ -207,19 +207,6 @@
     },
     {
       "id": "p2",
-      "section": "3.1.3",
-      "section_title": "Skill memory and experience synthesis",
-      "section_key": "section-3-1-3",
-      "keys": [
-        "fan2026macro"
-      ],
-      "excerpt": "MACRO shows how verified medical-imaging tool sequences can become reusable composite tools.",
-      "excerpts": {
-        "fan2026macro": "MACRO shows how verified medical-imaging tool sequences can become reusable composite tools."
-      }
-    },
-    {
-      "id": "p3",
       "section": "3.2.1",
       "section_title": "Tool integration via MCP",
       "section_key": "section-3-2-1",
@@ -232,7 +219,7 @@
       }
     },
     {
-      "id": "p4",
+      "id": "p3",
       "section": "3.2.2",
       "section_title": "Parallel multi-agent collaboration",
       "section_key": "section-3-2-2",
@@ -245,7 +232,7 @@
       }
     },
     {
-      "id": "p5",
+      "id": "p4",
       "section": "3.3",
       "section_title": "Feedback-driven updates and RL trajectories",
       "section_key": "section-3-3",
@@ -258,7 +245,7 @@
       }
     },
     {
-      "id": "p6",
+      "id": "p5",
       "section": "3.3",
       "section_title": "Feedback-driven updates and RL trajectories",
       "section_key": "section-3-3",
@@ -271,7 +258,7 @@
       }
     },
     {
-      "id": "p7",
+      "id": "p6",
       "section": "4.1",
       "section_title": "Classification and diagnosis",
       "section_key": "section-4-1",
@@ -284,7 +271,7 @@
       }
     },
     {
-      "id": "p8",
+      "id": "p7",
       "section": "4.1",
       "section_title": "Classification and diagnosis",
       "section_key": "section-4-1",
@@ -297,7 +284,7 @@
       }
     },
     {
-      "id": "p9",
+      "id": "p8",
       "section": "4.2",
       "section_title": "Generation",
       "section_key": "section-4-2",
@@ -310,7 +297,7 @@
       }
     },
     {
-      "id": "p10",
+      "id": "p9",
       "section": "4.3",
       "section_title": "Augmentation",
       "section_key": "section-4-3",
@@ -323,7 +310,7 @@
       }
     },
     {
-      "id": "p11",
+      "id": "p10",
       "section": "4.5",
       "section_title": "Inference",
       "section_key": "section-4-5",
@@ -338,7 +325,7 @@
       }
     },
     {
-      "id": "p12",
+      "id": "p11",
       "section": "4.5",
       "section_title": "Inference",
       "section_key": "section-4-5",
@@ -351,7 +338,7 @@
       }
     },
     {
-      "id": "p13",
+      "id": "p12",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -380,7 +367,7 @@
       }
     },
     {
-      "id": "p14",
+      "id": "p13",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -397,7 +384,7 @@
       }
     },
     {
-      "id": "p15",
+      "id": "p14",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -428,7 +415,7 @@
       }
     },
     {
-      "id": "p16",
+      "id": "p15",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -445,7 +432,7 @@
       }
     },
     {
-      "id": "p17",
+      "id": "p16",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -458,7 +445,7 @@
       }
     },
     {
-      "id": "p18",
+      "id": "p17",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -475,7 +462,7 @@
       }
     },
     {
-      "id": "p19",
+      "id": "p18",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -510,7 +497,7 @@
       }
     },
     {
-      "id": "p20",
+      "id": "p19",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -551,7 +538,7 @@
       }
     },
     {
-      "id": "p21",
+      "id": "p20",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -580,7 +567,7 @@
       }
     },
     {
-      "id": "p22",
+      "id": "p21",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -617,7 +604,7 @@
       }
     },
     {
-      "id": "p23",
+      "id": "p22",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -646,7 +633,7 @@
       }
     },
     {
-      "id": "p24",
+      "id": "p23",
       "section": "5.1",
       "section_title": "Technical and clinical challenges",
       "section_key": "section-5-1",
@@ -659,7 +646,7 @@
       }
     },
     {
-      "id": "p25",
+      "id": "p24",
       "section": "5.2",
       "section_title": "Research and translational directions",
       "section_key": "section-5-2",
@@ -672,7 +659,7 @@
       }
     },
     {
-      "id": "p26",
+      "id": "p25",
       "section": "5.2",
       "section_title": "Research and translational directions",
       "section_key": "section-5-2",

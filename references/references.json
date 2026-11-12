@@ -718,27 +718,6 @@
     },
     {
       "number": 32,
-      "key": "fan2026macro",
-      "title": "Evolving Medical Imaging Agents via Experience-driven Self-skill Discovery",
-      "authors": [
-        "Lin Fan",
-        "Pengyu Dai",
-        "Zhipeng Deng",
-        "Haolin Wang",
-        "Xun Gong",
-        "Yefeng Zheng",
-        "Yafei Ou"
-      ],
-      "year": "2026",
-      "venue": "",
-      "doi": "",
-      "url": "https://arxiv.org/abs/2603.05860",
-      "eprint": "2603.05860",
-      "in_evidence_map": true,
-      "bibtex": "@misc{fan2026macro,\n  author    = {Lin Fan and Pengyu Dai and Zhipeng Deng and Haolin Wang and Xun Gong and Yefeng Zheng and Yafei Ou},\n  title     = {Evolving Medical Imaging Agents via Experience-driven Self-skill Discovery},\n  eprint        = {2603.05860},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
-    },
-    {
-      "number": 33,
       "key": "lin2026ahe",
       "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
       "authors": [
@@ -763,7 +742,7 @@
       "bibtex": "@misc{lin2026ahe,\n  author        = {Jiahang Lin and Shichun Liu and Chengjun Pan and Lizhi Lin and Shihan Dou and Zhiheng Xi and Xuanjing Huang and Hang Yan and Zhenhua Han and Tao Gui and Yu-Gang Jiang},\n  title     = {Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses},\n  eprint        = {2604.25850},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
     },
     {
-      "number": 34,
+      "number": 33,
       "key": "ding2026agentHER",
       "title": "AgentHER: Hindsight Experience Replay for LLM Agent Trajectory Relabeling",
       "authors": [
@@ -778,7 +757,7 @@
       "bibtex": "@misc{ding2026agentHER,\n  author    = {Liang Ding},\n  title     = {{AgentHER}: Hindsight Experience Replay for {LLM} Agent Trajectory Relabeling},\n  eprint        = {2603.21357},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
     },
     {
-      "number": 35,
+      "number": 34,
       "key": "li2026skillsbench",
       "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
       "authors": [
@@ -792,6 +771,27 @@
       "eprint": "2602.12670",
       "in_evidence_map": false,
       "bibtex": "@misc{li2026skillsbench,\n  author    = {Xiangyi Li and others},\n  title     = {{SkillsBench}: Benchmarking How Well Agent Skills Work Across Diverse Tasks},\n  eprint        = {2602.12670},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
+    },
+    {
+      "number": 35,
+      "key": "fan2026macro",
+      "title": "Evolving Medical Imaging Agents via Experience-driven Self-skill Discovery",
+      "authors": [
+        "Lin Fan",
+        "Pengyu Dai",
+        "Zhipeng Deng",
+        "Haolin Wang",
+        "Xun Gong",
+        "Yefeng Zheng",
+        "Yafei Ou"
+      ],
+      "year": "2026",
+      "venue": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2603.05860",
+      "eprint": "2603.05860",
+      "in_evidence_map": true,
+      "bibtex": "@misc{fan2026macro,\n  author    = {Lin Fan and Pengyu Dai and Zhipeng Deng and Haolin Wang and Xun Gong and Yefeng Zheng and Yafei Ou},\n  title     = {Evolving Medical Imaging Agents via Experience-driven Self-skill Discovery},\n  eprint        = {2603.05860},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
     },
     {
       "number": 36,
