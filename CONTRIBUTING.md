@@ -1,8 +1,14 @@
-# Contributing corrections
+# Contributing papers, corrections and scope questions
 
-Please open an issue with the study name or stable bibliography key, the examined version, and a direct source locator such as a section, table or figure. State which extracted field needs correction and quote the supporting passage briefly.
+We maintain this collection as new studies appear and welcome paper suggestions, corrections and questions about scope. Please [open an issue](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new).
 
-For a proposed new study, provide its primary report, publication or preprint version, persistent artifact, update mechanism and evaluation setting. The review authors decide eligibility and evidence coding. A suggested addition is not automatically included.
+For a correction, provide the study name or stable bibliography key, the examined version, and a direct source locator such as a section, table or figure. State which extracted field needs correction and quote the supporting passage briefly.
+
+For a proposed new study, provide its title, primary-report URL, publication or preprint version, persistent artifact, update mechanism and evaluation setting. The review authors decide eligibility and evidence coding. A suggested addition is not automatically included.
+
+For a scope question, identify the study or mechanism and explain which eligibility criterion needs clarification.
+
+Papers first made available after 4 November 2026 are listed in the website and README recently-added sections after review. They do not enter the survey's 85-study snapshot automatically.
 
 The released `resources/snapshots/2026-11-04/` directory and the `evidence-2026-11-04-v0.3.2` tag are fixed. Corrections are documented before a new evidence release. Website presentation changes can be made without rewriting the fixed snapshot.
 

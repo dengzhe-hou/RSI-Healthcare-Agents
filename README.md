@@ -36,6 +36,16 @@ Six studies illustrated in the survey. The rows identify concrete update objects
 | **ECG-RSI** | Waveform operators, prompts, skills and learner change; acceptance criteria fixed. | Patient-separated tests; frozen-generator-component controls; physician sample review. | [Paper](https://arxiv.org/html/2610.17718v1) · [Evidence](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/#wang2026ecgrsi) |
 | **ReVision3D** | Perception adapters, training recipe and inference program change; LLM designer, verifier and objective fixed. | Test CT patients, partly reused from earlier comparisons; frontier, recipe-control and designer comparisons. | [Paper](https://arxiv.org/abs/2609.32984v2) · [Evidence](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/#lee2026revision3d) |
 
+## Recently added
+
+We maintain this paper collection as new healthcare-agent studies appear. Studies first made available after the survey cutoff of 4 November 2026 will be listed here after review, with the newest additions first.
+
+| Added | Study | Primary report | Update mechanism |
+|---|---|---|---|
+| - | No additions after the survey cutoff yet. | - | - |
+
+[Suggest a paper, correction or scope question](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new). The 85-study survey snapshot remains fixed at [version 0.3.2](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/tree/evidence-2026-11-04-v0.3.2/resources).
+
 ## Paper collection
 
 The four groups below are the existing evidence-map categories. They are not a quality ranking. Publication venues come from the recorded bibliography, and preprint status reflects the fixed snapshot.
@@ -187,6 +197,8 @@ python -m http.server 8000
 Open `http://localhost:8000/`. See [map documentation](map/README.md) for the layout, survey-link provenance and optional LaTeX context refresh.
 
 ## Contribute
+
+We welcome paper suggestions, corrections and questions about scope through [GitHub Issues](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new). New studies are reviewed before they enter the collection.
 
 Corrections and paper suggestions are welcome through [GitHub issues](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues). Please include the bibliography key, exact field, primary-source passage and proposed correction. Follow [CONTRIBUTING.md](CONTRIBUTING.md). Suggestions enter a later evidence release; the fixed snapshot is preserved.
 
