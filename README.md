@@ -2,13 +2,15 @@
 
 **Dengzhe Hou · Zihao Wu · Yuwen Zeng · Lingyu Jiang · Fangzhou Lin · Kazunori D Yamada**
 
-[Project homepage](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/) · [Explore the map](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/) · [All 85 papers](PAPERS.md) · [Evidence & templates](resources/) · [BibTeX](CITATION.bib)
+[Project homepage](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/) · [Explore the map](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/) · [85 mapped studies](PAPERS.md) · [All 146 references](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/references/) · [Evidence & templates](resources/) · [BibTeX](CITATION.bib)
 
 A paper collection and evidence companion for healthcare agent self-improvement. Follow a study from its update mechanism to its controls, independent tests, original sources and discussion in the survey.
 
 [![Tour of the connected paper map](assets/map-tour.gif)](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/)
 
 The map contains **85 studies** from the fixed **4 November 2026** evidence snapshot. Lines connect papers cited in the same review paragraph. Select a paper for its mechanism overview, survey excerpts and source-linked evidence record. Search and filters also work in the paper index on small screens.
+
+The [complete bibliography](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/references/) lists all **146 references** cited in the revised manuscript, in citation order. Search titles, authors, years and venues, filter the 85 entries with evidence records, and download the complete [BibTeX](references/references.bib). The network remains an 85-study evidence map.
 
 **Contents** · [Updates](#updates) · [What changes?](#what-changes) · [Start here](#start-here) · [Paper collection](#paper-collection) · [Data and templates](#data-and-templates) · [Rebuild](#rebuild-the-website) · [Contribute](#contribute) · [Citation](#citation)
 
@@ -191,10 +193,13 @@ The site is static HTML, CSS and JavaScript. The data builder uses Python’s st
 
 ```bash
 python scripts/build_map.py
+python scripts/build_references.py
 python -m http.server 8000
 ```
 
 Open `http://localhost:8000/`. See [map documentation](map/README.md) for the layout, survey-link provenance and optional LaTeX context refresh.
+
+The bibliography rebuild uses `references/references.bib` in manuscript order. Authors can refresh it from the manuscript sources with `python scripts/build_references.py --bib /path/to/references.bib --bbl /path/to/main.bbl`. This exports only the entries cited in the BBL and preserves their numbering. Bibliography metadata follow the manuscript source and are not a new citation audit.
 
 ## Contribute
 
