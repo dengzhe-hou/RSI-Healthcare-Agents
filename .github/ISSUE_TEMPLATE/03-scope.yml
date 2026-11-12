@@ -1,0 +1,25 @@
+name: Ask about scope
+description: Ask whether a study or mechanism fits this collection.
+title: '[Scope] '
+body:
+- type: input
+  id: topic
+  attributes:
+    label: Study, method or topic
+    description: Name the study or mechanism you want to discuss.
+  validations:
+    required: true
+- type: textarea
+  id: question
+  attributes:
+    label: Your question
+    description: Explain the question about eligibility, update mechanisms or evidence coding.
+  validations:
+    required: true
+- type: input
+  id: paper-url
+  attributes:
+    label: Paper link
+    description: Optional. Link to the relevant report if there is one.
+  validations:
+    required: false

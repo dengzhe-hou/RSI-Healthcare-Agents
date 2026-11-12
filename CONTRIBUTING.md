@@ -1,10 +1,10 @@
 # Contributing papers, corrections and scope questions
 
-We maintain this collection as new studies appear and welcome paper suggestions, corrections and questions about scope. Please [open an issue](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new).
+We maintain this collection as new studies appear. Use the [paper suggestion form](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new?template=01-paper.yml), [correction form](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new?template=02-correction.yml) or [scope question form](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new?template=03-scope.yml).
 
 For a correction, provide the study name or stable bibliography key, the examined version, and a direct source locator such as a section, table or figure. State which extracted field needs correction and quote the supporting passage briefly.
 
-For a proposed new study, provide its title, primary-report URL, publication or preprint version, persistent artifact, update mechanism and evaluation setting. The review authors decide eligibility and evidence coding. A suggested addition is not automatically included.
+For a proposed new study, enter its title, primary-report URL and a brief description of the healthcare task and retained update. Code or project links, publication status and specific source locations can be added when available. The review authors decide eligibility and evidence coding. A suggested addition is not automatically included.
 
 For a scope question, identify the study or mechanism and explain which eligibility criterion needs clarification.
 

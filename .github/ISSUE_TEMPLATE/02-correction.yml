@@ -1,0 +1,25 @@
+name: Report a correction
+description: Correct a study record, citation, figure or website detail.
+title: '[Correction] '
+body:
+- type: input
+  id: affected-item
+  attributes:
+    label: Study or resource
+    description: Give the study name, record key or affected page link.
+  validations:
+    required: true
+- type: textarea
+  id: correction
+  attributes:
+    label: What should change?
+    description: Describe the current content and the proposed correction.
+  validations:
+    required: true
+- type: textarea
+  id: supporting-source
+  attributes:
+    label: Supporting source
+    description: If applicable, provide a paper link, version and section, figure or table.
+  validations:
+    required: false

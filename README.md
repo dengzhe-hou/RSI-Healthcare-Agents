@@ -44,7 +44,7 @@ We maintain this paper collection as new healthcare-agent studies appear. Studie
 |---|---|---|---|
 | - | No additions after the survey cutoff yet. | - | - |
 
-[Suggest a paper, correction or scope question](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new). The 85-study survey snapshot remains fixed at [version 0.3.2](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/tree/evidence-2026-11-04-v0.3.2/resources).
+[Suggest a paper, correction or scope question](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new/choose). The 85-study survey snapshot remains fixed at [version 0.3.2](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/tree/evidence-2026-11-04-v0.3.2/resources).
 
 ## Paper collection
 
@@ -198,9 +198,9 @@ Open `http://localhost:8000/`. See [map documentation](map/README.md) for the la
 
 ## Contribute
 
-We welcome paper suggestions, corrections and questions about scope through [GitHub Issues](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new). New studies are reviewed before they enter the collection.
+Use the [paper suggestion form](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new?template=01-paper.yml), [correction form](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new?template=02-correction.yml) or [scope question form](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues/new?template=03-scope.yml). Paper suggestions ask for the report link and a short description of what the agent learns or updates. Code links are optional.
 
-Corrections and paper suggestions are welcome through [GitHub issues](https://github.com/dengzhe-hou/RSI-Healthcare-Agents/issues). Please include the bibliography key, exact field, primary-source passage and proposed correction. Follow [CONTRIBUTING.md](CONTRIBUTING.md). Suggestions enter a later evidence release; the fixed snapshot is preserved.
+The authors review eligibility and evidence coding before adding studies. See [CONTRIBUTING.md](CONTRIBUTING.md) for details. Presentation changes and pull requests are also welcome.
 
 ## Citation
 

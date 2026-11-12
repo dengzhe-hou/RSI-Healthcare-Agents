@@ -1,0 +1,55 @@
+name: Suggest a paper
+description: Recommend a healthcare-agent study for the collection.
+title: '[Paper] '
+body:
+- type: input
+  id: paper-title
+  attributes:
+    label: Paper title
+    description: Use the title of the primary report.
+  validations:
+    required: true
+- type: input
+  id: paper-url
+  attributes:
+    label: Paper link
+    description: Link to the primary paper, DOI or arXiv page.
+    placeholder: https://arxiv.org/abs/...
+  validations:
+    required: true
+- type: input
+  id: code-url
+  attributes:
+    label: Code or project link
+    description: Optional. Leave this empty if no code or project page is available.
+  validations:
+    required: false
+- type: dropdown
+  id: publication-status
+  attributes:
+    label: Publication status
+    description: Choose the current status if known.
+    options:
+    - Preprint
+    - Accepted
+    - Published
+    - Not sure
+    default: 3
+  validations:
+    required: false
+- type: textarea
+  id: research-summary
+  attributes:
+    label: What does the agent learn or update?
+    description: Briefly describe the healthcare task, what changes and how the change is used in later
+      cases.
+  validations:
+    required: true
+- type: textarea
+  id: source-location
+  attributes:
+    label: Relevant section or evidence
+    description: Optional. Point to the methods section, figure or table describing the update and its
+      evaluation.
+  validations:
+    required: false
