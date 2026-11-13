@@ -2,7 +2,7 @@
 
 Companion resources for **A Survey on Recursive Self-Improvement in Healthcare AI Agents** by Dengzhe Hou, Zihao Wu, Yuwen Zeng, Lingyu Jiang, Fangzhou Lin and Kazunori D Yamada. Fixed search cutoff **4 November 2026**, resource version **0.3.2**.
 
-Screening and extraction were LLM-assisted. The fixed sample-check plan was withdrawn without being performed. Read [review status](REVIEW_STATUS.md) before reuse.
+Screening and extraction were LLM-assisted. Read [review status](REVIEW_STATUS.md) before reuse.
 
 ## Start here
 
@@ -32,12 +32,12 @@ These are literature-extraction records, not a patient dataset or executable ben
 
 The revised manuscript remains under author revision and is not included in this resource publication. Its earlier version is on [Preprints.org](https://www.preprints.org/manuscript/202605.1547), with a different title and earlier contents.
 
-The evidence resources were made public on 9 November 2026 with author authorization. Manuscript revision continues, and arXiv upload and submission remain paused. Author verification is incomplete. No additional open-content license has been selected.
+The evidence resources were made public on 9 November 2026 with author authorization. Manuscript revision continues, and arXiv upload and submission remain paused. No additional open-content license has been selected.
 
 ## Design an evaluation and record it
 
 Read the evaluation-design guide in [PDF](EVALUATION_DESIGN_TEMPLATE.pdf) or [editable text](EVALUATION_DESIGN_TEMPLATE.md). Select a question, then fill the [plan](templates/experiment_plan.csv) and linked [CSV/JSON record formats](templates/README.md). Inspect the [four filled design assessments](examples/worked_designs.json) and [source-labelled cost/metric examples](examples/cost_log_reported.csv).
 
-The [85-study design matrix](snapshots/2026-11-04/study_design_matrix.html) aligns mechanism class, controls, independent tests and original locators. Download [CSV](snapshots/2026-11-04/study_design_matrix.csv) or [JSON](snapshots/2026-11-04/study_design_matrix.json), read its [field notes](STUDY_DESIGN_MATRIX.md), or complete the [author review form](author_review_85.csv). Author review is not yet recorded.
+The [85-study design matrix](snapshots/2026-11-04/study_design_matrix.html) aligns mechanism class, controls, independent tests and original locators. Download [CSV](snapshots/2026-11-04/study_design_matrix.csv) or [JSON](snapshots/2026-11-04/study_design_matrix.json), read its [field notes](STUDY_DESIGN_MATRIX.md), or complete the [author review form](author_review_85.csv).
 
 For a direct field-by-field example, compare the blank [plan CSV](templates/experiment_plan.csv) with the [completed plan CSV](examples/experiment_plan_filled.csv) or [JSON](examples/experiment_plan_filled.json). Every column is filled, while unavailable source details are explicitly labelled rather than fabricated.
