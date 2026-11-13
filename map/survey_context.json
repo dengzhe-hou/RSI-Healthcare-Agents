@@ -626,7 +626,7 @@
       "keys": [
         "coevolving2025"
       ],
-      "excerpt": "Experience transfer across modalities and institutions. Multimodal work can connect images, DICOM metadata, reports and longitudinal comparisons to test which experience transfers between cases. Federated training would require local trajectory collection, controlled sharing and independent cross-institution…",
+      "excerpt": "Experience transfer across modalities and institutions. Multimodal work can connect images, DICOM metadata, reports and longitudinal comparisons to test which experience transfers between cases. Federated training would require local trajectory collection, controlled sharing and independent cross-institution testing.",
       "excerpts": {
         "coevolving2025": "Multimodal work can connect images, DICOM metadata, reports and longitudinal comparisons to test which experience transfers between cases."
       }
