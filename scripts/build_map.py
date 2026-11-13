@@ -24,6 +24,7 @@ def plain(s):
     s = re.sub(r'(?m)(?<!\\)%.*$', '', s)
     for command,symbol in [('\\pm',' ± '),('\\leq',' ≤ '),('\\geq',' ≥ '),('\\times',' × '),('\\,',' ')]:
         s=s.replace(command,symbol)
+    s = re.sub(r'\\[Cc]ref\{fig:mechanism_examples\}([a-f])', r'Figure 4\1', s)
     s = re.sub(r'\\(?:cite\w*|[Cc]ref|ref|label|nocite)(?:\[[^\]]*\])?\{[^}]*\}', '', s)
     s = re.sub(r'\\(?:textbf|textit|emph|textrm|mathrm|text)\{([^{}]*)\}', r'\1', s)
     s = s.replace('\\%', '%').replace('\\&','&').replace('~',' ').replace('---',' ').replace('--','–')

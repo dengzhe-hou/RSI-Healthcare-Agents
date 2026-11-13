@@ -181,12 +181,6 @@
       "title": "Limitations of the review",
       "depth": 1,
       "key": "section-6-1"
-    },
-    {
-      "number": "6.2",
-      "title": "Recommendations for future research",
-      "depth": 1,
-      "key": "section-6-2"
     }
   ],
   "paragraphs": [
@@ -199,7 +193,7 @@
         "medhospital2024",
         "clinicalagents2026"
       ],
-      "excerpt": "Reflexion and ExpeL turn feedback into reusable information. Agent Hospital accumulates simulated clinical experience, ClinicalAgents retrieves diagnostic templates, and SkillRL combines policy learning with an evolving skill library. CoEvolve also changes the training distribution alongside the agent policy. These…",
+      "excerpt": "Reflexion and ExpeL turn feedback into reusable information. Agent Hospital accumulates simulated clinical experience, ClinicalAgents retrieves diagnostic templates, and SkillRL combines policy learning with an evolving skill library. CoEvolve also changes the training distribution alongside the agent policy.…",
       "excerpts": {
         "medhospital2024": "Agent Hospital accumulates simulated clinical experience, ClinicalAgents retrieves diagnostic templates, and SkillRL combines policy learning with an evolving skill library.",
         "clinicalagents2026": "Agent Hospital accumulates simulated clinical experience, ClinicalAgents retrieves diagnostic templates, and SkillRL combines policy learning with an evolving skill library."
@@ -207,41 +201,41 @@
     },
     {
       "id": "p2",
+      "section": "3.1.2",
+      "section_title": "Long-term persistent memory design",
+      "section_key": "section-3-1-2",
+      "keys": [
+        "feng2026medexpmem"
+      ],
+      "excerpt": "MedExpMem retains structured differential-diagnosis notes extracted from a model's errors, with a separate library for each model and unchanged diagnostic-model parameters (Figure 4a). Its anatomical index and relevance filtering determine which notes reach a new case. This design makes memory content and retrieval…",
+      "excerpts": {
+        "feng2026medexpmem": "MedExpMem retains structured differential-diagnosis notes extracted from a model's errors, with a separate library for each model and unchanged diagnostic-model parameters (Figure 4a)."
+      }
+    },
+    {
+      "id": "p3",
       "section": "3.2.1",
       "section_title": "Tool integration via MCP",
       "section_key": "section-3-2-1",
       "keys": [
         "fan2026macro"
       ],
-      "excerpt": "Clinical toolsets may combine FHIR queries, PubMed or guideline retrieval, DICOM viewers, segmentation and code execution. Persistent skills can retain useful invocation sequences, as illustrated by MACRO's composite imaging tools. MACRO accumulates reusable tools and image-feature memory during training episodes.",
+      "excerpt": "MCP standardizes access to available tools. FHIR queries, guideline retrieval, DICOM viewers, segmentation and code execution can supply actions within a clinical workflow. Experience changes this workflow when successful combinations become reusable actions. MACRO extracts recurring fragments from verified imaging…",
       "excerpts": {
-        "fan2026macro": "Persistent skills can retain useful invocation sequences, as illustrated by MACRO's composite imaging tools."
+        "fan2026macro": "MACRO extracts recurring fragments from verified imaging trajectories into composite tools and accumulates image-feature memory during training episodes (Figure 4b)."
       }
     },
     {
-      "id": "p3",
+      "id": "p4",
       "section": "3.2.2",
       "section_title": "Parallel multi-agent collaboration",
       "section_key": "section-3-2-2",
       "keys": [
         "medhospital2024"
       ],
-      "excerpt": "Separate subagent contexts allow parallel differential diagnosis, imaging/laboratory review and medication checking. Returned summaries inform a shared decision while intermediate histories remain separate. Hermes uses Python RPC for consolidation. AutoGen provides an alternative coordination mechanism. The analogy…",
+      "excerpt": "Separate subagent contexts can support differential diagnosis, imaging/laboratory review and medication checking, with summaries informing a shared decision. AutoGen provides a coordination framework, while Agent Hospital illustrates specialty consultation. The comparison concerns information sharing, communication…",
       "excerpts": {
-        "medhospital2024": "The analogy with specialty consultation, also illustrated by Agent Hospital, does not establish clinical effectiveness."
-      }
-    },
-    {
-      "id": "p4",
-      "section": "3.3",
-      "section_title": "Feedback-driven updates and RL trajectories",
-      "section_key": "section-3-3",
-      "keys": [
-        "dang2026medzero"
-      ],
-      "excerpt": "Verifier design. Medical verifiers need task-matched references, including guideline criteria and physician labels. MedZERO uses prescribed reward and curation rules to select training data. Rewards should distinguish correctness from confident presentation and permit appropriate uncertainty. Agreement among…",
-      "excerpts": {
-        "dang2026medzero": "MedZERO uses prescribed reward and curation rules to select training data."
+        "medhospital2024": "AutoGen provides a coordination framework, while Agent Hospital illustrates specialty consultation."
       }
     },
     {
@@ -250,67 +244,110 @@
       "section_title": "Feedback-driven updates and RL trajectories",
       "section_key": "section-3-3",
       "keys": [
-        "medhospital2024"
+        "qiu2025diaggym",
+        "coevolving2025"
       ],
-      "excerpt": "Privacy-preserving generation. Real interaction trajectories require appropriate data-use and de-identification procedures. Agent Hospital illustrates simulated encounters. Simulation supplies an alternative to direct patient-record access, while validity still depends on correspondence with the intended clinical task.",
+      "excerpt": "Parameter updates retain experience in the model producing actions. DiagAgent learns an examination-selection and diagnostic policy from trajectories in a simulated clinical environment (Figure 4d). TissueLab instead uses expert inspection and retained annotations to update lightweight classifiers within…",
       "excerpts": {
-        "medhospital2024": "Agent Hospital illustrates simulated encounters."
+        "qiu2025diaggym": "DiagAgent learns an examination-selection and diagnostic policy from trajectories in a simulated clinical environment (Figure 4d).",
+        "coevolving2025": "TissueLab instead uses expert inspection and retained annotations to update lightweight classifiers within image-analysis workflows (Figure 4c)."
       }
     },
     {
       "id": "p6",
+      "section": "3.3",
+      "section_title": "Feedback-driven updates and RL trajectories",
+      "section_key": "section-3-3",
+      "keys": [
+        "dang2026medzero"
+      ],
+      "excerpt": "Verifier design. Medical verifiers can assess outputs against guideline criteria and physician labels. MedZERO uses prescribed reward and curation rules to select training data. Rewards need to distinguish correctness from confident presentation and allow appropriate uncertainty. Agreement among generated…",
+      "excerpts": {
+        "dang2026medzero": "MedZERO uses prescribed reward and curation rules to select training data."
+      }
+    },
+    {
+      "id": "p7",
+      "section": "3.3",
+      "section_title": "Feedback-driven updates and RL trajectories",
+      "section_key": "section-3-3",
+      "keys": [
+        "wang2026ecgrsi",
+        "lee2026revision3d"
+      ],
+      "excerpt": "ECG-RSI revises synthesis operators, prompts and skills that produce ECG training examples (Figure 4e). ReVision3D revises reader configurations, training recipes and inference programs through retrospective CT replay (Figure 4f). These examples distinguish changing the learner's inputs or training recipe from…",
+      "excerpts": {
+        "wang2026ecgrsi": "ECG-RSI revises synthesis operators, prompts and skills that produce ECG training examples (Figure 4e).",
+        "lee2026revision3d": "ReVision3D revises reader configurations, training recipes and inference programs through retrospective CT replay (Figure 4f)."
+      }
+    },
+    {
+      "id": "p8",
+      "section": "3.3",
+      "section_title": "Feedback-driven updates and RL trajectories",
+      "section_key": "section-3-3",
+      "keys": [
+        "medhospital2024"
+      ],
+      "excerpt": "Privacy-preserving generation. Real interaction trajectories require appropriate data-use and de-identification procedures. Agent Hospital instead generates simulated encounters. Clinical use of synthesized cases requires evidence that their content and feedback match the intended task before they enter training.",
+      "excerpts": {
+        "medhospital2024": "Agent Hospital instead generates simulated encounters."
+      }
+    },
+    {
+      "id": "p9",
       "section": "4.1",
       "section_title": "Classification and diagnosis",
       "section_key": "section-4-1",
       "keys": [
         "medhospital2024"
       ],
-      "excerpt": "Agent Hospital retains cases and experience text while its base LLMs stay frozen. After 20,000 simulated patients per department, mean internal diagnosis accuracy across 21 departments rises from 77.0% to 95.3%. GPT-4o MedQA accuracy increases from 88.22% to 92.22%, only 0.70 points above the strongest reported…",
+      "excerpt": "For diagnosis, the central comparison concerns whether experience from earlier patients helps a later, distinct case. Agent Hospital retains cases and experience text while its base LLMs stay frozen. After 20,000 simulated patients per department, mean internal diagnosis accuracy across 21 departments rises from…",
       "excerpts": {
         "medhospital2024": "Agent Hospital retains cases and experience text while its base LLMs stay frozen."
       }
     },
     {
-      "id": "p7",
+      "id": "p10",
       "section": "4.1",
       "section_title": "Classification and diagnosis",
       "section_key": "section-4-1",
       "keys": [
         "clinicalagents2026"
       ],
-      "excerpt": "MDAgents adjusts collaboration depth to case complexity and outperforms fixed groups on MedQA. ClinicalAgents combines mutable patient Working Memory, static diagnostic Experience Memory and Monte Carlo Tree Search (MCTS). These examples separate coordination and current-case search from newly learned cross-case…",
+      "excerpt": "MDAgents adapts collaboration depth to case complexity and outperforms fixed groups on MedQA. ClinicalAgents combines mutable patient Working Memory, static diagnostic Experience Memory and Monte Carlo Tree Search (MCTS). Together, they illustrate why collaboration and within-case search are useful comparators when…",
       "excerpts": {
         "clinicalagents2026": "ClinicalAgents combines mutable patient Working Memory, static diagnostic Experience Memory and Monte Carlo Tree Search (MCTS)."
       }
     },
     {
-      "id": "p8",
+      "id": "p11",
       "section": "4.2",
       "section_title": "Generation",
       "section_key": "section-4-2",
       "keys": [
         "coevolving2025"
       ],
-      "excerpt": "Lyu et al. assess prompted translation of radiology reports into patient-readable language. Radiologist Copilot coordinates observation, template selection, drafting and quality control within a report. Its iterative refinement does not itself establish learning across future reports. TissueLab retains outputs and…",
+      "excerpt": "In report generation, the learning opportunity lies in separating factual corrections from stylistic preferences and retaining information useful to later reports. Prompted patient-language translation and Radiologist Copilot's within-report observation, template selection, drafting and quality control provide…",
       "excerpts": {
-        "coevolving2025": "TissueLab retains outputs and learns from expert inspection of image-analysis workflows, but its gains over static configurations come from one benchmark study without prospective deployment validation."
+        "coevolving2025": "TissueLab adds a persistent feedback path, retaining outputs and learning from expert inspection of image-analysis workflows."
       }
     },
     {
-      "id": "p9",
+      "id": "p12",
       "section": "4.3",
       "section_title": "Augmentation",
       "section_key": "section-4-3",
       "keys": [
         "medhospital2024"
       ],
-      "excerpt": "Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department. Volume alone does not establish realism or downstream utility, including for rare diseases.",
+      "excerpt": "Generated encounters can supply both a source of agent experience and candidate training material. Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department. The relevant comparison asks whether this material improves performance on independent cases,…",
       "excerpts": {
         "medhospital2024": "Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department."
       }
     },
     {
-      "id": "p10",
+      "id": "p13",
       "section": "4.5",
       "section_title": "Inference",
       "section_key": "section-4-5",
@@ -318,27 +355,27 @@
         "qiu2025diaggym",
         "feng2025doctoragentrl"
       ],
-      "excerpt": "The AI Clinician learns sepsis-treatment policies from historical ICU data, using a MIMIC-III development and validation cohort of approximately 17,000 admissions. It is a non-LLM RL comparator, with prospective deployment safety unresolved. DiagAgent learns examination and diagnosis policies in an EHR-derived…",
+      "excerpt": "Sequential clinical inference can retain experience in a policy for choosing questions, examinations or treatment actions. The AI Clinician learns sepsis-treatment policies from historical ICU data, using a MIMIC-III development and validation cohort of approximately 17,000 admissions. It provides a non-LLM RL…",
       "excerpts": {
         "qiu2025diaggym": "DiagAgent learns examination and diagnosis policies in an EHR-derived interactive world model.",
         "feng2025doctoragentrl": "DoctorAgent-RL instead uses multi-agent RL on MTMedDialog to refine progressive symptom elicitation."
       }
     },
     {
-      "id": "p11",
+      "id": "p14",
       "section": "4.5",
       "section_title": "Inference",
       "section_key": "section-4-5",
       "keys": [
         "clinicalagents2026"
       ],
-      "excerpt": "ClinicalAgents illustrates memory-supported search, while Reinventing Clinical Dialogue surveys four communication archetypes across planning, memory, action, collaboration and evolution. Architectural organization and historical policy learning contextualize persistent clinical agents without establishing a…",
+      "excerpt": "Routing and workflow organization determine which learned capability reaches a case. MedAide uses intent-aware routing across four medical benchmarks. Medical Data Inference proposes a seven-agent pipeline covering ingestion through inference on geriatric, palliative-care and colonoscopy data, including…",
       "excerpts": {
-        "clinicalagents2026": "ClinicalAgents illustrates memory-supported search, while Reinventing Clinical Dialogue surveys four communication archetypes across planning, memory, action, collaboration and evolution."
+        "clinicalagents2026": "ClinicalAgents supplies memory-supported search, while Reinventing Clinical Dialogue organizes four communication archetypes across planning, memory, action, collaboration and evolution."
       }
     },
     {
-      "id": "p12",
+      "id": "p15",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -347,44 +384,70 @@
         "almansoori2025medagentsim",
         "shen2026evomedagent",
         "shi2026emr",
-        "li2026healthclaw",
-        "han2026gsem",
         "wang2026privmesa",
         "schmidgall2026agentclinic",
         "feng2026medexpmem"
       ],
-      "excerpt": "Memory gains depend on learning/test separation. Evidence spans simulated consultation, retrospective streams and offline libraries. HealthClaw freezes writeback in synthetic-year probes, not clinical follow-up. GSEM lacks a clear independent holdout. In patient-disjoint replay with synthetic identifiers, PrivMeSA…",
+      "excerpt": "Memory benefits depend on what is retained and how it is tested. Memory studies span simulated consultations, retrospective streams and offline libraries. PrivMeSA's patient-disjoint replay with synthetic identifiers reduces specialist messages per case from 7.02 to 5.98, with quarter-wise accuracy within 0.008 of…",
       "excerpts": {
-        "lan2024amc": "Evidence spans simulated consultation, retrospective streams and offline libraries.",
-        "almansoori2025medagentsim": "Evidence spans simulated consultation, retrospective streams and offline libraries.",
-        "shen2026evomedagent": "Evidence spans simulated consultation, retrospective streams and offline libraries.",
-        "shi2026emr": "Evidence spans simulated consultation, retrospective streams and offline libraries.",
-        "li2026healthclaw": "GSEM lacks a clear independent holdout.",
-        "han2026gsem": "GSEM lacks a clear independent holdout.",
-        "wang2026privmesa": "In patient-disjoint replay with synthetic identifiers, PrivMeSA reduces specialist messages per case from 7.02 to 5.98, with quarter-wise accuracy within 0.008 of memory-off.",
+        "lan2024amc": "Memory studies span simulated consultations, retrospective streams and offline libraries.",
+        "almansoori2025medagentsim": "Memory studies span simulated consultations, retrospective streams and offline libraries.",
+        "shen2026evomedagent": "Memory studies span simulated consultations, retrospective streams and offline libraries.",
+        "shi2026emr": "Memory studies span simulated consultations, retrospective streams and offline libraries.",
+        "wang2026privmesa": "PrivMeSA's patient-disjoint replay with synthetic identifiers reduces specialist messages per case from 7.02 to 5.98, with quarter-wise accuracy within 0.008 of memory-off.",
         "schmidgall2026agentclinic": "AgentClinic's notebook helps Llama-3-70B but harms GPT-3.5 and GPT-4o-mini on the same evolving case stream.",
-        "feng2026medexpmem": "MedExpMem reports overall accuracy gains without variance, but memory changes correct to incorrect diagnoses in 1.3%–5.8% of 227 temporally held-out Eurorad teaching cases across seven models."
+        "feng2026medexpmem": "MedExpMem reports overall gains without variance, yet memory changes correct to incorrect diagnoses in 1.3%–5.8% of 227 temporally held-out Eurorad teaching cases across seven models."
       }
     },
     {
-      "id": "p13",
+      "id": "p16",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
       "keys": [
-        "ren2026dxevolve",
-        "liu2026evomdt",
-        "zhu2026healthflow"
+        "shi2024ehragent",
+        "liao2025reflectool",
+        "liao2026agentehr",
+        "ghaffari2026learnactcoder",
+        "chen2026mdteamgpt",
+        "chen2026skingptx",
+        "li2025macd",
+        "lu2025kea",
+        "dai2026cdeg",
+        "zeng2026trajevolve",
+        "chen2025semagents",
+        "chen2027mdtace",
+        "wu2026uehr",
+        "li2026healthclaw",
+        "han2026gsem",
+        "ji2026spagents",
+        "chen2026theraagent",
+        "murugesan2026amr"
       ],
-      "excerpt": "DxEvolve, EvoMDT and HealthFlow support experience transfer through independent hospital cases or external retrospective assessment, without isolating benefits from revising its construction procedure or establishing prospective effects.",
+      "excerpt": "The provenance of memory also changes the meaning of transfer. EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts. Training-only banks and sequential adaptation need distinct…",
       "excerpts": {
-        "ren2026dxevolve": "DxEvolve, EvoMDT and HealthFlow support experience transfer through independent hospital cases or external retrospective assessment, without isolating benefits from revising its construction procedure or establishing prospective effects.",
-        "liu2026evomdt": "DxEvolve, EvoMDT and HealthFlow support experience transfer through independent hospital cases or external retrospective assessment, without isolating benefits from revising its construction procedure or establishing prospective effects.",
-        "zhu2026healthflow": "DxEvolve, EvoMDT and HealthFlow support experience transfer through independent hospital cases or external retrospective assessment, without isolating benefits from revising its construction procedure or establishing prospective effects."
+        "shi2024ehragent": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts.",
+        "liao2025reflectool": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts.",
+        "liao2026agentehr": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts.",
+        "ghaffari2026learnactcoder": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts.",
+        "chen2026mdteamgpt": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts.",
+        "chen2026skingptx": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts. Unclear test-stream memory population also affects several clinical agents, including AMR's memory filling.",
+        "li2025macd": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts.",
+        "lu2025kea": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts.",
+        "dai2026cdeg": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts.",
+        "zeng2026trajevolve": "EHR and diagnostic agents retain information across different clinical workflows, while diagnostic/triage memories, evidence graphs and trajectory pools retain different artifacts.",
+        "chen2025semagents": "Training-only banks and sequential adaptation need distinct learning/test boundaries.",
+        "chen2027mdtace": "Training-only banks and sequential adaptation need distinct learning/test boundaries.",
+        "wu2026uehr": "Training-only banks and sequential adaptation need distinct learning/test boundaries.",
+        "li2026healthclaw": "HealthClaw's frozen-writeback synthetic-year probes and GSEM's unclear independent holdout illustrate different limits on interpreting later-case performance.",
+        "han2026gsem": "HealthClaw's frozen-writeback synthetic-year probes and GSEM's unclear independent holdout illustrate different limits on interpreting later-case performance.",
+        "ji2026spagents": "Unclear test-stream memory population also affects several clinical agents, including AMR's memory filling.",
+        "chen2026theraagent": "Unclear test-stream memory population also affects several clinical agents, including AMR's memory filling.",
+        "murugesan2026amr": "Unclear test-stream memory population also affects several clinical agents, including AMR's memory filling."
       }
     },
     {
-      "id": "p14",
+      "id": "p17",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -396,73 +459,161 @@
         "wu2026medrsi",
         "chen2026medforge",
         "zhang2026vibemed",
-        "yuan2026asclepius",
-        "wang2026tcmsea",
-        "hu2026templar"
+        "yuan2026asclepius"
       ],
-      "excerpt": "Component changes require attribution. Fixed update operators, unisolated task/update-producing roles and PrivMeSA's fixed distiller limit attribution to an improved procedure. MedRSI lacks isolated evidence of a changing improver's benefit. MedForge-RSI protects improvement mechanisms, while VIBEMed's comparison…",
+      "excerpt": "A performance gain needs attribution to the changed component. EvoClinician and Skemex retain fixed update operators, while task and update-producing roles are not isolated in PsychAgent and MACRO. PrivMeSA retains a fixed distiller, and MedRSI lacks isolated evidence for benefit from a changing improver.…",
       "excerpts": {
-        "he2026evoclinician": "Fixed update operators, unisolated task/update-producing roles and PrivMeSA's fixed distiller limit attribution to an improved procedure.",
-        "sun2026skemex": "Fixed update operators, unisolated task/update-producing roles and PrivMeSA's fixed distiller limit attribution to an improved procedure.",
-        "yang2026psychagent": "Fixed update operators, unisolated task/update-producing roles and PrivMeSA's fixed distiller limit attribution to an improved procedure.",
-        "fan2026macro": "Fixed update operators, unisolated task/update-producing roles and PrivMeSA's fixed distiller limit attribution to an improved procedure.",
-        "wu2026medrsi": "MedRSI lacks isolated evidence of a changing improver's benefit.",
-        "chen2026medforge": "MedForge-RSI protects improvement mechanisms, while VIBEMed's comparison tests parameter tuning.",
-        "zhang2026vibemed": "MedForge-RSI protects improvement mechanisms, while VIBEMed's comparison tests parameter tuning.",
-        "yuan2026asclepius": "Asclepius gains 0.625 critical-action points on held-out batches (p=0.024), but manual evolution alone adds 0.02 (p=0.883).",
-        "wang2026tcmsea": "TCM-SEA reports sealed-test gains with one evolution seed and no physician review.",
-        "hu2026templar": "TEMPLAR induces templates once, then freezes them."
-      }
-    },
-    {
-      "id": "p15",
-      "section": "4.7",
-      "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
-      "keys": [
-        "du2025evopatient",
-        "dang2026medzero",
-        "wang2026ecgrsi"
-      ],
-      "excerpt": "Generator changes need matched controls and complete costs. EvoPatient bundles doctor components, while MedZERO alternates models under fixed reward and curation rules. ECG-RSI's first-round seven-benchmark score is 43.22 ± 1.40, versus 39.29 ± 1.30 with operators frozen and 40.15 ± 1.30 with skills frozen (mean ±…",
-      "excerpts": {
-        "du2025evopatient": "EvoPatient bundles doctor components, while MedZERO alternates models under fixed reward and curation rules.",
-        "dang2026medzero": "EvoPatient bundles doctor components, while MedZERO alternates models under fixed reward and curation rules.",
-        "wang2026ecgrsi": "ECG-RSI's first-round seven-benchmark score is 43.22 ± 1.40, versus 39.29 ± 1.30 with operators frozen and 40.15 ± 1.30 with skills frozen (mean ± standard deviation, source Table 15)."
-      }
-    },
-    {
-      "id": "p16",
-      "section": "4.7",
-      "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
-      "keys": [
-        "lee2026revision3d"
-      ],
-      "excerpt": "ReVision3D changes adapters, a recipe and inference code under a fixed designer, verifier and acceptance rule. Its recipe yields 0.49 recall versus 0.41 for equal-compute training, with inconsistent designer/manual attribution. Retrospective liver recall reaches 0.79 (88/111 lesions) at no more than 0.5 false…",
-      "excerpts": {
-        "lee2026revision3d": "ReVision3D changes adapters, a recipe and inference code under a fixed designer, verifier and acceptance rule."
-      }
-    },
-    {
-      "id": "p17",
-      "section": "4.7",
-      "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
-      "keys": [
-        "wu2026medrsi",
-        "chen2026medforge",
-        "tzanis2026reclaim"
-      ],
-      "excerpt": "Checkpoint-selected MedRSI uses retrospective tests, while MedForge-RSI separates final evaluation and discloses earlier contamination. ReclAIm reuses its labeled monitoring cohort rather than an untouched test.",
-      "excerpts": {
-        "wu2026medrsi": "Checkpoint-selected MedRSI uses retrospective tests, while MedForge-RSI separates final evaluation and discloses earlier contamination.",
-        "chen2026medforge": "Checkpoint-selected MedRSI uses retrospective tests, while MedForge-RSI separates final evaluation and discloses earlier contamination.",
-        "tzanis2026reclaim": "ReclAIm reuses its labeled monitoring cohort rather than an untouched test."
+        "he2026evoclinician": "EvoClinician and Skemex retain fixed update operators, while task and update-producing roles are not isolated in PsychAgent and MACRO.",
+        "sun2026skemex": "EvoClinician and Skemex retain fixed update operators, while task and update-producing roles are not isolated in PsychAgent and MACRO.",
+        "yang2026psychagent": "EvoClinician and Skemex retain fixed update operators, while task and update-producing roles are not isolated in PsychAgent and MACRO.",
+        "fan2026macro": "EvoClinician and Skemex retain fixed update operators, while task and update-producing roles are not isolated in PsychAgent and MACRO.",
+        "wu2026medrsi": "PrivMeSA retains a fixed distiller, and MedRSI lacks isolated evidence for benefit from a changing improver.",
+        "chen2026medforge": "MedForge-RSI protects improvement mechanisms, whereas VIBEMed's comparison tests parameter tuning.",
+        "zhang2026vibemed": "MedForge-RSI protects improvement mechanisms, whereas VIBEMed's comparison tests parameter tuning.",
+        "yuan2026asclepius": "Asclepius makes this attribution concrete, gaining 0.625 critical-action points on held-out batches (p=0.024), while manual evolution alone adds 0.02 (p=0.883)."
       }
     },
     {
       "id": "p18",
+      "section": "4.7",
+      "section_title": "Study-level evidence for persistent and recursive improvement",
+      "section_key": "section-4-7",
+      "keys": [
+        "cao2026guideskill",
+        "wu2026mediskillevo",
+        "li2026skillcdpo",
+        "zhuang2025doctor",
+        "li2026decisionrules",
+        "ruan2026normcompliance",
+        "zheng2026meddcr",
+        "ossowski2026codeclinic",
+        "hu2026templar",
+        "mokssit2026fhiragenteval",
+        "xing2026clinicalretrial",
+        "mao2026srmapr",
+        "jiang2026sempa",
+        "fan2026medenv",
+        "chen2026rhis",
+        "shi2026medguard",
+        "li2026bridgegap"
+      ],
+      "excerpt": "Skill and workflow studies likewise vary in the object they revise. Some use fixed skill generators, while others revise workflows, prompt programs or role norms. MedDCR and CodeClinic examine skill/workflow adaptation, and TEMPLAR induces templates once before freezing them. Operational reflections and assessment…",
+      "excerpts": {
+        "cao2026guideskill": "Some use fixed skill generators, while others revise workflows, prompt programs or role norms.",
+        "wu2026mediskillevo": "Some use fixed skill generators, while others revise workflows, prompt programs or role norms.",
+        "li2026skillcdpo": "Some use fixed skill generators, while others revise workflows, prompt programs or role norms.",
+        "zhuang2025doctor": "Some use fixed skill generators, while others revise workflows, prompt programs or role norms.",
+        "li2026decisionrules": "Some use fixed skill generators, while others revise workflows, prompt programs or role norms.",
+        "ruan2026normcompliance": "Some use fixed skill generators, while others revise workflows, prompt programs or role norms.",
+        "zheng2026meddcr": "MedDCR and CodeClinic examine skill/workflow adaptation, and TEMPLAR induces templates once before freezing them.",
+        "ossowski2026codeclinic": "MedDCR and CodeClinic examine skill/workflow adaptation, and TEMPLAR induces templates once before freezing them.",
+        "hu2026templar": "MedDCR and CodeClinic examine skill/workflow adaptation, and TEMPLAR induces templates once before freezing them.",
+        "mokssit2026fhiragenteval": "Operational reflections and assessment rules offer further update targets, but evaluator evolution and controller comparisons still lack isolated updater benefit or held-out updater transfer.",
+        "xing2026clinicalretrial": "Operational reflections and assessment rules offer further update targets, but evaluator evolution and controller comparisons still lack isolated updater benefit or held-out updater transfer.",
+        "mao2026srmapr": "Operational reflections and assessment rules offer further update targets, but evaluator evolution and controller comparisons still lack isolated updater benefit or held-out updater transfer.",
+        "jiang2026sempa": "Operational reflections and assessment rules offer further update targets, but evaluator evolution and controller comparisons still lack isolated updater benefit or held-out updater transfer.",
+        "fan2026medenv": "Operational reflections and assessment rules offer further update targets, but evaluator evolution and controller comparisons still lack isolated updater benefit or held-out updater transfer.",
+        "chen2026rhis": "Operational reflections and assessment rules offer further update targets, but evaluator evolution and controller comparisons still lack isolated updater benefit or held-out updater transfer.",
+        "shi2026medguard": "MedGuard and BridgeGap retain case-local patient memory, placing the persistence question at a different boundary.",
+        "li2026bridgegap": "MedGuard and BridgeGap retain case-local patient memory, placing the persistence question at a different boundary."
+      }
+    },
+    {
+      "id": "p19",
+      "section": "4.7",
+      "section_title": "Study-level evidence for persistent and recursive improvement",
+      "section_key": "section-4-7",
+      "keys": [
+        "chen2026cura",
+        "liu2026bat",
+        "jeong2026healthcaregym",
+        "wu2026sepsisagent",
+        "du2025evopatient",
+        "dang2026medzero",
+        "wang2026ecgrsi"
+      ],
+      "excerpt": "Generator comparisons need matched learning conditions and complete costs. Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules. ECG-RSI's first-round seven-benchmark score is 43.22 ±…",
+      "excerpts": {
+        "chen2026cura": "Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules.",
+        "liu2026bat": "Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules.",
+        "jeong2026healthcaregym": "Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules.",
+        "wu2026sepsisagent": "Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules.",
+        "du2025evopatient": "Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules.",
+        "dang2026medzero": "Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules.",
+        "wang2026ecgrsi": "ECG-RSI's first-round seven-benchmark score is 43.22 ± 1.40, versus 39.29 ± 1.30 with operators frozen and 40.15 ± 1.30 with skills frozen (mean ± standard deviation, source Table 15)."
+      }
+    },
+    {
+      "id": "p20",
+      "section": "4.7",
+      "section_title": "Study-level evidence for persistent and recursive improvement",
+      "section_key": "section-4-7",
+      "keys": [
+        "lee2026revision3d",
+        "chen2026clinverse"
+      ],
+      "excerpt": "ReVision3D changes adapters, a recipe and inference code under a fixed designer, verifier and acceptance rule. Its recipe yields 0.49 recall versus 0.41 for equal-compute training, with inconsistent designer/manual attribution. Retrospective liver recall reaches 0.79 (88/111 lesions) at no more than 0.5 false…",
+      "excerpts": {
+        "lee2026revision3d": "ReVision3D changes adapters, a recipe and inference code under a fixed designer, verifier and acceptance rule.",
+        "chen2026clinverse": "ClinVerse lacks a fixed-improver control, and Recursive Reward Improvement remains a general-domain comparison excluded from the healthcare map."
+      }
+    },
+    {
+      "id": "p21",
+      "section": "4.7",
+      "section_title": "Study-level evidence for persistent and recursive improvement",
+      "section_key": "section-4-7",
+      "keys": [
+        "ren2026dxevolve",
+        "liu2026evomdt",
+        "zhu2026healthflow",
+        "wu2026medrsi",
+        "chen2026medforge",
+        "tzanis2026reclaim",
+        "liu2026openhospital",
+        "li2026sea",
+        "zhang2026medevoeval",
+        "sayeedi2026r4",
+        "meng2026topoagent"
+      ],
+      "excerpt": "Independent testing and human participation support different conclusions. DxEvolve, EvoMDT and HealthFlow test experience transfer through independent hospital cases or external retrospective assessment. Checkpoint-selected MedRSI uses retrospective tests, MedForge-RSI separates final evaluation while disclosing…",
+      "excerpts": {
+        "ren2026dxevolve": "DxEvolve, EvoMDT and HealthFlow test experience transfer through independent hospital cases or external retrospective assessment.",
+        "liu2026evomdt": "DxEvolve, EvoMDT and HealthFlow test experience transfer through independent hospital cases or external retrospective assessment.",
+        "zhu2026healthflow": "DxEvolve, EvoMDT and HealthFlow test experience transfer through independent hospital cases or external retrospective assessment.",
+        "wu2026medrsi": "Checkpoint-selected MedRSI uses retrospective tests, MedForge-RSI separates final evaluation while disclosing earlier contamination, and ReclAIm reuses its labeled monitoring cohort.",
+        "chen2026medforge": "Checkpoint-selected MedRSI uses retrospective tests, MedForge-RSI separates final evaluation while disclosing earlier contamination, and ReclAIm reuses its labeled monitoring cohort.",
+        "tzanis2026reclaim": "Checkpoint-selected MedRSI uses retrospective tests, MedForge-RSI separates final evaluation while disclosing earlier contamination, and ReclAIm reuses its labeled monitoring cohort.",
+        "liu2026openhospital": "Simulated or repeated-stream gains require corresponding learning/test boundaries, with MedEvoEval's held-out outcome gains not significant.",
+        "li2026sea": "Simulated or repeated-stream gains require corresponding learning/test boundaries, with MedEvoEval's held-out outcome gains not significant.",
+        "zhang2026medevoeval": "Simulated or repeated-stream gains require corresponding learning/test boundaries, with MedEvoEval's held-out outcome gains not significant.",
+        "sayeedi2026r4": "R4Agent retains unverified exemplars, whereas TopoAgent distills evaluation-benchmark skills.",
+        "meng2026topoagent": "R4Agent retains unverified exemplars, whereas TopoAgent distills evaluation-benchmark skills."
+      }
+    },
+    {
+      "id": "p22",
+      "section": "4.7",
+      "section_title": "Study-level evidence for persistent and recursive improvement",
+      "section_key": "section-4-7",
+      "keys": [
+        "dou2024shennongagent",
+        "rugo2026livingoep",
+        "wang2026tcmsea",
+        "li2026vdss",
+        "neary2025fast"
+      ],
+      "excerpt": "Pharmacist corrections and annotation validation concern the quality of different retained artifacts. TCM-SEA reports sealed-test gains with one evolution seed and no physician review, while VDSS reports a single-clinician regret trend. Coach Iris retrospectively evaluates recorded dialogues from an operating…",
+      "excerpts": {
+        "dou2024shennongagent": "Pharmacist corrections and annotation validation concern the quality of different retained artifacts.",
+        "rugo2026livingoep": "Pharmacist corrections and annotation validation concern the quality of different retained artifacts.",
+        "wang2026tcmsea": "TCM-SEA reports sealed-test gains with one evolution seed and no physician review, while VDSS reports a single-clinician regret trend.",
+        "li2026vdss": "TCM-SEA reports sealed-test gains with one evolution seed and no physician review, while VDSS reports a single-clinician regret trend.",
+        "neary2025fast": "Coach Iris retrospectively evaluates recorded dialogues from an operating patient service."
+      }
+    },
+    {
+      "id": "p23",
       "section": "4.7",
       "section_title": "Study-level evidence for persistent and recursive improvement",
       "section_key": "section-4-7",
@@ -480,182 +631,33 @@
         "fan2026medenv",
         "qu2026sageagent"
       ],
-      "excerpt": "Imaging evidence remains retrospective, benchmark-based or simulated. Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer. Explicit and implicit L2 cases have different attribution limits. None tests learning from actual…",
+      "excerpt": "Imaging studies connect these comparisons to clinical data without yet testing prospective adaptation. Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer. Their explicit and implicit L2 cases have different attribution limits.…",
       "excerpts": {
         "wu2026medrsi": "Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer.",
-        "chen2026theraagent": "Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer. TheraAgent and SAGEAgent use documented outcomes, but retrospective prediction does not measure adaptation's effect on care.",
+        "chen2026theraagent": "Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer. TheraAgent and SAGEAgent use documented outcomes, but no mapped study tests learning from actual radiologists' report corrections or prospective reporting adaptation.",
         "feng2026gatedopenclaw": "Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer.",
         "li2026emai": "Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer.",
-        "lee2026revision3d": "Explicit and implicit L2 cases have different attribution limits.",
-        "liu2026bat": "Explicit and implicit L2 cases have different attribution limits.",
-        "fan2026macro": "Explicit and implicit L2 cases have different attribution limits.",
-        "zhu2026ultrasoundagents": "Explicit and implicit L2 cases have different attribution limits.",
-        "wang2026mira": "Explicit and implicit L2 cases have different attribution limits.",
-        "shao2026case": "Explicit and implicit L2 cases have different attribution limits.",
-        "fan2026medenv": "Explicit and implicit L2 cases have different attribution limits.",
-        "qu2026sageagent": "TheraAgent and SAGEAgent use documented outcomes, but retrospective prediction does not measure adaptation's effect on care."
+        "lee2026revision3d": "Their explicit and implicit L2 cases have different attribution limits.",
+        "liu2026bat": "Their explicit and implicit L2 cases have different attribution limits.",
+        "fan2026macro": "Their explicit and implicit L2 cases have different attribution limits.",
+        "zhu2026ultrasoundagents": "Their explicit and implicit L2 cases have different attribution limits.",
+        "wang2026mira": "Their explicit and implicit L2 cases have different attribution limits.",
+        "shao2026case": "Their explicit and implicit L2 cases have different attribution limits.",
+        "fan2026medenv": "Their explicit and implicit L2 cases have different attribution limits.",
+        "qu2026sageagent": "TheraAgent and SAGEAgent use documented outcomes, but no mapped study tests learning from actual radiologists' report corrections or prospective reporting adaptation."
       }
     },
     {
-      "id": "p19",
-      "section": "4.7",
-      "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
-      "keys": [
-        "shi2024ehragent",
-        "liao2025reflectool",
-        "liao2026agentehr",
-        "ghaffari2026learnactcoder",
-        "chen2026mdteamgpt",
-        "chen2026skingptx",
-        "zheng2026meddcr",
-        "ossowski2026codeclinic",
-        "chen2026cura",
-        "liu2026bat",
-        "jeong2026healthcaregym",
-        "wu2026sepsisagent",
-        "chen2026clinverse",
-        "ji2026spagents",
-        "chen2026theraagent"
-      ],
-      "excerpt": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training. ClinVerse lacks a fixed-improver control. Unclear test-stream memory population limits several studies. Recursive Reward Improvement remains excluded as general-domain.",
-      "excerpts": {
-        "shi2024ehragent": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "liao2025reflectool": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "liao2026agentehr": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "ghaffari2026learnactcoder": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "chen2026mdteamgpt": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "chen2026skingptx": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training. Unclear test-stream memory population limits several studies.",
-        "zheng2026meddcr": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "ossowski2026codeclinic": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "chen2026cura": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "liu2026bat": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "jeong2026healthcaregym": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "wu2026sepsisagent": "Other work covers EHR and diagnostic memory, skill/workflow adaptation and curricula or simulated-policy training.",
-        "chen2026clinverse": "ClinVerse lacks a fixed-improver control.",
-        "ji2026spagents": "Unclear test-stream memory population limits several studies.",
-        "chen2026theraagent": "Unclear test-stream memory population limits several studies."
-      }
-    },
-    {
-      "id": "p20",
-      "section": "4.7",
-      "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
-      "keys": [
-        "chen2025semagents",
-        "chen2027mdtace",
-        "wu2026uehr",
-        "dou2024shennongagent",
-        "rugo2026livingoep",
-        "jiang2026sempa",
-        "fan2026medenv",
-        "chen2026rhis",
-        "neary2025fast"
-      ],
-      "excerpt": "Training-only banks and sequential adaptation need distinct learning/test boundaries. Pharmacist corrections and later-publication annotation validation target different artifacts. Evaluator evolution remains unisolated. Controller comparisons retain fixed admission without held-out updater transfer. Coach Iris…",
-      "excerpts": {
-        "chen2025semagents": "Training-only banks and sequential adaptation need distinct learning/test boundaries.",
-        "chen2027mdtace": "Training-only banks and sequential adaptation need distinct learning/test boundaries.",
-        "wu2026uehr": "Training-only banks and sequential adaptation need distinct learning/test boundaries.",
-        "dou2024shennongagent": "Pharmacist corrections and later-publication annotation validation target different artifacts.",
-        "rugo2026livingoep": "Pharmacist corrections and later-publication annotation validation target different artifacts.",
-        "jiang2026sempa": "Evaluator evolution remains unisolated.",
-        "fan2026medenv": "Evaluator evolution remains unisolated.",
-        "chen2026rhis": "Controller comparisons retain fixed admission without held-out updater transfer.",
-        "neary2025fast": "Coach Iris retrospectively evaluates recorded service dialogues."
-      }
-    },
-    {
-      "id": "p21",
-      "section": "4.7",
-      "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
-      "keys": [
-        "li2025macd",
-        "lu2025kea",
-        "mokssit2026fhiragenteval",
-        "xing2026clinicalretrial",
-        "mao2026srmapr",
-        "dai2026cdeg",
-        "zeng2026trajevolve",
-        "liu2026openhospital",
-        "li2026sea",
-        "zhang2026medevoeval",
-        "sayeedi2026r4",
-        "meng2026topoagent",
-        "murugesan2026amr"
-      ],
-      "excerpt": "Assets include diagnostic and triage memories, operational reflections and assessment rules, and evidence graphs or trajectory pools with LoRA updates. Simulated or repeated-stream gains require caution. MedEvoEval's held-out outcome gains are not significant. R4Agent retains unverified exemplars, TopoAgent…",
-      "excerpts": {
-        "li2025macd": "Assets include diagnostic and triage memories, operational reflections and assessment rules, and evidence graphs or trajectory pools with LoRA updates.",
-        "lu2025kea": "Assets include diagnostic and triage memories, operational reflections and assessment rules, and evidence graphs or trajectory pools with LoRA updates.",
-        "mokssit2026fhiragenteval": "Assets include diagnostic and triage memories, operational reflections and assessment rules, and evidence graphs or trajectory pools with LoRA updates.",
-        "xing2026clinicalretrial": "Assets include diagnostic and triage memories, operational reflections and assessment rules, and evidence graphs or trajectory pools with LoRA updates.",
-        "mao2026srmapr": "Assets include diagnostic and triage memories, operational reflections and assessment rules, and evidence graphs or trajectory pools with LoRA updates.",
-        "dai2026cdeg": "Assets include diagnostic and triage memories, operational reflections and assessment rules, and evidence graphs or trajectory pools with LoRA updates.",
-        "zeng2026trajevolve": "Assets include diagnostic and triage memories, operational reflections and assessment rules, and evidence graphs or trajectory pools with LoRA updates.",
-        "liu2026openhospital": "Simulated or repeated-stream gains require caution.",
-        "li2026sea": "Simulated or repeated-stream gains require caution.",
-        "zhang2026medevoeval": "Simulated or repeated-stream gains require caution.",
-        "sayeedi2026r4": "R4Agent retains unverified exemplars, TopoAgent distills evaluation-benchmark skills, and AMR leaves memory filling unclear.",
-        "meng2026topoagent": "R4Agent retains unverified exemplars, TopoAgent distills evaluation-benchmark skills, and AMR leaves memory filling unclear.",
-        "murugesan2026amr": "R4Agent retains unverified exemplars, TopoAgent distills evaluation-benchmark skills, and AMR leaves memory filling unclear."
-      }
-    },
-    {
-      "id": "p22",
-      "section": "4.7",
-      "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
-      "keys": [
-        "cao2026guideskill",
-        "wu2026mediskillevo",
-        "li2026skillcdpo",
-        "zhuang2025doctor",
-        "li2026decisionrules",
-        "ruan2026normcompliance",
-        "shi2026medguard",
-        "li2026bridgegap",
-        "li2026vdss"
-      ],
-      "excerpt": "Skill studies use fixed generators or revise workflows, prompt programs and role norms. MedGuard and BridgeGap retain case-local patient memory. VDSS reports a single-clinician regret trend. Expert participation in training, artifact validation and clinical assessment supports distinct claims.",
-      "excerpts": {
-        "cao2026guideskill": "Skill studies use fixed generators or revise workflows, prompt programs and role norms.",
-        "wu2026mediskillevo": "Skill studies use fixed generators or revise workflows, prompt programs and role norms.",
-        "li2026skillcdpo": "Skill studies use fixed generators or revise workflows, prompt programs and role norms.",
-        "zhuang2025doctor": "Skill studies use fixed generators or revise workflows, prompt programs and role norms.",
-        "li2026decisionrules": "Skill studies use fixed generators or revise workflows, prompt programs and role norms.",
-        "ruan2026normcompliance": "Skill studies use fixed generators or revise workflows, prompt programs and role norms.",
-        "shi2026medguard": "MedGuard and BridgeGap retain case-local patient memory.",
-        "li2026bridgegap": "MedGuard and BridgeGap retain case-local patient memory.",
-        "li2026vdss": "VDSS reports a single-clinician regret trend."
-      }
-    },
-    {
-      "id": "p23",
+      "id": "p24",
       "section": "5.1",
       "section_title": "Technical and clinical challenges",
       "section_key": "section-5-1",
       "keys": [
         "xu2026oaims"
       ],
-      "excerpt": "Domain adaptation and transferability. Scanner settings, preprocessing and institutional terminology can alter results. Pneumonia-detection AUC was 0.931 internally versus 0.815 externally, while another CNN identified hospitals with 99.95–99.98% accuracy. Preprocessing flipped up to 42% of EEG trial predictions…",
+      "excerpt": "Transfer and cumulative degradation. Retained experience may encounter different scanners, preprocessing or institutional terminology. Pneumonia-detection area under the receiver operating characteristic curve (AUC) was 0.931 internally versus 0.815 externally, while another convolutional neural network (CNN)…",
       "excerpts": {
-        "xu2026oaims": "OAIMS uses mask-simulated corrections to adapt a non-LLM segmentation model, without demonstrating an improved updater."
-      }
-    },
-    {
-      "id": "p24",
-      "section": "5.2",
-      "section_title": "Research and translational directions",
-      "section_key": "section-5-2",
-      "keys": [
-        "coevolving2025"
-      ],
-      "excerpt": "Multimodal integration. Connect images, DICOM metadata, reports and longitudinal comparisons, specifying how cross-modal experience changes later behavior or updates.",
-      "excerpts": {
-        "coevolving2025": "Connect images, DICOM metadata, reports and longitudinal comparisons, specifying how cross-modal experience changes later behavior or updates."
+        "xu2026oaims": "OAIMS illustrates mask-simulated corrections for adapting a non-LLM segmentation model."
       }
     },
     {
@@ -664,11 +666,24 @@
       "section_title": "Research and translational directions",
       "section_key": "section-5-2",
       "keys": [
+        "coevolving2025"
+      ],
+      "excerpt": "Experience transfer across modalities and institutions. Multimodal work can connect images, DICOM metadata, reports and longitudinal comparisons to test which experience transfers between cases. Federated training would require local trajectory collection, controlled sharing and independent cross-institution…",
+      "excerpts": {
+        "coevolving2025": "Multimodal work can connect images, DICOM metadata, reports and longitudinal comparisons to test which experience transfers between cases."
+      }
+    },
+    {
+      "id": "p26",
+      "section": "5.2",
+      "section_title": "Research and translational directions",
+      "section_key": "section-5-2",
+      "keys": [
         "li2025macd"
       ],
-      "excerpt": "Use matched fixed-procedure controls to test later learning independently of update selection. Record complete generation costs and evaluated versions. The Fryback–Thornbury hierarchy separates accuracy from diagnostic thinking, therapy, patient outcomes and societal effects. Diagnostic-thinking efficacy requires…",
+      "excerpt": "Clinical consequences of retained experience. The Fryback–Thornbury hierarchy distinguishes accuracy from diagnostic thinking, therapy, patient outcomes and societal effects. Diagnostic-thinking efficacy requires measured changes in clinicians' diagnostic assessments after agent input. MACD's retrospective reader…",
       "excerpts": {
-        "li2025macd": "Aided accuracy, as evaluated in MACD's retrospective reader study, does not alone establish this effect."
+        "li2025macd": "MACD's retrospective reader study measures aided accuracy, which does not alone establish that effect."
       }
     }
   ],
@@ -682,21 +697,7 @@
     },
     {
       "source": "almansoori2025medagentsim",
-      "target": "han2026gsem",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "almansoori2025medagentsim",
       "target": "lan2024amc",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "almansoori2025medagentsim",
-      "target": "li2026healthclaw",
       "sections": [
         "4.7"
       ]
@@ -731,6 +732,34 @@
     },
     {
       "source": "cao2026guideskill",
+      "target": "chen2026rhis",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "cao2026guideskill",
+      "target": "fan2026medenv",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "cao2026guideskill",
+      "target": "hu2026templar",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "cao2026guideskill",
+      "target": "jiang2026sempa",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "cao2026guideskill",
       "target": "li2026bridgegap",
       "sections": [
         "4.7"
@@ -752,7 +781,21 @@
     },
     {
       "source": "cao2026guideskill",
-      "target": "li2026vdss",
+      "target": "mao2026srmapr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "cao2026guideskill",
+      "target": "mokssit2026fhiragenteval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "cao2026guideskill",
+      "target": "ossowski2026codeclinic",
       "sections": [
         "4.7"
       ]
@@ -780,6 +823,20 @@
     },
     {
       "source": "cao2026guideskill",
+      "target": "xing2026clinicalretrial",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "cao2026guideskill",
+      "target": "zheng2026meddcr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "cao2026guideskill",
       "target": "zhuang2025doctor",
       "sections": [
         "4.7"
@@ -787,7 +844,21 @@
     },
     {
       "source": "chen2025semagents",
-      "target": "chen2026rhis",
+      "target": "chen2026mdteamgpt",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2025semagents",
+      "target": "chen2026skingptx",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2025semagents",
+      "target": "chen2026theraagent",
       "sections": [
         "4.7"
       ]
@@ -801,35 +872,77 @@
     },
     {
       "source": "chen2025semagents",
-      "target": "dou2024shennongagent",
+      "target": "dai2026cdeg",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2025semagents",
-      "target": "fan2026medenv",
+      "target": "ghaffari2026learnactcoder",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2025semagents",
-      "target": "jiang2026sempa",
+      "target": "han2026gsem",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2025semagents",
-      "target": "neary2025fast",
+      "target": "ji2026spagents",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2025semagents",
-      "target": "rugo2026livingoep",
+      "target": "li2025macd",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2025semagents",
+      "target": "li2026healthclaw",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2025semagents",
+      "target": "liao2025reflectool",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2025semagents",
+      "target": "liao2026agentehr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2025semagents",
+      "target": "lu2025kea",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2025semagents",
+      "target": "murugesan2026amr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2025semagents",
+      "target": "shi2024ehragent",
       "sections": [
         "4.7"
       ]
@@ -842,127 +955,29 @@
       ]
     },
     {
-      "source": "chen2026clinverse",
-      "target": "chen2026cura",
+      "source": "chen2025semagents",
+      "target": "zeng2026trajevolve",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026clinverse",
-      "target": "chen2026mdteamgpt",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "chen2026skingptx",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "chen2026theraagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "ghaffari2026learnactcoder",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "jeong2026healthcaregym",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "ji2026spagents",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "liao2025reflectool",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "liao2026agentehr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "liu2026bat",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "ossowski2026codeclinic",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "shi2024ehragent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "wu2026sepsisagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026clinverse",
-      "target": "zheng2026meddcr",
+      "target": "lee2026revision3d",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026cura",
-      "target": "chen2026mdteamgpt",
+      "target": "dang2026medzero",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026cura",
-      "target": "chen2026skingptx",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026cura",
-      "target": "chen2026theraagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026cura",
-      "target": "ghaffari2026learnactcoder",
+      "target": "du2025evopatient",
       "sections": [
         "4.7"
       ]
@@ -976,27 +991,6 @@
     },
     {
       "source": "chen2026cura",
-      "target": "ji2026spagents",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026cura",
-      "target": "liao2025reflectool",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026cura",
-      "target": "liao2026agentehr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026cura",
       "target": "liu2026bat",
       "sections": [
         "4.7"
@@ -1004,14 +998,7 @@
     },
     {
       "source": "chen2026cura",
-      "target": "ossowski2026codeclinic",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026cura",
-      "target": "shi2024ehragent",
+      "target": "wang2026ecgrsi",
       "sections": [
         "4.7"
       ]
@@ -1019,13 +1006,6 @@
     {
       "source": "chen2026cura",
       "target": "wu2026sepsisagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026cura",
-      "target": "zheng2026meddcr",
       "sections": [
         "4.7"
       ]
@@ -1046,6 +1026,20 @@
     },
     {
       "source": "chen2026mdteamgpt",
+      "target": "chen2027mdtace",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026mdteamgpt",
+      "target": "dai2026cdeg",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026mdteamgpt",
       "target": "ghaffari2026learnactcoder",
       "sections": [
         "4.7"
@@ -1053,7 +1047,7 @@
     },
     {
       "source": "chen2026mdteamgpt",
-      "target": "jeong2026healthcaregym",
+      "target": "han2026gsem",
       "sections": [
         "4.7"
       ]
@@ -1061,6 +1055,20 @@
     {
       "source": "chen2026mdteamgpt",
       "target": "ji2026spagents",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026mdteamgpt",
+      "target": "li2025macd",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026mdteamgpt",
+      "target": "li2026healthclaw",
       "sections": [
         "4.7"
       ]
@@ -1081,14 +1089,14 @@
     },
     {
       "source": "chen2026mdteamgpt",
-      "target": "liu2026bat",
+      "target": "lu2025kea",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
-      "target": "ossowski2026codeclinic",
+      "target": "murugesan2026amr",
       "sections": [
         "4.7"
       ]
@@ -1102,14 +1110,14 @@
     },
     {
       "source": "chen2026mdteamgpt",
-      "target": "wu2026sepsisagent",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
-      "target": "zheng2026meddcr",
+      "target": "zeng2026trajevolve",
       "sections": [
         "4.7"
       ]
@@ -1130,7 +1138,42 @@
     },
     {
       "source": "chen2026medforge",
-      "target": "hu2026templar",
+      "target": "li2026sea",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026medforge",
+      "target": "liu2026evomdt",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026medforge",
+      "target": "liu2026openhospital",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026medforge",
+      "target": "meng2026topoagent",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026medforge",
+      "target": "ren2026dxevolve",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026medforge",
+      "target": "sayeedi2026r4",
       "sections": [
         "4.7"
       ]
@@ -1151,13 +1194,6 @@
     },
     {
       "source": "chen2026medforge",
-      "target": "wang2026tcmsea",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026medforge",
       "target": "wu2026medrsi",
       "sections": [
         "4.7"
@@ -1179,21 +1215,21 @@
     },
     {
       "source": "chen2026medforge",
+      "target": "zhang2026medevoeval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026medforge",
       "target": "zhang2026vibemed",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "chen2026rhis",
-      "target": "chen2027mdtace",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "chen2026rhis",
-      "target": "dou2024shennongagent",
+      "source": "chen2026medforge",
+      "target": "zhu2026healthflow",
       "sections": [
         "4.7"
       ]
@@ -1207,6 +1243,13 @@
     },
     {
       "source": "chen2026rhis",
+      "target": "hu2026templar",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
       "target": "jiang2026sempa",
       "sections": [
         "4.7"
@@ -1214,21 +1257,84 @@
     },
     {
       "source": "chen2026rhis",
-      "target": "neary2025fast",
+      "target": "li2026bridgegap",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026rhis",
-      "target": "rugo2026livingoep",
+      "target": "li2026decisionrules",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026rhis",
-      "target": "wu2026uehr",
+      "target": "li2026skillcdpo",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
+      "target": "mao2026srmapr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
+      "target": "mokssit2026fhiragenteval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
+      "target": "ossowski2026codeclinic",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
+      "target": "ruan2026normcompliance",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
+      "target": "shi2026medguard",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
+      "target": "wu2026mediskillevo",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
+      "target": "xing2026clinicalretrial",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
+      "target": "zheng2026meddcr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026rhis",
+      "target": "zhuang2025doctor",
       "sections": [
         "4.7"
       ]
@@ -1242,6 +1348,20 @@
     },
     {
       "source": "chen2026skingptx",
+      "target": "chen2027mdtace",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026skingptx",
+      "target": "dai2026cdeg",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026skingptx",
       "target": "ghaffari2026learnactcoder",
       "sections": [
         "4.7"
@@ -1249,7 +1369,7 @@
     },
     {
       "source": "chen2026skingptx",
-      "target": "jeong2026healthcaregym",
+      "target": "han2026gsem",
       "sections": [
         "4.7"
       ]
@@ -1257,6 +1377,20 @@
     {
       "source": "chen2026skingptx",
       "target": "ji2026spagents",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026skingptx",
+      "target": "li2025macd",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026skingptx",
+      "target": "li2026healthclaw",
       "sections": [
         "4.7"
       ]
@@ -1277,14 +1411,14 @@
     },
     {
       "source": "chen2026skingptx",
-      "target": "liu2026bat",
+      "target": "lu2025kea",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026skingptx",
-      "target": "ossowski2026codeclinic",
+      "target": "murugesan2026amr",
       "sections": [
         "4.7"
       ]
@@ -1298,14 +1432,28 @@
     },
     {
       "source": "chen2026skingptx",
-      "target": "wu2026sepsisagent",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026skingptx",
-      "target": "zheng2026meddcr",
+      "target": "zeng2026trajevolve",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026theraagent",
+      "target": "chen2027mdtace",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026theraagent",
+      "target": "dai2026cdeg",
       "sections": [
         "4.7"
       ]
@@ -1340,7 +1488,7 @@
     },
     {
       "source": "chen2026theraagent",
-      "target": "jeong2026healthcaregym",
+      "target": "han2026gsem",
       "sections": [
         "4.7"
       ]
@@ -1361,7 +1509,21 @@
     },
     {
       "source": "chen2026theraagent",
+      "target": "li2025macd",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026theraagent",
       "target": "li2026emai",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026theraagent",
+      "target": "li2026healthclaw",
       "sections": [
         "4.7"
       ]
@@ -1389,7 +1551,14 @@
     },
     {
       "source": "chen2026theraagent",
-      "target": "ossowski2026codeclinic",
+      "target": "lu2025kea",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2026theraagent",
+      "target": "murugesan2026amr",
       "sections": [
         "4.7"
       ]
@@ -1431,14 +1600,14 @@
     },
     {
       "source": "chen2026theraagent",
-      "target": "wu2026sepsisagent",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2026theraagent",
-      "target": "zheng2026meddcr",
+      "target": "zeng2026trajevolve",
       "sections": [
         "4.7"
       ]
@@ -1452,35 +1621,77 @@
     },
     {
       "source": "chen2027mdtace",
-      "target": "dou2024shennongagent",
+      "target": "dai2026cdeg",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2027mdtace",
-      "target": "fan2026medenv",
+      "target": "ghaffari2026learnactcoder",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2027mdtace",
-      "target": "jiang2026sempa",
+      "target": "han2026gsem",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2027mdtace",
-      "target": "neary2025fast",
+      "target": "ji2026spagents",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "chen2027mdtace",
-      "target": "rugo2026livingoep",
+      "target": "li2025macd",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2027mdtace",
+      "target": "li2026healthclaw",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2027mdtace",
+      "target": "liao2025reflectool",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2027mdtace",
+      "target": "liao2026agentehr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2027mdtace",
+      "target": "lu2025kea",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2027mdtace",
+      "target": "murugesan2026amr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "chen2027mdtace",
+      "target": "shi2024ehragent",
       "sections": [
         "4.7"
       ]
@@ -1493,10 +1704,45 @@
       ]
     },
     {
+      "source": "chen2027mdtace",
+      "target": "zeng2026trajevolve",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
       "source": "clinicalagents2026",
       "target": "medhospital2024",
       "sections": [
         "1"
+      ]
+    },
+    {
+      "source": "coevolving2025",
+      "target": "qiu2025diaggym",
+      "sections": [
+        "3.3"
+      ]
+    },
+    {
+      "source": "dai2026cdeg",
+      "target": "ghaffari2026learnactcoder",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "dai2026cdeg",
+      "target": "han2026gsem",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "dai2026cdeg",
+      "target": "ji2026spagents",
+      "sections": [
+        "4.7"
       ]
     },
     {
@@ -1508,14 +1754,21 @@
     },
     {
       "source": "dai2026cdeg",
-      "target": "li2026sea",
+      "target": "li2026healthclaw",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "dai2026cdeg",
-      "target": "liu2026openhospital",
+      "target": "liao2025reflectool",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "dai2026cdeg",
+      "target": "liao2026agentehr",
       "sections": [
         "4.7"
       ]
@@ -1529,27 +1782,6 @@
     },
     {
       "source": "dai2026cdeg",
-      "target": "mao2026srmapr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "dai2026cdeg",
-      "target": "meng2026topoagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "dai2026cdeg",
-      "target": "mokssit2026fhiragenteval",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "dai2026cdeg",
       "target": "murugesan2026amr",
       "sections": [
         "4.7"
@@ -1557,14 +1789,14 @@
     },
     {
       "source": "dai2026cdeg",
-      "target": "sayeedi2026r4",
+      "target": "shi2024ehragent",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "dai2026cdeg",
-      "target": "xing2026clinicalretrial",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
@@ -1572,13 +1804,6 @@
     {
       "source": "dai2026cdeg",
       "target": "zeng2026trajevolve",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "dai2026cdeg",
-      "target": "zhang2026medevoeval",
       "sections": [
         "4.7"
       ]
@@ -1592,21 +1817,35 @@
     },
     {
       "source": "dang2026medzero",
+      "target": "jeong2026healthcaregym",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "dang2026medzero",
+      "target": "liu2026bat",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "dang2026medzero",
       "target": "wang2026ecgrsi",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "dou2024shennongagent",
-      "target": "fan2026medenv",
+      "source": "dang2026medzero",
+      "target": "wu2026sepsisagent",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "dou2024shennongagent",
-      "target": "jiang2026sempa",
+      "target": "li2026vdss",
       "sections": [
         "4.7"
       ]
@@ -1627,7 +1866,21 @@
     },
     {
       "source": "dou2024shennongagent",
-      "target": "wu2026uehr",
+      "target": "wang2026tcmsea",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "du2025evopatient",
+      "target": "jeong2026healthcaregym",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "du2025evopatient",
+      "target": "liu2026bat",
       "sections": [
         "4.7"
       ]
@@ -1635,6 +1888,13 @@
     {
       "source": "du2025evopatient",
       "target": "wang2026ecgrsi",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "du2025evopatient",
+      "target": "wu2026sepsisagent",
       "sections": [
         "4.7"
       ]
@@ -1656,13 +1916,6 @@
     {
       "source": "fan2026macro",
       "target": "he2026evoclinician",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "fan2026macro",
-      "target": "hu2026templar",
       "sections": [
         "4.7"
       ]
@@ -1718,13 +1971,6 @@
     },
     {
       "source": "fan2026macro",
-      "target": "wang2026tcmsea",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "fan2026macro",
       "target": "wu2026medrsi",
       "sections": [
         "4.7"
@@ -1767,6 +2013,13 @@
     },
     {
       "source": "fan2026medenv",
+      "target": "hu2026templar",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
       "target": "jiang2026sempa",
       "sections": [
         "4.7"
@@ -1781,7 +2034,28 @@
     },
     {
       "source": "fan2026medenv",
+      "target": "li2026bridgegap",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
+      "target": "li2026decisionrules",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
       "target": "li2026emai",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
+      "target": "li2026skillcdpo",
       "sections": [
         "4.7"
       ]
@@ -1795,7 +2069,21 @@
     },
     {
       "source": "fan2026medenv",
-      "target": "neary2025fast",
+      "target": "mao2026srmapr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
+      "target": "mokssit2026fhiragenteval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
+      "target": "ossowski2026codeclinic",
       "sections": [
         "4.7"
       ]
@@ -1809,7 +2097,7 @@
     },
     {
       "source": "fan2026medenv",
-      "target": "rugo2026livingoep",
+      "target": "ruan2026normcompliance",
       "sections": [
         "4.7"
       ]
@@ -1823,7 +2111,21 @@
     },
     {
       "source": "fan2026medenv",
+      "target": "shi2026medguard",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
       "target": "wang2026mira",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
+      "target": "wu2026mediskillevo",
       "sections": [
         "4.7"
       ]
@@ -1837,7 +2139,14 @@
     },
     {
       "source": "fan2026medenv",
-      "target": "wu2026uehr",
+      "target": "xing2026clinicalretrial",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
+      "target": "zheng2026meddcr",
       "sections": [
         "4.7"
       ]
@@ -1845,6 +2154,13 @@
     {
       "source": "fan2026medenv",
       "target": "zhu2026ultrasoundagents",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "fan2026medenv",
+      "target": "zhuang2025doctor",
       "sections": [
         "4.7"
       ]
@@ -1914,61 +2230,47 @@
     },
     {
       "source": "feng2026medexpmem",
+      "target": "lan2024amc",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "feng2026medexpmem",
+      "target": "schmidgall2026agentclinic",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "feng2026medexpmem",
+      "target": "shen2026evomedagent",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "feng2026medexpmem",
+      "target": "shi2026emr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "feng2026medexpmem",
+      "target": "wang2026privmesa",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ghaffari2026learnactcoder",
       "target": "han2026gsem",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "feng2026medexpmem",
-      "target": "lan2024amc",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "feng2026medexpmem",
-      "target": "li2026healthclaw",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "feng2026medexpmem",
-      "target": "schmidgall2026agentclinic",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "feng2026medexpmem",
-      "target": "shen2026evomedagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "feng2026medexpmem",
-      "target": "shi2026emr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "feng2026medexpmem",
-      "target": "wang2026privmesa",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ghaffari2026learnactcoder",
-      "target": "jeong2026healthcaregym",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
       "source": "ghaffari2026learnactcoder",
       "target": "ji2026spagents",
       "sections": [
@@ -1977,315 +2279,427 @@
     },
     {
       "source": "ghaffari2026learnactcoder",
-      "target": "liao2025reflectool",
+      "target": "li2025macd",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
-      "target": "liao2026agentehr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ghaffari2026learnactcoder",
-      "target": "liu2026bat",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ghaffari2026learnactcoder",
-      "target": "ossowski2026codeclinic",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ghaffari2026learnactcoder",
-      "target": "shi2024ehragent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ghaffari2026learnactcoder",
-      "target": "wu2026sepsisagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ghaffari2026learnactcoder",
-      "target": "zheng2026meddcr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "han2026gsem",
-      "target": "lan2024amc",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "han2026gsem",
       "target": "li2026healthclaw",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "han2026gsem",
-      "target": "schmidgall2026agentclinic",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "han2026gsem",
-      "target": "shen2026evomedagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "han2026gsem",
-      "target": "shi2026emr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "han2026gsem",
-      "target": "wang2026privmesa",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "he2026evoclinician",
-      "target": "hu2026templar",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "he2026evoclinician",
-      "target": "sun2026skemex",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "he2026evoclinician",
-      "target": "wang2026tcmsea",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "he2026evoclinician",
-      "target": "wu2026medrsi",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "he2026evoclinician",
-      "target": "yang2026psychagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "he2026evoclinician",
-      "target": "yuan2026asclepius",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "he2026evoclinician",
-      "target": "zhang2026vibemed",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "hu2026templar",
-      "target": "sun2026skemex",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "hu2026templar",
-      "target": "wang2026tcmsea",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "hu2026templar",
-      "target": "wu2026medrsi",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "hu2026templar",
-      "target": "yang2026psychagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "hu2026templar",
-      "target": "yuan2026asclepius",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "hu2026templar",
-      "target": "zhang2026vibemed",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "jeong2026healthcaregym",
-      "target": "ji2026spagents",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "jeong2026healthcaregym",
+      "source": "ghaffari2026learnactcoder",
       "target": "liao2025reflectool",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "jeong2026healthcaregym",
+      "source": "ghaffari2026learnactcoder",
       "target": "liao2026agentehr",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "jeong2026healthcaregym",
-      "target": "liu2026bat",
+      "source": "ghaffari2026learnactcoder",
+      "target": "lu2025kea",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "jeong2026healthcaregym",
-      "target": "ossowski2026codeclinic",
+      "source": "ghaffari2026learnactcoder",
+      "target": "murugesan2026amr",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "jeong2026healthcaregym",
+      "source": "ghaffari2026learnactcoder",
       "target": "shi2024ehragent",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "jeong2026healthcaregym",
-      "target": "wu2026sepsisagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "jeong2026healthcaregym",
-      "target": "zheng2026meddcr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ji2026spagents",
-      "target": "liao2025reflectool",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ji2026spagents",
-      "target": "liao2026agentehr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ji2026spagents",
-      "target": "liu2026bat",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ji2026spagents",
-      "target": "ossowski2026codeclinic",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ji2026spagents",
-      "target": "shi2024ehragent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ji2026spagents",
-      "target": "wu2026sepsisagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "ji2026spagents",
-      "target": "zheng2026meddcr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "jiang2026sempa",
-      "target": "neary2025fast",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "jiang2026sempa",
-      "target": "rugo2026livingoep",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "jiang2026sempa",
+      "source": "ghaffari2026learnactcoder",
       "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "lan2024amc",
+      "source": "ghaffari2026learnactcoder",
+      "target": "zeng2026trajevolve",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
+      "target": "ji2026spagents",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
+      "target": "li2025macd",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
       "target": "li2026healthclaw",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
+      "target": "liao2025reflectool",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
+      "target": "liao2026agentehr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
+      "target": "lu2025kea",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
+      "target": "murugesan2026amr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
+      "target": "shi2024ehragent",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
+      "target": "wu2026uehr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "han2026gsem",
+      "target": "zeng2026trajevolve",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "he2026evoclinician",
+      "target": "sun2026skemex",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "he2026evoclinician",
+      "target": "wu2026medrsi",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "he2026evoclinician",
+      "target": "yang2026psychagent",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "he2026evoclinician",
+      "target": "yuan2026asclepius",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "he2026evoclinician",
+      "target": "zhang2026vibemed",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "jiang2026sempa",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "li2026bridgegap",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "li2026decisionrules",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "li2026skillcdpo",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "mao2026srmapr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "mokssit2026fhiragenteval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "ossowski2026codeclinic",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "ruan2026normcompliance",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "shi2026medguard",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "wu2026mediskillevo",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "xing2026clinicalretrial",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "zheng2026meddcr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "hu2026templar",
+      "target": "zhuang2025doctor",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jeong2026healthcaregym",
+      "target": "liu2026bat",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jeong2026healthcaregym",
+      "target": "wang2026ecgrsi",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jeong2026healthcaregym",
+      "target": "wu2026sepsisagent",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ji2026spagents",
+      "target": "li2025macd",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ji2026spagents",
+      "target": "li2026healthclaw",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ji2026spagents",
+      "target": "liao2025reflectool",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ji2026spagents",
+      "target": "liao2026agentehr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ji2026spagents",
+      "target": "lu2025kea",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ji2026spagents",
+      "target": "murugesan2026amr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ji2026spagents",
+      "target": "shi2024ehragent",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ji2026spagents",
+      "target": "wu2026uehr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ji2026spagents",
+      "target": "zeng2026trajevolve",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "li2026bridgegap",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "li2026decisionrules",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "li2026skillcdpo",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "mao2026srmapr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "mokssit2026fhiragenteval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "ossowski2026codeclinic",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "ruan2026normcompliance",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "shi2026medguard",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "wu2026mediskillevo",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "xing2026clinicalretrial",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "zheng2026meddcr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "jiang2026sempa",
+      "target": "zhuang2025doctor",
       "sections": [
         "4.7"
       ]
@@ -2348,6 +2762,13 @@
     },
     {
       "source": "lee2026revision3d",
+      "target": "wang2026ecgrsi",
+      "sections": [
+        "3.3"
+      ]
+    },
+    {
+      "source": "lee2026revision3d",
       "target": "wang2026mira",
       "sections": [
         "4.7"
@@ -2369,14 +2790,21 @@
     },
     {
       "source": "li2025macd",
-      "target": "li2026sea",
+      "target": "li2026healthclaw",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "li2025macd",
-      "target": "liu2026openhospital",
+      "target": "liao2025reflectool",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2025macd",
+      "target": "liao2026agentehr",
       "sections": [
         "4.7"
       ]
@@ -2390,27 +2818,6 @@
     },
     {
       "source": "li2025macd",
-      "target": "mao2026srmapr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "li2025macd",
-      "target": "meng2026topoagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "li2025macd",
-      "target": "mokssit2026fhiragenteval",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "li2025macd",
       "target": "murugesan2026amr",
       "sections": [
         "4.7"
@@ -2418,14 +2825,14 @@
     },
     {
       "source": "li2025macd",
-      "target": "sayeedi2026r4",
+      "target": "shi2024ehragent",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "li2025macd",
-      "target": "xing2026clinicalretrial",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
@@ -2433,13 +2840,6 @@
     {
       "source": "li2025macd",
       "target": "zeng2026trajevolve",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "li2025macd",
-      "target": "zhang2026medevoeval",
       "sections": [
         "4.7"
       ]
@@ -2460,7 +2860,21 @@
     },
     {
       "source": "li2026bridgegap",
-      "target": "li2026vdss",
+      "target": "mao2026srmapr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026bridgegap",
+      "target": "mokssit2026fhiragenteval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026bridgegap",
+      "target": "ossowski2026codeclinic",
       "sections": [
         "4.7"
       ]
@@ -2482,6 +2896,20 @@
     {
       "source": "li2026bridgegap",
       "target": "wu2026mediskillevo",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026bridgegap",
+      "target": "xing2026clinicalretrial",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026bridgegap",
+      "target": "zheng2026meddcr",
       "sections": [
         "4.7"
       ]
@@ -2502,7 +2930,21 @@
     },
     {
       "source": "li2026decisionrules",
-      "target": "li2026vdss",
+      "target": "mao2026srmapr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026decisionrules",
+      "target": "mokssit2026fhiragenteval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026decisionrules",
+      "target": "ossowski2026codeclinic",
       "sections": [
         "4.7"
       ]
@@ -2524,6 +2966,20 @@
     {
       "source": "li2026decisionrules",
       "target": "wu2026mediskillevo",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026decisionrules",
+      "target": "xing2026clinicalretrial",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026decisionrules",
+      "target": "zheng2026meddcr",
       "sections": [
         "4.7"
       ]
@@ -2579,28 +3035,56 @@
     },
     {
       "source": "li2026healthclaw",
-      "target": "schmidgall2026agentclinic",
+      "target": "liao2025reflectool",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "li2026healthclaw",
-      "target": "shen2026evomedagent",
+      "target": "liao2026agentehr",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "li2026healthclaw",
-      "target": "shi2026emr",
+      "target": "lu2025kea",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "li2026healthclaw",
-      "target": "wang2026privmesa",
+      "target": "murugesan2026amr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026healthclaw",
+      "target": "shi2024ehragent",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026healthclaw",
+      "target": "wu2026uehr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026healthclaw",
+      "target": "zeng2026trajevolve",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026sea",
+      "target": "liu2026evomdt",
       "sections": [
         "4.7"
       ]
@@ -2614,20 +3098,6 @@
     },
     {
       "source": "li2026sea",
-      "target": "lu2025kea",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "li2026sea",
-      "target": "mao2026srmapr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "li2026sea",
       "target": "meng2026topoagent",
       "sections": [
         "4.7"
@@ -2635,14 +3105,7 @@
     },
     {
       "source": "li2026sea",
-      "target": "mokssit2026fhiragenteval",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "li2026sea",
-      "target": "murugesan2026amr",
+      "target": "ren2026dxevolve",
       "sections": [
         "4.7"
       ]
@@ -2656,14 +3119,14 @@
     },
     {
       "source": "li2026sea",
-      "target": "xing2026clinicalretrial",
+      "target": "tzanis2026reclaim",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "li2026sea",
-      "target": "zeng2026trajevolve",
+      "target": "wu2026medrsi",
       "sections": [
         "4.7"
       ]
@@ -2676,8 +3139,29 @@
       ]
     },
     {
+      "source": "li2026sea",
+      "target": "zhu2026healthflow",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
       "source": "li2026skillcdpo",
-      "target": "li2026vdss",
+      "target": "mao2026srmapr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026skillcdpo",
+      "target": "mokssit2026fhiragenteval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026skillcdpo",
+      "target": "ossowski2026codeclinic",
       "sections": [
         "4.7"
       ]
@@ -2705,6 +3189,20 @@
     },
     {
       "source": "li2026skillcdpo",
+      "target": "xing2026clinicalretrial",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026skillcdpo",
+      "target": "zheng2026meddcr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "li2026skillcdpo",
       "target": "zhuang2025doctor",
       "sections": [
         "4.7"
@@ -2712,28 +3210,21 @@
     },
     {
       "source": "li2026vdss",
-      "target": "ruan2026normcompliance",
+      "target": "neary2025fast",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "li2026vdss",
-      "target": "shi2026medguard",
+      "target": "rugo2026livingoep",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "li2026vdss",
-      "target": "wu2026mediskillevo",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "li2026vdss",
-      "target": "zhuang2025doctor",
+      "target": "wang2026tcmsea",
       "sections": [
         "4.7"
       ]
@@ -2747,14 +3238,14 @@
     },
     {
       "source": "liao2025reflectool",
-      "target": "liu2026bat",
+      "target": "lu2025kea",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "liao2025reflectool",
-      "target": "ossowski2026codeclinic",
+      "target": "murugesan2026amr",
       "sections": [
         "4.7"
       ]
@@ -2768,28 +3259,28 @@
     },
     {
       "source": "liao2025reflectool",
-      "target": "wu2026sepsisagent",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "liao2025reflectool",
-      "target": "zheng2026meddcr",
+      "target": "zeng2026trajevolve",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "liao2026agentehr",
-      "target": "liu2026bat",
+      "target": "lu2025kea",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "liao2026agentehr",
-      "target": "ossowski2026codeclinic",
+      "target": "murugesan2026amr",
       "sections": [
         "4.7"
       ]
@@ -2803,21 +3294,14 @@
     },
     {
       "source": "liao2026agentehr",
-      "target": "wu2026sepsisagent",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "liao2026agentehr",
-      "target": "zheng2026meddcr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "liu2026bat",
-      "target": "ossowski2026codeclinic",
+      "target": "zeng2026trajevolve",
       "sections": [
         "4.7"
       ]
@@ -2838,7 +3322,7 @@
     },
     {
       "source": "liu2026bat",
-      "target": "shi2024ehragent",
+      "target": "wang2026ecgrsi",
       "sections": [
         "4.7"
       ]
@@ -2866,14 +3350,21 @@
     },
     {
       "source": "liu2026bat",
-      "target": "zheng2026meddcr",
+      "target": "zhu2026ultrasoundagents",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "liu2026bat",
-      "target": "zhu2026ultrasoundagents",
+      "source": "liu2026evomdt",
+      "target": "liu2026openhospital",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "liu2026evomdt",
+      "target": "meng2026topoagent",
       "sections": [
         "4.7"
       ]
@@ -2887,6 +3378,34 @@
     },
     {
       "source": "liu2026evomdt",
+      "target": "sayeedi2026r4",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "liu2026evomdt",
+      "target": "tzanis2026reclaim",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "liu2026evomdt",
+      "target": "wu2026medrsi",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "liu2026evomdt",
+      "target": "zhang2026medevoeval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "liu2026evomdt",
       "target": "zhu2026healthflow",
       "sections": [
         "4.7"
@@ -2894,20 +3413,6 @@
     },
     {
       "source": "liu2026openhospital",
-      "target": "lu2025kea",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "liu2026openhospital",
-      "target": "mao2026srmapr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "liu2026openhospital",
       "target": "meng2026topoagent",
       "sections": [
         "4.7"
@@ -2915,14 +3420,7 @@
     },
     {
       "source": "liu2026openhospital",
-      "target": "mokssit2026fhiragenteval",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "liu2026openhospital",
-      "target": "murugesan2026amr",
+      "target": "ren2026dxevolve",
       "sections": [
         "4.7"
       ]
@@ -2936,14 +3434,14 @@
     },
     {
       "source": "liu2026openhospital",
-      "target": "xing2026clinicalretrial",
+      "target": "tzanis2026reclaim",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "liu2026openhospital",
-      "target": "zeng2026trajevolve",
+      "target": "wu2026medrsi",
       "sections": [
         "4.7"
       ]
@@ -2956,22 +3454,8 @@
       ]
     },
     {
-      "source": "lu2025kea",
-      "target": "mao2026srmapr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "lu2025kea",
-      "target": "meng2026topoagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "lu2025kea",
-      "target": "mokssit2026fhiragenteval",
+      "source": "liu2026openhospital",
+      "target": "zhu2026healthflow",
       "sections": [
         "4.7"
       ]
@@ -2985,14 +3469,14 @@
     },
     {
       "source": "lu2025kea",
-      "target": "sayeedi2026r4",
+      "target": "shi2024ehragent",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "lu2025kea",
-      "target": "xing2026clinicalretrial",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
@@ -3000,20 +3484,6 @@
     {
       "source": "lu2025kea",
       "target": "zeng2026trajevolve",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "lu2025kea",
-      "target": "zhang2026medevoeval",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "mao2026srmapr",
-      "target": "meng2026topoagent",
       "sections": [
         "4.7"
       ]
@@ -3027,14 +3497,28 @@
     },
     {
       "source": "mao2026srmapr",
-      "target": "murugesan2026amr",
+      "target": "ossowski2026codeclinic",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "mao2026srmapr",
-      "target": "sayeedi2026r4",
+      "target": "ruan2026normcompliance",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "mao2026srmapr",
+      "target": "shi2026medguard",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "mao2026srmapr",
+      "target": "wu2026mediskillevo",
       "sections": [
         "4.7"
       ]
@@ -3048,28 +3532,21 @@
     },
     {
       "source": "mao2026srmapr",
-      "target": "zeng2026trajevolve",
+      "target": "zheng2026meddcr",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "mao2026srmapr",
-      "target": "zhang2026medevoeval",
+      "target": "zhuang2025doctor",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "meng2026topoagent",
-      "target": "mokssit2026fhiragenteval",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "meng2026topoagent",
-      "target": "murugesan2026amr",
+      "target": "ren2026dxevolve",
       "sections": [
         "4.7"
       ]
@@ -3083,14 +3560,14 @@
     },
     {
       "source": "meng2026topoagent",
-      "target": "xing2026clinicalretrial",
+      "target": "tzanis2026reclaim",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "meng2026topoagent",
-      "target": "zeng2026trajevolve",
+      "target": "wu2026medrsi",
       "sections": [
         "4.7"
       ]
@@ -3103,15 +3580,36 @@
       ]
     },
     {
-      "source": "mokssit2026fhiragenteval",
-      "target": "murugesan2026amr",
+      "source": "meng2026topoagent",
+      "target": "zhu2026healthflow",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "mokssit2026fhiragenteval",
-      "target": "sayeedi2026r4",
+      "target": "ossowski2026codeclinic",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "mokssit2026fhiragenteval",
+      "target": "ruan2026normcompliance",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "mokssit2026fhiragenteval",
+      "target": "shi2026medguard",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "mokssit2026fhiragenteval",
+      "target": "wu2026mediskillevo",
       "sections": [
         "4.7"
       ]
@@ -3125,28 +3623,28 @@
     },
     {
       "source": "mokssit2026fhiragenteval",
-      "target": "zeng2026trajevolve",
+      "target": "zheng2026meddcr",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "mokssit2026fhiragenteval",
-      "target": "zhang2026medevoeval",
+      "target": "zhuang2025doctor",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "murugesan2026amr",
-      "target": "sayeedi2026r4",
+      "target": "shi2024ehragent",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "murugesan2026amr",
-      "target": "xing2026clinicalretrial",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
@@ -3154,13 +3652,6 @@
     {
       "source": "murugesan2026amr",
       "target": "zeng2026trajevolve",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "murugesan2026amr",
-      "target": "zhang2026medevoeval",
       "sections": [
         "4.7"
       ]
@@ -3174,21 +3665,35 @@
     },
     {
       "source": "neary2025fast",
-      "target": "wu2026uehr",
+      "target": "wang2026tcmsea",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "ossowski2026codeclinic",
-      "target": "shi2024ehragent",
+      "target": "ruan2026normcompliance",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "ossowski2026codeclinic",
-      "target": "wu2026sepsisagent",
+      "target": "shi2026medguard",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ossowski2026codeclinic",
+      "target": "wu2026mediskillevo",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ossowski2026codeclinic",
+      "target": "xing2026clinicalretrial",
       "sections": [
         "4.7"
       ]
@@ -3196,6 +3701,13 @@
     {
       "source": "ossowski2026codeclinic",
       "target": "zheng2026meddcr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ossowski2026codeclinic",
+      "target": "zhuang2025doctor",
       "sections": [
         "4.7"
       ]
@@ -3230,6 +3742,34 @@
     },
     {
       "source": "ren2026dxevolve",
+      "target": "sayeedi2026r4",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ren2026dxevolve",
+      "target": "tzanis2026reclaim",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ren2026dxevolve",
+      "target": "wu2026medrsi",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ren2026dxevolve",
+      "target": "zhang2026medevoeval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ren2026dxevolve",
       "target": "zhu2026healthflow",
       "sections": [
         "4.7"
@@ -3251,6 +3791,20 @@
     },
     {
       "source": "ruan2026normcompliance",
+      "target": "xing2026clinicalretrial",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ruan2026normcompliance",
+      "target": "zheng2026meddcr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "ruan2026normcompliance",
       "target": "zhuang2025doctor",
       "sections": [
         "4.7"
@@ -3258,21 +3812,21 @@
     },
     {
       "source": "rugo2026livingoep",
-      "target": "wu2026uehr",
+      "target": "wang2026tcmsea",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "sayeedi2026r4",
-      "target": "xing2026clinicalretrial",
+      "target": "tzanis2026reclaim",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "sayeedi2026r4",
-      "target": "zeng2026trajevolve",
+      "target": "wu2026medrsi",
       "sections": [
         "4.7"
       ]
@@ -3280,6 +3834,13 @@
     {
       "source": "sayeedi2026r4",
       "target": "zhang2026medevoeval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "sayeedi2026r4",
+      "target": "zhu2026healthflow",
       "sections": [
         "4.7"
       ]
@@ -3342,14 +3903,14 @@
     },
     {
       "source": "shi2024ehragent",
-      "target": "wu2026sepsisagent",
+      "target": "wu2026uehr",
       "sections": [
         "4.7"
       ]
     },
     {
       "source": "shi2024ehragent",
-      "target": "zheng2026meddcr",
+      "target": "zeng2026trajevolve",
       "sections": [
         "4.7"
       ]
@@ -3370,14 +3931,21 @@
     },
     {
       "source": "shi2026medguard",
-      "target": "zhuang2025doctor",
+      "target": "xing2026clinicalretrial",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "sun2026skemex",
-      "target": "wang2026tcmsea",
+      "source": "shi2026medguard",
+      "target": "zheng2026meddcr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "shi2026medguard",
+      "target": "zhuang2025doctor",
       "sections": [
         "4.7"
       ]
@@ -3418,6 +3986,27 @@
       ]
     },
     {
+      "source": "tzanis2026reclaim",
+      "target": "zhang2026medevoeval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "tzanis2026reclaim",
+      "target": "zhu2026healthflow",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "wang2026ecgrsi",
+      "target": "wu2026sepsisagent",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
       "source": "wang2026mira",
       "target": "wu2026medrsi",
       "sections": [
@@ -3432,29 +4021,15 @@
       ]
     },
     {
-      "source": "wang2026tcmsea",
-      "target": "wu2026medrsi",
+      "source": "wu2026mediskillevo",
+      "target": "xing2026clinicalretrial",
       "sections": [
         "4.7"
       ]
     },
     {
-      "source": "wang2026tcmsea",
-      "target": "yang2026psychagent",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "wang2026tcmsea",
-      "target": "yuan2026asclepius",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "wang2026tcmsea",
-      "target": "zhang2026vibemed",
+      "source": "wu2026mediskillevo",
+      "target": "zheng2026meddcr",
       "sections": [
         "4.7"
       ]
@@ -3482,7 +4057,21 @@
     },
     {
       "source": "wu2026medrsi",
+      "target": "zhang2026medevoeval",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "wu2026medrsi",
       "target": "zhang2026vibemed",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "wu2026medrsi",
+      "target": "zhu2026healthflow",
       "sections": [
         "4.7"
       ]
@@ -3495,14 +4084,7 @@
       ]
     },
     {
-      "source": "wu2026sepsisagent",
-      "target": "zheng2026meddcr",
-      "sections": [
-        "4.7"
-      ]
-    },
-    {
-      "source": "xing2026clinicalretrial",
+      "source": "wu2026uehr",
       "target": "zeng2026trajevolve",
       "sections": [
         "4.7"
@@ -3510,7 +4092,14 @@
     },
     {
       "source": "xing2026clinicalretrial",
-      "target": "zhang2026medevoeval",
+      "target": "zheng2026meddcr",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "xing2026clinicalretrial",
+      "target": "zhuang2025doctor",
       "sections": [
         "4.7"
       ]
@@ -3537,8 +4126,15 @@
       ]
     },
     {
-      "source": "zeng2026trajevolve",
-      "target": "zhang2026medevoeval",
+      "source": "zhang2026medevoeval",
+      "target": "zhu2026healthflow",
+      "sections": [
+        "4.7"
+      ]
+    },
+    {
+      "source": "zheng2026meddcr",
+      "target": "zhuang2025doctor",
       "sections": [
         "4.7"
       ]
