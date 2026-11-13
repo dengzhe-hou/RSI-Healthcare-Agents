@@ -13058,12 +13058,6 @@
       "key": "section-1-2"
     },
     {
-      "number": "1.3",
-      "title": "Outline of the review",
-      "depth": 1,
-      "key": "section-1-3"
-    },
-    {
       "number": "2",
       "title": "Foundations of healthcare agents",
       "depth": 0,
@@ -13218,7 +13212,7 @@
         "medhospital2024",
         "clinicalagents2026"
       ],
-      "excerpt": "Reflexion and ExpeL turn feedback into reusable information. Agent Hospital accumulates simulated clinical experience, ClinicalAgents retrieves diagnostic templates, and SkillRL combines policy learning with an evolving skill library. CoEvolve also changes the training distribution alongside the agent policy.…",
+      "excerpt": "Reflexion and ExpeL turn feedback into reusable information. Agent Hospital accumulates simulated clinical experience, ClinicalAgents retrieves diagnostic templates, and SkillRL combines policy learning with an evolving skill library. CoEvolve also changes the training distribution alongside the agent policy.",
       "excerpts": {
         "medhospital2024": "Agent Hospital accumulates simulated clinical experience, ClinicalAgents retrieves diagnostic templates, and SkillRL combines policy learning with an evolving skill library.",
         "clinicalagents2026": "Agent Hospital accumulates simulated clinical experience, ClinicalAgents retrieves diagnostic templates, and SkillRL combines policy learning with an evolving skill library."
@@ -13232,7 +13226,7 @@
       "keys": [
         "feng2026medexpmem"
       ],
-      "excerpt": "MedExpMem retains structured differential-diagnosis notes extracted from a model's errors, with a separate library for each model and unchanged diagnostic-model parameters (Figure 4a). Its anatomical index and relevance filtering determine which notes reach a new case. This design makes memory content and retrieval…",
+      "excerpt": "MedExpMem retains structured differential-diagnosis notes extracted from a model's errors, with a separate library for each model and unchanged diagnostic-model parameters (Figure 4a). Its anatomical index and relevance filtering determine which notes reach a new case.",
       "excerpts": {
         "feng2026medexpmem": "MedExpMem retains structured differential-diagnosis notes extracted from a model's errors, with a separate library for each model and unchanged diagnostic-model parameters (Figure 4a)."
       }
@@ -13258,7 +13252,7 @@
       "keys": [
         "medhospital2024"
       ],
-      "excerpt": "Separate subagent contexts can support differential diagnosis, imaging/laboratory review and medication checking, with summaries informing a shared decision. AutoGen provides a coordination framework, while Agent Hospital illustrates specialty consultation. The comparison concerns information sharing, communication…",
+      "excerpt": "Separate subagent contexts can support differential diagnosis, imaging/laboratory review and medication checking, with summaries informing a shared decision. AutoGen provides a coordination framework, while Agent Hospital illustrates specialty consultation. Persistent improvement additionally depends on which…",
       "excerpts": {
         "medhospital2024": "AutoGen provides a coordination framework, while Agent Hospital illustrates specialty consultation."
       }
@@ -13313,7 +13307,7 @@
         "wang2026ecgrsi",
         "lee2026revision3d"
       ],
-      "excerpt": "ECG-RSI revises synthesis operators, prompts and skills that produce ECG training examples (Figure 4e). ReVision3D revises reader configurations, training recipes and inference programs through retrospective CT replay (Figure 4f). These examples distinguish changing the learner's inputs or training recipe from…",
+      "excerpt": "ECG-RSI revises synthesis operators, prompts and skills that produce ECG training examples (Figure 4e). ReVision3D revises reader configurations, training recipes and inference programs through retrospective CT replay (Figure 4f).",
       "excerpts": {
         "wang2026ecgrsi": "ECG-RSI revises synthesis operators, prompts and skills that produce ECG training examples (Figure 4e).",
         "lee2026revision3d": "ReVision3D revises reader configurations, training recipes and inference programs through retrospective CT replay (Figure 4f)."
@@ -13340,7 +13334,7 @@
       "keys": [
         "clinicalagents2026"
       ],
-      "excerpt": "MDAgents adapts collaboration depth to case complexity and outperforms fixed groups on MedQA. ClinicalAgents combines mutable patient Working Memory, static diagnostic Experience Memory and Monte Carlo Tree Search (MCTS). Together, they illustrate why collaboration and within-case search are useful comparators when…",
+      "excerpt": "MDAgents adapts collaboration depth to case complexity and outperforms fixed groups on MedQA. ClinicalAgents combines mutable patient Working Memory, static diagnostic Experience Memory and Monte Carlo Tree Search (MCTS).",
       "excerpts": {
         "clinicalagents2026": "ClinicalAgents combines mutable patient Working Memory, static diagnostic Experience Memory and Monte Carlo Tree Search (MCTS)."
       }
@@ -13369,7 +13363,7 @@
         "fan2026macro",
         "coevolving2025"
       ],
-      "excerpt": "For image analysis, MACRO links retained image features with reusable composite tools (Figure 4b). TissueLab adds a persistent feedback path, retaining outputs and learning from expert inspection of image-analysis workflows. Its gains over static configurations come from one benchmark study without prospective…",
+      "excerpt": "For image analysis, MACRO links retained image features with reusable composite tools (Figure 4b). TissueLab adds a persistent feedback path, retaining outputs and learning from expert inspection of image-analysis workflows.",
       "excerpts": {
         "fan2026macro": "For image analysis, MACRO links retained image features with reusable composite tools (Figure 4b).",
         "coevolving2025": "TissueLab adds a persistent feedback path, retaining outputs and learning from expert inspection of image-analysis workflows."
@@ -13389,7 +13383,7 @@
         "schmidgall2026agentclinic",
         "feng2026medexpmem"
       ],
-      "excerpt": "Memory benefits depend on what is retained and how it is tested. Memory studies span simulated consultations, retrospective streams and offline libraries. PrivMeSA's patient-disjoint replay with synthetic identifiers reduces specialist messages per case from 7.02 to 5.98, with quarter-wise accuracy within 0.008 of…",
+      "excerpt": "Memory content and transfer. Memory studies span simulated consultations, retrospective streams and offline libraries. PrivMeSA's patient-disjoint replay with synthetic identifiers reduces specialist messages per case from 7.02 to 5.98, with quarter-wise accuracy within 0.008 of memory-off. AgentClinic's notebook…",
       "excerpts": {
         "lan2024amc": "Memory studies span simulated consultations, retrospective streams and offline libraries.",
         "almansoori2025medagentsim": "Memory studies span simulated consultations, retrospective streams and offline libraries.",
@@ -13462,7 +13456,7 @@
         "zhang2026vibemed",
         "yuan2026asclepius"
       ],
-      "excerpt": "A performance gain needs attribution to the changed component. EvoClinician and Skemex retain fixed update operators, while task and update-producing roles are not isolated in PsychAgent and MACRO. PrivMeSA retains a fixed distiller, and MedRSI lacks isolated evidence for benefit from a changing improver.…",
+      "excerpt": "Attribution to components and update procedures. EvoClinician and Skemex retain fixed update operators, while task and update-producing roles are not isolated in PsychAgent and MACRO. PrivMeSA retains a fixed distiller, and MedRSI lacks isolated evidence for benefit from a changing improver. MedForge-RSI protects…",
       "excerpts": {
         "he2026evoclinician": "EvoClinician and Skemex retain fixed update operators, while task and update-producing roles are not isolated in PsychAgent and MACRO.",
         "sun2026skemex": "EvoClinician and Skemex retain fixed update operators, while task and update-producing roles are not isolated in PsychAgent and MACRO.",
@@ -13533,7 +13527,7 @@
         "dang2026medzero",
         "wang2026ecgrsi"
       ],
-      "excerpt": "Generator comparisons need matched learning conditions and complete costs. Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules. ECG-RSI's first-round seven-benchmark score is 43.22 ±…",
+      "excerpt": "Training generators and revision costs. Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules. ECG-RSI's first-round seven-benchmark score is 43.22 ± 1.40, versus 39.29 ± 1.30 with…",
       "excerpts": {
         "chen2026cura": "Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules.",
         "liu2026bat": "Curriculum and simulated-policy studies change what the learner encounters, but EvoPatient bundles doctor components and MedZERO alternates models under fixed reward and curation rules.",
@@ -13577,7 +13571,7 @@
         "sayeedi2026r4",
         "meng2026topoagent"
       ],
-      "excerpt": "Independent testing and human participation support different conclusions. DxEvolve, EvoMDT and HealthFlow test experience transfer through independent hospital cases or external retrospective assessment. Checkpoint-selected MedRSI uses retrospective tests, MedForge-RSI separates final evaluation while disclosing…",
+      "excerpt": "Independent evaluation and human involvement. DxEvolve, EvoMDT and HealthFlow test experience transfer through independent hospital cases or external retrospective assessment. Checkpoint-selected MedRSI uses retrospective tests, MedForge-RSI separates final evaluation while disclosing earlier contamination, and…",
       "excerpts": {
         "ren2026dxevolve": "DxEvolve, EvoMDT and HealthFlow test experience transfer through independent hospital cases or external retrospective assessment.",
         "liu2026evomdt": "DxEvolve, EvoMDT and HealthFlow test experience transfer through independent hospital cases or external retrospective assessment.",
@@ -13632,12 +13626,12 @@
         "fan2026medenv",
         "qu2026sageagent"
       ],
-      "excerpt": "Imaging studies connect these comparisons to clinical data without yet testing prospective adaptation. Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer. Their explicit and implicit L2 cases have different attribution limits.…",
+      "excerpt": "Imaging and radiology reports. Twenty-five studies use images or radiology reports, including institutional data and external report-text transfer. Their explicit and implicit L2 cases have different attribution limits. TheraAgent and SAGEAgent use documented outcomes, but no mapped study tests learning from actual…",
       "excerpts": {
-        "wu2026medrsi": "Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer.",
-        "chen2026theraagent": "Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer. TheraAgent and SAGEAgent use documented outcomes, but no mapped study tests learning from actual radiologists' report corrections or prospective reporting adaptation.",
-        "feng2026gatedopenclaw": "Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer.",
-        "li2026emai": "Twenty-five studies use images or radiology reports (companion Table S4), including institutional data and external report-text transfer.",
+        "wu2026medrsi": "Twenty-five studies use images or radiology reports, including institutional data and external report-text transfer.",
+        "chen2026theraagent": "Twenty-five studies use images or radiology reports, including institutional data and external report-text transfer. TheraAgent and SAGEAgent use documented outcomes, but no mapped study tests learning from actual radiologists' report corrections or prospective reporting adaptation.",
+        "feng2026gatedopenclaw": "Twenty-five studies use images or radiology reports, including institutional data and external report-text transfer.",
+        "li2026emai": "Twenty-five studies use images or radiology reports, including institutional data and external report-text transfer.",
         "lee2026revision3d": "Their explicit and implicit L2 cases have different attribution limits.",
         "liu2026bat": "Their explicit and implicit L2 cases have different attribution limits.",
         "fan2026macro": "Their explicit and implicit L2 cases have different attribution limits.",
