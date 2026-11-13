@@ -112,45 +112,33 @@
     },
     {
       "number": "4.1",
-      "title": "Classification and diagnosis",
+      "title": "Clinical reasoning and decision-making",
       "depth": 1,
       "key": "section-4-1"
     },
     {
       "number": "4.2",
-      "title": "Generation",
+      "title": "Medical image analysis and reporting",
       "depth": 1,
       "key": "section-4-2"
     },
     {
       "number": "4.3",
-      "title": "Augmentation",
+      "title": "Medical question answering and evidence retrieval",
       "depth": 1,
       "key": "section-4-3"
     },
     {
       "number": "4.4",
-      "title": "Question answering",
+      "title": "Synthesis across tasks",
       "depth": 1,
       "key": "section-4-4"
     },
     {
       "number": "4.5",
-      "title": "Inference",
-      "depth": 1,
-      "key": "section-4-5"
-    },
-    {
-      "number": "4.6",
-      "title": "Synthesis across tasks",
-      "depth": 1,
-      "key": "section-4-6"
-    },
-    {
-      "number": "4.7",
       "title": "Study-level evidence for persistent and recursive improvement",
       "depth": 1,
-      "key": "section-4-7"
+      "key": "section-4-5"
     },
     {
       "number": "5",
@@ -272,6 +260,19 @@
       "section_title": "Feedback-driven updates and RL trajectories",
       "section_key": "section-3-3",
       "keys": [
+        "medhospital2024"
+      ],
+      "excerpt": "Training-data evolution. Generated encounters can supply both a source of agent experience and candidate training material. Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department. The relevant comparison asks whether this material improves performance on…",
+      "excerpts": {
+        "medhospital2024": "Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department."
+      }
+    },
+    {
+      "id": "p8",
+      "section": "3.3",
+      "section_title": "Feedback-driven updates and RL trajectories",
+      "section_key": "section-3-3",
+      "keys": [
         "wang2026ecgrsi",
         "lee2026revision3d"
       ],
@@ -282,27 +283,14 @@
       }
     },
     {
-      "id": "p8",
-      "section": "3.3",
-      "section_title": "Feedback-driven updates and RL trajectories",
-      "section_key": "section-3-3",
-      "keys": [
-        "medhospital2024"
-      ],
-      "excerpt": "Privacy-preserving generation. Real interaction trajectories require appropriate data-use and de-identification procedures. Agent Hospital instead generates simulated encounters. Clinical use of synthesized cases requires evidence that their content and feedback match the intended task before they enter training.",
-      "excerpts": {
-        "medhospital2024": "Agent Hospital instead generates simulated encounters."
-      }
-    },
-    {
       "id": "p9",
       "section": "4.1",
-      "section_title": "Classification and diagnosis",
+      "section_title": "Clinical reasoning and decision-making",
       "section_key": "section-4-1",
       "keys": [
         "medhospital2024"
       ],
-      "excerpt": "For diagnosis, the central comparison concerns whether experience from earlier patients helps a later, distinct case. Agent Hospital retains cases and experience text while its base LLMs stay frozen. After 20,000 simulated patients per department, mean internal diagnosis accuracy across 21 departments rises from…",
+      "excerpt": "Clinical reasoning covers diagnostic assessment, examination selection and treatment decisions. For diagnosis, the central comparison concerns whether experience from earlier patients helps a later, distinct case. Agent Hospital retains cases and experience text while its base LLMs stay frozen. After 20,000…",
       "excerpts": {
         "medhospital2024": "Agent Hospital retains cases and experience text while its base LLMs stay frozen."
       }
@@ -310,7 +298,7 @@
     {
       "id": "p10",
       "section": "4.1",
-      "section_title": "Classification and diagnosis",
+      "section_title": "Clinical reasoning and decision-making",
       "section_key": "section-4-1",
       "keys": [
         "clinicalagents2026"
@@ -322,63 +310,39 @@
     },
     {
       "id": "p11",
-      "section": "4.2",
-      "section_title": "Generation",
-      "section_key": "section-4-2",
-      "keys": [
-        "coevolving2025"
-      ],
-      "excerpt": "In report generation, the learning opportunity lies in separating factual corrections from stylistic preferences and retaining information useful to later reports. Prompted patient-language translation and Radiologist Copilot's within-report observation, template selection, drafting and quality control provide…",
-      "excerpts": {
-        "coevolving2025": "TissueLab adds a persistent feedback path, retaining outputs and learning from expert inspection of image-analysis workflows."
-      }
-    },
-    {
-      "id": "p12",
-      "section": "4.3",
-      "section_title": "Augmentation",
-      "section_key": "section-4-3",
-      "keys": [
-        "medhospital2024"
-      ],
-      "excerpt": "Generated encounters can supply both a source of agent experience and candidate training material. Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department. The relevant comparison asks whether this material improves performance on independent cases,…",
-      "excerpts": {
-        "medhospital2024": "Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department."
-      }
-    },
-    {
-      "id": "p13",
-      "section": "4.5",
-      "section_title": "Inference",
-      "section_key": "section-4-5",
+      "section": "4.1",
+      "section_title": "Clinical reasoning and decision-making",
+      "section_key": "section-4-1",
       "keys": [
         "qiu2025diaggym",
         "feng2025doctoragentrl"
       ],
-      "excerpt": "Sequential clinical inference can retain experience in a policy for choosing questions, examinations or treatment actions. The AI Clinician learns sepsis-treatment policies from historical ICU data, using a MIMIC-III development and validation cohort of approximately 17,000 admissions. It provides a non-LLM RL…",
+      "excerpt": "Sequential clinical decision-making can retain experience in a policy for choosing questions, examinations or treatment actions. DiagAgent learns examination and diagnosis policies in an EHR-derived interactive world model. On DiagBench's 750-case MIMIC-IV subset, its 14B model gains 11.20 diagnostic-accuracy…",
       "excerpts": {
         "qiu2025diaggym": "DiagAgent learns examination and diagnosis policies in an EHR-derived interactive world model.",
         "feng2025doctoragentrl": "DoctorAgent-RL instead uses multi-agent RL on MTMedDialog to refine progressive symptom elicitation."
       }
     },
     {
-      "id": "p14",
-      "section": "4.5",
-      "section_title": "Inference",
-      "section_key": "section-4-5",
+      "id": "p12",
+      "section": "4.2",
+      "section_title": "Medical image analysis and reporting",
+      "section_key": "section-4-2",
       "keys": [
-        "clinicalagents2026"
+        "fan2026macro",
+        "coevolving2025"
       ],
-      "excerpt": "Routing and workflow organization determine which learned capability reaches a case. MedAide uses intent-aware routing across four medical benchmarks. Medical Data Inference proposes a seven-agent pipeline covering ingestion through inference on geriatric, palliative-care and colonoscopy data, including…",
+      "excerpt": "For image analysis, MACRO links retained image features with reusable composite tools (Figure 4b). TissueLab adds a persistent feedback path, retaining outputs and learning from expert inspection of image-analysis workflows. Its gains over static configurations come from one benchmark study without prospective…",
       "excerpts": {
-        "clinicalagents2026": "ClinicalAgents supplies memory-supported search, while Reinventing Clinical Dialogue organizes four communication archetypes across planning, memory, action, collaboration and evolution."
+        "fan2026macro": "For image analysis, MACRO links retained image features with reusable composite tools (Figure 4b).",
+        "coevolving2025": "TissueLab adds a persistent feedback path, retaining outputs and learning from expert inspection of image-analysis workflows."
       }
     },
     {
-      "id": "p15",
-      "section": "4.7",
+      "id": "p13",
+      "section": "4.5",
       "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
+      "section_key": "section-4-5",
       "keys": [
         "lan2024amc",
         "almansoori2025medagentsim",
@@ -400,10 +364,10 @@
       }
     },
     {
-      "id": "p16",
-      "section": "4.7",
+      "id": "p14",
+      "section": "4.5",
       "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
+      "section_key": "section-4-5",
       "keys": [
         "shi2024ehragent",
         "liao2025reflectool",
@@ -447,10 +411,10 @@
       }
     },
     {
-      "id": "p17",
-      "section": "4.7",
+      "id": "p15",
+      "section": "4.5",
       "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
+      "section_key": "section-4-5",
       "keys": [
         "he2026evoclinician",
         "sun2026skemex",
@@ -474,10 +438,10 @@
       }
     },
     {
-      "id": "p18",
-      "section": "4.7",
+      "id": "p16",
+      "section": "4.5",
       "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
+      "section_key": "section-4-5",
       "keys": [
         "cao2026guideskill",
         "wu2026mediskillevo",
@@ -519,10 +483,10 @@
       }
     },
     {
-      "id": "p19",
-      "section": "4.7",
+      "id": "p17",
+      "section": "4.5",
       "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
+      "section_key": "section-4-5",
       "keys": [
         "chen2026cura",
         "liu2026bat",
@@ -544,10 +508,10 @@
       }
     },
     {
-      "id": "p20",
-      "section": "4.7",
+      "id": "p18",
+      "section": "4.5",
       "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
+      "section_key": "section-4-5",
       "keys": [
         "lee2026revision3d",
         "chen2026clinverse"
@@ -559,10 +523,10 @@
       }
     },
     {
-      "id": "p21",
-      "section": "4.7",
+      "id": "p19",
+      "section": "4.5",
       "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
+      "section_key": "section-4-5",
       "keys": [
         "ren2026dxevolve",
         "liu2026evomdt",
@@ -592,10 +556,10 @@
       }
     },
     {
-      "id": "p22",
-      "section": "4.7",
+      "id": "p20",
+      "section": "4.5",
       "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
+      "section_key": "section-4-5",
       "keys": [
         "dou2024shennongagent",
         "rugo2026livingoep",
@@ -613,10 +577,10 @@
       }
     },
     {
-      "id": "p23",
-      "section": "4.7",
+      "id": "p21",
+      "section": "4.5",
       "section_title": "Study-level evidence for persistent and recursive improvement",
-      "section_key": "section-4-7",
+      "section_key": "section-4-5",
       "keys": [
         "wu2026medrsi",
         "chen2026theraagent",
@@ -648,7 +612,7 @@
       }
     },
     {
-      "id": "p24",
+      "id": "p22",
       "section": "5.1",
       "section_title": "Technical and clinical challenges",
       "section_key": "section-5-1",
@@ -661,7 +625,7 @@
       }
     },
     {
-      "id": "p25",
+      "id": "p23",
       "section": "5.2",
       "section_title": "Research and translational directions",
       "section_key": "section-5-2",
@@ -674,7 +638,7 @@
       }
     },
     {
-      "id": "p26",
+      "id": "p24",
       "section": "5.2",
       "section_title": "Research and translational directions",
       "section_key": "section-5-2",
@@ -692,1022 +656,1022 @@
       "source": "almansoori2025medagentsim",
       "target": "feng2026medexpmem",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "almansoori2025medagentsim",
       "target": "lan2024amc",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "almansoori2025medagentsim",
       "target": "schmidgall2026agentclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "almansoori2025medagentsim",
       "target": "shen2026evomedagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "almansoori2025medagentsim",
       "target": "shi2026emr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "almansoori2025medagentsim",
       "target": "wang2026privmesa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "chen2026rhis",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "fan2026medenv",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "hu2026templar",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "jiang2026sempa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "li2026bridgegap",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "li2026decisionrules",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "li2026skillcdpo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "mao2026srmapr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "mokssit2026fhiragenteval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "cao2026guideskill",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "chen2026mdteamgpt",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "chen2026skingptx",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "chen2026theraagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "chen2027mdtace",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "dai2026cdeg",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "ghaffari2026learnactcoder",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "han2026gsem",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "ji2026spagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "li2025macd",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2025semagents",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026clinverse",
       "target": "lee2026revision3d",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026cura",
       "target": "dang2026medzero",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026cura",
       "target": "du2025evopatient",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026cura",
       "target": "jeong2026healthcaregym",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026cura",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026cura",
       "target": "wang2026ecgrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026cura",
       "target": "wu2026sepsisagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "chen2026skingptx",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "chen2026theraagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "chen2027mdtace",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "dai2026cdeg",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "ghaffari2026learnactcoder",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "han2026gsem",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "ji2026spagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "li2025macd",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026mdteamgpt",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "fan2026macro",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "he2026evoclinician",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "li2026sea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "liu2026evomdt",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "liu2026openhospital",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "meng2026topoagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "ren2026dxevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "sayeedi2026r4",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "sun2026skemex",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "tzanis2026reclaim",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "yang2026psychagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "yuan2026asclepius",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "zhang2026medevoeval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "zhang2026vibemed",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026medforge",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "fan2026medenv",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "hu2026templar",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "jiang2026sempa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "li2026bridgegap",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "li2026decisionrules",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "li2026skillcdpo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "mao2026srmapr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "mokssit2026fhiragenteval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026rhis",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "chen2026theraagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "chen2027mdtace",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "dai2026cdeg",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "ghaffari2026learnactcoder",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "han2026gsem",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "ji2026spagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "li2025macd",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026skingptx",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "chen2027mdtace",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "dai2026cdeg",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "fan2026macro",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "fan2026medenv",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "feng2026gatedopenclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "ghaffari2026learnactcoder",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "han2026gsem",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "ji2026spagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "lee2026revision3d",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "li2025macd",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "li2026emai",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "qu2026sageagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "shao2026case",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "wang2026mira",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2026theraagent",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "dai2026cdeg",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "ghaffari2026learnactcoder",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "han2026gsem",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "ji2026spagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "li2025macd",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "chen2027mdtace",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
@@ -1715,6 +1679,13 @@
       "target": "medhospital2024",
       "sections": [
         "1"
+      ]
+    },
+    {
+      "source": "coevolving2025",
+      "target": "fan2026macro",
+      "sections": [
+        "4.2"
       ]
     },
     {
@@ -1728,1036 +1699,1036 @@
       "source": "dai2026cdeg",
       "target": "ghaffari2026learnactcoder",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "han2026gsem",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "ji2026spagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "li2025macd",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dai2026cdeg",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dang2026medzero",
       "target": "du2025evopatient",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dang2026medzero",
       "target": "jeong2026healthcaregym",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dang2026medzero",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dang2026medzero",
       "target": "wang2026ecgrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dang2026medzero",
       "target": "wu2026sepsisagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dou2024shennongagent",
       "target": "li2026vdss",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dou2024shennongagent",
       "target": "neary2025fast",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dou2024shennongagent",
       "target": "rugo2026livingoep",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "dou2024shennongagent",
       "target": "wang2026tcmsea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "du2025evopatient",
       "target": "jeong2026healthcaregym",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "du2025evopatient",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "du2025evopatient",
       "target": "wang2026ecgrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "du2025evopatient",
       "target": "wu2026sepsisagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "fan2026medenv",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "feng2026gatedopenclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "he2026evoclinician",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "lee2026revision3d",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "li2026emai",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "qu2026sageagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "shao2026case",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "sun2026skemex",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "wang2026mira",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "yang2026psychagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "yuan2026asclepius",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "zhang2026vibemed",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026macro",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "feng2026gatedopenclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "hu2026templar",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "jiang2026sempa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "lee2026revision3d",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "li2026bridgegap",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "li2026decisionrules",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "li2026emai",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "li2026skillcdpo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "mao2026srmapr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "mokssit2026fhiragenteval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "qu2026sageagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "shao2026case",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "wang2026mira",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "fan2026medenv",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2025doctoragentrl",
       "target": "qiu2025diaggym",
       "sections": [
-        "4.5"
+        "4.1"
       ]
     },
     {
       "source": "feng2026gatedopenclaw",
       "target": "lee2026revision3d",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026gatedopenclaw",
       "target": "li2026emai",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026gatedopenclaw",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026gatedopenclaw",
       "target": "qu2026sageagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026gatedopenclaw",
       "target": "shao2026case",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026gatedopenclaw",
       "target": "wang2026mira",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026gatedopenclaw",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026gatedopenclaw",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026medexpmem",
       "target": "lan2024amc",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026medexpmem",
       "target": "schmidgall2026agentclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026medexpmem",
       "target": "shen2026evomedagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026medexpmem",
       "target": "shi2026emr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "feng2026medexpmem",
       "target": "wang2026privmesa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "han2026gsem",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "ji2026spagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "li2025macd",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ghaffari2026learnactcoder",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "ji2026spagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "li2025macd",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "han2026gsem",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "he2026evoclinician",
       "target": "sun2026skemex",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "he2026evoclinician",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "he2026evoclinician",
       "target": "yang2026psychagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "he2026evoclinician",
       "target": "yuan2026asclepius",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "he2026evoclinician",
       "target": "zhang2026vibemed",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "jiang2026sempa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "li2026bridgegap",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "li2026decisionrules",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "li2026skillcdpo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "mao2026srmapr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "mokssit2026fhiragenteval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "hu2026templar",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jeong2026healthcaregym",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jeong2026healthcaregym",
       "target": "wang2026ecgrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jeong2026healthcaregym",
       "target": "wu2026sepsisagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ji2026spagents",
       "target": "li2025macd",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ji2026spagents",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ji2026spagents",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ji2026spagents",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ji2026spagents",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ji2026spagents",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ji2026spagents",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ji2026spagents",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ji2026spagents",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "li2026bridgegap",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "li2026decisionrules",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "li2026skillcdpo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "mao2026srmapr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "mokssit2026fhiragenteval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "jiang2026sempa",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lan2024amc",
       "target": "schmidgall2026agentclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lan2024amc",
       "target": "shen2026evomedagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lan2024amc",
       "target": "shi2026emr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lan2024amc",
       "target": "wang2026privmesa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lee2026revision3d",
       "target": "li2026emai",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lee2026revision3d",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lee2026revision3d",
       "target": "qu2026sageagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lee2026revision3d",
       "target": "shao2026case",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
@@ -2771,1372 +2742,1372 @@
       "source": "lee2026revision3d",
       "target": "wang2026mira",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lee2026revision3d",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lee2026revision3d",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2025macd",
       "target": "li2026healthclaw",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2025macd",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2025macd",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2025macd",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2025macd",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2025macd",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2025macd",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2025macd",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "li2026decisionrules",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "li2026skillcdpo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "mao2026srmapr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "mokssit2026fhiragenteval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026bridgegap",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "li2026skillcdpo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "mao2026srmapr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "mokssit2026fhiragenteval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026decisionrules",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026emai",
       "target": "liu2026bat",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026emai",
       "target": "qu2026sageagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026emai",
       "target": "shao2026case",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026emai",
       "target": "wang2026mira",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026emai",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026emai",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026healthclaw",
       "target": "liao2025reflectool",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026healthclaw",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026healthclaw",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026healthclaw",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026healthclaw",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026healthclaw",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026healthclaw",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026sea",
       "target": "liu2026evomdt",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026sea",
       "target": "liu2026openhospital",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026sea",
       "target": "meng2026topoagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026sea",
       "target": "ren2026dxevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026sea",
       "target": "sayeedi2026r4",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026sea",
       "target": "tzanis2026reclaim",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026sea",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026sea",
       "target": "zhang2026medevoeval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026sea",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026skillcdpo",
       "target": "mao2026srmapr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026skillcdpo",
       "target": "mokssit2026fhiragenteval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026skillcdpo",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026skillcdpo",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026skillcdpo",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026skillcdpo",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026skillcdpo",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026skillcdpo",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026skillcdpo",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026vdss",
       "target": "neary2025fast",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026vdss",
       "target": "rugo2026livingoep",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "li2026vdss",
       "target": "wang2026tcmsea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2025reflectool",
       "target": "liao2026agentehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2025reflectool",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2025reflectool",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2025reflectool",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2025reflectool",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2025reflectool",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2026agentehr",
       "target": "lu2025kea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2026agentehr",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2026agentehr",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2026agentehr",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liao2026agentehr",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026bat",
       "target": "qu2026sageagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026bat",
       "target": "shao2026case",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026bat",
       "target": "wang2026ecgrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026bat",
       "target": "wang2026mira",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026bat",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026bat",
       "target": "wu2026sepsisagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026bat",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026evomdt",
       "target": "liu2026openhospital",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026evomdt",
       "target": "meng2026topoagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026evomdt",
       "target": "ren2026dxevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026evomdt",
       "target": "sayeedi2026r4",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026evomdt",
       "target": "tzanis2026reclaim",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026evomdt",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026evomdt",
       "target": "zhang2026medevoeval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026evomdt",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026openhospital",
       "target": "meng2026topoagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026openhospital",
       "target": "ren2026dxevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026openhospital",
       "target": "sayeedi2026r4",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026openhospital",
       "target": "tzanis2026reclaim",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026openhospital",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026openhospital",
       "target": "zhang2026medevoeval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "liu2026openhospital",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lu2025kea",
       "target": "murugesan2026amr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lu2025kea",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lu2025kea",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "lu2025kea",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mao2026srmapr",
       "target": "mokssit2026fhiragenteval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mao2026srmapr",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mao2026srmapr",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mao2026srmapr",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mao2026srmapr",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mao2026srmapr",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mao2026srmapr",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mao2026srmapr",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "meng2026topoagent",
       "target": "ren2026dxevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "meng2026topoagent",
       "target": "sayeedi2026r4",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "meng2026topoagent",
       "target": "tzanis2026reclaim",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "meng2026topoagent",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "meng2026topoagent",
       "target": "zhang2026medevoeval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "meng2026topoagent",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mokssit2026fhiragenteval",
       "target": "ossowski2026codeclinic",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mokssit2026fhiragenteval",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mokssit2026fhiragenteval",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mokssit2026fhiragenteval",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mokssit2026fhiragenteval",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mokssit2026fhiragenteval",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "mokssit2026fhiragenteval",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "murugesan2026amr",
       "target": "shi2024ehragent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "murugesan2026amr",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "murugesan2026amr",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "neary2025fast",
       "target": "rugo2026livingoep",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "neary2025fast",
       "target": "wang2026tcmsea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ossowski2026codeclinic",
       "target": "ruan2026normcompliance",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ossowski2026codeclinic",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ossowski2026codeclinic",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ossowski2026codeclinic",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ossowski2026codeclinic",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ossowski2026codeclinic",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "qu2026sageagent",
       "target": "shao2026case",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "qu2026sageagent",
       "target": "wang2026mira",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "qu2026sageagent",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "qu2026sageagent",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ren2026dxevolve",
       "target": "sayeedi2026r4",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ren2026dxevolve",
       "target": "tzanis2026reclaim",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ren2026dxevolve",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ren2026dxevolve",
       "target": "zhang2026medevoeval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ren2026dxevolve",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ruan2026normcompliance",
       "target": "shi2026medguard",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ruan2026normcompliance",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ruan2026normcompliance",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ruan2026normcompliance",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "ruan2026normcompliance",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "rugo2026livingoep",
       "target": "wang2026tcmsea",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "sayeedi2026r4",
       "target": "tzanis2026reclaim",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "sayeedi2026r4",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "sayeedi2026r4",
       "target": "zhang2026medevoeval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "sayeedi2026r4",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "schmidgall2026agentclinic",
       "target": "shen2026evomedagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "schmidgall2026agentclinic",
       "target": "shi2026emr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "schmidgall2026agentclinic",
       "target": "wang2026privmesa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shao2026case",
       "target": "wang2026mira",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shao2026case",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shao2026case",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shen2026evomedagent",
       "target": "shi2026emr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shen2026evomedagent",
       "target": "wang2026privmesa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shi2024ehragent",
       "target": "wu2026uehr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shi2024ehragent",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shi2026emr",
       "target": "wang2026privmesa",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shi2026medguard",
       "target": "wu2026mediskillevo",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shi2026medguard",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shi2026medguard",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "shi2026medguard",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "sun2026skemex",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "sun2026skemex",
       "target": "yang2026psychagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "sun2026skemex",
       "target": "yuan2026asclepius",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "sun2026skemex",
       "target": "zhang2026vibemed",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "tzanis2026reclaim",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "tzanis2026reclaim",
       "target": "zhang2026medevoeval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "tzanis2026reclaim",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wang2026ecgrsi",
       "target": "wu2026sepsisagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wang2026mira",
       "target": "wu2026medrsi",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wang2026mira",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026mediskillevo",
       "target": "xing2026clinicalretrial",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026mediskillevo",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026mediskillevo",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026medrsi",
       "target": "yang2026psychagent",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026medrsi",
       "target": "yuan2026asclepius",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026medrsi",
       "target": "zhang2026medevoeval",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026medrsi",
       "target": "zhang2026vibemed",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026medrsi",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026medrsi",
       "target": "zhu2026ultrasoundagents",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "wu2026uehr",
       "target": "zeng2026trajevolve",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "xing2026clinicalretrial",
       "target": "zheng2026meddcr",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "xing2026clinicalretrial",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "yang2026psychagent",
       "target": "yuan2026asclepius",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "yang2026psychagent",
       "target": "zhang2026vibemed",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "yuan2026asclepius",
       "target": "zhang2026vibemed",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "zhang2026medevoeval",
       "target": "zhu2026healthflow",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     },
     {
       "source": "zheng2026meddcr",
       "target": "zhuang2025doctor",
       "sections": [
-        "4.7"
+        "4.5"
       ]
     }
   ]

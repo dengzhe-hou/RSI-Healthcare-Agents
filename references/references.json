@@ -816,6 +816,70 @@
     },
     {
       "number": 37,
+      "key": "medaide2024",
+      "title": "MedAide: Information Fusion and Anatomy of Medical Intents via LLM-based Agent Collaboration",
+      "authors": [
+        "Dingkang Yang",
+        "Jinjie Wei",
+        "Mingcheng Li",
+        "Jiyao Liu",
+        "Lihao Liu",
+        "Ming Hu",
+        "Junjun He",
+        "Yakun Ju",
+        "Wei Zhou",
+        "Yang Liu",
+        "Lihua Zhang"
+      ],
+      "year": "2026",
+      "venue": "Information Fusion",
+      "doi": "10.1016/j.inffus.2025.103743",
+      "url": "https://doi.org/10.1016/j.inffus.2025.103743",
+      "eprint": "2410.12532",
+      "in_evidence_map": false,
+      "bibtex": "@article{medaide2024,\n  author    = {Dingkang Yang and Jinjie Wei and Mingcheng Li and Jiyao Liu and Lihao Liu and Ming Hu and Junjun He and Yakun Ju and Wei Zhou and Yang Liu and Lihua Zhang},\n  title     = {{MedAide}: Information Fusion and Anatomy of Medical Intents via {LLM}-based Agent Collaboration},\n  eprint        = {2410.12532},\n  archivePrefix = {arXiv},\n  year          = {2026},\n  journal       = {Information Fusion},\n  volume        = {127},\n  pages         = {103743},\n  doi           = {10.1016/j.inffus.2025.103743}\n}"
+    },
+    {
+      "number": 38,
+      "key": "meddata2025",
+      "title": "Agentic AI Framework for End-to-End Medical Data Inference",
+      "authors": [
+        "Soorya Ram Shimgekar",
+        "Shayan Vassef",
+        "Abhay Goyal",
+        "Koustuv Saha",
+        "Pi Zonooz",
+        "Navin Kumar"
+      ],
+      "year": "2025",
+      "venue": "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
+      "doi": "10.1109/BIBM66473.2025.11356498",
+      "url": "https://doi.org/10.1109/BIBM66473.2025.11356498",
+      "eprint": "2507.18115",
+      "in_evidence_map": false,
+      "bibtex": "@inproceedings{meddata2025,\n  author        = {Soorya Ram Shimgekar and Shayan Vassef and Abhay Goyal and Koustuv Saha and Pi Zonooz and Navin Kumar},\n  title     = {Agentic {AI} Framework for End-to-End Medical Data Inference},\n  eprint        = {2507.18115},\n  archivePrefix = {arXiv},\n  year      = {2025},\n  booktitle     = {2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},\n  pages         = {7807--7810},\n  publisher     = {IEEE},\n  doi           = {10.1109/BIBM66473.2025.11356498}\n}"
+    },
+    {
+      "number": 39,
+      "key": "reinventing_dialogue2025",
+      "title": "Reinventing Clinical Dialogue: Agentic Paradigms for LLM Enabled Healthcare Communication",
+      "authors": [
+        "Xiaoquan Zhi",
+        "Hongke Zhao",
+        "Likang Wu",
+        "Chuang Zhao",
+        "Hengshu Zhu"
+      ],
+      "year": "2025",
+      "venue": "",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2512.01453",
+      "eprint": "2512.01453",
+      "in_evidence_map": false,
+      "bibtex": "@misc{reinventing_dialogue2025,\n  author    = {Xiaoquan Zhi and Hongke Zhao and Likang Wu and Chuang Zhao and Hengshu Zhu},\n  title         = {Reinventing Clinical Dialogue: Agentic Paradigms for {LLM} Enabled Healthcare Communication},\n  eprint        = {2512.01453},\n  archivePrefix = {arXiv},\n  year      = {2025}\n}"
+    },
+    {
+      "number": 40,
       "key": "qiu2025diaggym",
       "title": "Evolving Interactive Diagnostic Agents in a Virtual Clinical Environment",
       "authors": [
@@ -843,7 +907,7 @@
       "bibtex": "@misc{qiu2025diaggym,\n  author    = {Pengcheng Qiu and Chaoyi Wu and Junwei Liu and Qiaoyu Zheng and Yusheng Liao and Haowen Wang and Yun Yue and Qianrui Fan and Shuai Zhen and Jian Wang and Jinjie Gu and Yanfeng Wang and Ya Zhang and Weidi Xie},\n  title     = {Evolving Interactive Diagnostic Agents in a Virtual Clinical Environment},\n  eprint        = {2510.24654},\n  archivePrefix = {arXiv},\n  year      = {2025}\n}"
     },
     {
-      "number": 38,
+      "number": 41,
       "key": "coevolving2025",
       "title": "A Co-Evolving Agentic AI System for Medical Imaging Analysis",
       "authors": [
@@ -871,7 +935,7 @@
       "bibtex": "@misc{coevolving2025,\n  author    = {Songhao Li and Jonathan Xu and Tiancheng Bao and Yuxuan Liu and Yuchen Liu and Yihang Liu and Lilin Wang and Wenhui Lei and Sheng Wang and Yinuo Xu and Yan Cui and Jialu Yao and Shunsuke Koga and Zhi Huang},\n  title     = {A Co-Evolving Agentic {AI} System for Medical Imaging Analysis},\n  eprint        = {2509.20279},\n  archivePrefix = {arXiv},\n  year      = {2025}\n}"
     },
     {
-      "number": 39,
+      "number": 42,
       "key": "dang2026medzero",
       "title": "MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation",
       "authors": [
@@ -892,7 +956,7 @@
       "bibtex": "@misc{dang2026medzero,\n  author = {Xilin Dang and Weilin Ruan and Xue Yang and Jinghao Wang and Xiaowei Hu and Jinpeng Li and Pheng-Ann Heng},\n  title = {{MedZERO}: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation},\n  year = {2026},\n  eprint = {2610.08327},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.08327},\n  note = {Author-reported acceptance at NeurIPS 2026},\n  url = {https://arxiv.org/abs/2610.08327v1}\n}"
     },
     {
-      "number": 40,
+      "number": 43,
       "key": "wang2026ecgrsi",
       "title": "ECG-RSI: Recursive Self-Improvement through Targeted Electrocardiogram Waveform Evolution",
       "authors": [
@@ -918,7 +982,7 @@
       "bibtex": "@misc{wang2026ecgrsi,\n  author = {Xiaoliang Wang and Zhuo Chen and Chuanyang Zheng and Jiangwei Lao and Quanbin Wang and Honglin Lin and Jiajia Liu and Zhihong Lu and Hao Jin and Jian Wang and Jinjie Gu and Lijun Wu},\n  title = {{ECG-RSI}: Recursive Self-Improvement through Targeted Electrocardiogram Waveform Evolution},\n  year = {2026},\n  eprint = {2610.17718},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.17718},\n  url = {https://arxiv.org/abs/2610.17718v1}\n}"
     },
     {
-      "number": 41,
+      "number": 44,
       "key": "lee2026revision3d",
       "title": "ReVision3D: Attribution-Guided Recursive Self-Improvement for 3D Medical Perception",
       "authors": [
@@ -937,7 +1001,45 @@
       "bibtex": "@misc{lee2026revision3d,\n  author = {Ho Hin Lee and Yuyin Zhou and Yannan Yu and Shi Gu and Yifan Wu},\n  title = {{ReVision3D: Attribution-Guided Recursive Self-Improvement for 3D Medical Perception}},\n  year = {2026},\n  eprint = {2609.32984},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2609.32984},\n  url = {https://arxiv.org/abs/2609.32984v2}\n}"
     },
     {
-      "number": 42,
+      "number": 45,
+      "key": "komorowski2018clinician",
+      "title": "The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care",
+      "authors": [
+        "Matthieu Komorowski",
+        "Leo A. Celi",
+        "Omar Badawi",
+        "Anthony C. Gordon",
+        "A. Aldo Faisal"
+      ],
+      "year": "2018",
+      "venue": "Nature Medicine",
+      "doi": "10.1038/s41591-018-0213-5",
+      "url": "https://doi.org/10.1038/s41591-018-0213-5",
+      "eprint": "",
+      "in_evidence_map": false,
+      "bibtex": "@article{komorowski2018clinician,\n  author    = {Matthieu Komorowski and Leo A. Celi and Omar Badawi and Anthony C. Gordon and A. Aldo Faisal},\n  title     = {The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care},\n  journal   = {Nature Medicine},\n  volume    = {24},\n  pages     = {1716--1720},\n  year      = {2018},\n  doi       = {10.1038/s41591-018-0213-5}\n}"
+    },
+    {
+      "number": 46,
+      "key": "feng2025doctoragentrl",
+      "title": "DoctorAgent-RL: A Multi-Agent Collaborative Reinforcement Learning System for Multi-Turn Clinical Dialogue",
+      "authors": [
+        "Yichun Feng",
+        "Jiawei Wang",
+        "Lu Zhou",
+        "Zhen Lei",
+        "Yixue Li"
+      ],
+      "year": "2026",
+      "venue": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "doi": "10.1109/ICASSP55912.2026.11460976",
+      "url": "https://doi.org/10.1109/ICASSP55912.2026.11460976",
+      "eprint": "2505.19630",
+      "in_evidence_map": true,
+      "bibtex": "@inproceedings{feng2025doctoragentrl,\n  author        = {Yichun Feng and Jiawei Wang and Lu Zhou and Zhen Lei and Yixue Li},\n  title         = {{DoctorAgent-RL}: A Multi-Agent Collaborative Reinforcement Learning System for Multi-Turn Clinical Dialogue},\n  eprint        = {2505.19630},\n  archivePrefix = {arXiv},\n  year          = {2026},\n  booktitle     = {ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},\n  pages         = {16952--16956},\n  publisher     = {IEEE},\n  doi           = {10.1109/ICASSP55912.2026.11460976}\n}"
+    },
+    {
+      "number": 47,
       "key": "lyu2023clinicalnote",
       "title": "Translating radiology reports into plain language using ChatGPT and GPT-4 with prompt learning: results, limitations, and potential",
       "authors": [
@@ -959,7 +1061,7 @@
       "bibtex": "@article{lyu2023clinicalnote,\n  author    = {Qing Lyu and Josh Tan and Michael E. Zapadka and Janardhana Ponnatapura and Chuang Niu and Kyle J. Myers and Ge Wang and Christopher T. Whitlow},\n  title     = {Translating radiology reports into plain language using {ChatGPT} and {GPT-4} with prompt learning: results, limitations, and potential},\n  journal   = {Visual Computing for Industry, Biomedicine, and Art},\n  volume    = {6},\n  year      = {2023},\n  pages     = {9},\n  doi       = {10.1186/s42492-023-00136-5}\n}"
     },
     {
-      "number": 43,
+      "number": 48,
       "key": "wang2023r2gengpt",
       "title": "R2GenGPT: Radiology Report Generation with Frozen LLMs",
       "authors": [
@@ -977,7 +1079,7 @@
       "bibtex": "@article{wang2023r2gengpt,\n  author    = {Zhanyu Wang and Lingqiao Liu and Lei Wang and Luping Zhou},\n  title     = {{R2GenGPT}: Radiology Report Generation with Frozen {LLMs}},\n  journal   = {Meta-Radiology},\n  volume    = {1},\n  number    = {3},\n  pages     = {100033},\n  year      = {2023},\n  doi       = {10.1016/j.metrad.2023.100033},\n  url       = {https://www.sciencedirect.com/science/article/pii/S2950162823000334}\n}"
     },
     {
-      "number": 44,
+      "number": 49,
       "key": "yu2025radiologist",
       "title": "Radiologist Copilot: An Agentic Framework Orchestrating Specialized Tools for Reliable Radiology Reporting",
       "authors": [
@@ -996,7 +1098,7 @@
       "bibtex": "@misc{yu2025radiologist,\n  title={Radiologist Copilot: An Agentic Framework Orchestrating Specialized Tools for Reliable Radiology Reporting},\n  author={Yu, Yongrui and Huang, Zhongzhen and Mu, Linjie and Zhang, Shaoting and Zhang, Xiaofan},\n  eprint        = {2512.02814},\n  archivePrefix = {arXiv},\n  year={2025}\n}"
     },
     {
-      "number": 45,
+      "number": 50,
       "key": "kgagent2024",
       "title": "KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph",
       "authors": [
@@ -1017,7 +1119,7 @@
       "bibtex": "@inproceedings{kgagent2024,\n  author    = {Jinhao Jiang and Kun Zhou and Wayne Xin Zhao and Yang Song and Chen Zhu and Hengshu Zhu and Ji-Rong Wen},\n  title     = {{KG-Agent}: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph},\n  eprint        = {2402.11163},\n  archivePrefix = {arXiv},\n  year          = {2025},\n  booktitle     = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},\n  pages         = {9505--9523},\n  publisher     = {Association for Computational Linguistics},\n  doi           = {10.18653/v1/2025.acl-long.468}\n}"
     },
     {
-      "number": 46,
+      "number": 51,
       "key": "zakka2024almanac",
       "title": "Almanac: Retrieval-Augmented Language Models for Clinical Medicine",
       "authors": [
@@ -1051,108 +1153,6 @@
       "eprint": "",
       "in_evidence_map": false,
       "bibtex": "@article{zakka2024almanac,\n  author = {Zakka, Cyril and Shad, Rohan and Chaurasia, Akash and Dalal, Alex R. and Kim, Jennifer L. and Moor, Michael and Fong, Robyn and Phillips, Curran and Alexander, Kevin and Ashley, Euan and Boyd, Jack and Boyd, Kathleen and Hirsch, Karen and Langlotz, Curt and Lee, Rita and Melia, Joanna and Nelson, Joanna and Sallam, Karim and Tullis, Stacey and Vogelsong, Melissa Ann and Cunningham, John Patrick and Hiesinger, William},\n  title = {Almanac: Retrieval-Augmented Language Models for Clinical Medicine},\n  journal = {NEJM AI},\n  volume = {1},\n  number = {2},\n  pages = {AIoa2300068},\n  year = {2024},\n  doi = {10.1056/AIoa2300068}\n}"
-    },
-    {
-      "number": 47,
-      "key": "reinventing_dialogue2025",
-      "title": "Reinventing Clinical Dialogue: Agentic Paradigms for LLM Enabled Healthcare Communication",
-      "authors": [
-        "Xiaoquan Zhi",
-        "Hongke Zhao",
-        "Likang Wu",
-        "Chuang Zhao",
-        "Hengshu Zhu"
-      ],
-      "year": "2025",
-      "venue": "",
-      "doi": "",
-      "url": "https://arxiv.org/abs/2512.01453",
-      "eprint": "2512.01453",
-      "in_evidence_map": false,
-      "bibtex": "@misc{reinventing_dialogue2025,\n  author    = {Xiaoquan Zhi and Hongke Zhao and Likang Wu and Chuang Zhao and Hengshu Zhu},\n  title         = {Reinventing Clinical Dialogue: Agentic Paradigms for {LLM} Enabled Healthcare Communication},\n  eprint        = {2512.01453},\n  archivePrefix = {arXiv},\n  year      = {2025}\n}"
-    },
-    {
-      "number": 48,
-      "key": "komorowski2018clinician",
-      "title": "The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care",
-      "authors": [
-        "Matthieu Komorowski",
-        "Leo A. Celi",
-        "Omar Badawi",
-        "Anthony C. Gordon",
-        "A. Aldo Faisal"
-      ],
-      "year": "2018",
-      "venue": "Nature Medicine",
-      "doi": "10.1038/s41591-018-0213-5",
-      "url": "https://doi.org/10.1038/s41591-018-0213-5",
-      "eprint": "",
-      "in_evidence_map": false,
-      "bibtex": "@article{komorowski2018clinician,\n  author    = {Matthieu Komorowski and Leo A. Celi and Omar Badawi and Anthony C. Gordon and A. Aldo Faisal},\n  title     = {The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care},\n  journal   = {Nature Medicine},\n  volume    = {24},\n  pages     = {1716--1720},\n  year      = {2018},\n  doi       = {10.1038/s41591-018-0213-5}\n}"
-    },
-    {
-      "number": 49,
-      "key": "feng2025doctoragentrl",
-      "title": "DoctorAgent-RL: A Multi-Agent Collaborative Reinforcement Learning System for Multi-Turn Clinical Dialogue",
-      "authors": [
-        "Yichun Feng",
-        "Jiawei Wang",
-        "Lu Zhou",
-        "Zhen Lei",
-        "Yixue Li"
-      ],
-      "year": "2026",
-      "venue": "ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
-      "doi": "10.1109/ICASSP55912.2026.11460976",
-      "url": "https://doi.org/10.1109/ICASSP55912.2026.11460976",
-      "eprint": "2505.19630",
-      "in_evidence_map": true,
-      "bibtex": "@inproceedings{feng2025doctoragentrl,\n  author        = {Yichun Feng and Jiawei Wang and Lu Zhou and Zhen Lei and Yixue Li},\n  title         = {{DoctorAgent-RL}: A Multi-Agent Collaborative Reinforcement Learning System for Multi-Turn Clinical Dialogue},\n  eprint        = {2505.19630},\n  archivePrefix = {arXiv},\n  year          = {2026},\n  booktitle     = {ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},\n  pages         = {16952--16956},\n  publisher     = {IEEE},\n  doi           = {10.1109/ICASSP55912.2026.11460976}\n}"
-    },
-    {
-      "number": 50,
-      "key": "medaide2024",
-      "title": "MedAide: Information Fusion and Anatomy of Medical Intents via LLM-based Agent Collaboration",
-      "authors": [
-        "Dingkang Yang",
-        "Jinjie Wei",
-        "Mingcheng Li",
-        "Jiyao Liu",
-        "Lihao Liu",
-        "Ming Hu",
-        "Junjun He",
-        "Yakun Ju",
-        "Wei Zhou",
-        "Yang Liu",
-        "Lihua Zhang"
-      ],
-      "year": "2026",
-      "venue": "Information Fusion",
-      "doi": "10.1016/j.inffus.2025.103743",
-      "url": "https://doi.org/10.1016/j.inffus.2025.103743",
-      "eprint": "2410.12532",
-      "in_evidence_map": false,
-      "bibtex": "@article{medaide2024,\n  author    = {Dingkang Yang and Jinjie Wei and Mingcheng Li and Jiyao Liu and Lihao Liu and Ming Hu and Junjun He and Yakun Ju and Wei Zhou and Yang Liu and Lihua Zhang},\n  title     = {{MedAide}: Information Fusion and Anatomy of Medical Intents via {LLM}-based Agent Collaboration},\n  eprint        = {2410.12532},\n  archivePrefix = {arXiv},\n  year          = {2026},\n  journal       = {Information Fusion},\n  volume        = {127},\n  pages         = {103743},\n  doi           = {10.1016/j.inffus.2025.103743}\n}"
-    },
-    {
-      "number": 51,
-      "key": "meddata2025",
-      "title": "Agentic AI Framework for End-to-End Medical Data Inference",
-      "authors": [
-        "Soorya Ram Shimgekar",
-        "Shayan Vassef",
-        "Abhay Goyal",
-        "Koustuv Saha",
-        "Pi Zonooz",
-        "Navin Kumar"
-      ],
-      "year": "2025",
-      "venue": "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
-      "doi": "10.1109/BIBM66473.2025.11356498",
-      "url": "https://doi.org/10.1109/BIBM66473.2025.11356498",
-      "eprint": "2507.18115",
-      "in_evidence_map": false,
-      "bibtex": "@inproceedings{meddata2025,\n  author        = {Soorya Ram Shimgekar and Shayan Vassef and Abhay Goyal and Koustuv Saha and Pi Zonooz and Navin Kumar},\n  title     = {Agentic {AI} Framework for End-to-End Medical Data Inference},\n  eprint        = {2507.18115},\n  archivePrefix = {arXiv},\n  year      = {2025},\n  booktitle     = {2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},\n  pages         = {7807--7810},\n  publisher     = {IEEE},\n  doi           = {10.1109/BIBM66473.2025.11356498}\n}"
     },
     {
       "number": 52,
