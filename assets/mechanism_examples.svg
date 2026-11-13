@@ -1109,7 +1109,7 @@ z
     <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="7.387258" y="22.240187" transform="rotate(-0 7.387258 22.240187)">Pairwise experience memory</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="155.132427" y="21.950656" transform="rotate(-0 155.132427 21.950656)">MedExpMem [29]</text>
+    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="155.132427" y="21.950656" transform="rotate(-0 155.132427 21.950656)">MedExpMem [28]</text>
    </g>
    <g id="text_3">
     <text style="font-weight: 700; font-size: 5.4px; font-family: 'Arial', 'Helvetica', sans-serif" transform="translate(20.556097 36.295853)">Phase I</text>
@@ -2003,7 +2003,7 @@ z
     <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="181.245526" y="22.280406" transform="rotate(-0 181.245526 22.280406)">Composite tool discovery</text>
    </g>
    <g id="text_41">
-    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="328.990694" y="21.976742" transform="rotate(-0 328.990694 21.976742)">MACRO [36]</text>
+    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="328.990694" y="21.976742" transform="rotate(-0 328.990694 21.976742)">MACRO [35]</text>
    </g>
    <g id="text_42">
     <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="181.245526" y="35.946834" transform="rotate(-0 181.245526 35.946834)">Verified training trajectory</text>
@@ -2234,7 +2234,7 @@ z
     <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="355.103794" y="22.240187" transform="rotate(-0 355.103794 22.240187)">Expert-guided active learning</text>
    </g>
    <g id="text_66">
-    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="502.848962" y="21.950656" transform="rotate(-0 502.848962 21.950656)">TissueLab [41]</text>
+    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="502.848962" y="21.950656" transform="rotate(-0 502.848962 21.950656)">TissueLab [40]</text>
    </g>
    <g id="text_67">
     <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="355.103794" y="36.883132" transform="rotate(-0 355.103794 36.883132)">1  Review prediction</text>
@@ -2764,7 +2764,7 @@ z
     <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="7.387258" y="199.792084" transform="rotate(-0 7.387258 199.792084)">Reward-driven policy evolution</text>
    </g>
    <g id="text_82">
-    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="155.132427" y="199.471498" transform="rotate(-0 155.132427 199.471498)">DiagAgent [40]</text>
+    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="155.132427" y="199.471498" transform="rotate(-0 155.132427 199.471498)">DiagAgent [39]</text>
    </g>
    <g id="text_83">
     <text style="font-weight: 700; font-size: 6.2px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="30.472441" y="216.774056" transform="rotate(-0 30.472441 216.774056)">Initial inquiry</text>
@@ -4769,7 +4769,7 @@ z
     <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="181.245526" y="199.875615" transform="rotate(-0 181.245526 199.875615)">ECG supervision refinement</text>
    </g>
    <g id="text_116">
-    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="328.990694" y="199.526982" transform="rotate(-0 328.990694 199.526982)">ECG-RSI [42]</text>
+    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="328.990694" y="199.526982" transform="rotate(-0 328.990694 199.526982)">ECG-RSI [41]</text>
    </g>
    <g id="text_117">
     <text style="font-weight: 700; font-size: 6.3px; font-family: 'Arial', 'Helvetica', sans-serif" transform="translate(207.661056 216.657893)">Data</text>
@@ -5649,7 +5649,7 @@ z
     <text style="font-weight: 700; font-size: 6.6px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: start" x="355.103794" y="199.792084" transform="rotate(-0 355.103794 199.792084)">Reading-pipeline revision</text>
    </g>
    <g id="text_148">
-    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="502.848962" y="199.502553" transform="rotate(-0 502.848962 199.502553)">ReVision3D [43]</text>
+    <text style="font-size: 5.3px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: end" x="502.848962" y="199.502553" transform="rotate(-0 502.848962 199.502553)">ReVision3D [42]</text>
    </g>
    <g id="text_149">
     <text style="font-weight: 700; font-size: 6.2px; font-family: 'Arial', 'Helvetica', sans-serif; text-anchor: middle" x="379.112384" y="216.904178" transform="rotate(-0 379.112384 216.904178)">1  CT replay</text>

@@ -1,8 +1,8 @@
 {
   "counts": {
-    "total": 146,
-    "evidence": 85,
-    "other": 61
+    "total": 137,
+    "evidence": 83,
+    "other": 54
   },
   "references": [
     {
@@ -542,21 +542,6 @@
     },
     {
       "number": 24,
-      "key": "anthropic2024mcp",
-      "title": "Model Context Protocol: An open standard for connecting LLM applications to data sources and tools",
-      "authors": [
-        "Anthropic"
-      ],
-      "year": "2024",
-      "venue": "",
-      "doi": "",
-      "url": "https://modelcontextprotocol.io",
-      "eprint": "",
-      "in_evidence_map": false,
-      "bibtex": "@misc{anthropic2024mcp,\n  author       = {{Anthropic}},\n  title        = {Model {Context Protocol}: An open standard for connecting {LLM} applications to data sources and tools},\n  year         = {2024},\n  howpublished = {\\url{https://modelcontextprotocol.io}},\n  note         = {Open protocol specification, accessed May 2026}\n}"
-    },
-    {
-      "number": 25,
       "key": "nousresearch2026hermes",
       "title": "Hermes Agent documentation",
       "authors": [
@@ -571,7 +556,7 @@
       "bibtex": "@misc{nousresearch2026hermes,\n  author = {{NousResearch}},\n  title = {{Hermes Agent documentation}},\n  year = {2026},\n  howpublished = {Online documentation},\n  url = {https://hermes-agent.nousresearch.com/docs},\n  note = {Accessed 8 November 2026}\n}"
     },
     {
-      "number": 26,
+      "number": 25,
       "key": "wu2023autogen",
       "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversations",
       "authors": [
@@ -599,7 +584,7 @@
       "bibtex": "@inproceedings{wu2023autogen,\n  author    = {Qingyun Wu and Gagan Bansal and Jieyu Zhang and Yiran Wu and Beibin Li and Erkang Zhu and Li Jiang and Xiaoyun Zhang and Shaokun Zhang and Jiale Liu and Ahmed Hassan Awadallah and Ryen W. White and Doug Burger and Chi Wang},\n  title         = {{AutoGen}: Enabling Next-Gen {LLM} Applications via Multi-Agent Conversations},\n  year          = {2024},\n  url           = {https://openreview.net/forum?id=BAakY1hNKS},\n  booktitle     = {First Conference on Language Modeling},\n  eprint        = {2308.08155},\n  archivePrefix = {arXiv}\n}"
     },
     {
-      "number": 27,
+      "number": 26,
       "key": "wu2026vibemedicine",
       "title": "Vibe Medicine: Redefining Biomedical Research Through Human-AI Co-Work",
       "authors": [
@@ -624,7 +609,7 @@
       "bibtex": "@misc{wu2026vibemedicine,\n  author    = {Zihao Wu and Steven Xu and Bowen Chen and Shaowen Wan and Yiwei Li and Wei Ruan and Yanjun Lyu and Siyuan Li and Dajiang Zhu and Tianming Liu and Lin Zhao},\n  title     = {Vibe Medicine: Redefining Biomedical Research Through Human-{AI} Co-Work},\n  eprint        = {2604.23674},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
     },
     {
-      "number": 28,
+      "number": 27,
       "key": "hou2026wmfam",
       "title": "WMIP: A Working-Memory-Inspired Programmable Probe of Cumulative State Tracking in Large Language Models",
       "authors": [
@@ -644,7 +629,7 @@
       "bibtex": "@misc{hou2026wmfam,\n  author    = {Dengzhe Hou and Lingyu Jiang and Deng Li and Zirui Li and Fangzhou Lin and Kazunori D. Yamada},\n  title     = {{WMIP}: A Working-Memory-Inspired Programmable Probe of Cumulative State Tracking in Large Language Models},\n  eprint        = {2603.27343},\n  archivePrefix = {arXiv},\n  year      = {2026},\n  url       = {https://arxiv.org/abs/2603.27343}\n}"
     },
     {
-      "number": 29,
+      "number": 28,
       "key": "feng2026medexpmem",
       "title": "MedExpMem: Adapting Experience Memory for Differential Diagnosis",
       "authors": [
@@ -665,7 +650,7 @@
       "bibtex": "@inproceedings{feng2026medexpmem,\n  author = {Feng, Qianhan and Huang, Zhongzhen and Zhu, Yakun and Gu, Yannian and Chu, Winnie Chiu Wing and Zhang, Xiaofan and Dou, Qi},\n  title = {{MedExpMem}: Adapting Experience Memory for Differential Diagnosis},\n  booktitle = {Medical Image Computing and Computer Assisted Intervention -- {MICCAI} 2026},\n  series = {Lecture Notes in Computer Science},\n  publisher = {Springer},\n  pages = {430--440},\n  year = {2026},\n  doi = {10.1007/978-3-032-38098-2_41}\n}"
     },
     {
-      "number": 30,
+      "number": 29,
       "key": "ni2026trace2skill",
       "title": "Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills",
       "authors": [
@@ -689,7 +674,7 @@
       "bibtex": "@inproceedings{ni2026trace2skill,\n  title = {{Trace2Skill}: Distill Trajectory-Local Lessons into Transferable Agent Skills},\n  author = {Ni, Jingwei and Liu, Yihao and Liu, Xinpeng and Sun, Yutao and Zhou, Mengyu and Cheng, Pengyu and Wang, Dexin and Zhao, Erchao and Jiang, Xiaoxi and Jiang, Guanjun},\n  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},\n  pages = {17556--17577},\n  year = {2026},\n  doi = {10.18653/2026.emnlp-main.758}\n}"
     },
     {
-      "number": 31,
+      "number": 30,
       "key": "zhang2026evoskills",
       "title": "CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification",
       "authors": [
@@ -716,7 +701,7 @@
       "bibtex": "@inproceedings{zhang2026evoskills,\n  author    = {Zhang, Hanrong and Fan, Shicheng and Zou, Henry Peng and Chen, Yankai and Wang, Zhenting and Zhou, Jiayu and Li, Chengze and Huang, Wei-Chieh and Yao, Yifei and Zheng, Kening and Liu, Xue and Li, Xiaoxiao and Yu, Philip S.},\n  title     = {{CoEvoSkills}: Self-Evolving Agent Skills via Co-Evolutionary Verification},\n  eprint        = {2604.01687},\n  archivePrefix = {arXiv},\n  year      = {2026},\n  booktitle     = {Conference on Language Modeling ({COLM})}\n}"
     },
     {
-      "number": 32,
+      "number": 31,
       "key": "skillclaw2026",
       "title": "SkillClaw: Let Skills Evolve Collectively with Agentic Evolver",
       "authors": [
@@ -738,7 +723,7 @@
       "bibtex": "@misc{skillclaw2026,\n  author    = {Ziyu Ma and Shidong Yang and Yuxiang Ji and Xucong Wang and Yong Wang and Yiming Hu and Tongwen Huang and Xiangxiang Chu},\n  title     = {{SkillClaw}: Let Skills Evolve Collectively with Agentic Evolver},\n  eprint        = {2604.08377},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
     },
     {
-      "number": 33,
+      "number": 32,
       "key": "lin2026ahe",
       "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
       "authors": [
@@ -763,7 +748,7 @@
       "bibtex": "@misc{lin2026ahe,\n  author        = {Jiahang Lin and Shichun Liu and Chengjun Pan and Lizhi Lin and Shihan Dou and Zhiheng Xi and Xuanjing Huang and Hang Yan and Zhenhua Han and Tao Gui and Yu-Gang Jiang},\n  title     = {Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses},\n  eprint        = {2604.25850},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
     },
     {
-      "number": 34,
+      "number": 33,
       "key": "ding2026agentHER",
       "title": "AgentHER: Hindsight Experience Replay for LLM Agent Trajectory Relabeling",
       "authors": [
@@ -778,7 +763,7 @@
       "bibtex": "@misc{ding2026agentHER,\n  author    = {Liang Ding},\n  title     = {{AgentHER}: Hindsight Experience Replay for {LLM} Agent Trajectory Relabeling},\n  eprint        = {2603.21357},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
     },
     {
-      "number": 35,
+      "number": 34,
       "key": "li2026skillsbench",
       "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
       "authors": [
@@ -794,7 +779,7 @@
       "bibtex": "@misc{li2026skillsbench,\n  author    = {Xiangyi Li and others},\n  title     = {{SkillsBench}: Benchmarking How Well Agent Skills Work Across Diverse Tasks},\n  eprint        = {2602.12670},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
     },
     {
-      "number": 36,
+      "number": 35,
       "key": "fan2026macro",
       "title": "Evolving Medical Imaging Agents via Experience-driven Self-skill Discovery",
       "authors": [
@@ -815,7 +800,7 @@
       "bibtex": "@misc{fan2026macro,\n  author    = {Lin Fan and Pengyu Dai and Zhipeng Deng and Haolin Wang and Xun Gong and Yefeng Zheng and Yafei Ou},\n  title     = {Evolving Medical Imaging Agents via Experience-driven Self-skill Discovery},\n  eprint        = {2603.05860},\n  archivePrefix = {arXiv},\n  year      = {2026}\n}"
     },
     {
-      "number": 37,
+      "number": 36,
       "key": "medaide2024",
       "title": "MedAide: Information Fusion and Anatomy of Medical Intents via LLM-based Agent Collaboration",
       "authors": [
@@ -840,7 +825,7 @@
       "bibtex": "@article{medaide2024,\n  author    = {Dingkang Yang and Jinjie Wei and Mingcheng Li and Jiyao Liu and Lihao Liu and Ming Hu and Junjun He and Yakun Ju and Wei Zhou and Yang Liu and Lihua Zhang},\n  title     = {{MedAide}: Information Fusion and Anatomy of Medical Intents via {LLM}-based Agent Collaboration},\n  eprint        = {2410.12532},\n  archivePrefix = {arXiv},\n  year          = {2026},\n  journal       = {Information Fusion},\n  volume        = {127},\n  pages         = {103743},\n  doi           = {10.1016/j.inffus.2025.103743}\n}"
     },
     {
-      "number": 38,
+      "number": 37,
       "key": "meddata2025",
       "title": "Agentic AI Framework for End-to-End Medical Data Inference",
       "authors": [
@@ -860,7 +845,7 @@
       "bibtex": "@inproceedings{meddata2025,\n  author        = {Soorya Ram Shimgekar and Shayan Vassef and Abhay Goyal and Koustuv Saha and Pi Zonooz and Navin Kumar},\n  title     = {Agentic {AI} Framework for End-to-End Medical Data Inference},\n  eprint        = {2507.18115},\n  archivePrefix = {arXiv},\n  year      = {2025},\n  booktitle     = {2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},\n  pages         = {7807--7810},\n  publisher     = {IEEE},\n  doi           = {10.1109/BIBM66473.2025.11356498}\n}"
     },
     {
-      "number": 39,
+      "number": 38,
       "key": "reinventing_dialogue2025",
       "title": "Reinventing Clinical Dialogue: Agentic Paradigms for LLM Enabled Healthcare Communication",
       "authors": [
@@ -879,7 +864,7 @@
       "bibtex": "@misc{reinventing_dialogue2025,\n  author    = {Xiaoquan Zhi and Hongke Zhao and Likang Wu and Chuang Zhao and Hengshu Zhu},\n  title         = {Reinventing Clinical Dialogue: Agentic Paradigms for {LLM} Enabled Healthcare Communication},\n  eprint        = {2512.01453},\n  archivePrefix = {arXiv},\n  year      = {2025}\n}"
     },
     {
-      "number": 40,
+      "number": 39,
       "key": "qiu2025diaggym",
       "title": "Evolving Interactive Diagnostic Agents in a Virtual Clinical Environment",
       "authors": [
@@ -907,7 +892,7 @@
       "bibtex": "@misc{qiu2025diaggym,\n  author    = {Pengcheng Qiu and Chaoyi Wu and Junwei Liu and Qiaoyu Zheng and Yusheng Liao and Haowen Wang and Yun Yue and Qianrui Fan and Shuai Zhen and Jian Wang and Jinjie Gu and Yanfeng Wang and Ya Zhang and Weidi Xie},\n  title     = {Evolving Interactive Diagnostic Agents in a Virtual Clinical Environment},\n  eprint        = {2510.24654},\n  archivePrefix = {arXiv},\n  year      = {2025}\n}"
     },
     {
-      "number": 41,
+      "number": 40,
       "key": "coevolving2025",
       "title": "A Co-Evolving Agentic AI System for Medical Imaging Analysis",
       "authors": [
@@ -935,7 +920,7 @@
       "bibtex": "@misc{coevolving2025,\n  author    = {Songhao Li and Jonathan Xu and Tiancheng Bao and Yuxuan Liu and Yuchen Liu and Yihang Liu and Lilin Wang and Wenhui Lei and Sheng Wang and Yinuo Xu and Yan Cui and Jialu Yao and Shunsuke Koga and Zhi Huang},\n  title     = {A Co-Evolving Agentic {AI} System for Medical Imaging Analysis},\n  eprint        = {2509.20279},\n  archivePrefix = {arXiv},\n  year      = {2025}\n}"
     },
     {
-      "number": 42,
+      "number": 41,
       "key": "wang2026ecgrsi",
       "title": "ECG-RSI: Recursive Self-Improvement through Targeted Electrocardiogram Waveform Evolution",
       "authors": [
@@ -961,7 +946,7 @@
       "bibtex": "@misc{wang2026ecgrsi,\n  author = {Xiaoliang Wang and Zhuo Chen and Chuanyang Zheng and Jiangwei Lao and Quanbin Wang and Honglin Lin and Jiajia Liu and Zhihong Lu and Hao Jin and Jian Wang and Jinjie Gu and Lijun Wu},\n  title = {{ECG-RSI}: Recursive Self-Improvement through Targeted Electrocardiogram Waveform Evolution},\n  year = {2026},\n  eprint = {2610.17718},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.17718},\n  url = {https://arxiv.org/abs/2610.17718v1}\n}"
     },
     {
-      "number": 43,
+      "number": 42,
       "key": "lee2026revision3d",
       "title": "ReVision3D: Attribution-Guided Recursive Self-Improvement for 3D Medical Perception",
       "authors": [
@@ -980,7 +965,7 @@
       "bibtex": "@misc{lee2026revision3d,\n  author = {Ho Hin Lee and Yuyin Zhou and Yannan Yu and Shi Gu and Yifan Wu},\n  title = {{ReVision3D: Attribution-Guided Recursive Self-Improvement for 3D Medical Perception}},\n  year = {2026},\n  eprint = {2609.32984},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2609.32984},\n  url = {https://arxiv.org/abs/2609.32984v2}\n}"
     },
     {
-      "number": 44,
+      "number": 43,
       "key": "dang2026medzero",
       "title": "MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation",
       "authors": [
@@ -1001,7 +986,7 @@
       "bibtex": "@misc{dang2026medzero,\n  author = {Xilin Dang and Weilin Ruan and Xue Yang and Jinghao Wang and Xiaowei Hu and Jinpeng Li and Pheng-Ann Heng},\n  title = {{MedZERO}: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation},\n  year = {2026},\n  eprint = {2610.08327},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.08327},\n  note = {Author-reported acceptance at NeurIPS 2026},\n  url = {https://arxiv.org/abs/2610.08327v1}\n}"
     },
     {
-      "number": 45,
+      "number": 44,
       "key": "komorowski2018clinician",
       "title": "The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care",
       "authors": [
@@ -1020,7 +1005,7 @@
       "bibtex": "@article{komorowski2018clinician,\n  author    = {Matthieu Komorowski and Leo A. Celi and Omar Badawi and Anthony C. Gordon and A. Aldo Faisal},\n  title     = {The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care},\n  journal   = {Nature Medicine},\n  volume    = {24},\n  pages     = {1716--1720},\n  year      = {2018},\n  doi       = {10.1038/s41591-018-0213-5}\n}"
     },
     {
-      "number": 46,
+      "number": 45,
       "key": "feng2025doctoragentrl",
       "title": "DoctorAgent-RL: A Multi-Agent Collaborative Reinforcement Learning System for Multi-Turn Clinical Dialogue",
       "authors": [
@@ -1039,7 +1024,7 @@
       "bibtex": "@inproceedings{feng2025doctoragentrl,\n  author        = {Yichun Feng and Jiawei Wang and Lu Zhou and Zhen Lei and Yixue Li},\n  title         = {{DoctorAgent-RL}: A Multi-Agent Collaborative Reinforcement Learning System for Multi-Turn Clinical Dialogue},\n  eprint        = {2505.19630},\n  archivePrefix = {arXiv},\n  year          = {2026},\n  booktitle     = {ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},\n  pages         = {16952--16956},\n  publisher     = {IEEE},\n  doi           = {10.1109/ICASSP55912.2026.11460976}\n}"
     },
     {
-      "number": 47,
+      "number": 46,
       "key": "lyu2023clinicalnote",
       "title": "Translating radiology reports into plain language using ChatGPT and GPT-4 with prompt learning: results, limitations, and potential",
       "authors": [
@@ -1061,7 +1046,7 @@
       "bibtex": "@article{lyu2023clinicalnote,\n  author    = {Qing Lyu and Josh Tan and Michael E. Zapadka and Janardhana Ponnatapura and Chuang Niu and Kyle J. Myers and Ge Wang and Christopher T. Whitlow},\n  title     = {Translating radiology reports into plain language using {ChatGPT} and {GPT-4} with prompt learning: results, limitations, and potential},\n  journal   = {Visual Computing for Industry, Biomedicine, and Art},\n  volume    = {6},\n  year      = {2023},\n  pages     = {9},\n  doi       = {10.1186/s42492-023-00136-5}\n}"
     },
     {
-      "number": 48,
+      "number": 47,
       "key": "wang2023r2gengpt",
       "title": "R2GenGPT: Radiology Report Generation with Frozen LLMs",
       "authors": [
@@ -1079,7 +1064,7 @@
       "bibtex": "@article{wang2023r2gengpt,\n  author    = {Zhanyu Wang and Lingqiao Liu and Lei Wang and Luping Zhou},\n  title     = {{R2GenGPT}: Radiology Report Generation with Frozen {LLMs}},\n  journal   = {Meta-Radiology},\n  volume    = {1},\n  number    = {3},\n  pages     = {100033},\n  year      = {2023},\n  doi       = {10.1016/j.metrad.2023.100033},\n  url       = {https://www.sciencedirect.com/science/article/pii/S2950162823000334}\n}"
     },
     {
-      "number": 49,
+      "number": 48,
       "key": "yu2025radiologist",
       "title": "Radiologist Copilot: An Agentic Framework Orchestrating Specialized Tools for Reliable Radiology Reporting",
       "authors": [
@@ -1098,7 +1083,7 @@
       "bibtex": "@misc{yu2025radiologist,\n  title={Radiologist Copilot: An Agentic Framework Orchestrating Specialized Tools for Reliable Radiology Reporting},\n  author={Yu, Yongrui and Huang, Zhongzhen and Mu, Linjie and Zhang, Shaoting and Zhang, Xiaofan},\n  eprint        = {2512.02814},\n  archivePrefix = {arXiv},\n  year={2025}\n}"
     },
     {
-      "number": 50,
+      "number": 49,
       "key": "kgagent2024",
       "title": "KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph",
       "authors": [
@@ -1119,7 +1104,7 @@
       "bibtex": "@inproceedings{kgagent2024,\n  author    = {Jinhao Jiang and Kun Zhou and Wayne Xin Zhao and Yang Song and Chen Zhu and Hengshu Zhu and Ji-Rong Wen},\n  title     = {{KG-Agent}: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph},\n  eprint        = {2402.11163},\n  archivePrefix = {arXiv},\n  year          = {2025},\n  booktitle     = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},\n  pages         = {9505--9523},\n  publisher     = {Association for Computational Linguistics},\n  doi           = {10.18653/v1/2025.acl-long.468}\n}"
     },
     {
-      "number": 51,
+      "number": 50,
       "key": "zakka2024almanac",
       "title": "Almanac: Retrieval-Augmented Language Models for Clinical Medicine",
       "authors": [
@@ -1155,7 +1140,7 @@
       "bibtex": "@article{zakka2024almanac,\n  author = {Zakka, Cyril and Shad, Rohan and Chaurasia, Akash and Dalal, Alex R. and Kim, Jennifer L. and Moor, Michael and Fong, Robyn and Phillips, Curran and Alexander, Kevin and Ashley, Euan and Boyd, Jack and Boyd, Kathleen and Hirsch, Karen and Langlotz, Curt and Lee, Rita and Melia, Joanna and Nelson, Joanna and Sallam, Karim and Tullis, Stacey and Vogelsong, Melissa Ann and Cunningham, John Patrick and Hiesinger, William},\n  title = {Almanac: Retrieval-Augmented Language Models for Clinical Medicine},\n  journal = {NEJM AI},\n  volume = {1},\n  number = {2},\n  pages = {AIoa2300068},\n  year = {2024},\n  doi = {10.1056/AIoa2300068}\n}"
     },
     {
-      "number": 52,
+      "number": 51,
       "key": "lan2024amc",
       "title": "Depression Diagnosis Dialogue Simulation: Self-improving Psychiatrist with Tertiary Memory",
       "authors": [
@@ -1176,7 +1161,7 @@
       "bibtex": "@article{lan2024amc,\n  author = {Lan, Kunyao and Jin, Bingrui and Zhu, Zichen and Chen, Siyuan and Zhang, Shu and Zhu, Kenny Q. and Wu, Mengyue},\n  title = {{Depression Diagnosis Dialogue Simulation: Self-improving Psychiatrist with Tertiary Memory}},\n  journal = {arXiv preprint arXiv:2409.15084},\n  year = {2024},\n  doi = {10.48550/arXiv.2409.15084},\n  url = {https://arxiv.org/abs/2409.15084},\n  note = {Version 2, 2024-10-09}\n}"
     },
     {
-      "number": 53,
+      "number": 52,
       "key": "almansoori2025medagentsim",
       "title": "MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions",
       "authors": [
@@ -1193,7 +1178,7 @@
       "bibtex": "@inproceedings{almansoori2025medagentsim,\n  author = {Almansoori, Mohammad and Kumar, Komal and Cholakkal, Hisham},\n  title = {{MedAgentSim}: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions},\n  booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025},\n  series = {Lecture Notes in Computer Science},\n  volume = {15968},\n  pages = {362--372},\n  year = {2025},\n  publisher = {Springer Nature Switzerland},\n  doi = {10.1007/978-3-032-05114-1_35},\n  url = {https://papers.miccai.org/miccai-2025/0537-Paper2575.html}\n}"
     },
     {
-      "number": 54,
+      "number": 53,
       "key": "shen2026evomedagent",
       "title": "Evo-MedAgent: Beyond One-Shot Diagnosis with Agents That Remember, Reflect, and Improve",
       "authors": [
@@ -1216,7 +1201,7 @@
       "bibtex": "@article{shen2026evomedagent,\n  author = {Shen, Weixiang and Jian, Bailiang and Li, Jun and Liu, Che and Moll, Johannes and Hu, Xiaobin and Rueckert, Daniel and Li, Hongwei Bran and Pan, Jiazhen},\n  title = {{Evo-MedAgent: Beyond One-Shot Diagnosis with Agents That Remember, Reflect, and Improve}},\n  journal = {arXiv preprint arXiv:2604.14475},\n  year = {2026},\n  doi = {10.48550/arXiv.2604.14475},\n  url = {https://arxiv.org/abs/2604.14475},\n  note = {Version 1, 2026-04-15}\n}"
     },
     {
-      "number": 55,
+      "number": 54,
       "key": "shi2026emr",
       "title": "EMR: Self-Evolving Medical Multi-Agent System via Experience Mining and Reuse",
       "authors": [
@@ -1234,7 +1219,7 @@
       "bibtex": "@article{shi2026emr,\n  title = {{EMR: Self-Evolving Medical Multi-Agent System via Experience Mining and Reuse}},\n  author = {Shi, Dongsheng and Li, Yue and Yi, Xin and Wang, Linlin},\n  journal = {arXiv preprint arXiv:2609.15161},\n  year = {2026},\n  eprint = {2609.15161},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2609.15161v1}\n}"
     },
     {
-      "number": 56,
+      "number": 55,
       "key": "wang2026privmesa",
       "title": "PrivMeSA: Privacy-Aware Self-Evolving Multi-Agent System for Medicine via Local-Remote LLM Collaboration",
       "authors": [
@@ -1255,7 +1240,7 @@
       "bibtex": "@misc{wang2026privmesa,\n  author = {Dannong Wang and Yuran Zhang and Bian Sun and Alex Stinard and Yuzhang Shang and Song Wang and Yu Tian},\n  title = {{PrivMeSA: Privacy-Aware Self-Evolving Multi-Agent System for Medicine via Local-Remote LLM Collaboration}},\n  year = {2026},\n  eprint = {2609.38458},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2609.38458},\n  url = {https://arxiv.org/abs/2609.38458v1}\n}"
     },
     {
-      "number": 57,
+      "number": 56,
       "key": "schmidgall2026agentclinic",
       "title": "AgentClinic: a multimodal benchmark for tool-using clinical AI agents",
       "authors": [
@@ -1276,7 +1261,7 @@
       "bibtex": "@article{schmidgall2026agentclinic,\n  author = {Schmidgall, Samuel and Ziaei, Rojin and Harris, Carl and Kim, Ji Woong and Reis, Eduardo Pontes and Jopling, Jeffrey and Moor, Michael},\n  title = {{AgentClinic}: a multimodal benchmark for tool-using clinical {AI} agents},\n  journal = {npj Digital Medicine},\n  volume = {9},\n  pages = {499},\n  year = {2026},\n  doi = {10.1038/s41746-026-02674-7}\n}"
     },
     {
-      "number": 58,
+      "number": 57,
       "key": "shi2024ehragent",
       "title": "EHRAgent: Code Empowers Large Language Models for Few-shot Complex Tabular Reasoning on Electronic Health Records",
       "authors": [
@@ -1300,7 +1285,7 @@
       "bibtex": "@inproceedings{shi2024ehragent,\n  author = {Shi, Wenqi and Xu, Ran and Zhuang, Yuchen and Yu, Yue and Zhang, Jieyu and Wu, Hang and Zhu, Yuanda and Ho, Joyce C. and Yang, Carl and Wang, May Dongmei},\n  title = {{EHRAgent: Code Empowers Large Language Models for Few-shot Complex Tabular Reasoning on Electronic Health Records}},\n  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},\n  pages = {22315--22339},\n  year = {2024},\n  doi = {10.18653/v1/2024.emnlp-main.1245}\n}"
     },
     {
-      "number": 59,
+      "number": 58,
       "key": "liao2025reflectool",
       "title": "ReflecTool: Towards Reflection-Aware Tool-Augmented Clinical Agents",
       "authors": [
@@ -1318,7 +1303,7 @@
       "bibtex": "@inproceedings{liao2025reflectool,\n  author = {Liao, Yusheng and Jiang, Shuyang and Wang, Yanfeng and Wang, Yu},\n  title = {{ReflecTool: Towards Reflection-Aware Tool-Augmented Clinical Agents}},\n  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},\n  pages = {13507--13531},\n  year = {2025},\n  doi = {10.18653/v1/2025.acl-long.663}\n}"
     },
     {
-      "number": 60,
+      "number": 59,
       "key": "liao2026agentehr",
       "title": "AgentEHR: Advancing Autonomous Clinical Decision-Making via Retrospective Summarization",
       "authors": [
@@ -1333,7 +1318,7 @@
       "bibtex": "@inproceedings{liao2026agentehr,\n    title = \"{A}gent{EHR}: Advancing Autonomous Clinical Decision-Making via Retrospective Summarization\",\n    author = \"Liao, Yusheng  and\n      Xuan, Chuan  and\n      Cai, Yutong  and\n      Yang, Lina  and\n      Chen, Zhe  and\n      Wang, Yanfeng  and\n      Wang, Yu\",\n    editor = \"Lee, Hung-Yi  and\n      Dev, Sunipa  and\n      Li, Junyi Jessy  and\n      Elliott, Desmond\",\n    booktitle = \"Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing\",\n    month = oct,\n    year = \"2026\",\n    address = \"Budapest, Hungary\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.emnlp-main.1529/\",\n    doi = \"10.18653/2026.emnlp-main.1529\",\n    pages = \"34870--34917\",\n    ISBN = \"979-8-89176-459-0\"\n}"
     },
     {
-      "number": 61,
+      "number": 60,
       "key": "ghaffari2026learnactcoder",
       "title": "LearnActCoder: Role-Aware Error Memory for Adaptive Clinical Coding Agents",
       "authors": [
@@ -1353,7 +1338,7 @@
       "bibtex": "@misc{ghaffari2026learnactcoder,\n  author = {Meysam Ghaffari and Bhaskar Sen and Nasim Sabetpour and Nina Fatehi and Animesh Agarwal and Carlos Morato},\n  title = {{LearnActCoder: Role-Aware Error Memory for Adaptive Clinical Coding Agents}},\n  year = {2026},\n  eprint = {2609.19721},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2609.19721},\n  url = {https://arxiv.org/abs/2609.19721v1}\n}"
     },
     {
-      "number": 62,
+      "number": 61,
       "key": "chen2026mdteamgpt",
       "title": "MDTeamGPT: Mitigating Context Collapse and Enabling Self-Evolution in Medical Multi-Agent Reasoning",
       "authors": [
@@ -1368,7 +1353,7 @@
       "bibtex": "@inproceedings{chen2026mdteamgpt,\n    title = \"{MDT}eam{GPT}: Mitigating Context Collapse and Enabling Self-Evolution in Medical Multi-Agent Reasoning\",\n    author = \"Chen, Kai  and\n      Li, Xinfeng  and\n      Yang, Tianpei  and\n      Wang, Hewei  and\n      Yang, Guang  and\n      Huo, Jing  and\n      Gao, Yang\",\n    editor = \"Liakata, Maria  and\n      Moreira, Viviane P.  and\n      Zhang, Jiajun  and\n      Jurgens, David\",\n    booktitle = \"Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026\",\n    month = jul,\n    year = \"2026\",\n    address = \"San Diego, California, United States\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.findings-acl.1427/\",\n    doi = \"10.18653/v1/2026.findings-acl.1427\",\n    pages = \"28578--28606\",\n    ISBN = \"979-8-89176-395-1\"\n}"
     },
     {
-      "number": 63,
+      "number": 62,
       "key": "chen2026skingptx",
       "title": "SkinGPT-X: A Self-Evolving Collaborative Multi-Agent System for Transparent and Trustworthy Dermatological Diagnosis",
       "authors": [
@@ -1391,7 +1376,7 @@
       "bibtex": "@misc{chen2026skingptx,\n  author = {Zhangtianyi Chen and Yuhao Shen and Florensia Widjaja and Yan Xu and Liyuan Sun and Zijian Wang and Hongyi Chen and Wufei Dai and Juexiao Zhou},\n  title = {{SkinGPT-X: A Self-Evolving Collaborative Multi-Agent System for Transparent and Trustworthy Dermatological Diagnosis}},\n  year = {2026},\n  eprint = {2603.26122},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2603.26122},\n  url = {https://arxiv.org/abs/2603.26122v1}\n}"
     },
     {
-      "number": 64,
+      "number": 63,
       "key": "li2025macd",
       "title": "MACD: Multi-Agent Clinical Diagnosis with Self-Learned Knowledge for LLM",
       "authors": [
@@ -1418,7 +1403,7 @@
       "bibtex": "@misc{li2025macd,\n  author = {Wenliang Li and Rui Yan and Xu Zhang and Li Chen and Hongji Zhu and Jing Zhao and Junjun Li and Mengru Li and Wei Cao and Zihang Jiang and Wei Wei and Kun Zhang and Shaohua Kevin Zhou},\n  title = {{MACD: Multi-Agent Clinical Diagnosis with Self-Learned Knowledge for LLM}},\n  year = {2025},\n  eprint = {2509.20067},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2509.20067},\n  url = {https://arxiv.org/abs/2509.20067v5}\n}"
     },
     {
-      "number": 65,
+      "number": 64,
       "key": "lu2025kea",
       "title": "Advancing Chinese Conversation-based Patient Guidance with a Benchmark and Knowledge-Evolvable Assistant",
       "authors": [
@@ -1442,7 +1427,7 @@
       "bibtex": "@article{lu2025kea,\n  author = {Lu, Wenpeng and Liu, Kangjun and Wang, Jianlei and Peng, Xueping and Shen, Tao and Zhu, Fa and Zhang, Weiyu and Zhu, Jiabing and Xin, Tao and Vasilakos, Athanasios V.},\n  title = {{Advancing Chinese Conversation-based Patient Guidance with a Benchmark and Knowledge-Evolvable Assistant}},\n  journal = {IEEE Journal of Biomedical and Health Informatics},\n  pages = {1--12},\n  year = {2025},\n  doi = {10.1109/jbhi.2025.3639805}\n}"
     },
     {
-      "number": 66,
+      "number": 65,
       "key": "dai2026cdeg",
       "title": "CDEG: Learning Decision-Critical Evidence for Long-Horizon Diagnostic Agents",
       "authors": [
@@ -1463,7 +1448,7 @@
       "bibtex": "@misc{dai2026cdeg,\n  author = {Xiwei Dai and Zijie Meng and Zhiting Fan and Yixuan Tang and Guanyu Jiang and Ziru Niu and Zuozhu Liu},\n  title = {{CDEG: Learning Decision-Critical Evidence for Long-Horizon Diagnostic Agents}},\n  year = {2026},\n  eprint = {2608.22899},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2608.22899},\n  url = {https://arxiv.org/abs/2608.22899v3}\n}"
     },
     {
-      "number": 67,
+      "number": 66,
       "key": "zeng2026trajevolve",
       "title": "Traj-Evolve: A Self-Evolving Multi-Agent System for Patient Trajectory Modeling in Lung Cancer Early Detection",
       "authors": [
@@ -1481,7 +1466,7 @@
       "bibtex": "@misc{zeng2026trajevolve,\n  author = {Sihang Zeng and Matthew Thompson and Ruth Etzioni and Meliha Yetisgen},\n  title = {{Traj-Evolve: A Self-Evolving Multi-Agent System for Patient Trajectory Modeling in Lung Cancer Early Detection}},\n  year = {2026},\n  eprint = {2606.02812},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2606.02812},\n  url = {https://arxiv.org/abs/2606.02812v1}\n}"
     },
     {
-      "number": 68,
+      "number": 67,
       "key": "chen2025semagents",
       "title": "A Self-Evolving Framework for Multi-Agent Medical Consultation Based on Large Language Models",
       "authors": [
@@ -1502,7 +1487,7 @@
       "bibtex": "@inproceedings{chen2025semagents,\n  author = {Kai Chen and Ji Qi and Jing Huo and Pinzhuo Tian and Fanyu Meng and Xi Yang and Yang Gao},\n  title = {{A Self-Evolving Framework for Multi-Agent Medical Consultation Based on Large Language Models}},\n  year = {2025},\n  booktitle = {ICASSP 2025 - IEEE International Conference on Acoustics, Speech and Signal Processing},\n  doi = {10.1109/ICASSP49660.2025.10889517},\n  url = {https://ieeexplore.ieee.org/document/10889517}\n}"
     },
     {
-      "number": 69,
+      "number": 68,
       "key": "chen2027mdtace",
       "title": "MDTace: Agentic Context Engineering for Multi-disciplinary Team Medical Consultation",
       "authors": [
@@ -1518,7 +1503,7 @@
       "bibtex": "@inproceedings{chen2027mdtace,\n  author = {Kai Chen and Yang Gao},\n  title = {{MDTace: Agentic Context Engineering for Multi-disciplinary Team Medical Consultation}},\n  year = {2027},\n  booktitle = {Intelligent Computing Theories and Application (ICIC 2026)},\n  pages = {81--92},\n  volume = {16649},\n  doi = {10.1007/978-981-92-3403-5_6},\n  url = {https://link.springer.com/chapter/10.1007/978-981-92-3403-5_6},\n  note = {First online 19 July 2026; publisher citation year 2027}\n}"
     },
     {
-      "number": 70,
+      "number": 69,
       "key": "wu2026uehr",
       "title": "U-EHR: A Self-Evolving EHR Agent with Step-Level Credit Assignment and UCB-Guided Memory Retrieval",
       "authors": [
@@ -1542,7 +1527,7 @@
       "bibtex": "@inproceedings{wu2026uehr,\n  author = {Hao Wu and Zihan Wang and Ziyang Rao and Heyi Lin and Jinjing Zhu and Qianyi Cai and Yi Zhou and An Lin and Hao Wang and Hui Xiong},\n  title = {{U-EHR: A Self-Evolving EHR Agent with Step-Level Credit Assignment and UCB-Guided Memory Retrieval}},\n  year = {2026},\n  booktitle = {Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2},\n  pages = {12420--12431},\n  doi = {10.1145/3770855.3819038},\n  url = {https://dl.acm.org/doi/pdf/10.1145/3770855.3819038}\n}"
     },
     {
-      "number": 71,
+      "number": 70,
       "key": "li2026healthclaw",
       "title": "A Self-Evolving Agent for Longitudinal Personal Health Management",
       "authors": [
@@ -1569,7 +1554,7 @@
       "bibtex": "@article{li2026healthclaw,\n  title = {{A Self-Evolving Agent for Longitudinal Personal Health Management}},\n  author = {Li, Haoran and Deng, Jiebi and Jin, Tong and Han, Jinghong and Wang, Yuxin and Wang, Zexin and Si, Qingyi and Gong, Weikang and Zhuang, Xiahai and You, Jia and Cheng, Wei and Feng, Jianfeng and Guo, Hongcheng},\n  journal = {arXiv preprint arXiv:2607.13940},\n  year = {2026},\n  eprint = {2607.13940},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2607.13940v1}\n}"
     },
     {
-      "number": 72,
+      "number": 71,
       "key": "han2026gsem",
       "title": "GSEM: Graph-based Self-Evolving Memory for Experience Augmented Clinical Reasoning",
       "authors": [
@@ -1588,7 +1573,7 @@
       "bibtex": "@inproceedings{han2026gsem,\n  author = {Han, Xiao and Fan, Yuzheng and Zhao, Sendong and Wang, Haochun and Qin, Bing},\n  title = {{GSEM}: Graph-based Self-Evolving Memory for Experience Augmented Clinical Reasoning},\n  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},\n  pages = {11637--11660},\n  year = {2026},\n  doi = {10.18653/2026.emnlp-main.507},\n  url = {https://aclanthology.org/2026.emnlp-main.507/}\n}"
     },
     {
-      "number": 73,
+      "number": 72,
       "key": "ji2026spagents",
       "title": "Early diagnosis of axial spondyloarthritis in primary care using multi-agent systems",
       "authors": [
@@ -1626,7 +1611,7 @@
       "bibtex": "@article{ji2026spagents,\n  author = {Ji, Xiaojian and Li, Zhuofeng and Zeng, Lulu and Hu, Lidong and Wang, Yanyan and Zhang, Kui and Shi, Lianjie and Wei, Meng and Chen, Lifeng and Guo, Lin and Dong, Jing and Wang, An’an and Sun, Lei and Song, Yimin and Wang, Huatao and Wang, Jingming and Lei, Ying and Yue, Wenqian and Zhao, Zheng and Zhu, Jian and Huang, Feng and Zhang, Jing and Li, Tao and Li, Kunpeng},\n  title = {{Early diagnosis of axial spondyloarthritis in primary care using multi-agent systems}},\n  journal = {npj Digital Medicine},\n  volume = {9},\n  number = {1},\n  pages = {185},\n  year = {2026},\n  doi = {10.1038/s41746-026-02372-4}\n}"
     },
     {
-      "number": 74,
+      "number": 73,
       "key": "chen2026theraagent",
       "title": "TheraAgent: Multi-Agent Framework with Self-Evolving Memory and Evidence-Calibrated Reasoning for PET Theranostics",
       "authors": [
@@ -1651,7 +1636,7 @@
       "bibtex": "@misc{chen2026theraagent,\n  author = {Zhihao Chen and Jiahui Wang and Yizhou Chen and Xiaozhong Ji and Xiaobin Hu and Jimin Hong and Wolfram Andreas Bosbach and Axel Rominger and Ali Afshar-Oromieh and Hongming Shan and Kuangyu Shi},\n  title = {{TheraAgent: Multi-Agent Framework with Self-Evolving Memory and Evidence-Calibrated Reasoning for PET Theranostics}},\n  year = {2026},\n  eprint = {2603.13676},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2603.13676},\n  url = {https://arxiv.org/abs/2603.13676v1}\n}"
     },
     {
-      "number": 75,
+      "number": 74,
       "key": "murugesan2026amr",
       "title": "Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering",
       "authors": [
@@ -1669,7 +1654,7 @@
       "bibtex": "@misc{murugesan2026amr,\n  author = {Pradeep Murugesan and Luoxiao Yang and Xueli Chen and Xinqi Fan},\n  title = {{Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering}},\n  year = {2026},\n  eprint = {2608.19029},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2608.19029},\n  url = {https://arxiv.org/abs/2608.19029v1}\n}"
     },
     {
-      "number": 76,
+      "number": 75,
       "key": "he2026evoclinician",
       "title": "EvoClinician: A Self-Evolving Agent for Multi-Turn Medical Diagnosis via Test-Time Evolutionary Learning",
       "authors": [
@@ -1695,7 +1680,7 @@
       "bibtex": "@misc{he2026evoclinician,\n  title = {{EvoClinician: A Self-Evolving Agent for Multi-Turn Medical Diagnosis via Test-Time Evolutionary Learning}},\n  author = {Yufei He and Juncheng Liu and Zhiyuan Hu and Yulin Chen and Yue Liu and Yuan Sui and Yibo Li and Nuo Chen and Jun Hu and Bryan Hooi and Xinxing Xu and Jiang Bian},\n  year = {2026},\n  doi = {10.48550/arXiv.2601.22964},\n  url = {https://arxiv.org/html/2601.22964v1},\n  eprint = {2601.22964},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AI},\n  note = {arXiv v1, 2026-01-30}\n}"
     },
     {
-      "number": 77,
+      "number": 76,
       "key": "sun2026skemex",
       "title": "Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory",
       "authors": [
@@ -1720,7 +1705,7 @@
       "bibtex": "@misc{sun2026skemex,\n  title = {{Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory}},\n  author = {Haoran Sun and Wenjie Li and Yujie Zhang and Zekai Lin and Fanrui Zhang and Kaitao Chen and Xingqi He and Yichen Li and Mianxin Liu and Lei Liu and Yankai Jiang},\n  year = {2026},\n  howpublished = {Accepted at NeurIPS 2026},\n  doi = {10.48550/arXiv.2606.09365},\n  url = {https://openreview.net/forum?id=i09nlt9B6r},\n  note = {Accepted at NeurIPS 2026}\n}"
     },
     {
-      "number": 78,
+      "number": 77,
       "key": "yang2026psychagent",
       "title": "PsychAgent: An Experience-Driven Lifelong Learning Agent for Self-Evolving Psychological Counselor",
       "authors": [
@@ -1744,7 +1729,7 @@
       "bibtex": "@misc{yang2026psychagent,\n  title = {{PsychAgent: An Experience-Driven Lifelong Learning Agent for Self-Evolving Psychological Counselor}},\n  author = {Yutao Yang and Junsong Li and Qianjun Pan and Jie Zhou and Kai Chen and Qin Chen and Jingyuan Zhao and Ningning Zhou and Xin Li and Liang He},\n  year = {2026},\n  doi = {10.48550/arXiv.2604.00931},\n  url = {https://arxiv.org/html/2604.00931v3},\n  eprint = {2604.00931},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AI},\n  note = {arXiv v3, 2026-04-28; v1 2026-04-01}\n}"
     },
     {
-      "number": 79,
+      "number": 78,
       "key": "chen2026medforge",
       "title": "MedForge-RSI: Medical Deepfake Detection via Recursive Self-Improvement",
       "authors": [
@@ -1760,7 +1745,7 @@
       "bibtex": "@article{chen2026medforge,\n  title = {{MedForge-RSI: Medical Deepfake Detection via Recursive Self-Improvement}},\n  author = {Chen, Zhihui and Feng, Mengling},\n  journal = {arXiv preprint arXiv:2609.36549},\n  year = {2026},\n  eprint = {2609.36549},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2609.36549v1}\n}"
     },
     {
-      "number": 80,
+      "number": 79,
       "key": "zhang2026vibemed",
       "title": "Toward Vibe Medicine: A Self-Evolving Multi-Agent Framework for Clinical Decision Support",
       "authors": [
@@ -1795,7 +1780,7 @@
       "bibtex": "@article{zhang2026vibemed,\n  title = {{Toward Vibe Medicine: A Self-Evolving Multi-Agent Framework for Clinical Decision Support}},\n  author = {Zhang, Qianxue and Ren, Yiming and Qin, Shihuan and Zhang, Xiao and Zhang, Liao and Huang, Jinyang and Liu, Zhengliang and Liu, Chenbin and Feng, Hongying and Chen, Jingyuan and Ding, Yuzhen and You, Weihang and Jiang, Hanqi and Pan, Yi and Zhou, Yifan and Chen, Junhao and Chen, Lifeng and Liu, Wei and Liu, Tianming and Zhao, Zengren and Zhang, Lian},\n  journal = {Meta-Radiology},\n  volume = {4},\n  number = {2},\n  pages = {100223},\n  year = {2026},\n  doi = {10.1016/j.metrad.2026.100223}\n}"
     },
     {
-      "number": 81,
+      "number": 80,
       "key": "yuan2026asclepius",
       "title": "Asclepius: An Adaptive Harness for Long-Horizon Clinical Agents",
       "authors": [
@@ -1814,7 +1799,7 @@
       "bibtex": "@inproceedings{yuan2026asclepius,\n  author = {Grace Chang Yuan and Xiaoman Zhang and Sung Eun Kim and Luyang Luo and Pranav Rajpurkar},\n  title = {{Asclepius}: An Adaptive Harness for Long-Horizon Clinical Agents},\n  booktitle = {Findings of the Association for Computational Linguistics: {EMNLP} 2026},\n  pages = {44611--44629},\n  year = {2026},\n  publisher = {Association for Computational Linguistics},\n  doi = {10.18653/2026.findings-emnlp.2094},\n  url = {https://aclanthology.org/2026.findings-emnlp.2094/}\n}"
     },
     {
-      "number": 82,
+      "number": 81,
       "key": "cao2026guideskill",
       "title": "GuideSkill: Evolving Executable LLM Agent Skills for Guideline-Grounded Clinical Reasoning",
       "authors": [
@@ -1834,7 +1819,7 @@
       "bibtex": "@misc{cao2026guideskill,\n  author = {Lang Cao and Yuhao Shen and Tianyang Luo and Simo Du and Hao Peng and Yue Guo},\n  title = {{GuideSkill: Evolving Executable LLM Agent Skills for Guideline-Grounded Clinical Reasoning}},\n  year = {2026},\n  doi = {10.48550/arXiv.2607.26160},\n  url = {https://arxiv.org/html/2607.26160v1},\n  eprint = {2607.26160},\n  archivePrefix = {arXiv}\n}"
     },
     {
-      "number": 83,
+      "number": 82,
       "key": "wu2026mediskillevo",
       "title": "MediSkill-Evo: Process-Constrained Self-Evolution for Evidence-Grounded Clinical Interaction",
       "authors": [
@@ -1853,7 +1838,7 @@
       "bibtex": "@misc{wu2026mediskillevo,\n  author = {Ruoyu Wu and Shenfu Xie and Yinqian Sun and Haibo Tong and Feifei Zhao},\n  title = {{MediSkill-Evo: Process-Constrained Self-Evolution for Evidence-Grounded Clinical Interaction}},\n  year = {2026},\n  eprint = {2608.23397},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2608.23397},\n  url = {https://arxiv.org/abs/2608.23397v2}\n}"
     },
     {
-      "number": 84,
+      "number": 83,
       "key": "li2026skillcdpo",
       "title": "Skill-CDPO: Evolving Agent Tool-Use via Critical Step Preference Optimization",
       "authors": [
@@ -1870,7 +1855,7 @@
       "bibtex": "@inproceedings{li2026skillcdpo,\n  author = {Yuchen Li and Jinghao Lin and Yuanqing Wang},\n  title = {{Skill-CDPO: Evolving Agent Tool-Use via Critical Step Preference Optimization}},\n  year = {2026},\n  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},\n  pages = {42309--42326},\n  doi = {10.18653/2026.findings-emnlp.1985},\n  url = {https://aclanthology.org/2026.findings-emnlp.1985.pdf}\n}"
     },
     {
-      "number": 85,
+      "number": 84,
       "key": "zhuang2025doctor",
       "title": "Learning to Be a Doctor: Searching for Effective Medical Agent Architectures",
       "authors": [
@@ -1890,7 +1875,7 @@
       "bibtex": "@inproceedings{zhuang2025doctor,\n  author = {Zhuang, Yangyang and Jiang, Wenjia and Zhang, Jia-Yu and Yang, Ze and Zhou, Joey Tianyi and Zhang, Chi},\n  title = {{Learning to Be a Doctor: Searching for Effective Medical Agent Architectures}},\n  booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},\n  pages = {6996--7005},\n  year = {2025},\n  doi = {10.1145/3746027.3755559}\n}"
     },
     {
-      "number": 86,
+      "number": 85,
       "key": "li2026decisionrules",
       "title": "Inference-Time Agentic Decision Rules Beat Longer Evolving Search for Multi-Image Medical Reasoning",
       "authors": [
@@ -1907,7 +1892,7 @@
       "bibtex": "@misc{li2026decisionrules,\n  author = {Site Li and Jianyi Hao and Xiaofeng Liu},\n  title = {{Inference-Time Agentic Decision Rules Beat Longer Evolving Search for Multi-Image Medical Reasoning}},\n  year = {2026},\n  doi = {10.48550/arXiv.2607.27564},\n  url = {https://arxiv.org/abs/2607.27564v1},\n  eprint = {2607.27564},\n  archivePrefix = {arXiv}\n}"
     },
     {
-      "number": 87,
+      "number": 86,
       "key": "ruan2026normcompliance",
       "title": "A Self-Evolving LLM Agent Framework for Role-Based Norm Compliance in Healthcare",
       "authors": [
@@ -1929,7 +1914,7 @@
       "bibtex": "@inproceedings{ruan2026normcompliance,\n  author = {Haijie Ruan and Xiaowu Jiang and Zhanpeng Li and Wei Jia and Xuanwu Xu and Xiao-Fen Shan and Shujie Chen and Xindong Ye},\n  title = {{A Self-Evolving LLM Agent Framework for Role-Based Norm Compliance in Healthcare}},\n  year = {2026},\n  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},\n  pages = {22562--22577},\n  doi = {10.18653/v1/2026.findings-acl.1133},\n  url = {https://aclanthology.org/2026.findings-acl.1133.pdf}\n}"
     },
     {
-      "number": 88,
+      "number": 87,
       "key": "zheng2026meddcr",
       "title": "MedDCR: Learning to Design Agentic Workflows for Medical Coding",
       "authors": [
@@ -1944,7 +1929,7 @@
       "bibtex": "@inproceedings{zheng2026meddcr,\n    title = \"{M}ed{DCR}: Learning to Design Agentic Workflows for Medical Coding\",\n    author = \"Zheng, Jiyang  and\n      Nassar, Islam  and\n      Vu, Thanh  and\n      Zhong, Xu  and\n      Lin, Yang  and\n      Liu, Tongliang  and\n      Duong, Long  and\n      Li, Yuan-Fang\",\n    editor = \"Liakata, Maria  and\n      Moreira, Viviane P.  and\n      Zhang, Jiajun  and\n      Jurgens, David\",\n    booktitle = \"Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026\",\n    month = jul,\n    year = \"2026\",\n    address = \"San Diego, California, United States\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.findings-acl.627/\",\n    doi = \"10.18653/v1/2026.findings-acl.627\",\n    pages = \"12878--12893\",\n    ISBN = \"979-8-89176-395-1\"\n}"
     },
     {
-      "number": 89,
+      "number": 88,
       "key": "ossowski2026codeclinic",
       "title": "CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents",
       "authors": [
@@ -1967,7 +1952,7 @@
       "bibtex": "@misc{ossowski2026codeclinic,\n  author = {Timothy Ossowski and Xinchi Liu and Danyal Maqbool and Vaibhav Dhanuka and Sheng Zhang and Hoifung Poon and Majid Afshar and Tyler Bradshaw and Junjie Hu},\n  title = {{CodeClinic: Evaluating Automation of Coding Skills for Clinical Reasoning Agents}},\n  year = {2026},\n  eprint = {2605.09675},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2605.09675},\n  url = {https://arxiv.org/abs/2605.09675v1}\n}"
     },
     {
-      "number": 90,
+      "number": 89,
       "key": "hu2026templar",
       "title": "TEMPLAR: agentic induction and evolution of standardized radiology reporting templates from large-scale clinical corpora",
       "authors": [
@@ -1993,7 +1978,7 @@
       "bibtex": "@misc{hu2026templar,\n  author = {Xiaotian Hu and Mingxuan Liu and Zhonghan Wang and Xinfeng Zhang and Yiming Huang and Ziang Wang and Kasidit Anmahaepong and Yijin Li and Yifei Chen and Hongjia Yang and Zihan Li and Qiyuan Tian},\n  title = {{TEMPLAR: agentic induction and evolution of standardized radiology reporting templates from large-scale clinical corpora}},\n  year = {2026},\n  eprint = {2610.05247},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.05247},\n  url = {https://arxiv.org/abs/2610.05247v1}\n}"
     },
     {
-      "number": 91,
+      "number": 90,
       "key": "mokssit2026fhiragenteval",
       "title": "FHIR-AgentEval: a modular sandbox for benchmarking clinical LLM agents with memory-augmented configurations",
       "authors": [
@@ -2012,7 +1997,7 @@
       "bibtex": "@article{mokssit2026fhiragenteval,\n  author = {Mokssit, Youssef and Ravi, Kamalakkannan and Nie, Mengshu and Kim, Junyoung and Liu, Cong},\n  title = {{FHIR-AgentEval: a modular sandbox for benchmarking clinical LLM agents with memory-augmented configurations}},\n  journal = {npj Digital Medicine},\n  year = {2026},\n  doi = {10.1038/s41746-026-03348-0}\n}"
     },
     {
-      "number": 92,
+      "number": 91,
       "key": "xing2026clinicalretrial",
       "title": "ClinicalReTrial: Clinical Trial Redesign with Self-Evolving Agents",
       "authors": [
@@ -2027,7 +2012,7 @@
       "bibtex": "@inproceedings{xing2026clinicalretrial,\n    title = \"{C}linical{R}e{T}rial: Clinical Trial Redesign with Self-Evolving Agents\",\n    author = \"Xing, Sixue  and\n      Wu, Kerui  and\n      Xia, Xuanye  and\n      He, Haoyu  and\n      Jiang, Meng  and\n      Chen, Jintai  and\n      Fu, Tianfan\",\n    editor = \"Lee, Hung-Yi  and\n      Dev, Sunipa  and\n      Li, Jessy  and\n      Elliott, Desmond\",\n    booktitle = \"Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026\",\n    month = oct,\n    year = \"2026\",\n    address = \"Budapest, Hungary\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.findings-emnlp.772/\",\n    doi = \"10.18653/2026.findings-emnlp.772\",\n    pages = \"16296--16330\",\n    ISBN = \"979-8-89176-462-0\"\n}"
     },
     {
-      "number": 93,
+      "number": 92,
       "key": "mao2026srmapr",
       "title": "A Self-Reflective Multi-Agent Physician Recommendation Framework",
       "authors": [
@@ -2043,7 +2028,7 @@
       "bibtex": "@inproceedings{mao2026srmapr,\n  author = {Shuai Mao and Yuqing Yang},\n  title = {{A Self-Reflective Multi-Agent Physician Recommendation Framework}},\n  year = {2026},\n  booktitle = {CNML 2026},\n  doi = {10.1109/CNML68938.2026.11452303},\n  url = {https://ieeexplore.ieee.org/document/11452303}\n}"
     },
     {
-      "number": 94,
+      "number": 93,
       "key": "jiang2026sempa",
       "title": "Self-Evolving Dual-Role Deliberation for Medication Recommendation from Clinical Records",
       "authors": [
@@ -2070,7 +2055,7 @@
       "bibtex": "@inproceedings{jiang2026sempa,\n  author = {Jiyue Jiang and Yu Lei and Yitao Xu and Zikang Wang and Zhenyu Wang and Licheng Zong and Han Huang and Ziyi Li and Zhiyu Huo and Yuhan Chen and Jiayang Chen and Xiaodan Fan and Yu Li},\n  title = {{Self-Evolving Dual-Role Deliberation for Medication Recommendation from Clinical Records}},\n  year = {2026},\n  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},\n  pages = {20985--21004},\n  doi = {10.18653/2026.findings-emnlp.994},\n  url = {https://aclanthology.org/2026.findings-emnlp.994.pdf}\n}"
     },
     {
-      "number": 95,
+      "number": 94,
       "key": "fan2026medenv",
       "title": "MedEnv: Scaling Multimodal Virtual Medical Environments for Long-Horizon Diagnosis",
       "authors": [
@@ -2095,7 +2080,7 @@
       "bibtex": "@inproceedings{fan2026medenv,\n  author = {Zhiting Fan and Xuxiang Ren and Yuan Wang and Ruizhe Chen and Zijie Meng and Keli Hu and Jiaxiang Liu and Jian Wu and Weiqi Zhai and Hongxia Xu and Zuozhu Liu},\n  title = {{MedEnv: Scaling Multimodal Virtual Medical Environments for Long-Horizon Diagnosis}},\n  year = {2026},\n  booktitle = {Medical Image Computing and Computer Assisted Intervention - MICCAI 2026},\n  pages = {420--429},\n  volume = {16886},\n  doi = {10.1007/978-3-032-38098-2_40},\n  url = {https://papers.miccai.org/miccai-2026/paper/5084_paper.pdf}\n}"
     },
     {
-      "number": 96,
+      "number": 95,
       "key": "chen2026rhis",
       "title": "From API Acknowledgment to Clinical State: Runtime Governance, Controlled Self-Evolution, and Cost in MedAgentBench",
       "authors": [
@@ -2110,7 +2095,7 @@
       "bibtex": "@misc{chen2026rhis,\n  author = {Wenjie Chen},\n  title = {{From API Acknowledgment to Clinical State: Runtime Governance, Controlled Self-Evolution, and Cost in MedAgentBench}},\n  year = {2026},\n  doi = {10.2139/ssrn.7482519},\n  url = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7482519},\n  howpublished = {SSRN working paper}\n}"
     },
     {
-      "number": 97,
+      "number": 96,
       "key": "shi2026medguard",
       "title": "MedGuard: an LLM-based gatekeeper for detecting clinical risks in Chinese telemedicine consultations",
       "authors": [
@@ -2132,7 +2117,7 @@
       "bibtex": "@article{shi2026medguard,\n  author = {Yuntao Shi and Qiwen Wang and Shang Gao and Jing Zhou and Jinzhen Lin and Zhenzhe Ying and Xiangxiang Zeng and Chen Lin},\n  title = {{MedGuard: an LLM-based gatekeeper for detecting clinical risks in Chinese telemedicine consultations}},\n  year = {2026},\n  journal = {npj Digital Medicine},\n  doi = {10.1038/s41746-026-03116-0},\n  url = {https://www.nature.com/articles/s41746-026-03116-0_reference.pdf}\n}"
     },
     {
-      "number": 98,
+      "number": 97,
       "key": "li2026bridgegap",
       "title": "BridgeGap: Belief-Grounded Training for Medical Dialogue Agents",
       "authors": [
@@ -2150,7 +2135,7 @@
       "bibtex": "@inproceedings{li2026bridgegap,\n  author = {Weijun Li and Tao Yang and Jiayu Yang and Fei Chao},\n  title = {{BridgeGap: Belief-Grounded Training for Medical Dialogue Agents}},\n  year = {2026},\n  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},\n  pages = {44932--44947},\n  doi = {10.18653/2026.emnlp-main.1974},\n  url = {https://aclanthology.org/2026.emnlp-main.1974.pdf}\n}"
     },
     {
-      "number": 99,
+      "number": 98,
       "key": "chen2026cura",
       "title": "Cura 1T: Healthcare Foundation Model via Recursive Self-Improvement",
       "authors": [
@@ -2174,7 +2159,7 @@
       "bibtex": "@misc{chen2026cura,\n  author = {Haolin Chen and Leon Qi and Steve Brown and Deon Metelski and Tao Xia and Joonyul Lee and Qixuan Wang and Kevin Riley and Frank Wang and Weiran Yao},\n  title = {{Cura 1T: Healthcare Foundation Model via Recursive Self-Improvement}},\n  year = {2026},\n  eprint = {2607.15314},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2607.15314},\n  url = {https://arxiv.org/abs/2607.15314v3}\n}"
     },
     {
-      "number": 100,
+      "number": 99,
       "key": "liu2026bat",
       "title": "BaT: Towards Self-Evolving Medical Research Agent with Stage Rubrics",
       "authors": [
@@ -2200,7 +2185,7 @@
       "bibtex": "@misc{liu2026bat,\n  author = {Junqi Liu and Yufan He and Yexiao He and Pengfei Guo and Dong Yang and Andriy Myronenko and Can Zhao and Hanrong Ye and Tianhao Qi and Yuyin Zhou and Daguang Xu and Yucheng Tang},\n  title = {{BaT: Towards Self-Evolving Medical Research Agent with Stage Rubrics}},\n  year = {2026},\n  eprint = {2608.16211},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2608.16211},\n  url = {https://arxiv.org/abs/2608.16211v1}\n}"
     },
     {
-      "number": 101,
+      "number": 100,
       "key": "jeong2026healthcaregym",
       "title": "Healthcare AI GYM for Medical Agents",
       "authors": [
@@ -2215,7 +2200,7 @@
       "bibtex": "@misc{jeong2026healthcaregym,\n  author = {Minbyul Jeong},\n  title = {{Healthcare AI GYM for Medical Agents}},\n  year = {2026},\n  eprint = {2605.02943},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2605.02943},\n  url = {https://arxiv.org/abs/2605.02943v1}\n}"
     },
     {
-      "number": 102,
+      "number": 101,
       "key": "wu2026sepsisagent",
       "title": "Agentifying Patient Dynamics within LLMs through Interacting with Clinical World Model",
       "authors": [
@@ -2241,7 +2226,7 @@
       "bibtex": "@misc{wu2026sepsisagent,\n  author = {Minghao Wu and Yuting Yan and Zhenyang Cai and Ke Ji and Chuangsen Fang and Ziying Sheng and Xidong Wang and Rongsheng Wang and Hejia Zhang and Shuang Li and Benyou Wang and Hongyuan Zha},\n  title = {{Agentifying Patient Dynamics within LLMs through Interacting with Clinical World Model}},\n  year = {2026},\n  eprint = {2605.14723},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2605.14723},\n  url = {https://arxiv.org/abs/2605.14723v1}\n}"
     },
     {
-      "number": 103,
+      "number": 102,
       "key": "du2025evopatient",
       "title": "LLMs Can Simulate Standardized Patients via Agent Coevolution",
       "authors": [
@@ -2265,7 +2250,7 @@
       "bibtex": "@inproceedings{du2025evopatient,\n  title = {{LLMs Can Simulate Standardized Patients via Agent Coevolution}},\n  author = {Zhuoyun Du and Lujie Zheng and Renjun Hu and Yuyang Xu and Xiawei Li and Ying Sun and Wei Chen and Jian Wu and Haolei Cai and Haochao Ying},\n  year = {2025},\n  pages = {17278--17306},\n  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},\n  publisher = {Association for Computational Linguistics},\n  doi = {10.18653/v1/2025.acl-long.846},\n  url = {https://aclanthology.org/2025.acl-long.846/}\n}"
     },
     {
-      "number": 104,
+      "number": 103,
       "key": "chen2026clinverse",
       "title": "ClinVerse: A Realistic Multi-Agent Diagnostic Environment for Training and Evaluating Medical Agents",
       "authors": [
@@ -2284,7 +2269,7 @@
       "bibtex": "@misc{chen2026clinverse,\n  author = {Sirry Chen and Fangke Chen and Xuanwen Ding and Wei Chen and Zhongyu Wei},\n  title = {{ClinVerse: A Realistic Multi-Agent Diagnostic Environment for Training and Evaluating Medical Agents}},\n  year = {2026},\n  eprint = {2610.34878},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.34878},\n  url = {https://arxiv.org/abs/2610.34878v1}\n}"
     },
     {
-      "number": 105,
+      "number": 104,
       "key": "dai2026rri",
       "title": "Recursive Reward Improvement via Adversarial Meta-Prompt Evolution",
       "authors": [
@@ -2305,7 +2290,7 @@
       "bibtex": "@misc{dai2026rri,\n  author = {Wei Dai and Qianchu Liu and Guanghui Qin and Xing Han and Tristan Naumann and Paul Pu Liang and Sheng Zhang},\n  title = {{Recursive Reward Improvement via Adversarial Meta-Prompt Evolution}},\n  year = {2026},\n  eprint = {2610.21040},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.21040},\n  url = {https://arxiv.org/abs/2610.21040v1}\n}"
     },
     {
-      "number": 106,
+      "number": 105,
       "key": "ren2026dxevolve",
       "title": "Emulating Clinician Cognition via Self-Evolving Deep Clinical Research",
       "authors": [
@@ -2330,7 +2315,7 @@
       "bibtex": "@article{ren2026dxevolve,\n  author = {Ren, Ruiyang and Wang, Yuhao and Liang, Yunsen and Luo, Lan and Liu, Jing and Wang, Haifeng and Feng, Cong and Zhang, Yinan and Miao, Chunyan and Wen, Ji-Rong and Zhao, Wayne Xin},\n  title = {{Emulating Clinician Cognition via Self-Evolving Deep Clinical Research}},\n  journal = {arXiv preprint arXiv:2603.10677},\n  year = {2026},\n  doi = {10.48550/arXiv.2603.10677},\n  url = {https://arxiv.org/abs/2603.10677},\n  note = {Version 1, 2026-03-11}\n}"
     },
     {
-      "number": 107,
+      "number": 106,
       "key": "liu2026evomdt",
       "title": "EvoMDT: a self-evolving multi-agent system for structured clinical decision-making in multi-cancer",
       "authors": [
@@ -2357,7 +2342,7 @@
       "bibtex": "@article{liu2026evomdt,\n  title = {{EvoMDT: a self-evolving multi-agent system for structured clinical decision-making in multi-cancer}},\n  author = {Qicai Liu and Zhichao Hu and Tao Huang and Yupeng Niu and Xinche Zhang and Shanwu Ma and Chutong Lin and Goh Kim Huat and Hyeokkoo Eric Kwon and Feng Gao and Xianfu Sun and Zhitao Ying and Guangliang Qiang},\n  year = {2026},\n  journal = {npj Digital Medicine},\n  volume = {9},\n  pages = {124},\n  doi = {10.1038/s41746-025-02304-8},\n  url = {https://www.nature.com/articles/s41746-025-02304-8}\n}"
     },
     {
-      "number": 108,
+      "number": 107,
       "key": "zhu2026healthflow",
       "title": "HealthFlow: automating electronic health record analysis via a strategically self-evolving multi-agent framework",
       "authors": [
@@ -2383,7 +2368,7 @@
       "bibtex": "@article{zhu2026healthflow,\n  title = {{HealthFlow: automating electronic health record analysis via a strategically self-evolving multi-agent framework}},\n  author = {Yinghao Zhu and Zixiang Wang and Yifan Qi and Lei Gu and Dehao Sui and Haoran Hu and Xichen Zhang and Ziyi He and Yasha Wang and Junjun He and Liantao Ma and Lequan Yu},\n  year = {2026},\n  journal = {npj Digital Medicine},\n  volume = {9},\n  pages = {660},\n  doi = {10.1038/s41746-026-03097-0},\n  url = {https://www.nature.com/articles/s41746-026-03097-0}\n}"
     },
     {
-      "number": 109,
+      "number": 108,
       "key": "tzanis2026reclaim",
       "title": "ReclAIm: A Multiagent Framework for Monitoring and Correcting Performance Decline in Medical Imaging AI",
       "authors": [
@@ -2399,7 +2384,7 @@
       "bibtex": "@article{tzanis2026reclaim,\n  author = {Tzanis, Eleftherios and Klontzas, Michail E.},\n  title = {{ReclAIm}: A Multiagent Framework for Monitoring and Correcting Performance Decline in Medical Imaging {AI}},\n  journal = {Radiology: Artificial Intelligence},\n  volume = {8},\n  number = {4},\n  pages = {e250923},\n  year = {2026},\n  doi = {10.1148/ryai.250923},\n  url = {https://pubs.rsna.org/doi/10.1148/ryai.250923}\n}"
     },
     {
-      "number": 110,
+      "number": 109,
       "key": "liu2026openhospital",
       "title": "OpenHospital: A Thing-in-itself Arena for Evolving and Benchmarking LLM-based Collective Intelligence",
       "authors": [
@@ -2423,7 +2408,7 @@
       "bibtex": "@misc{liu2026openhospital,\n  author = {Peigen Liu and Rui Ding and Yuren Mao and Ziyan Jiang and Yuxiang Ye and Yunjun Gao and Ying Zhang and Renjie Sun and Longbin Lai and Zhengping Qian},\n  title = {{OpenHospital: A Thing-in-itself Arena for Evolving and Benchmarking LLM-based Collective Intelligence}},\n  year = {2026},\n  eprint = {2603.14771},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2603.14771},\n  url = {https://arxiv.org/abs/2603.14771v3}\n}"
     },
     {
-      "number": 111,
+      "number": 110,
       "key": "li2026sea",
       "title": "Joint Optimization of Reasoning and Dual-Memory for Self-Learning Diagnostic Agent",
       "authors": [
@@ -2440,7 +2425,7 @@
       "bibtex": "@misc{li2026sea,\n  author = {Bingxuan Li and Simo Du and Yue Guo},\n  title = {{Joint Optimization of Reasoning and Dual-Memory for Self-Learning Diagnostic Agent}},\n  year = {2026},\n  eprint = {2604.07269},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2604.07269},\n  url = {https://arxiv.org/abs/2604.07269v2}\n}"
     },
     {
-      "number": 112,
+      "number": 111,
       "key": "zhang2026medevoeval",
       "title": "MedEvoEval: Evaluating Continual Evolution of Doctor Agents through Simulated Clinical Episodes",
       "authors": [
@@ -2455,7 +2440,7 @@
       "bibtex": "@misc{zhang2026medevoeval,\n  author = {Hui Zhang},\n  title = {{MedEvoEval: Evaluating Continual Evolution of Doctor Agents through Simulated Clinical Episodes}},\n  year = {2026},\n  eprint = {2606.28900},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2606.28900},\n  url = {https://arxiv.org/abs/2606.28900v3}\n}"
     },
     {
-      "number": 113,
+      "number": 112,
       "key": "sayeedi2026r4",
       "title": "Route, Retrieve, Reflect, Repair: Self-Improving Agentic Framework for Visual Detection and Linguistic Reasoning in Medical Imaging",
       "authors": [
@@ -2476,7 +2461,7 @@
       "bibtex": "@misc{sayeedi2026r4,\n  author = {Md. Faiyaz Abdullah Sayeedi and Rashedur Rahman and Siam Tahsin Bhuiyan and Sefatul Wasi and Ashraful Islam and Saadia Binte Alam and AKM Mahbubur Rahman},\n  title = {{Route, Retrieve, Reflect, Repair: Self-Improving Agentic Framework for Visual Detection and Linguistic Reasoning in Medical Imaging}},\n  year = {2026},\n  eprint = {2601.08192},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2601.08192},\n  url = {https://arxiv.org/abs/2601.08192v2}\n}"
     },
     {
-      "number": 114,
+      "number": 113,
       "key": "meng2026topoagent",
       "title": "TopoAgent: An Agentic Framework for Automated Topology Learning in Medical Imaging",
       "authors": [
@@ -2496,7 +2481,7 @@
       "bibtex": "@misc{meng2026topoagent,\n  author = {Guangyu Meng and Pengfei Gu and Xueyang Li and Yiyu Shi and Erin Wolf Chambers and Danny Z. Chen},\n  title = {{TopoAgent: An Agentic Framework for Automated Topology Learning in Medical Imaging}},\n  year = {2026},\n  eprint = {2606.29763},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2606.29763},\n  url = {https://arxiv.org/abs/2606.29763v1}\n}"
     },
     {
-      "number": 115,
+      "number": 114,
       "key": "dou2024shennongagent",
       "title": "Autonomous Pharmaceutical Care with Large Language Models",
       "authors": [
@@ -2515,7 +2500,7 @@
       "bibtex": "@inproceedings{dou2024shennongagent,\n  author = {Yutao Dou and Zike Deng and Tao Xing and Jian Xiao and Shaoliang Peng},\n  title = {{Autonomous Pharmaceutical Care with Large Language Models}},\n  year = {2024},\n  booktitle = {2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},\n  doi = {10.1109/BIBM62325.2024.10822302},\n  url = {https://ieeexplore.ieee.org/document/10822302}\n}"
     },
     {
-      "number": 116,
+      "number": 115,
       "key": "rugo2026livingoep",
       "title": "Development and validation of a human-supervised AI-augmented living oncology evidence platform: a breast cancer pilot study",
       "authors": [
@@ -2543,7 +2528,7 @@
       "bibtex": "@article{rugo2026livingoep,\n  author = {H. Rugo and Anna Forsythe and D. Flora and S. Gl{\\\"u}ck and S. Grieve and R. Campden and R. J. Liu and M. Musat and J. M. Rege and P. A. Kaufman and R. L. Coleman and P. Tarantino and J. O'Shaughnessy and L. Schwartzberg},\n  title = {{Development and validation of a human-supervised AI-augmented living oncology evidence platform: a breast cancer pilot study}},\n  year = {2026},\n  journal = {ESMO Real World Data and Digital Oncology},\n  pages = {100770},\n  volume = {13},\n  doi = {10.1016/j.esmorw.2026.100770},\n  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC13563553/}\n}"
     },
     {
-      "number": 117,
+      "number": 116,
       "key": "wang2026tcmsea",
       "title": "Learning from Expert-Corrected Misdiagnoses: A Self-Evolving Consultation Agent for Traditional Chinese Medicine after Failed Treatment",
       "authors": [
@@ -2562,7 +2547,7 @@
       "bibtex": "@misc{wang2026tcmsea,\n  author = {Ye Wang and Zhikang Lin and Jia Liu and Tianle Zhang and Nanyue Wang},\n  title = {{Learning from Expert-Corrected Misdiagnoses: A Self-Evolving Consultation Agent for Traditional Chinese Medicine after Failed Treatment}},\n  year = {2026},\n  eprint = {2610.40663},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.40663},\n  url = {https://arxiv.org/abs/2610.40663v1}\n}"
     },
     {
-      "number": 118,
+      "number": 117,
       "key": "li2026vdss",
       "title": "Human-In-The-Loop Multi-agent Ventilator Decision Support with Contextual Bandit Preference Learning",
       "authors": [
@@ -2586,28 +2571,7 @@
       "bibtex": "@inproceedings{li2026vdss,\n  author = {Li, Sijia and Tan, Xiaoyu and Wang, Qixing and Zhao, Weiyi and Zhan, Chen and Hao, Teqi and Wang, Xuemin and Gu, Lei and Eils, Roland and Qiu, Xihe},\n  title = {{Human-In-The-Loop Multi-agent Ventilator Decision Support with Contextual Bandit Preference Learning}},\n  booktitle = {Medical Image Computing and Computer Assisted Intervention – MICCAI 2026},\n  pages = {290--300},\n  year = {2026},\n  doi = {10.1007/978-3-032-38260-3_28}\n}"
     },
     {
-      "number": 119,
-      "key": "neary2025fast",
-      "title": "Think FAST: a novel framework to evaluate fidelity, accuracy, safety, and tone in conversational AI health coach dialogues",
-      "authors": [
-        "Martha Neary",
-        "Emily Fulton",
-        "Victoria Rogers",
-        "Julia Wilson",
-        "Zoe Griffiths",
-        "Ram Chuttani",
-        "Paul M. Sacher"
-      ],
-      "year": "2025",
-      "venue": "Frontiers in Digital Health",
-      "doi": "10.3389/fdgth.2025.1460236",
-      "url": "https://doi.org/10.3389/fdgth.2025.1460236",
-      "eprint": "",
-      "in_evidence_map": true,
-      "bibtex": "@article{neary2025fast,\n  author = {Martha Neary and Emily Fulton and Victoria Rogers and Julia Wilson and Zoe Griffiths and Ram Chuttani and Paul M. Sacher},\n  title = {{Think FAST: a novel framework to evaluate fidelity, accuracy, safety, and tone in conversational AI health coach dialogues}},\n  year = {2025},\n  journal = {Frontiers in Digital Health},\n  pages = {1460236},\n  volume = {7},\n  doi = {10.3389/fdgth.2025.1460236},\n  url = {https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1460236/full}\n}"
-    },
-    {
-      "number": 120,
+      "number": 118,
       "key": "feng2026gatedopenclaw",
       "title": "Self-Evolving Diagnostic Framework based Gated Residual Adapters and OpenClaw-Based Medical Agents",
       "authors": [
@@ -2623,7 +2587,7 @@
       "bibtex": "@article{feng2026gatedopenclaw,\n  author = {Shuai Feng and Pan Su},\n  title = {{Self-Evolving Diagnostic Framework based Gated Residual Adapters and OpenClaw-Based Medical Agents}},\n  year = {2026},\n  journal = {International Journal of Computer Science and Information Technology},\n  pages = {1--11},\n  volume = {8},\n  number = {4},\n  doi = {10.62051/ijcsit.v8n4.01},\n  url = {https://ijocsit.org/pdf/2026/10.62051-ijcsit.v8n4.01.pdf}\n}"
     },
     {
-      "number": 121,
+      "number": 119,
       "key": "li2026emai",
       "title": "Experience-guided multi-agent interpretable framework for radiology report summarization",
       "authors": [
@@ -2645,7 +2609,7 @@
       "bibtex": "@article{li2026emai,\n  author = {Jia Li and Tong Zhou and Zichun Zhou and Xuan Wei and Hong Song and Zhixiang Wang and Yubo Chen and Han Lv},\n  title = {{Experience-guided multi-agent interpretable framework for radiology report summarization}},\n  year = {2026},\n  journal = {Computer Methods and Programs in Biomedicine},\n  pages = {109078},\n  volume = {273},\n  doi = {10.1016/j.cmpb.2025.109078},\n  url = {https://www.sciencedirect.com/science/article/abs/pii/S016926072500495X}\n}"
     },
     {
-      "number": 122,
+      "number": 120,
       "key": "zhu2026ultrasoundagents",
       "title": "UltrasoundAgents: Hierarchical Multi-Agent Evidence-Chain Reasoning for Breast Ultrasound Diagnosis",
       "authors": [
@@ -2663,7 +2627,7 @@
       "bibtex": "@misc{zhu2026ultrasoundagents,\n  author = {Yali Zhu and Kang Zhou and Dingbang Wu and Gaofeng Meng},\n  title = {{UltrasoundAgents: Hierarchical Multi-Agent Evidence-Chain Reasoning for Breast Ultrasound Diagnosis}},\n  year = {2026},\n  eprint = {2603.10852},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2603.10852},\n  url = {https://arxiv.org/abs/2603.10852v1}\n}"
     },
     {
-      "number": 123,
+      "number": 121,
       "key": "wang2026mira",
       "title": "MIRA: Medical Image Reflection for Agentic Diagnosis",
       "authors": [
@@ -2691,7 +2655,7 @@
       "bibtex": "@misc{wang2026mira,\n  author = {Shengzhi Wang and Jun Yang and Kai Wu and Xiaozhong Ji and Yiwen Ye and Ziyang Chen and Mingliang Xiong and Wen Fang and Mingqing Liu and Mengyuan Xu and Miaoxuan Shan and Caiyan Liu and Bin He and Qingwen Liu},\n  title = {{MIRA: Medical Image Reflection for Agentic Diagnosis}},\n  year = {2026},\n  eprint = {2608.10827},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2608.10827},\n  url = {https://arxiv.org/abs/2608.10827v1}\n}"
     },
     {
-      "number": 124,
+      "number": 122,
       "key": "shao2026case",
       "title": "From Given to Gathered Evidence: Agentic Learning for Longitudinal Medical Reasoning",
       "authors": [
@@ -2714,7 +2678,7 @@
       "bibtex": "@misc{shao2026case,\n  author = {Minye Shao and Chaohui Yu and Yixuan Wu and Fan Wang and Ling Shao and Yang Long and Jing Wang and Hangjie Yuan and Shang Liu},\n  title = {{From Given to Gathered Evidence: Agentic Learning for Longitudinal Medical Reasoning}},\n  year = {2026},\n  eprint = {2609.39566},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2609.39566},\n  url = {https://arxiv.org/abs/2609.39566v3}\n}"
     },
     {
-      "number": 125,
+      "number": 123,
       "key": "qu2026sageagent",
       "title": "SAGEAgent: A Self-evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction",
       "authors": [
@@ -2739,7 +2703,7 @@
       "bibtex": "@inproceedings{qu2026sageagent,\n  author = {Qu, Chongyu and Cui, Can and Lu, Zhengyi and Zhu, Junchao and Yao, Tianyuan and Guo, Junlin and Xiong, Juming and Zhu, Yanfan and Yang, Yuechen and Landman, Bennett A. and Huo, Yuankai},\n  title = {{SAGEAgent: A Self-evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction}},\n  booktitle = {Medical Image Computing and Computer Assisted Intervention – MICCAI 2026},\n  pages = {536--546},\n  year = {2026},\n  doi = {10.1007/978-3-032-38059-3_51}\n}"
     },
     {
-      "number": 126,
+      "number": 124,
       "key": "pal2023medhalt",
       "title": "Med-HALT: Medical Domain Hallucination Test for Large Language Models",
       "authors": [
@@ -2756,7 +2720,7 @@
       "bibtex": "@inproceedings{pal2023medhalt,\n  author    = {Ankit Pal and Logesh Kumar Umapathi and Malaikannan Sankarasubbu},\n  title     = {{Med-HALT}: Medical Domain Hallucination Test for Large Language Models},\n  year      = {2023},\n  doi           = {10.18653/v1/2023.conll-1.21},\n  url           = {https://aclanthology.org/2023.conll-1.21/},\n  publisher     = {Association for Computational Linguistics},\n  booktitle     = {Proceedings of the 27th Conference on Computational Natural Language Learning ({CoNLL})},\n  pages         = {314--334},\n  eprint        = {2307.15343},\n  archivePrefix = {arXiv}\n}"
     },
     {
-      "number": 127,
+      "number": 125,
       "key": "moore2015dicomdeid",
       "title": "De-identification of Medical Images with Retention of Scientific Research Value",
       "authors": [
@@ -2779,7 +2743,7 @@
       "bibtex": "@article{moore2015dicomdeid,\n  author    = {Stephen M. Moore and David R. Maffitt and Kirk E. Smith and Justin S. Kirby and Kenneth W. Clark and John B. Freymann and Bruce A. Vendt and Lawrence R. Tarbox and Fred W. Prior},\n  title     = {De-identification of Medical Images with Retention of Scientific Research Value},\n  journal   = {RadioGraphics},\n  volume    = {35},\n  number    = {3},\n  pages     = {727--735},\n  year      = {2015},\n  doi       = {10.1148/rg.2015140244}\n}"
     },
     {
-      "number": 128,
+      "number": 126,
       "key": "lin2026memsecurity",
       "title": "A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle",
       "authors": [
@@ -2801,7 +2765,7 @@
       "bibtex": "@inproceedings{lin2026memsecurity,\n  author        = {Zehao Lin and Xixuan Hao and Renyu Fu and Shaobo Cui and Kai Chen and Chunyu Li and Zhiyu Li and Feiyu Xiong},\n  title         = {A Survey on Long-Term Memory Security in {LLM} Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle},\n  booktitle     = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},\n  pages         = {52221--52235},\n  year          = {2026},\n  doi           = {10.18653/2026.emnlp-main.2296}\n}"
     },
     {
-      "number": 129,
+      "number": 127,
       "key": "zech2018domainshift",
       "title": "Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs: A cross-sectional study",
       "authors": [
@@ -2821,7 +2785,7 @@
       "bibtex": "@article{zech2018domainshift,\n  author    = {John R. Zech and Marcus A. Badgeley and Manway Liu and Anthony B. Costa and Joseph J. Titano and Eric K. Oermann},\n  title     = {Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs: A cross-sectional study},\n  journal   = {PLOS Medicine},\n  volume    = {15},\n  number    = {11},\n  pages     = {e1002683},\n  year      = {2018},\n  doi       = {10.1371/journal.pmed.1002683}\n}"
     },
     {
-      "number": 130,
+      "number": 128,
       "key": "hou2026samebrain",
       "title": "Same Brain, Different Prediction: How Preprocessing Choices Undermine EEG Decoding Reliability",
       "authors": [
@@ -2841,28 +2805,7 @@
       "bibtex": "@misc{hou2026samebrain,\n  author = {Dengzhe Hou and Zihao Wu and Lingyu Jiang and Zirui Li and Fangzhou Lin and Kazunori D. Yamada},\n  title = {Same Brain, Different Prediction: How Preprocessing Choices Undermine {EEG} Decoding Reliability},\n  year = {2026},\n  eprint = {2605.07212},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2605.07212},\n  url = {https://arxiv.org/abs/2605.07212v1}\n}"
     },
     {
-      "number": 131,
-      "key": "xu2026oaims",
-      "title": "You Point, I Learn: Online Adaptation of Interactive Segmentation Models for Handling Distribution Shifts in Medical Imaging",
-      "authors": [
-        "Wentian Xu",
-        "Ziyun Liang",
-        "Harry Anthony",
-        "Yasin Ibrahim",
-        "Felix Cohen",
-        "Guang Yang",
-        "Konstantinos Kamnitsas"
-      ],
-      "year": "2026",
-      "venue": "International Conference on Learning Representations (ICLR)",
-      "doi": "",
-      "url": "https://arxiv.org/abs/2503.06717",
-      "eprint": "",
-      "in_evidence_map": true,
-      "bibtex": "@inproceedings{xu2026oaims,\n  author       = {Wentian Xu and Ziyun Liang and Harry Anthony and Yasin Ibrahim and Felix Cohen and Guang Yang and Konstantinos Kamnitsas},\n  title        = {You Point, {I} Learn: Online Adaptation of Interactive Segmentation Models for Handling Distribution Shifts in Medical Imaging},\n  year         = {2026},\n\n  url          = {https://arxiv.org/abs/2503.06717},\n  booktitle     = {International Conference on Learning Representations (ICLR)}\n}"
-    },
-    {
-      "number": 132,
+      "number": 129,
       "key": "kirkpatrick2017overcoming",
       "title": "Overcoming catastrophic forgetting in neural networks",
       "authors": [
@@ -2890,7 +2833,7 @@
       "bibtex": "@article{kirkpatrick2017overcoming,\n  author    = {Kirkpatrick, James and Pascanu, Razvan and Rabinowitz, Neil and Veness, Joel and Desjardins, Guillaume and Rusu, Andrei A. and Milan, Kieran and Quan, John and Ramalho, Tiago and Grabska-Barwinska, Agnieszka and Hassabis, Demis and Clopath, Claudia and Kumaran, Dharshan and Hadsell, Raia},\n  title     = {Overcoming catastrophic forgetting in neural networks},\n  journal   = {Proceedings of the National Academy of Sciences},\n  volume    = {114},\n  number    = {13},\n  pages     = {3521--3526},\n  year      = {2017},\n  doi       = {10.1073/pnas.1611835114}\n}"
     },
     {
-      "number": 133,
+      "number": 130,
       "key": "hou2026s1cogbench",
       "title": "S1CogBench: What System One Decision Models Can and Cannot Do on Cognitive Experiments",
       "authors": [
@@ -2906,7 +2849,7 @@
       "bibtex": "@misc{hou2026s1cogbench,\n author = {Dengzhe Hou and Kazunori D. Yamada},\n title = {{S1CogBench}: What System One Decision Models Can and Cannot Do on Cognitive Experiments},\n year = {2026},\n eprint = {2611.00911},\n archivePrefix = {arXiv},\n url = {https://arxiv.org/abs/2611.00911v1}\n}"
     },
     {
-      "number": 134,
+      "number": 131,
       "key": "goddard2012automation",
       "title": "Automation Bias: A Systematic Review of Frequency, Effect Mediators, and Mitigators",
       "authors": [
@@ -2923,22 +2866,7 @@
       "bibtex": "@article{goddard2012automation,\n  author    = {Kate Goddard and Abdul Roudsari and Jeremy C. Wyatt},\n  title     = {Automation Bias: A Systematic Review of Frequency, Effect Mediators, and Mitigators},\n  journal   = {Journal of the American Medical Informatics Association},\n  volume    = {19},\n  number    = {1},\n  pages     = {121--127},\n  year      = {2012}\n}"
     },
     {
-      "number": 135,
-      "key": "fda2026cds",
-      "title": "Clinical Decision Support Software: Guidance for Industry and Food and Drug Administration Staff",
-      "authors": [
-        "U.S. Food and Drug Administration"
-      ],
-      "year": "2026",
-      "venue": "",
-      "doi": "",
-      "url": "https://www.fda.gov/media/109618/download",
-      "eprint": "",
-      "in_evidence_map": false,
-      "bibtex": "@misc{fda2026cds,\n  author = {{U.S. Food and Drug Administration}},\n  title = {Clinical Decision Support Software: Guidance for Industry and Food and Drug Administration Staff},\n  year = {2026},\n  howpublished = {Final guidance issued 29 January 2026},\n  url = {https://www.fda.gov/media/109618/download}\n}"
-    },
-    {
-      "number": 136,
+      "number": 132,
       "key": "fda2024pccp",
       "title": "Marketing Submission Recommendations for a Predetermined Change Control Plan for Artificial Intelligence-Enabled Device Software Functions: Final Guidance",
       "authors": [
@@ -2953,47 +2881,7 @@
       "bibtex": "@misc{fda2024pccp,\n  author = {{U.S. Food and Drug Administration}},\n  title = {Marketing Submission Recommendations for a Predetermined Change Control Plan for Artificial Intelligence-Enabled Device Software Functions: Final Guidance},\n  year = {2024},\n  howpublished = {Federal Register notice, 4 December 2024, document 2024-28361},\n  url = {https://www.federalregister.gov/documents/2024/12/04/2024-28361}\n}"
     },
     {
-      "number": 137,
-      "key": "eu2024aiact",
-      "title": "Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)",
-      "authors": [
-        "European Parliament and Council of the European Union"
-      ],
-      "year": "2024",
-      "venue": "",
-      "doi": "",
-      "url": "http://data.europa.eu/eli/reg/2024/1689/oj",
-      "eprint": "",
-      "in_evidence_map": false,
-      "bibtex": "@misc{eu2024aiact,\n  author = {{European Parliament and Council of the European Union}},\n  title = {Regulation ({EU}) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)},\n  year = {2024},\n  howpublished = {Official Journal of the European Union, L series, 12 July 2024},\n  url = {http://data.europa.eu/eli/reg/2024/1689/oj}\n}"
-    },
-    {
-      "number": 138,
-      "key": "brady2024multisociety",
-      "title": "Developing, Purchasing, Implementing and Monitoring AI Tools in Radiology: Practical Considerations. A Multi-Society Statement from the ACR, CAR, ESR, RANZCR and RSNA",
-      "authors": [
-        "Adrian P. Brady",
-        "Bibb Allen",
-        "Jaron Chong",
-        "Elmar Kotter",
-        "Nina Kottler",
-        "John Mongan",
-        "Lauren Oakden-Rayner",
-        "Daniel Pinto dos Santos",
-        "An Tang",
-        "Christoph Wald",
-        "John Slavotinek"
-      ],
-      "year": "2024",
-      "venue": "Radiology: Artificial Intelligence",
-      "doi": "10.1148/ryai.230513",
-      "url": "https://doi.org/10.1148/ryai.230513",
-      "eprint": "",
-      "in_evidence_map": false,
-      "bibtex": "@article{brady2024multisociety,\n  author = {Brady, Adrian P. and Allen, Bibb and Chong, Jaron and Kotter, Elmar and Kottler, Nina and Mongan, John and Oakden-Rayner, Lauren and dos Santos, Daniel Pinto and Tang, An and Wald, Christoph and Slavotinek, John},\n  title = {Developing, Purchasing, Implementing and Monitoring {AI} Tools in Radiology: Practical Considerations. {A} Multi-Society Statement from the {ACR}, {CAR}, {ESR}, {RANZCR} and {RSNA}},\n  journal = {Radiology: Artificial Intelligence},\n  volume = {6},\n  number = {1},\n  pages = {e230513},\n  year = {2024},\n  doi = {10.1148/ryai.230513}\n}"
-    },
-    {
-      "number": 139,
+      "number": 133,
       "key": "hou2026cogbattery",
       "title": "CogBattery: Human-Referenced Evaluation of Cognitive Task Behavior and Structure in Language Models",
       "authors": [
@@ -3011,7 +2899,7 @@
       "bibtex": "@misc{hou2026cogbattery,\n author = {Dengzhe Hou and Lingyu Jiang and Fangzhou Lin and Kazunori D. Yamada},\n title = {{CogBattery}: Human-Referenced Evaluation of Cognitive Task Behavior and Structure in Language Models},\n year = {2026},\n eprint = {2607.24999},\n archivePrefix = {arXiv},\n doi = {10.48550/arXiv.2607.24999},\n url = {https://arxiv.org/abs/2607.24999v2}\n}"
     },
     {
-      "number": 140,
+      "number": 134,
       "key": "hou2026cogeegagent",
       "title": "CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification",
       "authors": [
@@ -3029,7 +2917,7 @@
       "bibtex": "@misc{hou2026cogeegagent,\n  author = {Dengzhe Hou and Lingyu Jiang and Fangzhou Lin and Kazunori D. Yamada},\n  title = {{CogEEGAgent}: Toward Autonomous Cognitive {EEG} Analysis with Grounded Execution and Selection-Aware Verification},\n  year = {2026},\n  eprint = {2607.25045},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2607.25045},\n  url = {https://arxiv.org/abs/2607.25045v1}\n}"
     },
     {
-      "number": 141,
+      "number": 135,
       "key": "fryback1991efficacy",
       "title": "The Efficacy of Diagnostic Imaging",
       "authors": [
@@ -3045,7 +2933,7 @@
       "bibtex": "@article{fryback1991efficacy,\n  author = {Fryback, Dennis G. and Thornbury, John R.},\n  title = {The Efficacy of Diagnostic Imaging},\n  journal = {Medical Decision Making},\n  volume = {11},\n  number = {2},\n  pages = {88--94},\n  year = {1991},\n  doi = {10.1177/0272989X9101100203}\n}"
     },
     {
-      "number": 142,
+      "number": 136,
       "key": "tejani2024claim",
       "title": "Checklist for Artificial Intelligence in Medical Imaging (CLAIM): 2024 Update",
       "authors": [
@@ -3067,32 +2955,7 @@
       "bibtex": "@article{tejani2024claim,\n  author = {Tejani, Ali S. and Klontzas, Michail E. and Gatti, Anthony A. and Mongan, John T. and Moy, Linda and Park, Seong Ho and Kahn, Charles E. and others},\n  title = {Checklist for Artificial Intelligence in Medical Imaging ({CLAIM}): 2024 Update},\n  journal = {Radiology: Artificial Intelligence},\n  volume = {6},\n  number = {4},\n  pages = {e240300},\n  year = {2024},\n  doi = {10.1148/ryai.240300}\n}"
     },
     {
-      "number": 143,
-      "key": "collins2024tripodai",
-      "title": "TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods",
-      "authors": [
-        "Gary S. Collins",
-        "Karel G. M. Moons",
-        "Paula Dhiman",
-        "Richard D. Riley",
-        "Andrew L. Beam",
-        "Ben Van Calster",
-        "Marzyeh Ghassemi",
-        "Xiaoxuan Liu",
-        "Johannes B. Reitsma",
-        "Maarten van Smeden",
-        "et al."
-      ],
-      "year": "2024",
-      "venue": "BMJ",
-      "doi": "10.1136/bmj-2023-078378",
-      "url": "https://doi.org/10.1136/bmj-2023-078378",
-      "eprint": "",
-      "in_evidence_map": false,
-      "bibtex": "@article{collins2024tripodai,\n  author = {Collins, Gary S. and Moons, Karel G. M. and Dhiman, Paula and Riley, Richard D. and Beam, Andrew L. and Van Calster, Ben and Ghassemi, Marzyeh and Liu, Xiaoxuan and Reitsma, Johannes B. and van Smeden, Maarten and others},\n  title = {{TRIPOD+AI} statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods},\n  journal = {BMJ},\n  volume = {385},\n  pages = {e078378},\n  year = {2024},\n  doi = {10.1136/bmj-2023-078378}\n}"
-    },
-    {
-      "number": 144,
+      "number": 137,
       "key": "vasey2022decideai",
       "title": "Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI",
       "authors": [
@@ -3117,46 +2980,6 @@
       "eprint": "",
       "in_evidence_map": false,
       "bibtex": "@article{vasey2022decideai,\n  author = {Vasey, Baptiste and Nagendran, Myura and Campbell, Bruce and Clifton, David A. and Collins, Gary S. and Denaxas, Spiros and Denniston, Alastair K. and Faes, Livia and Geerts, Bart and Ibrahim, Mudathir and Liu, Xiaoxuan and Mateen, Bilal A. and others},\n  title = {Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: {DECIDE-AI}},\n  journal = {Nature Medicine},\n  volume = {28},\n  number = {5},\n  pages = {924--933},\n  year = {2022},\n  doi = {10.1038/s41591-022-01772-9}\n}"
-    },
-    {
-      "number": 145,
-      "key": "cruzrivera2020spiritai",
-      "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
-      "authors": [
-        "Samantha Cruz Rivera",
-        "Xiaoxuan Liu",
-        "An-Wen Chan",
-        "Alastair K. Denniston",
-        "Melanie J. Calvert",
-        "et al."
-      ],
-      "year": "2020",
-      "venue": "Nature Medicine",
-      "doi": "10.1038/s41591-020-1037-7",
-      "url": "https://doi.org/10.1038/s41591-020-1037-7",
-      "eprint": "",
-      "in_evidence_map": false,
-      "bibtex": "@article{cruzrivera2020spiritai,\n  author = {Cruz Rivera, Samantha and Liu, Xiaoxuan and Chan, An-Wen and Denniston, Alastair K. and Calvert, Melanie J. and others},\n  title = {Guidelines for clinical trial protocols for interventions involving artificial intelligence: the {SPIRIT-AI} extension},\n  journal = {Nature Medicine},\n  volume = {26},\n  number = {9},\n  pages = {1351--1363},\n  year = {2020},\n  doi = {10.1038/s41591-020-1037-7}\n}"
-    },
-    {
-      "number": 146,
-      "key": "liu2020consortai",
-      "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
-      "authors": [
-        "Xiaoxuan Liu",
-        "Samantha Cruz Rivera",
-        "David Moher",
-        "Melanie J. Calvert",
-        "Alastair K. Denniston",
-        "et al."
-      ],
-      "year": "2020",
-      "venue": "Nature Medicine",
-      "doi": "10.1038/s41591-020-1034-x",
-      "url": "https://doi.org/10.1038/s41591-020-1034-x",
-      "eprint": "",
-      "in_evidence_map": false,
-      "bibtex": "@article{liu2020consortai,\n  author = {Liu, Xiaoxuan and Cruz Rivera, Samantha and Moher, David and Calvert, Melanie J. and Denniston, Alastair K. and others},\n  title = {Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the {CONSORT-AI} extension},\n  journal = {Nature Medicine},\n  volume = {26},\n  number = {9},\n  pages = {1364--1374},\n  year = {2020},\n  doi = {10.1038/s41591-020-1034-x}\n}"
     }
   ]
 }

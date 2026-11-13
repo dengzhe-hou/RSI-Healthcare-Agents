@@ -76,7 +76,7 @@
     },
     {
       "number": "3.2.1",
-      "title": "Tool integration via MCP",
+      "title": "Tool integration and reuse",
       "depth": 2,
       "key": "section-3-2-1"
     },
@@ -191,12 +191,12 @@
     {
       "id": "p3",
       "section": "3.2.1",
-      "section_title": "Tool integration via MCP",
+      "section_title": "Tool integration and reuse",
       "section_key": "section-3-2-1",
       "keys": [
         "fan2026macro"
       ],
-      "excerpt": "MCP standardizes access to available tools. FHIR queries, guideline retrieval, DICOM viewers, segmentation and code execution can supply actions within a clinical workflow. Experience changes this workflow when successful combinations become reusable actions. MACRO extracts recurring fragments from verified imaging…",
+      "excerpt": "FHIR queries, guideline retrieval, DICOM viewers, segmentation and code execution can supply actions within a clinical workflow. Experience changes this workflow when successful combinations become reusable actions. MACRO extracts recurring fragments from verified imaging trajectories into composite tools and…",
       "excerpts": {
         "fan2026macro": "MACRO extracts recurring fragments from verified imaging trajectories into composite tools and accumulates image-feature memory during training episodes (Figure 4b)."
       }
@@ -552,16 +552,14 @@
         "dou2024shennongagent",
         "rugo2026livingoep",
         "wang2026tcmsea",
-        "li2026vdss",
-        "neary2025fast"
+        "li2026vdss"
       ],
-      "excerpt": "Pharmacist corrections and annotation validation concern the quality of different retained artifacts. TCM-SEA reports sealed-test gains with one evolution seed and no physician review, while VDSS reports a single-clinician regret trend. Coach Iris retrospectively evaluates recorded dialogues from an operating…",
+      "excerpt": "Pharmacist corrections and annotation validation concern the quality of different retained artifacts. TCM-SEA reports sealed-test gains with one evolution seed and no physician review, while VDSS reports a single-clinician regret trend.",
       "excerpts": {
         "dou2024shennongagent": "Pharmacist corrections and annotation validation concern the quality of different retained artifacts.",
         "rugo2026livingoep": "Pharmacist corrections and annotation validation concern the quality of different retained artifacts.",
         "wang2026tcmsea": "TCM-SEA reports sealed-test gains with one evolution seed and no physician review, while VDSS reports a single-clinician regret trend.",
-        "li2026vdss": "TCM-SEA reports sealed-test gains with one evolution seed and no physician review, while VDSS reports a single-clinician regret trend.",
-        "neary2025fast": "Coach Iris retrospectively evaluates recorded dialogues from an operating patient service."
+        "li2026vdss": "TCM-SEA reports sealed-test gains with one evolution seed and no physician review, while VDSS reports a single-clinician regret trend."
       }
     },
     {
@@ -601,19 +599,6 @@
     },
     {
       "id": "p22",
-      "section": "5.1",
-      "section_title": "Technical and clinical challenges",
-      "section_key": "section-5-1",
-      "keys": [
-        "xu2026oaims"
-      ],
-      "excerpt": "Transfer and cumulative degradation. Retained experience may encounter different scanners, preprocessing or institutional terminology. Pneumonia-detection area under the receiver operating characteristic curve (AUC) was 0.931 internally versus 0.815 externally, while another convolutional neural network (CNN)…",
-      "excerpts": {
-        "xu2026oaims": "OAIMS illustrates mask-simulated corrections for adapting a non-LLM segmentation model."
-      }
-    },
-    {
-      "id": "p23",
       "section": "5.2",
       "section_title": "Research and translational directions",
       "section_key": "section-5-2",
@@ -626,7 +611,7 @@
       }
     },
     {
-      "id": "p24",
+      "id": "p23",
       "section": "5.2",
       "section_title": "Research and translational directions",
       "section_key": "section-5-2",
@@ -1805,13 +1790,6 @@
     {
       "source": "dou2024shennongagent",
       "target": "li2026vdss",
-      "sections": [
-        "4.5"
-      ]
-    },
-    {
-      "source": "dou2024shennongagent",
-      "target": "neary2025fast",
       "sections": [
         "4.5"
       ]
@@ -3169,13 +3147,6 @@
     },
     {
       "source": "li2026vdss",
-      "target": "neary2025fast",
-      "sections": [
-        "4.5"
-      ]
-    },
-    {
-      "source": "li2026vdss",
       "target": "rugo2026livingoep",
       "sections": [
         "4.5"
@@ -3611,20 +3582,6 @@
     {
       "source": "murugesan2026amr",
       "target": "zeng2026trajevolve",
-      "sections": [
-        "4.5"
-      ]
-    },
-    {
-      "source": "neary2025fast",
-      "target": "rugo2026livingoep",
-      "sections": [
-        "4.5"
-      ]
-    },
-    {
-      "source": "neary2025fast",
-      "target": "wang2026tcmsea",
       "sections": [
         "4.5"
       ]

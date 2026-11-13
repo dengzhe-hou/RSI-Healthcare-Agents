@@ -2,7 +2,7 @@
 
 **Dengzhe Hou · Zihao Wu · Yuwen Zeng · Lingyu Jiang · Fangzhou Lin · Kazunori D Yamada**
 
-[Project homepage](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/) · [Explore the map](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/) · [85 mapped studies](PAPERS.md) · [All 146 references](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/references/) · [Evidence & templates](resources/) · [BibTeX](CITATION.bib)
+[Project homepage](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/) · [Explore the map](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/) · [85 mapped studies](PAPERS.md) · [All 137 references](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/references/) · [Evidence & templates](resources/) · [BibTeX](CITATION.bib)
 
 A paper collection and evidence companion for healthcare agent self-improvement. Follow a study from its update mechanism to its controls, independent tests, original sources and discussion in the survey.
 
@@ -10,7 +10,7 @@ A paper collection and evidence companion for healthcare agent self-improvement.
 
 The map contains **85 studies** from the fixed **4 November 2026** evidence snapshot. Lines connect papers cited in the same review paragraph. Select a paper for its mechanism overview, survey excerpts and source-linked evidence record. Search and filters also work in the paper index on small screens.
 
-The [complete bibliography](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/references/) lists all **146 references** cited in the revised manuscript, in citation order. Search titles, authors, years and venues, filter the 85 entries with evidence records, and download the complete [BibTeX](references/references.bib). The network remains an 85-study evidence map.
+The [complete bibliography](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/references/) lists all **137 references** cited in the revised manuscript, in citation order. Search titles, authors, years and venues, filter the 83 manuscript references with evidence records, and download the complete [BibTeX](references/references.bib). The network remains an 85-study evidence map.
 
 **Contents** · [Updates](#updates) · [What changes?](#what-changes) · [Start here](#start-here) · [Paper collection](#paper-collection) · [Data and templates](#data-and-templates) · [Rebuild](#rebuild-the-website) · [Contribute](#contribute) · [Citation](#citation)
 
