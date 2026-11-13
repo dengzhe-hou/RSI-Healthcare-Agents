@@ -262,7 +262,7 @@
       "keys": [
         "medhospital2024"
       ],
-      "excerpt": "Training-data evolution. Generated encounters can supply both a source of agent experience and candidate training material. Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department. The relevant comparison asks whether this material improves performance on…",
+      "excerpt": "Training-data evolution. Generated encounters can supply both a source of agent experience and candidate training material. Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department.",
       "excerpts": {
         "medhospital2024": "Agent Hospital generates labeled encounters across 21 departments, with up to 20,000 virtual patients per department."
       }
