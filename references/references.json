@@ -1,8 +1,8 @@
 {
   "counts": {
-    "total": 137,
+    "total": 136,
     "evidence": 83,
-    "other": 54
+    "other": 53
   },
   "references": [
     {
@@ -2867,21 +2867,6 @@
     },
     {
       "number": 132,
-      "key": "fda2024pccp",
-      "title": "Marketing Submission Recommendations for a Predetermined Change Control Plan for Artificial Intelligence-Enabled Device Software Functions: Final Guidance",
-      "authors": [
-        "U.S. Food and Drug Administration"
-      ],
-      "year": "2024",
-      "venue": "",
-      "doi": "",
-      "url": "https://www.federalregister.gov/documents/2024/12/04/2024-28361",
-      "eprint": "",
-      "in_evidence_map": false,
-      "bibtex": "@misc{fda2024pccp,\n  author = {{U.S. Food and Drug Administration}},\n  title = {Marketing Submission Recommendations for a Predetermined Change Control Plan for Artificial Intelligence-Enabled Device Software Functions: Final Guidance},\n  year = {2024},\n  howpublished = {Federal Register notice, 4 December 2024, document 2024-28361},\n  url = {https://www.federalregister.gov/documents/2024/12/04/2024-28361}\n}"
-    },
-    {
-      "number": 133,
       "key": "hou2026cogbattery",
       "title": "CogBattery: Human-Referenced Evaluation of Cognitive Task Behavior and Structure in Language Models",
       "authors": [
@@ -2899,7 +2884,7 @@
       "bibtex": "@misc{hou2026cogbattery,\n author = {Dengzhe Hou and Lingyu Jiang and Fangzhou Lin and Kazunori D. Yamada},\n title = {{CogBattery}: Human-Referenced Evaluation of Cognitive Task Behavior and Structure in Language Models},\n year = {2026},\n eprint = {2607.24999},\n archivePrefix = {arXiv},\n doi = {10.48550/arXiv.2607.24999},\n url = {https://arxiv.org/abs/2607.24999v2}\n}"
     },
     {
-      "number": 134,
+      "number": 133,
       "key": "hou2026cogeegagent",
       "title": "CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification",
       "authors": [
@@ -2917,7 +2902,7 @@
       "bibtex": "@misc{hou2026cogeegagent,\n  author = {Dengzhe Hou and Lingyu Jiang and Fangzhou Lin and Kazunori D. Yamada},\n  title = {{CogEEGAgent}: Toward Autonomous Cognitive {EEG} Analysis with Grounded Execution and Selection-Aware Verification},\n  year = {2026},\n  eprint = {2607.25045},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2607.25045},\n  url = {https://arxiv.org/abs/2607.25045v1}\n}"
     },
     {
-      "number": 135,
+      "number": 134,
       "key": "fryback1991efficacy",
       "title": "The Efficacy of Diagnostic Imaging",
       "authors": [
@@ -2933,7 +2918,7 @@
       "bibtex": "@article{fryback1991efficacy,\n  author = {Fryback, Dennis G. and Thornbury, John R.},\n  title = {The Efficacy of Diagnostic Imaging},\n  journal = {Medical Decision Making},\n  volume = {11},\n  number = {2},\n  pages = {88--94},\n  year = {1991},\n  doi = {10.1177/0272989X9101100203}\n}"
     },
     {
-      "number": 136,
+      "number": 135,
       "key": "tejani2024claim",
       "title": "Checklist for Artificial Intelligence in Medical Imaging (CLAIM): 2024 Update",
       "authors": [
@@ -2955,7 +2940,7 @@
       "bibtex": "@article{tejani2024claim,\n  author = {Tejani, Ali S. and Klontzas, Michail E. and Gatti, Anthony A. and Mongan, John T. and Moy, Linda and Park, Seong Ho and Kahn, Charles E. and others},\n  title = {Checklist for Artificial Intelligence in Medical Imaging ({CLAIM}): 2024 Update},\n  journal = {Radiology: Artificial Intelligence},\n  volume = {6},\n  number = {4},\n  pages = {e240300},\n  year = {2024},\n  doi = {10.1148/ryai.240300}\n}"
     },
     {
-      "number": 137,
+      "number": 136,
       "key": "vasey2022decideai",
       "title": "Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI",
       "authors": [
