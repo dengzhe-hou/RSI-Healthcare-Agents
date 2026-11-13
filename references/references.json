@@ -936,27 +936,6 @@
     },
     {
       "number": 42,
-      "key": "dang2026medzero",
-      "title": "MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation",
-      "authors": [
-        "Xilin Dang",
-        "Weilin Ruan",
-        "Xue Yang",
-        "Jinghao Wang",
-        "Xiaowei Hu",
-        "Jinpeng Li",
-        "Pheng-Ann Heng"
-      ],
-      "year": "2026",
-      "venue": "",
-      "doi": "10.48550/arXiv.2610.08327",
-      "url": "https://doi.org/10.48550/arXiv.2610.08327",
-      "eprint": "2610.08327",
-      "in_evidence_map": true,
-      "bibtex": "@misc{dang2026medzero,\n  author = {Xilin Dang and Weilin Ruan and Xue Yang and Jinghao Wang and Xiaowei Hu and Jinpeng Li and Pheng-Ann Heng},\n  title = {{MedZERO}: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation},\n  year = {2026},\n  eprint = {2610.08327},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.08327},\n  note = {Author-reported acceptance at NeurIPS 2026},\n  url = {https://arxiv.org/abs/2610.08327v1}\n}"
-    },
-    {
-      "number": 43,
       "key": "wang2026ecgrsi",
       "title": "ECG-RSI: Recursive Self-Improvement through Targeted Electrocardiogram Waveform Evolution",
       "authors": [
@@ -982,7 +961,7 @@
       "bibtex": "@misc{wang2026ecgrsi,\n  author = {Xiaoliang Wang and Zhuo Chen and Chuanyang Zheng and Jiangwei Lao and Quanbin Wang and Honglin Lin and Jiajia Liu and Zhihong Lu and Hao Jin and Jian Wang and Jinjie Gu and Lijun Wu},\n  title = {{ECG-RSI}: Recursive Self-Improvement through Targeted Electrocardiogram Waveform Evolution},\n  year = {2026},\n  eprint = {2610.17718},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.17718},\n  url = {https://arxiv.org/abs/2610.17718v1}\n}"
     },
     {
-      "number": 44,
+      "number": 43,
       "key": "lee2026revision3d",
       "title": "ReVision3D: Attribution-Guided Recursive Self-Improvement for 3D Medical Perception",
       "authors": [
@@ -999,6 +978,27 @@
       "eprint": "2609.32984",
       "in_evidence_map": true,
       "bibtex": "@misc{lee2026revision3d,\n  author = {Ho Hin Lee and Yuyin Zhou and Yannan Yu and Shi Gu and Yifan Wu},\n  title = {{ReVision3D: Attribution-Guided Recursive Self-Improvement for 3D Medical Perception}},\n  year = {2026},\n  eprint = {2609.32984},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2609.32984},\n  url = {https://arxiv.org/abs/2609.32984v2}\n}"
+    },
+    {
+      "number": 44,
+      "key": "dang2026medzero",
+      "title": "MedZERO: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation",
+      "authors": [
+        "Xilin Dang",
+        "Weilin Ruan",
+        "Xue Yang",
+        "Jinghao Wang",
+        "Xiaowei Hu",
+        "Jinpeng Li",
+        "Pheng-Ann Heng"
+      ],
+      "year": "2026",
+      "venue": "",
+      "doi": "10.48550/arXiv.2610.08327",
+      "url": "https://doi.org/10.48550/arXiv.2610.08327",
+      "eprint": "2610.08327",
+      "in_evidence_map": true,
+      "bibtex": "@misc{dang2026medzero,\n  author = {Xilin Dang and Weilin Ruan and Xue Yang and Jinghao Wang and Xiaowei Hu and Jinpeng Li and Pheng-Ann Heng},\n  title = {{MedZERO}: Self-Evolving Agents for Open-Ended Medical Reasoning Through Controlled Knowledge Accumulation},\n  year = {2026},\n  eprint = {2610.08327},\n  archivePrefix = {arXiv},\n  doi = {10.48550/arXiv.2610.08327},\n  note = {Author-reported acceptance at NeurIPS 2026},\n  url = {https://arxiv.org/abs/2610.08327v1}\n}"
     },
     {
       "number": 45,
