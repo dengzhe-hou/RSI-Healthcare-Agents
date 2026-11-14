@@ -1,7 +1,5 @@
 # A Survey on Recursive Self-Improvement in Healthcare AI Agents
 
-**Dengzhe Hou · Zihao Wu · Yuwen Zeng · Lingyu Jiang · Fangzhou Lin · Kazunori D Yamada**
-
 [Project homepage](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/) · [Explore the map](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/) · [85 mapped studies](PAPERS.md) · [All 136 references](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/references/) · [Evidence & templates](resources/) · [BibTeX](CITATION.bib)
 
 A paper collection and evidence companion for healthcare agent self-improvement. Follow a study from its update mechanism to its controls, independent tests, original sources and discussion in the survey.
