@@ -4,3 +4,20 @@
 
 .author-block{position:relative}.university-row>span{line-height:1.1}.university-row small{display:none}#affiliations{position:absolute;z-index:25;left:50%;transform:translateX(-50%);width:min(700px,100%);margin-top:10px}#affiliations[open]{padding:12px;border:1px solid var(--rule);border-radius:6px;background:var(--card);box-shadow:0 8px 24px #11182720}
 .site-footer-note{display:grid;gap:6px}.design-credit{font-size:.9em}.design-credit a{color:inherit}
+
+/* Small presentation changes to the existing homepage. Layout and palette retained. */
+.landing h1{font-weight:450;line-height:1.2;letter-spacing:-.65px}
+.landing h1 em{font-weight:450}
+.directory{margin-top:30px;padding-top:24px;gap:32px}
+.preview-link{gap:15px}
+.preview-label{display:inline-flex;align-items:center;justify-content:center;min-height:35px;padding:5px 10px;border:1px solid var(--border);border-radius:3px;font-size:17px;line-height:1.35;white-space:nowrap;background:var(--card)}
+.preview-link:hover .preview-label{border-color:var(--link);background:var(--soft)}
+.repo-preview,.map-preview{box-shadow:none;border-bottom-width:3px}
+.text-block{padding-block:35px}
+.opening-figure figcaption{font-size:14px;line-height:1.65}
+.abstract-box{border-radius:4px}
+.abstract-box:before{height:3px;background:var(--accent)}
+.abstract-opening{background:var(--soft)}
+.mechanism-tabs button{border-radius:3px}
+@media(max-width:1050px){.directory{gap:24px}.preview-label{font-size:15px;padding-inline:8px}}
+@media(max-width:600px){.landing h1{line-height:1.2;letter-spacing:-.5px}.directory{margin-top:24px;gap:20px;padding-top:19px}.preview-link{gap:12px}.preview-label{font-size:15px;padding:5px 9px}.text-block{padding-block:27px}.opening-figure figcaption{font-size:13px}}
