@@ -23,3 +23,9 @@
 @media(max-width:600px){.landing h1{line-height:1.2;letter-spacing:-.5px}.directory{margin-top:24px;gap:20px;padding-top:19px}.preview-link{gap:12px}.preview-label{font-size:15px;padding:5px 9px}.text-block{padding-block:27px}.opening-figure figcaption{font-size:13px}}
 /* Keep each institution name intact while allowing the row to wrap. */
 .university-row>span:last-child{width:auto;max-width:none;white-space:nowrap}
+
+/* Official site icons beside the existing author affiliations. */
+.university-row>span{width:auto;max-width:none}
+.university-link{display:inline-flex;align-items:center;gap:7px;text-decoration:none;white-space:nowrap;color:var(--heading)}
+.university-icon{display:block;width:24px;height:24px;object-fit:contain;flex-shrink:0}
+@media(max-width:600px){.university-row{gap:13px 20px}.university-link{gap:6px}.university-icon{width:22px;height:22px}}
