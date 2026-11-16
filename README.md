@@ -1,6 +1,6 @@
 # A Survey on Recursive Self-Improvement in Healthcare AI Agents
 
-[Project homepage](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/) · [Explore the map](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/) · [85 mapped studies](PAPERS.md) · [All 136 references](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/references/) · [Evidence & templates](resources/) · [BibTeX](CITATION.bib)
+[Read survey](https://www.alphaxiv.org/abs/2611.recursive-self-improvement-healthcare-agents) · [Project homepage](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/) · [Explore the map](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/map/) · [85 mapped studies](PAPERS.md) · [All 136 references](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/references/) · [Evidence & templates](resources/) · [BibTeX](CITATION.bib)
 
 A paper collection and evidence companion for healthcare agent self-improvement. Follow a study from its update mechanism to its controls, independent tests, original sources and discussion in the survey.
 
@@ -14,6 +14,7 @@ The [complete bibliography](https://dengzhe-hou.github.io/RSI-Healthcare-Agents/
 
 ## Updates
 
+- **16 November 2026**. The revised survey is now available on [alphaXiv](https://www.alphaxiv.org/abs/2611.recursive-self-improvement-healthcare-agents) and has been submitted to Meta-Radiology. The fixed 85-study evidence release remains v0.3.2.
 - **12 November 2026**. Added a connected paper map, manuscript-section browsing, a six-study reading guide and this categorized collection. The evidence release remains v0.3.2.
 - **4 November 2026**. Unified search cutoff across arXiv, PubMed, Europe PMC and OpenAlex.
 
@@ -211,7 +212,7 @@ Use [CITATION.bib](CITATION.bib) or [CITATION.cff](CITATION.cff). Cite the fixed
 
 ## Manuscript and review status
 
-The revised manuscript is under author revision. The [earlier Preprints.org version](https://www.preprints.org/manuscript/202605.1547) has different contents and an earlier title. The full revised manuscript PDF is not published in this repository.
+The revised survey is available as an [alphaXiv preprint](https://www.alphaxiv.org/abs/2611.recursive-self-improvement-healthcare-agents) and has been submitted to Meta-Radiology. The [original Preprints.org version](https://www.preprints.org/manuscript/202605.1547) was posted on 22 May 2026 under an earlier title. The repository provides the accompanying evidence and evaluation resources.
 
 Screening and extraction were LLM-assisted. See [review status](resources/REVIEW_STATUS.md), [rights](resources/RIGHTS.md) and [versions](resources/VERSIONS.md). No additional open-content license has been selected. The bundled Newsreader, Inter and JetBrains Mono fonts retain their separate [SIL Open Font Licenses](assets/fonts/README.md).
 
