@@ -35,5 +35,6 @@ preferred-citation:
     - family-names: "Yamada"
       given-names: "Kazunori D"
   year: 2026
-  url: "https://github.com/dengzhe-hou/RSI-Healthcare-Agents"
-  notes: "Structured narrative review manuscript. Revised version; arXiv identifier not yet assigned."
+  doi: "10.20944/preprints202605.1547.v2"
+  url: "https://www.preprints.org/manuscript/202605.1547/v2"
+  notes: "Survey preprint, version 2, posted 17 November 2026. First version posted 22 May 2026 under an earlier title. Also available on alphaXiv."
